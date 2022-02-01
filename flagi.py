@@ -4,6 +4,10 @@ import urllib.request
 import time
 import json
 
+# ?? funkcja/procedura ??
+# wyszukiwanie fragmentu adresu url w dostarczonej tablicy stringow
+# if 'http://' in str
+#################################
 def wyszukajWStringu(str):
   if 'http://' in str:
     return True
@@ -12,6 +16,10 @@ def wyszukajWStringu(str):
   else:
     return False
 
+# ?? funkcja/procedura ??
+# odpytanie za pomoca biblioteki requests domeny - oczekiwana odpowiedz 200
+# import requests czy import urllib.request - czy nie wystarczy 1  z tych linii ??
+#################################
 def webRequest(url):
   try:
     r = requests.get(url, verify=False, timeout=10)
@@ -20,6 +28,10 @@ def webRequest(url):
   except requests.exceptions.HTTPError as e: 
     return [0, "Error"]
 
+# ?? funkcja/procedura ??
+# tablica blednych domen, uzupelniana recnie z uwagi na blad nad ktorym nie jestem w stanie zapanowac
+# uruchomienie aplikacji aktywuje blad, chyba ze tablica zostanie uzupelniona do konca
+#################################
 def bledneDomeny(str):
   bledne_domeny_list = ["http://www.marcyg.pl", "http://martaitwaw.pl", "http://elara-zp.pl", "http://cheswawprograms.pl", "http://www.agentdkkabelek.pl"]
   bledne_domeny_list.append("http://pythonprogramowanie.pl")
@@ -35,6 +47,13 @@ def bledneDomeny(str):
   else:
     return False
 
+# ?? funkcja/procedura ??
+# pobranie listy domen, obrobienie stringow zawierajacych adresy stron (URI) i dodanie ich do tablic oraz wywołań (request) domen 
+# linia 99 -> status_code = webRequest(url) - miejsce wysypki domeny która odpowiedziała -> DNS_PROBE_FINISHED_NXDOMAIN
+# *****     **********       *****
+# ***** jakies propozycje ?? *****
+# *****     **********       *****
+#################################
 def flagsList():
   link = 'http://zajecia-programowania-xd.pl/flagi'
   flagi_response = requests.get(link)
@@ -107,6 +126,10 @@ def flagsList():
   
   return [clearUrlList, licz, status_ok_count]
 
+
+# ?? funkcja/procedura ??
+# uruchomienie procedur main()
+#################################
 def main():
     val_list = flagsList()
     res = ' '.join([str(item) for item in val_list[0]])
