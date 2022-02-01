@@ -41,6 +41,12 @@ def bledneDomeny(str):
   bledne_domeny_list.append("http://emocrec.pl")
   bledne_domeny_list.append("http://rafal-gala.pl")
   bledne_domeny_list.append("http://takietamprogramowanie.pl")
+  bledne_domeny_list.append("http://patrycja-kaluza.pl")
+  bledne_domeny_list.append("http://fizykadlateoretyka.pl")
+  bledne_domeny_list.append("http://www.martaprogramuje.pl")
+  bledne_domeny_list.append("http://www.jj-s.pl")
+  bledne_domeny_list.append("http://programowanie-zalno.pl")
+  bledne_domeny_list.append("http://annre.pl")
   if str in bledne_domeny_list:
     print('***********************************************************\n!!!!!==',str,' in ',bledne_domeny_list,'==!!!!!\n********************************************')
     return True
