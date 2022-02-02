@@ -25,7 +25,7 @@ def wyszukajWStringu_depr(str):
 
 def progressBar(initInt):
   # importing modules
-  from tqdm import trange
+  from tqdm import tqdm
   from time import sleep
    
   # creating loop
