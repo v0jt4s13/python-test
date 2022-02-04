@@ -137,7 +137,7 @@ def flagsList(link,resp_count):
       json_list.append({'domena':url, "data":str_list})
       
       if resp_count != 0:
-        if licz > resp_count:        # na czas testow ogranicznie ilosci wyswietlania linków
+        if licz > int(resp_count):        # na czas testow ogranicznie ilosci wyswietlania linków
           break
       #print("url {}".format("test"))
 
@@ -163,8 +163,11 @@ def flagsList(link,resp_count):
 def main():
   
   resp_count = input("        Ilość wierszy do przeszukania?\n        (0-max; Enter-10) ")
-  if type(resp_count) != "int":
-    resp_count = 10
+  if resp_count != 0:
+    print(resp_count,type(int(resp_count)))
+    if type(int(resp_count)) != type(1):
+      resp_count = 10
+  print(resp_count,type(resp_count))
   
   output_type = input("        Wynik zapisać jako plik .json?\n        (y-tak; Enter-pokaż wynik na ekranie) ")
   if output_type in ["y", "t"]:
@@ -173,6 +176,7 @@ def main():
   #link = 'http://zajecia-programowania-xd.pl/flagi'
   link = 'http://localhost/narzedzia/local/flagi'
   # uruchamiamy nasz program
+  
   val_list = flagsList(link,resp_count)
   #wyszukajUrlWStringu
   #print(val_list)
