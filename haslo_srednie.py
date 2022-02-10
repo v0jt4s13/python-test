@@ -98,7 +98,6 @@ def main():
 if __name__ == '__main__':
   main()
 
-
 # Zadanie domowe:
 
 # Wypracowaliśmy generator haseł średnich :D Teraz Twoja kolej, korzystajac z kodu wyżej
