@@ -185,6 +185,7 @@ def flagsList(link,resp_count,json_file_name):
         print(url)
         print("*****************************************\n*****************************************\n  Oops! ", e)
 
+
   #print('1',clearUrlList)
   #print('2',licz)
   #print('3',status_ok_count)
@@ -201,7 +202,6 @@ def flagsList(link,resp_count,json_file_name):
 # uruchomienie procedur main()
 #################################
 def main():
-  
   console.clear()
   print('\n\n')
   resp_count = console.input("\t\t\t\t*** Ilość wierszy do przeszukania?\n\t\t\t\t\t (0-max; Enter-10) :smiley: ")
@@ -258,7 +258,6 @@ def main():
     print("\t\t\t\t******************************************************")
     print("\t\t\t\t*** Zapisane do pliku:[bold blue] %s [/bold blue]" %json_file_name)
     print("\t\t\t\t******************************************************")
-    
     #print("*****************************************\n*****************************************\n")
     #print(json.dumps(val_list[0]));
     #print("*****************************************\n*****************************************\n")
