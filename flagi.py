@@ -112,7 +112,10 @@ def flagsList(link,resp_count,json_file_name):
   clearUrlList.clear()
   licz = 0
   status_ok_count = 0
-    
+  full_line_json = ""
+  dictJ = {}
+  data = {}
+
   if 1 == 1:
     for url in tmpDomeny_list:
       tmpUrl = wyszukajUrlWStringu(url)
@@ -129,6 +132,7 @@ def flagsList(link,resp_count,json_file_name):
           wszystkieDomenyOut_list.append([url, status_code[0]])
           curl_url = "curl -i " + url
           str_list = [{'id':licz, 'status_code':status_code[0],'description':'Status code dla domeny', 'extra':200}] #, 'output':curl_url}]
+          str_list_json = {'id':licz, 'status_code':status_code[0],'description':'Status code dla domeny', 'extra':200}
           #str_list = [["id", licz], ["status_code", status_code[0]], ["description", 'Status code dla domeny'], ["url", url], ["extra",200], ["output",curl_url]] #, ["json_resp", status_code[1]]
           #[1, 200, {'Server': 'nginx/1.14.0 (Ubuntu)', 'Date': 'Wed, 02 Feb 2022 22:10:57 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Content-Encoding': 'gzip'}, 'Status code dla domeny', 'http://www.roszkov.pl']
           #showLogs(1, str)
@@ -139,6 +143,7 @@ def flagsList(link,resp_count,json_file_name):
           #print(licz,';',status_code[0],';',status_code[1],';Problem z domeną;   curl -i ', url)
           curl_url = "curl -i " + url
           str_list = [{'id':licz, 'status_code':status_code[0],'description':'Problem z domeną', 'extra':0}] #, 'output':curl_url}]
+          str_list_json = {'id':licz, 'status_code':status_code[0],'description':'Problem z domeną', 'extra':0}
           #str_list = [["id", licz], ["status_code", status_code[0]], ["description", 'Problem z domeną'], ["url", url], ["extra",0], ["output",curl_url]] #, ["json_resp", status_code[1]]
           #print(str_list)
         except:
@@ -147,6 +152,7 @@ def flagsList(link,resp_count,json_file_name):
           #print(licz,';',status_code[0],';',status_code[1],';Nieudokumentowany problem z domeną;   curl -i ', url)
           curl_url = "curl -i " + url
           str_list = [{'id':licz, 'status_code':status_code[0],'description':'Nieudokumentowany problem z domeną', 'extra':0}] #, 'output':curl_url}]
+          str_list_json = {'id':licz, 'status_code':status_code[0],'description':'Nieudokumentowany problem z domeną', 'extra':0}
           #str_list = [["id", licz], ["status_code", status_code[0]], ["description", 'Nieudokumentowany problem z domeną'], ["url", url], ["extra",0], ["output",curl_url]] #, ["json_resp", status_code[1]]
           #print(str_list)
         
@@ -172,7 +178,18 @@ def flagsList(link,resp_count,json_file_name):
         clearUrlList.append([url, status_code[0]])
         json_list.append({"domena":url, "data":str_list})
         
-        full_line = "'domena':"+url+", 'data':"+str(str_list)+"}"
+        if full_line_json == "":
+          full_line_json = "{'domena':'%s','data':%s}" %(url,str_list)
+        else:
+          full_line_json = "{'domena':'%s','data':%s}, %s" %(url,str_list,full_line_json)
+        #full_line_json = '{"domena":%s,"data":%s}' % (url,str(str_list_json))
+        
+        #data['domena'] = url
+        #data['data'] = str_list_json
+        #json_data = json.dumps(data)
+
+        #dictJ.update(json.loads(full_line_json))
+
         logging.info(url)
         
         if resp_count != 0:
@@ -184,8 +201,14 @@ def flagsList(link,resp_count,json_file_name):
       except ValueError as e:
         print(url)
         print("*****************************************\n*****************************************\n  Oops! ", e)
+        break
 
-
+  #print('*************** XXXXXX ********** XXXXXX ********** XXXXXX ***************')
+  #print(full_line_json)
+  #qq = "{'ListaDomen':[%s]}" %full_line_json
+  #print(qq)
+  #print(json.dumps(','.join(json_list)))
+  #print('*************** XXXXXX ********** XXXXXX ********** XXXXXX ***************')
   #print('1',clearUrlList)
   #print('2',licz)
   #print('3',status_ok_count)
@@ -242,8 +265,8 @@ def main():
     #print("*****************************************")
     #print("*****************************************")
     
-    lista_domen_list = "{'ListaDomen':"+str(val_list[5])+"},{'IloscDomen':"+str(val_list[1])+"},{'Status200':"+str(val_list[2])+"},"
-    lista_domen_list = lista_domen_list+"{'Statusy':"+str(val_list[3])+"},{'BledneDomeny':"+str(val_list[4])+"}"
+    lista_domen_list = "{'ListaDomen':"+str(val_list[5])+",'IloscDomen':"+str(val_list[1])+",'Status200':"+str(val_list[2])+","
+    lista_domen_list = lista_domen_list+"'Statusy':"+str(val_list[3])+",'BledneDomeny':"+str(val_list[4])+"}"
     lista_domen_json = lista_domen_list #json.dumps(lista_domen_list)
     #print('\t\t****************************************\n\t\t*********** supa json ******************\n\t\t****************************************\n')
     #print(lista_domen_json)
