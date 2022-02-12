@@ -269,7 +269,7 @@ def main():
     lista_domen_list = lista_domen_list+"'Statusy':"+str(val_list[3])+",'BledneDomeny':"+str(val_list[4])+"}"
     lista_domen_json = lista_domen_list #json.dumps(lista_domen_list)
     #print('\t\t****************************************\n\t\t*********** supa json ******************\n\t\t****************************************\n')
-    #print(lista_domen_json)
+    #print(json.loads(lista_domen_json))
     #print('\t\t****************************************\n\t\t****************************************\n\t\t****************************************\n')
     
     json_file_name = "test_test_file.json"
@@ -322,16 +322,24 @@ def main():
     print('\t\t\t\t****** Oddano do użytku w zaledwie %s sekundy' %str(int(getDifference2(startDateTime, endDateTime)/1000)))
     print('\t\t\t\t\t\t\t*** by v0jt4s *** \n\n')
     
-  def read_json(filename='test_test_file.json'):
-    liczcz = 0
-    with open(filename,'r+') as file:
-      liczcz+= 1
-      # First we load existing data into a dict.
-      file_data = file.read() #json.load(file)
-      #print(json.dumps(file_data))
-      #print(file_data)
-      
-    file.close()
+    def read_json(filename='test_test_file.json'):
+      liczcz = 0
+      with open(filename,'r+') as file:
+        liczcz+= 1
+        # First we load existing data into a dict.
+        file_data = file.read() #json.load(file)
+        print('****** data z pliku ponizej ********')
+        print('****** json.dumps(file_data) ********')
+        print(json.dumps(file_data))
+        print()
+        print()
+        print('****** data z pliku ponizej ********')
+        print('****** file_data ********')
+        print(file_data)
         
+      file.close()
+    read_json()
+
+
 if __name__ == '__main__':
   main()

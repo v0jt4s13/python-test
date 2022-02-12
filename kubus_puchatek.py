@@ -44,7 +44,7 @@ with open('/var/www/flaga/templates/kubus_puchatek.html','w') as file:
 #f = open("/home/ubuntu/python-test/kubus_puchatek.html", "w")
 #f.write(str_out)
 #f.close()
-print('Zapisane, trwa reboot serwera .... Encodeing: ', sys.getfilesystemencoding())
+print('Zapisane, trwa reboot serwera .... Encoding: ', sys.getfilesystemencoding())
 #os.system('')
 os.system('sudo systemctl daemon-reload')
 os.system('sudo systemctl restart nginx')
