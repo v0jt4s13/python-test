@@ -13,7 +13,24 @@ def read_json(filename='test_test_file.json'):
 		file_data = json.loads(file_data_json)
 		#print(type(file_data))
 		licz = 0
-		while licz < len(file_data['ListaDomen']):
+		# IloscDomen':759,'Status200':714,'Statusy':[200, 502, 404, 500],'BledneDomeny
+		wszystkich_domen = file_data['IloscDomen']
+		domeny_ok = file_data['Status200']
+		bledne_domeny = wszystkich_domen-domeny_ok
+
+		str_to_html_list.append('<p>Wszystkich domen: %s; błędnych domen: %s' %(wszystkich_domen,bledne_domeny))
+		print(len(file_data['BledneDomeny']))
+		print(file_data['BledneDomeny'][0][1])
+		while licz < len(file_data['BledneDomeny']):
+			#print(file_data['BledneDomeny'])
+			status_code = file_data['BledneDomeny'][licz][0]
+			domena = file_data['BledneDomeny'][licz][1]
+			str_to_html = "<p><span class=\"domena\">"+domena+"</span><span class=\"status-code\">"+str(status_code)+"</span></p>"
+			str_to_html_list.append(str_to_html)
+			licz+= 1
+		
+		licz = 0
+		while licz < 0: # len(file_data['ListaDomen']):
 			status_code = file_data['ListaDomen'][licz]['data'][0]['status_code']
 			domena = file_data['ListaDomen'][licz]['domena']
 			extra = file_data['ListaDomen'][licz]['data'][0]['extra']
