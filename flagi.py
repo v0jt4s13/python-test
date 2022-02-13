@@ -328,6 +328,8 @@ def main():
         liczcz+= 1
         # First we load existing data into a dict.
         file_data = file.read() #json.load(file)
+        
+        '''
         print('****** data z pliku ponizej ********')
         print('****** json.dumps(file_data) ********')
         print(json.dumps(file_data))
@@ -336,6 +338,7 @@ def main():
         print('****** data z pliku ponizej ********')
         print('****** file_data ********')
         print(file_data)
+        '''
         
       file.close()
     read_json()
