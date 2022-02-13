@@ -97,6 +97,10 @@ def extractEmailsFromFile(text, find_text, method):
 					em = re.findall(r"^[\w.-]+@[\w.-]+\.\w+$",email)
 					email_new = ''.join(em)
 					#emails_re_out_arr.append(em)
+				elif ( method == "regex2" ):
+					em = re.findall(r"(?:[a-zA-Z0-9_-]+\.)+[a-zA-Z]+(?::\d{1,5})?$",email) 
+					email_new = ''.join(em)
+					#emails_re_out_arr.append(em)
 
 				if email_new in emails_obj:
 					licz_err += 1
@@ -319,6 +323,12 @@ else:
 	endDateTime3 = current_milli_time()
 	print("extractEmailsFromFile - method regex %s ms." %str(getDifference2(startDateTime3, endDateTime3)))
 
+	############ \\_?_// metoda 4 - regexp2
+	startDateTime4 = current_milli_time()
+	emails_regex2_obj = extractEmailsFromFile(text, find_text, "regex2")
+	endDateTime4 = current_milli_time()
+	print("extractEmailsFromFile - method regex2 %s ms." %str(getDifference2(startDateTime4, endDateTime4)))
+
 	emails_arr = []
 
 
@@ -326,6 +336,7 @@ else:
 	arr_substr.append({"substr": obj_to_arr(emails_substr_arr,str(getDifference2(startDateTime1, endDateTime1)))})
 	arr_substr.append({"replace": obj_to_arr(emails_replace_arr,str(getDifference2(startDateTime2, endDateTime2)))})
 	arr_substr.append({"regex": obj_to_arr(emails_regex_obj,str(getDifference2(startDateTime3, endDateTime3)))})
+	arr_substr.append({"regex2": obj_to_arr(emails_regex2_obj,str(getDifference2(startDateTime4, endDateTime4)))})
 	emails_arr = {"Metoda": arr_substr}
 	#"aaaaa" {"asdasd": emails_substr_obj[0]}}
 	#print(emails_arr)
