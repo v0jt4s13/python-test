@@ -5,7 +5,7 @@ import re
 import datetime
 import time
 from datetime import date, timedelta
-
+import sys
 # modules dla kolorowania textow
 from rich import print
 from rich.console import Console
@@ -224,25 +224,32 @@ def flagsList(link,resp_count,json_file_name):
 # funkcja main
 # uruchomienie procedur main()
 #################################
-def main():
+def main(argv):
   console.clear()
-  print('\n\n')
-  resp_count = console.input("\t\t\t\t*** Ilość wierszy do przeszukania?\n\t\t\t\t\t (0-max; Enter-10) :smiley: ")
-  if resp_count == "":
-    resp_count = 10
-  elif resp_count != 0:
-    #print(resp_count,type(int(resp_count)))
-    if type(int(resp_count)) != type(1):
+  if len(argv) == 3:
+    resp_count = int(argv[1])
+    if argv[2] in ("j","J","t","T","y","Y"):
+      output_type = "json"
+    else:
+      output_type = ""
+  else:
+    print('\n\n')
+    resp_count = console.input("\t\t\t\t*** Ilość wierszy do przeszukania?\n\t\t\t\t\t (0-max; Enter-10) :smiley: ")
+    if resp_count == "":
       resp_count = 10
-  
-  resp_count = int(resp_count)
-  #print('resp_count==>',resp_count,' type=',type(resp_count))
-  
-  output_type = console.input("\n\t\t\t\t*** Wynik zapisać jako plik .json?\n\t\t\t\t\t (y-tak; Enter-pokaż wynik na ekranie): ")
-  if output_type in ["y","Y","t","T"]:
-    output_type = "json"
-  print('\n')
-  
+    elif resp_count != 0:
+      #print(resp_count,type(int(resp_count)))
+      if type(int(resp_count)) != type(1):
+        resp_count = 10
+    
+    resp_count = int(resp_count)
+    #print('resp_count==>',resp_count,' type=',type(resp_count))
+    
+    output_type = console.input("\n\t\t\t\t*** Wynik zapisać jako plik .json?\n\t\t\t\t\t (y-tak; Enter-pokaż wynik na ekranie): ")
+    if output_type in ["y","Y","t","T"]:
+      output_type = "json"
+    print('\n')
+    
   json_file_name = "test_file.json"
   link = 'http://zajecia-programowania-xd.pl/flagi'
   #link = 'http://localhost/narzedzia/local/flagi'
@@ -345,4 +352,4 @@ def main():
 
 
 if __name__ == '__main__':
-  main()
+  main(sys.argv)
