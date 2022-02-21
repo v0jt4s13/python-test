@@ -246,7 +246,7 @@ find_text = input()
 
 file_name_out = "emails_list"
 file_to_read = '/home/voj/.icedove/chbv6831.default/ImapMail/imap.gmail-3.com/INBOX.sbd/MailDeliveryFail2'
-file_to_read2 = "test_emails_file"
+#file_to_read = "test_emails_file"
 
 if ( read_file == "0" ):
 	shutil.copy(file_to_read, 'test_emails_file')
@@ -258,42 +258,42 @@ elif ( read_file == "1" ):
 		f= open(file_to_read, 'r', encoding=coding1)
 		content= f.read()
 		f.close()
-		f= open(file_to_read2, 'w', encoding=coding2)
+		f= open(file_to_read, 'w', encoding=coding2)
 		f.write(content)
 		f.close()
 		print("done")
-		text = open(file_to_read2).read()
+		text = open(file_to_read).read()
 	except:
 		try:
 			import pandas as pd
-			f=pd.read_csv(file_to_read2,encoding='utf-8')
+			f=pd.read_csv(file_to_read,encoding='utf-8')
 			text = open(f).read()
 		except:
 			try:
 				import codecs
-				with codecs.open(file_to_read2, 'r', encoding='utf-8',
+				with codecs.open(file_to_read, 'r', encoding='utf-8',
 					errors='ignore') as f:
 						text = open(f).read()
 			except:
-				ALL_FILES = glob.glob(file_to_read2)
+				ALL_FILES = glob.glob(file_to_read)
 				kira_encoding_function()
 
 elif ( read_file == "2" ):
 	try:
-		text = open(file_to_read2).read()
+		text = open(file_to_read).read()
 	except:
-		text = open(file_to_read2, encoding='utf-8').read()
+		text = open(file_to_read, encoding='utf-8').read()
 else:
-	text = open(file_to_read2).read()
+	text = open(file_to_read).read()
 
 if ( read_file == "0" ):
 	print("=====================================")
-	print("    Skopiowany plik: %s  do %s" %(file_to_read, file_to_read2))
+	print("    Skopiowany plik: %s  do %s" %(file_to_read, file_to_read))
 	print("=====================================")
 
 else:
 	print("=====================================")
-	print("    Emaile z pliku : %s  " %file_to_read2)
+	print("    Emaile z pliku : %s  " %file_to_read)
 	print("    Szukany string : %s  " %find_text)
 	print("    Plik na wyjsciu: %s  " %file_name_out)
 	print("=====================================")
