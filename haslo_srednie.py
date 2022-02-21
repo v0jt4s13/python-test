@@ -3,6 +3,7 @@ import string
 import logging
 import logging.handlers
 import time
+import sys
 
 def log_setup():
   log_file_name = "haslo_srednie_output.log"
@@ -40,8 +41,12 @@ def listRandomSort(lista):
 	new_list_str = ''.join(new_list)
 	return new_list_str
 
-def main():
+def main(argv):
 	#console.clear()
+	
+	print('Number of arguments:', len(argv), 'arguments.')
+	print('Argument List:', str(argv))
+
 	print("\n\n")
 	print("\t\t\t####### Generator haseł #######")
 	print("\t\t\tWstępne założenia: min 8 znakow, a w tym: 2 duże litery, 2 małe litery, 2 cyfry oraz 2 znaki specjalne")
@@ -96,7 +101,7 @@ def main():
 	print()
 
 if __name__ == '__main__':
-  main()
+  main(sys.argv)
 
 # Zadanie domowe:
 

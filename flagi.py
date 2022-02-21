@@ -5,7 +5,7 @@ import re
 import datetime
 import time
 from datetime import date, timedelta
-
+import sys
 # modules dla kolorowania textow
 from rich import print
 from rich.console import Console
@@ -112,7 +112,10 @@ def flagsList(link,resp_count,json_file_name):
   clearUrlList.clear()
   licz = 0
   status_ok_count = 0
-    
+  full_line_json = ""
+  dictJ = {}
+  data = {}
+
   if 1 == 1:
     for url in tmpDomeny_list:
       tmpUrl = wyszukajUrlWStringu(url)
@@ -129,6 +132,7 @@ def flagsList(link,resp_count,json_file_name):
           wszystkieDomenyOut_list.append([url, status_code[0]])
           curl_url = "curl -i " + url
           str_list = [{'id':licz, 'status_code':status_code[0],'description':'Status code dla domeny', 'extra':200}] #, 'output':curl_url}]
+          str_list_json = {'id':licz, 'status_code':status_code[0],'description':'Status code dla domeny', 'extra':200}
           #str_list = [["id", licz], ["status_code", status_code[0]], ["description", 'Status code dla domeny'], ["url", url], ["extra",200], ["output",curl_url]] #, ["json_resp", status_code[1]]
           #[1, 200, {'Server': 'nginx/1.14.0 (Ubuntu)', 'Date': 'Wed, 02 Feb 2022 22:10:57 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Content-Encoding': 'gzip'}, 'Status code dla domeny', 'http://www.roszkov.pl']
           #showLogs(1, str)
@@ -139,6 +143,7 @@ def flagsList(link,resp_count,json_file_name):
           #print(licz,';',status_code[0],';',status_code[1],';Problem z domeną;   curl -i ', url)
           curl_url = "curl -i " + url
           str_list = [{'id':licz, 'status_code':status_code[0],'description':'Problem z domeną', 'extra':0}] #, 'output':curl_url}]
+          str_list_json = {'id':licz, 'status_code':status_code[0],'description':'Problem z domeną', 'extra':0}
           #str_list = [["id", licz], ["status_code", status_code[0]], ["description", 'Problem z domeną'], ["url", url], ["extra",0], ["output",curl_url]] #, ["json_resp", status_code[1]]
           #print(str_list)
         except:
@@ -147,6 +152,7 @@ def flagsList(link,resp_count,json_file_name):
           #print(licz,';',status_code[0],';',status_code[1],';Nieudokumentowany problem z domeną;   curl -i ', url)
           curl_url = "curl -i " + url
           str_list = [{'id':licz, 'status_code':status_code[0],'description':'Nieudokumentowany problem z domeną', 'extra':0}] #, 'output':curl_url}]
+          str_list_json = {'id':licz, 'status_code':status_code[0],'description':'Nieudokumentowany problem z domeną', 'extra':0}
           #str_list = [["id", licz], ["status_code", status_code[0]], ["description", 'Nieudokumentowany problem z domeną'], ["url", url], ["extra",0], ["output",curl_url]] #, ["json_resp", status_code[1]]
           #print(str_list)
         
@@ -172,7 +178,18 @@ def flagsList(link,resp_count,json_file_name):
         clearUrlList.append([url, status_code[0]])
         json_list.append({"domena":url, "data":str_list})
         
-        full_line = "'domena':"+url+", 'data':"+str(str_list)+"}"
+        if full_line_json == "":
+          full_line_json = "{'domena':'%s','data':%s}" %(url,str_list)
+        else:
+          full_line_json = "{'domena':'%s','data':%s}, %s" %(url,str_list,full_line_json)
+        #full_line_json = '{"domena":%s,"data":%s}' % (url,str(str_list_json))
+        
+        #data['domena'] = url
+        #data['data'] = str_list_json
+        #json_data = json.dumps(data)
+
+        #dictJ.update(json.loads(full_line_json))
+
         logging.info(url)
         
         if resp_count != 0:
@@ -184,8 +201,14 @@ def flagsList(link,resp_count,json_file_name):
       except ValueError as e:
         print(url)
         print("*****************************************\n*****************************************\n  Oops! ", e)
+        break
 
-
+  #print('*************** XXXXXX ********** XXXXXX ********** XXXXXX ***************')
+  #print(full_line_json)
+  #qq = "{'ListaDomen':[%s]}" %full_line_json
+  #print(qq)
+  #print(json.dumps(','.join(json_list)))
+  #print('*************** XXXXXX ********** XXXXXX ********** XXXXXX ***************')
   #print('1',clearUrlList)
   #print('2',licz)
   #print('3',status_ok_count)
@@ -201,25 +224,32 @@ def flagsList(link,resp_count,json_file_name):
 # funkcja main
 # uruchomienie procedur main()
 #################################
-def main():
+def main(argv):
   console.clear()
-  print('\n\n')
-  resp_count = console.input("\t\t\t\t*** Ilość wierszy do przeszukania?\n\t\t\t\t\t (0-max; Enter-10) :smiley: ")
-  if resp_count == "":
-    resp_count = 10
-  elif resp_count != 0:
-    #print(resp_count,type(int(resp_count)))
-    if type(int(resp_count)) != type(1):
+  if len(argv) == 3:
+    resp_count = int(argv[1])
+    if argv[2] in ("j","J","t","T","y","Y"):
+      output_type = "json"
+    else:
+      output_type = ""
+  else:
+    print('\n\n')
+    resp_count = console.input("\t\t\t\t*** Ilość wierszy do przeszukania?\n\t\t\t\t\t (0-max; Enter-10) :smiley: ")
+    if resp_count == "":
       resp_count = 10
-  
-  resp_count = int(resp_count)
-  #print('resp_count==>',resp_count,' type=',type(resp_count))
-  
-  output_type = console.input("\n\t\t\t\t*** Wynik zapisać jako plik .json?\n\t\t\t\t\t (y-tak; Enter-pokaż wynik na ekranie): ")
-  if output_type in ["y","Y","t","T"]:
-    output_type = "json"
-  print('\n')
-  
+    elif resp_count != 0:
+      #print(resp_count,type(int(resp_count)))
+      if type(int(resp_count)) != type(1):
+        resp_count = 10
+    
+    resp_count = int(resp_count)
+    #print('resp_count==>',resp_count,' type=',type(resp_count))
+    
+    output_type = console.input("\n\t\t\t\t*** Wynik zapisać jako plik .json?\n\t\t\t\t\t (y-tak; Enter-pokaż wynik na ekranie): ")
+    if output_type in ["y","Y","t","T"]:
+      output_type = "json"
+    print('\n')
+    
   json_file_name = "test_file.json"
   link = 'http://zajecia-programowania-xd.pl/flagi'
   #link = 'http://localhost/narzedzia/local/flagi'
@@ -242,11 +272,11 @@ def main():
     #print("*****************************************")
     #print("*****************************************")
     
-    lista_domen_list = "{'ListaDomen':"+str(val_list[5])+"},{'IloscDomen':"+str(val_list[1])+"},{'Status200':"+str(val_list[2])+"},"
-    lista_domen_list = lista_domen_list+"{'Statusy':"+str(val_list[3])+"},{'BledneDomeny':"+str(val_list[4])+"}"
+    lista_domen_list = "{'ListaDomen':"+str(val_list[5])+",'IloscDomen':"+str(val_list[1])+",'Status200':"+str(val_list[2])+","
+    lista_domen_list = lista_domen_list+"'Statusy':"+str(val_list[3])+",'BledneDomeny':"+str(val_list[4])+"}"
     lista_domen_json = lista_domen_list #json.dumps(lista_domen_list)
     #print('\t\t****************************************\n\t\t*********** supa json ******************\n\t\t****************************************\n')
-    #print(lista_domen_json)
+    #print(json.loads(lista_domen_json))
     #print('\t\t****************************************\n\t\t****************************************\n\t\t****************************************\n')
     
     json_file_name = "test_test_file.json"
@@ -299,16 +329,27 @@ def main():
     print('\t\t\t\t****** Oddano do użytku w zaledwie %s sekundy' %str(int(getDifference2(startDateTime, endDateTime)/1000)))
     print('\t\t\t\t\t\t\t*** by v0jt4s *** \n\n')
     
-  def read_json(filename='test_test_file.json'):
-    liczcz = 0
-    with open(filename,'r+') as file:
-      liczcz+= 1
-      # First we load existing data into a dict.
-      file_data = file.read() #json.load(file)
-      #print(json.dumps(file_data))
-      #print(file_data)
-      
-    file.close()
+    def read_json(filename='test_test_file.json'):
+      liczcz = 0
+      with open(filename,'r+') as file:
+        liczcz+= 1
+        # First we load existing data into a dict.
+        file_data = file.read() #json.load(file)
         
+        '''
+        print('****** data z pliku ponizej ********')
+        print('****** json.dumps(file_data) ********')
+        print(json.dumps(file_data))
+        print()
+        print()
+        print('****** data z pliku ponizej ********')
+        print('****** file_data ********')
+        print(file_data)
+        '''
+        
+      file.close()
+    read_json()
+
+
 if __name__ == '__main__':
-  main()
+  main(sys.argv)

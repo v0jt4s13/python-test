@@ -97,6 +97,10 @@ def extractEmailsFromFile(text, find_text, method):
 					em = re.findall(r"^[\w.-]+@[\w.-]+\.\w+$",email)
 					email_new = ''.join(em)
 					#emails_re_out_arr.append(em)
+				elif ( method == "regex2" ):
+					em = re.findall(r"(?:[a-zA-Z0-9_-]+\.)+[a-zA-Z]+(?::\d{1,5})?$",email) 
+					email_new = ''.join(em)
+					#emails_re_out_arr.append(em)
 
 				if email_new in emails_obj:
 					licz_err += 1
@@ -242,7 +246,7 @@ find_text = input()
 
 file_name_out = "emails_list"
 file_to_read = '/home/voj/.icedove/chbv6831.default/ImapMail/imap.gmail-3.com/INBOX.sbd/MailDeliveryFail2'
-file_to_read2 = "test_emails_file"
+#file_to_read = "test_emails_file"
 
 if ( read_file == "0" ):
 	shutil.copy(file_to_read, 'test_emails_file')
@@ -254,42 +258,42 @@ elif ( read_file == "1" ):
 		f= open(file_to_read, 'r', encoding=coding1)
 		content= f.read()
 		f.close()
-		f= open(file_to_read2, 'w', encoding=coding2)
+		f= open(file_to_read, 'w', encoding=coding2)
 		f.write(content)
 		f.close()
 		print("done")
-		text = open(file_to_read2).read()
+		text = open(file_to_read).read()
 	except:
 		try:
 			import pandas as pd
-			f=pd.read_csv(file_to_read2,encoding='utf-8')
+			f=pd.read_csv(file_to_read,encoding='utf-8')
 			text = open(f).read()
 		except:
 			try:
 				import codecs
-				with codecs.open(file_to_read2, 'r', encoding='utf-8',
+				with codecs.open(file_to_read, 'r', encoding='utf-8',
 					errors='ignore') as f:
 						text = open(f).read()
 			except:
-				ALL_FILES = glob.glob(file_to_read2)
+				ALL_FILES = glob.glob(file_to_read)
 				kira_encoding_function()
 
 elif ( read_file == "2" ):
 	try:
-		text = open(file_to_read2).read()
+		text = open(file_to_read).read()
 	except:
-		text = open(file_to_read2, encoding='utf-8').read()
+		text = open(file_to_read, encoding='utf-8').read()
 else:
-	text = open(file_to_read2).read()
+	text = open(file_to_read).read()
 
 if ( read_file == "0" ):
 	print("=====================================")
-	print("    Skopiowany plik: %s  do %s" %(file_to_read, file_to_read2))
+	print("    Skopiowany plik: %s  do %s" %(file_to_read, file_to_read))
 	print("=====================================")
 
 else:
 	print("=====================================")
-	print("    Emaile z pliku : %s  " %file_to_read2)
+	print("    Emaile z pliku : %s  " %file_to_read)
 	print("    Szukany string : %s  " %find_text)
 	print("    Plik na wyjsciu: %s  " %file_name_out)
 	print("=====================================")
@@ -319,6 +323,12 @@ else:
 	endDateTime3 = current_milli_time()
 	print("extractEmailsFromFile - method regex %s ms." %str(getDifference2(startDateTime3, endDateTime3)))
 
+	############ \\_?_// metoda 4 - regexp2
+	startDateTime4 = current_milli_time()
+	emails_regex2_obj = extractEmailsFromFile(text, find_text, "regex2")
+	endDateTime4 = current_milli_time()
+	print("extractEmailsFromFile - method regex2 %s ms." %str(getDifference2(startDateTime4, endDateTime4)))
+
 	emails_arr = []
 
 
@@ -326,6 +336,7 @@ else:
 	arr_substr.append({"substr": obj_to_arr(emails_substr_arr,str(getDifference2(startDateTime1, endDateTime1)))})
 	arr_substr.append({"replace": obj_to_arr(emails_replace_arr,str(getDifference2(startDateTime2, endDateTime2)))})
 	arr_substr.append({"regex": obj_to_arr(emails_regex_obj,str(getDifference2(startDateTime3, endDateTime3)))})
+	arr_substr.append({"regex2": obj_to_arr(emails_regex2_obj,str(getDifference2(startDateTime4, endDateTime4)))})
 	emails_arr = {"Metoda": arr_substr}
 	#"aaaaa" {"asdasd": emails_substr_obj[0]}}
 	#print(emails_arr)

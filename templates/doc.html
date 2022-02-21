@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kurs Programowania w Pythonie</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-color: #111;
+      color: #ddd;
+    }
+    a {
+      color: cadetblue;
+    }
+      .short-box {
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-top: 50px;
+        min-width: 688px;
+        background-color: #582828d4;
+        display: inline-grid;
+        color: wheat;
+        padding: 40px;
+      }
+      .short-box .title {
+        margin-top: -55px;
+        font-size: xx-large;
+        color: initial;
+        font-weight: 700;
+        width: 300px !important;
+        background-color: seashell;
+        text-align: center;
+        line-height: 55px;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        margin-bottom: 15px;
+        font-family: monospace;
+      }
+      .short-box div {
+        margin-top: 16px !important;
+      }
+      .short-box span {
+        width: 22px !important;
+        margin-right: 8px !important;
+      }
+      .short-box input {
+        border-color: red;
+        padding: 1vw;
+      }
+      
+      li {
+          list-style: none;
+      }
+      .main {
+        font-size: larger;
+        font-weight: 700;
+        text-align: center;
+        list-style: none;
+      }
+      .main a {
+        font-size: smaller;
+        text-decoration: auto;
+      }
+      .paragraf {
+        font-size: larger;
+        list-style: disc;
+        padding: 12px;
+        list-style-type: disclosure-open;
+        list-style-position: inside;
+      }
+      .clear {
+        list-style: none;
+      }
+      .clear ul {
+        font-family: monospace;
+      }
+      .terminal-text {
+        display: grid;
+        min-width: 600px;
+        margin: 12px auto 12px auto;
+        color: whitesmoke;
+        background-color: black;
+        width: fit-content;
+        padding: 15px 10px 15px 20px;
+      }
+      .terminal-text li>span {
+        color: pink;
+      }
+      .line_value {
+        background-color: #062e10c9;
+        color: whitesmoke;
+        font-weight: 700;
+        border-style: none;
+        font-family: monospace;
+        height: 30px;
+        width: calc(100% - 55px);
+      }
+      
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        font-size: 15px;
+        width: 100%;
+      }
+      .tooltip>label {
+        width: 100%;
+      }
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 140px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -75px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      awsui-icon {
+    animation: none 0s ease 0s 1 normal none running;
+    backface-visibility: visible;
+    background: transparent none repeat 0 0 / auto auto padding-box border-box scroll;
+    border: medium none currentColor;
+    border-collapse: separate;
+    border-image: none;
+    border-radius: 0;
+    border-spacing: 0;
+    bottom: auto;
+    box-shadow: none;
+    box-sizing: content-box;
+    caption-side: top;
+    clear: none;
+    clip: auto;
+    color: #000;
+    columns: auto;
+    column-count: auto;
+    column-fill: balance;
+    column-gap: normal;
+    column-rule: medium none currentColor;
+    column-span: 1;
+    column-width: auto;
+    content: normal;
+    counter-increment: none;
+    counter-reset: none;
+    cursor: auto;
+    direction: ltr;
+    display: inline;
+    empty-cells: show;
+    float: none;
+    font-family: serif;
+    font-size: medium;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: normal;
+    height: auto;
+    hyphens: none;
+    left: auto;
+    letter-spacing: normal;
+    list-style: disc outside none;
+    margin: 0;
+    max-height: none;
+    max-width: none;
+    min-height: 0;
+    min-width: 0;
+    opacity: 1;
+    orphans: 2;
+    outline: medium none invert;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding: 0;
+    page-break-after: auto;
+    page-break-before: auto;
+    page-break-inside: auto;
+    perspective: none;
+    perspective-origin: 50% 50%;
+    position: static;
+    right: auto;
+    tab-size: 8;
+    table-layout: auto;
+    text-align: left;
+    text-align-last: auto;
+    text-decoration: none;
+    text-indent: 0;
+    text-shadow: none;
+    text-transform: none;
+    top: auto;
+    transform: none;
+    transform-origin: 50% 50% 0;
+    transform-style: flat;
+    transition: none 0s ease 0s;
+    unicode-bidi: normal;
+    vertical-align: baseline;
+    visibility: visible;
+    white-space: normal;
+    widows: 2;
+    width: auto;
+    word-spacing: normal;
+    z-index: auto;
+    all: initial;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #16191f;
+    color: var(--awsui-color-text-body-default, #16191f);
+    font-weight: 400;
+    font-family: "Amazon Ember","Helvetica Neue",Roboto,Arial,sans-serif;
+    cursor: inherit;
+    color: inherit;
+    display: inline-block;
+    font-size: inherit;
+    line-height: inherit;
+}
+.awsui-icon.awsui-icon-variant-normal {
+    color: currentColor;
+}
+.awsui-icon.awsui-icon-size-normal {
+    width: 15px;
+    height: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 10px;
+}
+.awsui-icon {
+    display: inline-block;
+    vertical-align: top;
+}
+
+      svg * {
+        stroke-width: 1px;
+        fill: none;
+      }
+      .awsui-icon.awsui-icon-size-normal svg, .awsui .awsui-icon.awsui-icon-size-normal svg * {
+        stroke-width: 1px;
+      }
+      .awsui-icon svg .stroke-linejoin-round {
+        stroke-linejoin: round;
+      }
+      .awsui-icon svg * {
+        stroke: lightblue;
+      }
+      li>hr {
+        padding: 20px;
+      }
+
+  </style>
+  <script>
+    function fCopy(id) {
+        if (!navigator.clipboard) return
+
+      var copyText = document.getElementById("itt"+id);
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      console.log("Text skopiowany: "+copyText.value);
+      navigator.clipboard.writeText(copyText.value);
+      
+      var tooltip = document.getElementById("it"+id);
+      tooltip.innerHTML = "Skopiowano: " + copyText.value;
+    }
+    
+    function fCopyTip(id) {
+      var tooltip = document.getElementById("it"+id);
+      tooltip.innerHTML = "Kopiuj do schowka";
+    }
+    </script>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <br>
+    <!--<h1 style="text-align:center">{{text}}</h1>//-->
+    <h1 style="text-align:center">{{text}} - python-programming.marzec.eu</h1>
+    <h2 style="text-align:center">Instrukcje dla HomeCloud i Amazon AWS - działające i przetestowane ;)</h2>
+    <h4 style="text-align:center">Zawarte na stronie materiały są wynikiem uczestniczenia w experymencie
+      <br /><a href="https://zajecia-programowania-xd.pl/szturm_na_aws" target="_blank">https://zajecia-programowania-xd.pl/szturm_na_aws</a></h4>
+<ul>
+  <li class="main">I. <a href="#homecloud">Konfiguracja serwera HomeCloud</a></li>
+  <li class="main">II. <a href="#aws-info">Konfiguracja serwera AWS</a></li>
+  <li class="main">III. <a href="#aws-more">Przydatne informacje co i jak na AWS</a></li>
+  <li class="main">IIIa. <a href="#aws-more">Przydatny soft</a></li>
+  <li class="main">IV. <a href="#aws-costexplorer">Zarządzanie kosztami obsługi AWS (Under construction) - <a href="https://console.aws.amazon.com/billing/home?region=eu-central-1#/">Billing home Page</a></li>
+  
+  <li class="main">Extra. <a href="#adblock-test">Adblock test</a></li>
+  <li class="main"><h2>I. HomeCloud</h2></li>
+  <li>
+    <ul>
+      <li id="homecloud" class="paragraf">Zaloguj się na swoje konto w <a href="https://marketing.tr.netsalesmedia.pl/ts/i5034390/tsc?amc=con.cubegroup.501479.512129.133430&rmd=3&trg=https%3A%2F%2Fhomecloud.pl%2Fbonus%2F%3Fp%3DCLOUD_VPS_S%26ax%5B2%5D%3DHSSL%26ax%5B1%5D%3DACRONIS_BACKUP_50GB%26checkedPeriod%3D1m%3Fpartner%3Dsm%26creation_id%3D%23%7BCLICK_ID%7D%26id%3D%23%7BADSPACE_ID%7D//">https://homecloud.pl</a> oraz na swojej maszynie wirtualnej na konto -> <b>root</b>
+          <br />(VPS -> Akcje -> Otwórz konsolę web)
+          <br />Następnie wykonaj poniższe komendy wpisując je w terminalu.
+      </li>
+      <li class="clear">
+        <ul class="terminal-text">
+          <li class="tooltip">
+            <label onclick="fCopy(1)" onmouseout="fCopyTip(1)">
+            ubuntu:/# <input type="text" class="line_value" value="adduser ubuntu" id="itt1">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                <span class="tooltiptext" id="it1">Kopiuj</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                  <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                  <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(2)" onmouseout="fCopyTip(2)">
+            ubuntu:/# <input type="text" class="line_value" value="apt install sudo" id="itt2">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it2">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(3)" onmouseout="fCopyTip(3)">
+            ubuntu:/# <input type="text" class="line_value" value="usermod -aG sudo ubuntu" id="itt3">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it3">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(4)" onmouseout="fCopyTip(4)">
+            ubuntu:/# <input type="text" class="line_value" value="reboot" id="itt4">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it4">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+        </ul>
+      </li>
+      <li class="paragraf">Świetnie, pierwsze koty za płoty. Ale co te komendy robiły i po co były wpisywane?
+          <p>- <b>adduser</b> - dodanie nowego usera
+          <br />- <b>apt install</b> - instalację pakietu sudo - pozwoli nam on łatwo i bezpiecznie instalować niezbędne oprogramowanie
+          <br />- <b>usermod</b> - dodanie użytkownika ubuntu do grupy sudo
+          <br />- <b>reboot</b> -= restart naszego servera</p>
+      </li>
+      <li class="paragraf">Gdy maszyna się uruchomi po restarcie, logujemy się na dodanego użytkownika ubuntu i wykonujemy poniższe polecenia</li>
+      <li class="clear">
+        <ul class="terminal-text">
+          <li class="tooltip">
+            <label onclick="fCopy(5)" onmouseout="fCopyTip(5)">
+              ubuntu:/$ <input type="text" class="line_value" value="sudo apt update" id="itt5">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it5">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(6)" onmouseout="fCopyTip(6)">
+              ubuntu:/$ <input type="text" class="line_value" value="sudo apt upgrade" id="itt6">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it6">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(7)" onmouseout="fCopyTip(7)">
+              ubuntu:/$ <input type="text" class="line_value" value="sudo mkdir -p /var/www" id="itt7">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it7">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(8)" onmouseout="fCopyTip(8)">
+              ubuntu:/$ <input type="text" class="line_value" value="sudo chown -R ubuntu.ubuntu /var/www" id="itt8">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it8">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(9)" onmouseout="fCopyTip(9)">
+              ubuntu:/$ <input type="text" class="line_value" value="cd /var/www" id="itt9">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it9">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(210)" onmouseout="fCopyTip(10)">
+              ubuntu:/var/www$ <input type="text" class="line_value" value="apt install git" id="itt10">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it10">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(11)" onmouseout="fCopyTip(11)">
+              ubuntu:/var/www$ <input type="text" class="line_value" value="ls -la" id="itt11">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it11">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(12)" onmouseout="fCopyTip(12)">
+              ubuntu:/var/www$ <input type="text" class="line_value" value="git clone https://github.com/lukasz-test/flaga.git" id="itt12">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it12">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(13)" onmouseout="fCopyTip(13)">
+              ubuntu:/var/www$ <input type="text" class="line_value" value="cd flaga" id="itt13">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it13">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(14)" onmouseout="fCopyTip(14)">
+              ubuntu:/var/www/faga$ <input type="text" class="line_value" value="ls -la" id="itt14">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it14">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(15)" onmouseout="fCopyTip(15)">
+              ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="python3 xD.py" id="itt15">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it15">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(16)" onmouseout="fCopyTip(16)">
+              ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="python3 -m venv flagaenv" id="itt16">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it16">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(17)" onmouseout="fCopyTip(17)">
+              ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="source flagaenv/bin/activate" id="itt17">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it17">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(18)" onmouseout="fCopyTip(18)">
+              ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="export FLASK_APP=app.py" id="itt18">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it18">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(19)" onmouseout="fCopyTip(19)">
+              ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="nano settings.ini" id="itt19">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it19">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(20)" onmouseout="fCopyTip(20)">
+              ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="pip3 install -r requirements.txt" id="itt20">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it20">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(21)" onmouseout="fCopyTip(21)">
+              ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="python3 xd.py" id="itt21">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it21">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(22)" onmouseout="fCopyTip(22)">
+              ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="systemctl start flaga.service" id="itt22">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it22">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(23)" onmouseout="fCopyTip(23)">
+              ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="systemctl daemon-reload" id="itt23">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it23">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(24)" onmouseout="fCopyTip(24)">
+              ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="systemctl restart nginx" id="itt24">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it24">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+          <li class="tooltip">
+            <label onclick="fCopy(25)" onmouseout="fCopyTip(25)">
+              ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="systemctl restart flaga.service" id="itt25">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <span class="tooltiptext" id="it25">Kopiuj</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+              </svg>
+            </span>
+            </label>
+          </li>
+        </ul>
+      </li>
+      <li class="paragraf">Maszyna powinna już działać. Ale co to za komendy poleciały i po co ?
+        <p>- <b>sudo apt</b> - apt zamiennie z apt-get jest narzędziem do zarządzania naszymi aplikacjami w systemie
+        <br />- <b>mkdir</b> - make directory / utwórz katalog. Parametr -p tworzy całą gałąź katalogów.
+        <br />- <b>chown</b> - dodanie grupy i właściciela pliku
+        <br />- <b>git</b> - potężne narzędzie do wersjonowania kodu</p>
+      </li>
+    </ul>
+  </li>
+
+
+
+
+
+
+
+
+
+
+
+  <li><hr></li>
+  <li class="main" id="aws-info"><h2>II. Amazon AWS -> <a href="https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#Home:" target="_blank">https://eu-central-1.console.aws.amazon.com</a></h2></li>
+  <li>
+    <ul>
+      <li class="paragraf">Zaloguj się na swoje konto w AWS aby utworzyc instancje (maszyne wirtualną)
+          <br />Przejdź na stronę EC2 wyszukując ja w dostępnej wyszukiwarce lub <a href="https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#Instances:v=3" target="_blank">kliknij tutaj</a>
+          <br />- "Launch instance" - przycisk
+          <br />- wyszukaj ubuntu w wyszukiwarce "Step 1: Choose an Amazon Machine Image (AMI)"
+          <br />- "Select" - przycisk, dla Ubuntu Server 20.04
+          <br />- pozostaw defaultową konfiguracje
+          <br />- przejdz do "Step 6: Configure Security Group" - "Add Rule" - przycisk, w utworzonym wierszu zmien Type na HTTP i Source na My IP
+          <br />- "Review and Launch" - przycisk
+          <br />- na stronie podsumowania kliknij "Launch" - przycisk
+          <br />- w oknie "Select an existing key pair or create a new key pair" - wybierz "Create a new pair", nadaj kluczowi dowolna nazwe i "Download Key Pair" - przycisk
+          <br />- utworzony plik z rozszerzeniem .pem zapisz na dysku
+          <br />- "Launch instance" - przycisk
+          <br />- na stronie Launch Status powinieneś zobaczyć komunikat "Your instances are now launching"
+          <br />- ponownie przejdź na stronę EC2 wyszukując ja w dostępnej wyszukiwarce
+          <br />- na liście powinna być podlinkowana pozycja z naszym serwerm, kliknij w link
+          <br />- strona "Instance summary for " jest podsumowaniem naszej maszyny, tu znajdziesz potrzebne informacje do kolejnych zadań
+          <br />
+          <br />Zajmijmy się taraz konfiguracją naszego serwera. Zaloguj się do konsoli i wykonuj poniższe polecenia.
+        </li>
+
+        <li class="clear">
+            <ul class="terminal-text">
+              <li class="tooltip">
+                <label onclick="fCopy(5)" onmouseout="fCopyTip(5)">
+                  ubuntu:/$ <input type="text" class="line_value" value="sudo apt update" id="itt5">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it5">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(6)" onmouseout="fCopyTip(6)">
+                  ubuntu:/$ <input type="text" class="line_value" value="sudo apt upgrade" id="itt6">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it6">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(7)" onmouseout="fCopyTip(7)">
+                  ubuntu:/$ <input type="text" class="line_value" value="sudo mkdir -p /var/www" id="itt7">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it7">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(8)" onmouseout="fCopyTip(8)">
+                  ubuntu:/$ <input type="text" class="line_value" value="sudo chown -R ubuntu.ubuntu /var/www" id="itt8">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it8">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(9)" onmouseout="fCopyTip(9)">
+                  ubuntu:/$ <input type="text" class="line_value" value="cd /var/www" id="itt9">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it9">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(34)" onmouseout="fCopyTip(34)">
+                  ubuntu:/var/www$ <input type="text" class="line_value" value="sudo apt install git" id="itt34">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it34">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(11)" onmouseout="fCopyTip(11)">
+                  ubuntu:/var/www$ <input type="text" class="line_value" value="ls -la" id="itt11">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it11">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(12)" onmouseout="fCopyTip(12)">
+                  ubuntu:/var/www$ <input type="text" class="line_value" value="git clone https://github.com/lukasz-test/flaga.git" id="itt12">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it12">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(13)" onmouseout="fCopyTip(13)">
+                  ubuntu:/var/www$ <input type="text" class="line_value" value="cd flaga" id="itt13">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it13">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(14)" onmouseout="fCopyTip(14)">
+                  ubuntu:/var/www/faga$ <input type="text" class="line_value" value="ls -la" id="itt14">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it14">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(26)" onmouseout="fCopyTip(26)">
+                  ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="sudo python3 xD.py" id="itt26">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it26">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(27)" onmouseout="fCopyTip(27)">
+                  ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="sudo python3 -m venv flagaenv" id="itt27">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it27">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(17)" onmouseout="fCopyTip(17)">
+                  ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="source flagaenv/bin/activate" id="itt17">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it17">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(18)" onmouseout="fCopyTip(18)">
+                  ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="export FLASK_APP=app.py" id="itt18">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it18">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(19)" onmouseout="fCopyTip(19)">
+                  ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="nano settings.ini" id="itt19">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it19">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(28)" onmouseout="fCopyTip(28)">
+                  ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="sudo pip3 install -r requirements.txt" id="itt28">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it28">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(29)" onmouseout="fCopyTip(29)">
+                  ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="sudo python3 xd.py" id="itt29">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it29">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(30)" onmouseout="fCopyTip(30)">
+                  ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="sudo systemctl start flaga.service" id="itt30">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it30">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(31)" onmouseout="fCopyTip(31)">
+                  ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="sudo systemctl daemon-reload" id="itt31">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it31">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(32)" onmouseout="fCopyTip(32)">
+                  ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="sudo systemctl restart nginx" id="itt32">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it32">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+              <li class="tooltip">
+                <label onclick="fCopy(33)" onmouseout="fCopyTip(33)">
+                  ubuntu:/var/www/flaga$ <input type="text" class="line_value" value="sudo systemctl restart flaga.service" id="itt33">
+                <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+                  <span class="tooltiptext" id="it33">Kopiuj</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                    <path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path>
+                    <path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path>
+                  </svg>
+                </span>
+                </label>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>      
+      <li class="short-box">
+        <span class="title">Short box</span>
+            Co my tu mamy? Szybki research aktualnego środowiska.<br>
+            <div onclick="fCopy(34)" onmouseout="fCopyTip(34)" style="margin-top:10px">
+            <input type="text" class="line_value" value="pwd &amp;&amp; ls -la &amp;&amp; systemctl status nginx &amp;&amp; sudo systemctl status flaga.service &amp;&amp; curl -i xd.pl" id="itt34">
+            <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true"><path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path><path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path></svg>
+            </span>
+            </div>
+            <br>
+            <h3>Świeżo uruchomiona maszyna z AWS - Ubuntu 20.04</h3>
+            <h4>1. Ustawienie Hasla dla uzytkownika root oraz aktualizacja pakietow</h4>
+            <div onclick="fCopy(35)" onmouseout="fCopyTip(35)">
+              <input type="text" class="line_value" value="sudo passwd" id="itt35">
+              <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true"><path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path><path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path></svg></span>
+            </div>
+            <div onclick="fCopy(36)" onmouseout="fCopyTip(36)">
+              <input type="text" class="line_value" value="su -" id="itt36">
+              <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true"><path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path><path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path></svg></span>
+            </div>
+            <div onclick="fCopy(37)" onmouseout="fCopyTip(37)">
+              <input type="text" class="line_value" value="apt update &amp;&amp; apt upgrade -y" id="itt37">
+              <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true"><path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path><path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path></svg></span>
+            </div>
+            
+            <h4>2. Przygotowanie folderów, instalacja pakietu git oraz sklonowanie repozytorium</h4>
+            <div onclick="fCopy(38)" onmouseout="fCopyTip(38)">
+              <p type="text" class="line_value" style="padding: 10px 10px 10px 10px;margin-left:10px;line-height: 18px;">mkdir -p /var/www &amp;&amp; chown -R ubuntu.ubuntu /var/www &amp;&amp; cd /var/www &amp;&amp; apt install -y git &amp;&amp; ls -la &amp;&amp; git clone https://github.com/lukasz-test/flaga.git &amp;&amp; cd flaga &amp;&amp; ls -la</p>
+              <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true"><path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path><path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path></svg></span>
+            </div>              
+
+            <h4>3. Przygotowanie i uruchomienie środowiska python. Na zakończenie w otwartym pliku należy wpisać adres domeny w miejsce xd.pl.</h4>
+            <div onclick="fCopy(39)" onmouseout="fCopyTip(39)">
+              <p type="text" class="line_value" style="padding: 10px 10px 10px 10px;margin-left:10px;line-height: 18px;">python3 xD.py &amp;&amp; python3 -m venv flagaenv &amp;&amp; source flagaenv/bin/activate &amp;&amp; export FLASK_APP=app.py &amp;&amp; nano settings.ini</p>
+              <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true"><path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path><path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path></svg></span>
+            </div>              
+
+            <h4>4. Instalacja pozostałych pakietów i uruchomienie serwisu</h4>
+            <div onclick="fCopy(40)" onmouseout="fCopyTip(40)">
+              <p type="text" class="line_value" style="padding: 10px 10px 10px 10px;margin-left:10px;line-height: 18px;">pip3 install -r requirements.txt &amp;&amp; python3 xd.py &amp;&amp; systemctl start flaga.service &amp;&amp; systemctl status flaga.service</p>
+              <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true"><path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path><path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path></svg></span>
+            </div>              
+
+            <h4>5. Przeładowanie wszystkich usług i serwisów</h4>
+            <div onclick="fCopy(41)" onmouseout="fCopyTip(41)">
+              <p type="text" class="line_value" style="padding: 10px 10px 10px 10px;margin-left:10px;line-height: 18px;">systemctl daemon-reload &amp;&amp; systemctl restart nginx &amp;&amp; systemctl restart flaga.service &amp;&amp; systemctl status flaga.service</p>
+              <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true"><path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path><path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path></svg></span>
+            </div>  
+            
+            <h4>5. Przeładowanie wszystkich usług i serwisów</h4>
+            <div onclick="fCopy(42)" onmouseout="fCopyTip(42)">
+              <p type="text" class="line_value" style="padding: 10px 10px 10px 10px;margin-left:10px;line-height: 18px;">systemctl daemon-reload &amp;&amp; systemctl restart nginx &amp;&amp; systemctl restart flaga.service &amp;&amp; systemctl status flaga.service && nic</p>
+              <span class="awsui-icon awsui-icon-size-normal awsui-icon-variant-normal"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" focusable="false" aria-hidden="true"><path class="stroke-linejoin-round" d="M2 5h9v9H2z"></path><path class="stroke-linejoin-round" d="M5 5V2h9v9h-3"></path></svg></span>
+            </div>  
+                                    
+      </li>
+
+
+
+
+
+
+
+
+
+
+      <li><hr></li>
+      <li class="main" id="aws-more"><h2>III. Przydatne informacje co i jak na AWS</h2></li>
+      <li>
+        <ul>
+          <li class="paragraf"><h3>1. Konfiguracja static IP na AWS</h3>
+              <br />Przejdź na stronę EC2 wyszukując ja w dostępnej wyszukiwarce lub <a href="https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#Home:" target="_blank">kliknij tutaj</a>
+              <br />- w lewym menu znajdź "Elastic IPs", kliknij w link
+              <br />- "Allocate Elastic IP address" - przycisk
+              <br />- pozostaw defaultową konfiguracje, "Allocate" - przycisk
+              <br />- na stronie Elastic IP addresses ustaw sobie na liscie nazwe dla IP
+              <br />- wejdź do swojego nowo utworzonego rekordu w Elastic IP
+              <br />- "Associate Elastic IP address" - przycisk
+              <br />- w polu Instance wybierz swoj serwer
+              <br />- "Associate" - przycisk
+              <br />- gratulacje, masz już stałe IP podpiete - <b>Uwaga! Nieużywne IP może spowodować naliczenie opłaty za jego blokadę</b>
+              <br />- skopiuj teraz IP i przejdź na strone gdzie domena została zakupiona. Znajdź miejsce gdzie możesz dopisać rekord A dla domeny, wpisz tam swoje IP. 
+          </li><li>
+            <div style="margin-left: auto; margin-right: auto; width: fit-content;">
+              <a href="https://www.youtube.com/embed/9Uu2VKoot-c" target="_blank">https://www.youtube.com/embed/9Uu2VKoot-c</a>
+            </div>
+          </li><li class="paragraf"><h3>2. Ustawienie hasła dostępu</h3>
+            <br />Defaultowo dostęp do konsoli bez klucza jest wyłączony i żeby aktywować taki dostęp należy ustawić hasło do konta. 
+            <br />Zaloguj się do terminala i wpisz komendę: sudo passwd
+            <br />Następnie wyedytuj plik <b>/etc/ssh/sshd_config</b> i ustaw tam <b>PasswordAuthentication yes</b>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </li><li id="adblock-test">
+        <style>
+          .ad, .sponsored {
+                color: #000;
+                font-weight: 700;
+                background-color: aqua;
+                width: 100vw;
+                /*height: 10vh;*/
+                padding: 10px;
+            }
+            .href {
+                color: #000;
+                font-weight: 700;
+                background-color: rgb(228, 201, 80);
+                width: 100vw;
+                /*height: 10vh;*/
+                padding: 10px;
+            }
+            .footer {
+                color: #000;
+                font-weight: 700;
+                background-color: rgb(132, 80, 228);
+                color: white;
+                width: 100vw;
+                /*height: 10vh;*/
+                padding: 10px;
+            }
+        </style>
+	<div style="padding: 10px; background-color: brown; text-align: center;width:100vw;">AD Block TEST</div>
+        <div class="ad" id="ad">Line 1. Nazwa klasy "ad"</div>
+        <div class="sponsored" id="sponsored">Line 2. Nazwa klasy "sponsored"</div>
+        <div class="href" id="href">Line 3. Standardowy url ==> <a href="?ad_id=123">zawierajacy ad_id</a></div>
+        <div class="href" id="href">Line 4. Zmodyfikowany powyższy url ==> <a href="?a=b&ad_id=123">dodane cokolwiek po ? a przed ad_id</a></div>
+        <div class="footer">Widzisz wszystkie 4 linie ? Jezeli nie, to jest to wina konfiguracji Twojego adBloka.<br />Lista filtrów do włączenia/wyłączenia dla przeglądarki Brave -> <a href="brave://adblock/">brave://adblock/</a></div>
+        <script>
+            console.log(document.getElementById('ad').style.display);
+            console.log(document.getElementById('sponsored').style.width+" x "+document.getElementById('sponsored').style.height);
+            console.log(document.getElementById('href').style.width+" x "+document.getElementById('href').style.height);
+        </script>
+
+  </li>
+</ul>
+
+</body>
+
+</html>
