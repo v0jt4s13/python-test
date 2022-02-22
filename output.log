@@ -15299,3 +15299,2307 @@ Feb 15 02:24:16 program [104787]: http://i-profil.pl
 Feb 15 02:24:16 program [104787]: Starting new HTTP connection (1): python.weselle.pl:80
 Feb 15 02:24:16 program [104787]: http://python.weselle.pl:80 "GET / HTTP/1.1" 200 None
 Feb 15 02:24:16 program [104787]: http://python.weselle.pl
+lut 21 22:50:15 program [180550]: Starting new HTTP connection (1): zajecia-programowania-xd.pl:80
+lut 21 22:50:15 program [180550]: http://zajecia-programowania-xd.pl:80 "GET /flagi HTTP/1.1" 301 194
+lut 21 22:50:15 program [180550]: Starting new HTTPS connection (1): zajecia-programowania-xd.pl:443
+lut 21 22:50:15 program [180550]: https://zajecia-programowania-xd.pl:443 "GET /flagi HTTP/1.1" 200 None
+lut 21 22:50:15 program [180550]: Starting new HTTP connection (1): etyczne-dziennikarstwo.pl:80
+lut 21 22:50:15 program [180550]: http://etyczne-dziennikarstwo.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:15 program [180550]: http://etyczne-dziennikarstwo.pl
+lut 21 22:50:15 program [180550]: Starting new HTTP connection (1): telusmikolaj.com:80
+lut 21 22:50:15 program [180550]: http://telusmikolaj.com:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:15 program [180550]: http://telusmikolaj.com
+lut 21 22:50:15 program [180550]: Starting new HTTP connection (1): adrianeight.tech:80
+lut 21 22:50:15 program [180550]: http://adrianeight.tech:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:15 program [180550]: http://adrianeight.tech
+lut 21 22:50:15 program [180550]: Starting new HTTP connection (1): pythonistaxd.pl:80
+lut 21 22:50:15 program [180550]: http://pythonistaxd.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:15 program [180550]: http://pythonistaxd.pl
+lut 21 22:50:15 program [180550]: Starting new HTTP connection (1): aws.programista.warszawa.pl:80
+lut 21 22:50:15 program [180550]: http://aws.programista.warszawa.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:15 program [180550]: http://aws.programista.warszawa.pl
+lut 21 22:50:15 program [180550]: Starting new HTTP connection (1): animuscreations.pl:80
+lut 21 22:50:15 program [180550]: http://animuscreations.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:15 program [180550]: http://animuscreations.pl
+lut 21 22:50:15 program [180550]: Starting new HTTP connection (1): t-mike.pl:80
+lut 21 22:50:15 program [180550]: http://t-mike.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:15 program [180550]: http://t-mike.pl
+lut 21 22:50:15 program [180550]: Starting new HTTP connection (1): wurcu.pl:80
+lut 21 22:50:15 program [180550]: http://wurcu.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:15 program [180550]: http://wurcu.pl
+lut 21 22:50:15 program [180550]: Starting new HTTP connection (1): karolina-jedrzejak.com.pl:80
+lut 21 22:50:16 program [180550]: http://karolina-jedrzejak.com.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:50:16 program [180550]: http://karolina-jedrzejak.com.pl
+lut 21 22:50:16 program [180550]: Starting new HTTP connection (1): brownmilleryt.pl:80
+lut 21 22:50:16 program [180550]: http://brownmilleryt.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:16 program [180550]: http://brownmilleryt.pl
+lut 21 22:50:16 program [180550]: Starting new HTTP connection (1): aws.r80.pl:80
+lut 21 22:50:16 program [180550]: http://aws.r80.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:16 program [180550]: http://aws.r80.pl
+lut 21 22:50:16 program [180550]: Starting new HTTP connection (1): internet-online.pl:80
+lut 21 22:50:16 program [180550]: http://internet-online.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:16 program [180550]: http://internet-online.pl
+lut 21 22:50:16 program [180550]: Starting new HTTP connection (1): domenafb.pl:80
+lut 21 22:50:16 program [180550]: http://domenafb.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:16 program [180550]: http://domenafb.pl
+lut 21 22:50:16 program [180550]: Starting new HTTP connection (1): rafalsygut.pl:80
+lut 21 22:50:16 program [180550]: http://rafalsygut.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:16 program [180550]: http://rafalsygut.pl
+lut 21 22:50:16 program [180550]: Starting new HTTP connection (1): xd.netadmins.pl:80
+lut 21 22:50:26 program [180550]: http://xd.netadmins.pl
+lut 21 22:50:26 program [180550]: Starting new HTTP connection (1): mrozinscyolawa.pl:80
+lut 21 22:50:26 program [180550]: http://mrozinscyolawa.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:26 program [180550]: http://mrozinscyolawa.pl
+lut 21 22:50:26 program [180550]: Starting new HTTP connection (1): kavata.pl:80
+lut 21 22:50:26 program [180550]: http://kavata.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:26 program [180550]: http://kavata.pl
+lut 21 22:50:26 program [180550]: Starting new HTTP connection (1): xyder-dlgdaw.pl:80
+lut 21 22:50:26 program [180550]: http://xyder-dlgdaw.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:26 program [180550]: http://xyder-dlgdaw.pl
+lut 21 22:50:26 program [180550]: Starting new HTTP connection (1): malgorzata-swiatkowska.pl:80
+lut 21 22:50:26 program [180550]: http://malgorzata-swiatkowska.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:26 program [180550]: http://malgorzata-swiatkowska.pl
+lut 21 22:50:26 program [180550]: Starting new HTTP connection (1): e-lodoherbata.pl:80
+lut 21 22:50:27 program [180550]: http://e-lodoherbata.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:27 program [180550]: http://e-lodoherbata.pl
+lut 21 22:50:27 program [180550]: Starting new HTTP connection (1): joamad.pl:80
+lut 21 22:50:27 program [180550]: http://joamad.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:27 program [180550]: http://joamad.pl
+lut 21 22:50:27 program [180550]: Starting new HTTP connection (1): webdepp.net:80
+lut 21 22:50:27 program [180550]: http://webdepp.net:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:27 program [180550]: http://webdepp.net
+lut 21 22:50:27 program [180550]: Starting new HTTP connection (1): stripeshirt.pl:80
+lut 21 22:50:27 program [180550]: http://stripeshirt.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:27 program [180550]: http://stripeshirt.pl
+lut 21 22:50:27 program [180550]: Starting new HTTP connection (1): mkaptur.pl:80
+lut 21 22:50:27 program [180550]: http://mkaptur.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:27 program [180550]: http://mkaptur.pl
+lut 21 22:50:27 program [180550]: Starting new HTTP connection (1): python-programming-project.pl:80
+lut 21 22:50:27 program [180550]: http://python-programming-project.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:27 program [180550]: http://python-programming-project.pl
+lut 21 22:50:27 program [180550]: Starting new HTTP connection (1): xwhoami.pl:80
+lut 21 22:50:28 program [180550]: http://xwhoami.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:28 program [180550]: http://xwhoami.pl
+lut 21 22:50:28 program [180550]: Starting new HTTP connection (1): blinkiemoon.pl:80
+lut 21 22:50:28 program [180550]: http://blinkiemoon.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:28 program [180550]: http://blinkiemoon.pl
+lut 21 22:50:28 program [180550]: Starting new HTTP connection (1): boringdev.pl:80
+lut 21 22:50:28 program [180550]: http://boringdev.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:28 program [180550]: http://boringdev.pl
+lut 21 22:50:28 program [180550]: Starting new HTTP connection (1): wulpi.pl:80
+lut 21 22:50:28 program [180550]: http://wulpi.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:28 program [180550]: http://wulpi.pl
+lut 21 22:50:28 program [180550]: Starting new HTTP connection (1): pelczarskimateusz.pl:80
+lut 21 22:50:28 program [180550]: http://pelczarskimateusz.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:28 program [180550]: http://pelczarskimateusz.pl
+lut 21 22:50:28 program [180550]: Starting new HTTP connection (1): dacraft.pl:80
+lut 21 22:50:28 program [180550]: http://dacraft.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:28 program [180550]: http://dacraft.pl
+lut 21 22:50:28 program [180550]: Starting new HTTP connection (1): kingwaw.pl:80
+lut 21 22:50:28 program [180550]: http://kingwaw.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:28 program [180550]: http://kingwaw.pl
+lut 21 22:50:28 program [180550]: Starting new HTTP connection (1): wojrep.actuna.pl:80
+lut 21 22:50:28 program [180550]: http://wojrep.actuna.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:28 program [180550]: http://wojrep.actuna.pl
+lut 21 22:50:28 program [180550]: Starting new HTTP connection (1): studentmetina.pl:80
+lut 21 22:50:29 program [180550]: http://studentmetina.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:29 program [180550]: http://studentmetina.pl
+lut 21 22:50:29 program [180550]: Starting new HTTP connection (1): jstrozniak.pl:80
+lut 21 22:50:29 program [180550]: http://jstrozniak.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:29 program [180550]: http://jstrozniak.pl
+lut 21 22:50:29 program [180550]: Starting new HTTP connection (1): coddiwomple.cloud:80
+lut 21 22:50:29 program [180550]: http://coddiwomple.cloud:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:29 program [180550]: http://coddiwomple.cloud
+lut 21 22:50:29 program [180550]: Starting new HTTP connection (1): yavin.daryo.in:80
+lut 21 22:50:29 program [180550]: http://yavin.daryo.in:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:29 program [180550]: http://yavin.daryo.in
+lut 21 22:50:29 program [180550]: Starting new HTTP connection (1): polish-your-russian.pl:80
+lut 21 22:50:29 program [180550]: http://polish-your-russian.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:50:29 program [180550]: http://polish-your-russian.pl
+lut 21 22:50:29 program [180550]: Starting new HTTP connection (1): ewelina-k.pl:80
+lut 21 22:50:29 program [180550]: http://ewelina-k.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:29 program [180550]: http://ewelina-k.pl
+lut 21 22:50:29 program [180550]: Starting new HTTP connection (1): vadimdev.pl:80
+lut 21 22:50:29 program [180550]: http://vadimdev.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:29 program [180550]: http://vadimdev.pl
+lut 21 22:50:29 program [180550]: Starting new HTTP connection (1): bardzoprostytrik.pl:80
+lut 21 22:50:29 program [180550]: http://bardzoprostytrik.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:29 program [180550]: http://bardzoprostytrik.pl
+lut 21 22:50:29 program [180550]: Starting new HTTP connection (1): tenteteges.pl:80
+lut 21 22:50:29 program [180550]: http://tenteteges.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:29 program [180550]: http://tenteteges.pl
+lut 21 22:50:29 program [180550]: Starting new HTTP connection (1): szymonfraczek.pl:80
+lut 21 22:50:30 program [180550]: http://szymonfraczek.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:30 program [180550]: http://szymonfraczek.pl
+lut 21 22:50:30 program [180550]: Starting new HTTP connection (1): wyspany-jestem.com.pl:80
+lut 21 22:50:30 program [180550]: http://wyspany-jestem.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:30 program [180550]: http://wyspany-jestem.com.pl
+lut 21 22:50:30 program [180550]: Starting new HTTP connection (1): projekty-karoli.pl:80
+lut 21 22:50:30 program [180550]: http://projekty-karoli.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:30 program [180550]: http://projekty-karoli.pl
+lut 21 22:50:30 program [180550]: Starting new HTTP connection (1): ignacy.site:80
+lut 21 22:50:30 program [180550]: http://ignacy.site:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:30 program [180550]: http://ignacy.site
+lut 21 22:50:30 program [180550]: Starting new HTTP connection (1): dbys.pl:80
+lut 21 22:50:30 program [180550]: http://dbys.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:30 program [180550]: http://dbys.pl
+lut 21 22:50:30 program [180550]: Starting new HTTP connection (1): akarnas.pl:80
+lut 21 22:50:30 program [180550]: http://akarnas.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:30 program [180550]: http://akarnas.pl
+lut 21 22:50:30 program [180550]: Starting new HTTP connection (1): moje-programowanie.pl:80
+lut 21 22:50:40 program [180550]: http://moje-programowanie.pl
+lut 21 22:50:40 program [180550]: Starting new HTTP connection (1): michael-jeziorski.pl:80
+lut 21 22:50:40 program [180550]: http://michael-jeziorski.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:40 program [180550]: http://michael-jeziorski.pl
+lut 21 22:50:40 program [180550]: Starting new HTTP connection (1): awojcieszek.pl:80
+lut 21 22:50:40 program [180550]: http://awojcieszek.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:40 program [180550]: http://awojcieszek.pl
+lut 21 22:50:40 program [180550]: Starting new HTTP connection (1): 0kompleks.pl:80
+lut 21 22:50:40 program [180550]: http://0kompleks.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:40 program [180550]: http://0kompleks.pl
+lut 21 22:50:40 program [180550]: Starting new HTTP connection (1): pawelpolaszk.pl:80
+lut 21 22:50:40 program [180550]: http://pawelpolaszk.pl:80 "GET / HTTP/1.1" 404 None
+lut 21 22:50:40 program [180550]: http://pawelpolaszk.pl
+lut 21 22:50:40 program [180550]: Starting new HTTP connection (1): rjgsite.pl:80
+lut 21 22:50:50 program [180550]: http://rjgsite.pl
+lut 21 22:50:50 program [180550]: Starting new HTTP connection (1): mamiya.pl:80
+lut 21 22:50:50 program [180550]: http://mamiya.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:51 program [180550]: http://mamiya.pl
+lut 21 22:50:51 program [180550]: Starting new HTTP connection (1): mcbiru.pl:80
+lut 21 22:50:51 program [180550]: http://mcbiru.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:51 program [180550]: http://mcbiru.pl
+lut 21 22:50:51 program [180550]: Starting new HTTP connection (1): tomczakowe-programowanie.pl:80
+lut 21 22:50:51 program [180550]: http://tomczakowe-programowanie.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:51 program [180550]: http://tomczakowe-programowanie.pl
+lut 21 22:50:51 program [180550]: Starting new HTTP connection (1): akwarelaitusz.pl:80
+lut 21 22:50:51 program [180550]: http://akwarelaitusz.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:50:51 program [180550]: http://akwarelaitusz.pl
+lut 21 22:50:51 program [180550]: Starting new HTTP connection (1): pythonologia.pl:80
+lut 21 22:50:51 program [180550]: http://pythonologia.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:51 program [180550]: http://pythonologia.pl
+lut 21 22:50:51 program [180550]: Starting new HTTP connection (1): lounalevittoux.pl:80
+lut 21 22:50:51 program [180550]: http://lounalevittoux.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:50:51 program [180550]: http://lounalevittoux.pl
+lut 21 22:50:51 program [180550]: Starting new HTTP connection (1): trellomorelo.pl:80
+lut 21 22:50:51 program [180550]: http://trellomorelo.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:51 program [180550]: http://trellomorelo.pl
+lut 21 22:50:51 program [180550]: Starting new HTTP connection (1): xd.oskarkwidzinski.pl:80
+lut 21 22:50:51 program [180550]: http://xd.oskarkwidzinski.pl
+lut 21 22:50:51 program [180550]: Starting new HTTP connection (1): zeleznik.pl:80
+lut 21 22:50:52 program [180550]: http://zeleznik.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:52 program [180550]: http://zeleznik.pl
+lut 21 22:50:52 program [180550]: Starting new HTTP connection (1): flatearthsociety.pl:80
+lut 21 22:50:52 program [180550]: http://flatearthsociety.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:52 program [180550]: http://flatearthsociety.pl
+lut 21 22:50:52 program [180550]: Starting new HTTP connection (1): naukapythona.pl:80
+lut 21 22:50:52 program [180550]: http://naukapythona.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:52 program [180550]: http://naukapythona.pl
+lut 21 22:50:52 program [180550]: Starting new HTTP connection (1): dominikak.pl:80
+lut 21 22:50:52 program [180550]: http://dominikak.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:52 program [180550]: http://dominikak.pl
+lut 21 22:50:52 program [180550]: Starting new HTTP connection (1): codechallenger.pl:80
+lut 21 22:50:52 program [180550]: http://codechallenger.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:50:52 program [180550]: http://codechallenger.pl
+lut 21 22:50:52 program [180550]: Starting new HTTP connection (1): lamentyiodmety.pl:80
+lut 21 22:51:02 program [180550]: http://lamentyiodmety.pl
+lut 21 22:51:02 program [180550]: Starting new HTTP connection (1): igaprogramuje.pl:80
+lut 21 22:51:02 program [180550]: http://igaprogramuje.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:51:02 program [180550]: http://igaprogramuje.pl
+lut 21 22:51:02 program [180550]: Starting new HTTP connection (1): laboratorium-projektu.pl:80
+lut 21 22:51:02 program [180550]: http://laboratorium-projektu.pl:80 "GET / HTTP/1.1" 500 290
+lut 21 22:51:02 program [180550]: http://laboratorium-projektu.pl
+lut 21 22:51:02 program [180550]: Starting new HTTP connection (1): pythonarea.com:80
+lut 21 22:51:02 program [180550]: http://pythonarea.com:80 "GET / HTTP/1.1" 200 None
+lut 21 22:51:02 program [180550]: http://pythonarea.com
+lut 21 22:51:02 program [180550]: Starting new HTTP connection (1): crowely.pl:80
+lut 21 22:51:02 program [180550]: http://crowely.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:51:02 program [180550]: http://crowely.pl
+lut 21 22:51:02 program [180550]: Starting new HTTP connection (1): tomaszfigura-zpxd.pl:80
+lut 21 22:51:03 program [180550]: http://tomaszfigura-zpxd.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:51:03 program [180550]: http://tomaszfigura-zpxd.pl
+lut 21 22:51:03 program [180550]: Starting new HTTP connection (1): duszyczkirazjela.pl:80
+lut 21 22:51:03 program [180550]: http://duszyczkirazjela.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:51:03 program [180550]: http://duszyczkirazjela.pl
+lut 21 22:51:03 program [180550]: Starting new HTTP connection (1): onecodetwo.pl:80
+lut 21 22:51:03 program [180550]: http://onecodetwo.pl:80 "GET / HTTP/1.1" 301 169
+lut 21 22:51:03 program [180550]: Starting new HTTPS connection (1): onecodetwo.pl:443
+lut 21 22:51:03 program [180550]: https://onecodetwo.pl:443 "GET / HTTP/1.1" 302 0
+lut 21 22:51:03 program [180550]: https://onecodetwo.pl:443 "GET /keycloak/login?next=/ HTTP/1.1" 302 0
+lut 21 22:51:03 program [180550]: Starting new HTTPS connection (1): awssimaamgen.pkiapps.net:443
+lut 21 22:51:03 program [180550]: https://awssimaamgen.pkiapps.net:443 "GET /auth/realms/SImA/protocol/openid-connect/auth?client_id=sima&redirect_uri=https%3A%2F%2Fonecodetwo.pl%2Fkeycloak%2Flogin-complete&response_type=code&scope=openid&state=61017e07-c9dd-4134-aeeb-5a3b3b0bf8e7 HTTP/1.1" 200 3544
+lut 21 22:51:03 program [180550]: http://onecodetwo.pl
+lut 21 22:51:03 program [180550]: Starting new HTTP connection (1): sledzkulture.pl:80
+lut 21 22:51:03 program [180550]: http://sledzkulture.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:51:03 program [180550]: http://sledzkulture.pl
+lut 21 22:51:03 program [180550]: Starting new HTTP connection (1): theblackjok3r.pl:80
+lut 21 22:51:13 program [180550]: http://theblackjok3r.pl:80 "GET / HTTP/1.1" 502 166
+lut 21 22:51:13 program [180550]: http://theblackjok3r.pl
+lut 21 22:51:13 program [180550]: Starting new HTTP connection (1): ewelinamuzal.pl:80
+lut 21 22:51:13 program [180550]: http://ewelinamuzal.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:51:13 program [180550]: http://ewelinamuzal.pl
+lut 21 22:51:13 program [180550]: Starting new HTTP connection (1): derdak.pl:80
+lut 21 22:51:13 program [180550]: http://derdak.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:51:13 program [180550]: http://derdak.pl
+lut 21 22:51:13 program [180550]: Starting new HTTP connection (1): kotkisafajne.pl:80
+lut 21 22:51:13 program [180550]: http://kotkisafajne.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:51:13 program [180550]: http://kotkisafajne.pl
+lut 21 22:51:13 program [180550]: Starting new HTTP connection (1): dziedzic.me:80
+lut 21 22:51:23 program [180550]: http://dziedzic.me
+lut 21 22:51:23 program [180550]: Starting new HTTP connection (1): andrewfan.pl:80
+lut 21 22:51:23 program [180550]: http://andrewfan.pl
+lut 21 22:51:23 program [180550]: Starting new HTTP connection (1): morphads.pl:80
+lut 21 22:51:23 program [180550]: http://morphads.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:51:23 program [180550]: http://morphads.pl
+lut 21 22:51:23 program [180550]: Starting new HTTP connection (1): saramichalska.pl:80
+lut 21 22:51:33 program [180550]: http://saramichalska.pl
+lut 21 22:51:33 program [180550]: Starting new HTTP connection (1): obiekt-626.pl:80
+lut 21 22:51:33 program [180550]: http://obiekt-626.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:51:33 program [180550]: http://obiekt-626.pl
+lut 21 22:51:33 program [180550]: Starting new HTTP connection (1): paulinawierzchowskalublin.pl:80
+lut 21 22:51:33 program [180550]: http://paulinawierzchowskalublin.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:51:33 program [180550]: http://paulinawierzchowskalublin.pl
+lut 21 22:51:34 program [180550]: Starting new HTTP connection (1): botul.tech:80
+lut 21 22:51:34 program [180550]: http://botul.tech:80 "GET / HTTP/1.1" 301 None
+lut 21 22:51:34 program [180550]: Starting new HTTPS connection (1): botul.tech:443
+lut 21 22:51:34 program [180550]: https://botul.tech:443 "GET / HTTP/1.1" 200 None
+lut 21 22:51:34 program [180550]: http://botul.tech
+lut 21 22:51:34 program [180550]: Starting new HTTP connection (1): robiefajnerzeczywpythonie.pl:80
+lut 21 22:51:34 program [180550]: http://robiefajnerzeczywpythonie.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:51:34 program [180550]: http://robiefajnerzeczywpythonie.pl
+lut 21 22:51:34 program [180550]: Starting new HTTP connection (1): maksworks.pl:80
+lut 21 22:51:34 program [180550]: http://maksworks.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:51:34 program [180550]: http://maksworks.pl
+lut 21 22:51:34 program [180550]: Starting new HTTP connection (1): 3dradar.pl:80
+lut 21 22:51:34 program [180550]: http://3dradar.pl:80 "GET / HTTP/1.1" 404 None
+lut 21 22:51:34 program [180550]: http://3dradar.pl
+lut 21 22:51:34 program [180550]: Starting new HTTP connection (1): jedrzejnowaczyk.pl:80
+lut 21 22:51:34 program [180550]: http://jedrzejnowaczyk.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:51:34 program [180550]: http://jedrzejnowaczyk.pl
+lut 21 22:51:34 program [180550]: Starting new HTTP connection (1): pythonprodigy.pl:80
+lut 21 22:51:34 program [180550]: http://pythonprodigy.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:51:34 program [180550]: http://pythonprodigy.pl
+lut 21 22:51:34 program [180550]: Starting new HTTP connection (1): rafalbryzek.pl:80
+lut 21 22:51:44 program [180550]: http://rafalbryzek.pl
+lut 21 22:51:44 program [180550]: Starting new HTTP connection (1): zadaj.pythanie.pl:80
+lut 21 22:51:44 program [180550]: http://zadaj.pythanie.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:51:44 program [180550]: http://zadaj.pythanie.pl
+lut 21 22:51:44 program [180550]: Starting new HTTP connection (1): faberze-litosci.pl:80
+lut 21 22:51:54 program [180550]: http://faberze-litosci.pl
+lut 21 22:51:54 program [180550]: Starting new HTTP connection (1): ebajabongo.pl:80
+lut 21 22:51:54 program [180550]: http://ebajabongo.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:51:54 program [180550]: http://ebajabongo.pl
+lut 21 22:51:54 program [180550]: Starting new HTTP connection (1): jakubdusza.pl:80
+lut 21 22:51:54 program [180550]: http://jakubdusza.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:51:54 program [180550]: http://jakubdusza.pl
+lut 21 22:51:54 program [180550]: Starting new HTTP connection (1): sassy85.pl:80
+lut 21 22:52:04 program [180550]: http://sassy85.pl
+lut 21 22:52:04 program [180550]: Starting new HTTP connection (1): kdomanski.pl:80
+lut 21 22:52:04 program [180550]: http://kdomanski.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:04 program [180550]: http://kdomanski.pl
+lut 21 22:52:04 program [180550]: Starting new HTTP connection (1): adventureit.pl:80
+lut 21 22:52:05 program [180550]: http://adventureit.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:05 program [180550]: http://adventureit.pl
+lut 21 22:52:05 program [180550]: Starting new HTTP connection (1): paulinaorm.site:80
+lut 21 22:52:05 program [180550]: http://paulinaorm.site:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:05 program [180550]: http://paulinaorm.site
+lut 21 22:52:05 program [180550]: Starting new HTTP connection (1): jokuna.pl:80
+lut 21 22:52:05 program [180550]: http://jokuna.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:05 program [180550]: http://jokuna.pl
+lut 21 22:52:05 program [180550]: Starting new HTTP connection (1): bubobengalis.pl:80
+lut 21 22:52:05 program [180550]: http://bubobengalis.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:05 program [180550]: http://bubobengalis.pl
+lut 21 22:52:05 program [180550]: Starting new HTTP connection (1): kalafior.site:80
+lut 21 22:52:05 program [180550]: http://kalafior.site:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:05 program [180550]: http://kalafior.site
+lut 21 22:52:05 program [180550]: Starting new HTTP connection (1): dziaga.pl:80
+lut 21 22:52:05 program [180550]: http://dziaga.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:05 program [180550]: http://dziaga.pl
+lut 21 22:52:05 program [180550]: Starting new HTTP connection (1): kursprogrmowania.online:80
+lut 21 22:52:05 program [180550]: http://kursprogrmowania.online:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:05 program [180550]: http://kursprogrmowania.online
+lut 21 22:52:05 program [180550]: Starting new HTTP connection (1): patrykignaczak.com:80
+lut 21 22:52:15 program [180550]: http://patrykignaczak.com
+lut 21 22:52:15 program [180550]: Starting new HTTP connection (1): drogadosukcesu.com.pl:80
+lut 21 22:52:15 program [180550]: http://drogadosukcesu.com.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:52:15 program [180550]: http://drogadosukcesu.com.pl
+lut 21 22:52:15 program [180550]: Starting new HTTP connection (1): dziamska.com:80
+lut 21 22:52:16 program [180550]: http://dziamska.com:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:16 program [180550]: http://dziamska.com
+lut 21 22:52:16 program [180550]: Starting new HTTP connection (1): svingel.website:80
+lut 21 22:52:16 program [180550]: http://svingel.website:80 "GET / HTTP/1.1" 502 182
+lut 21 22:52:16 program [180550]: http://svingel.website
+lut 21 22:52:16 program [180550]: Starting new HTTP connection (1): swietochowska.pl:80
+lut 21 22:52:16 program [180550]: http://swietochowska.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:16 program [180550]: http://swietochowska.pl
+lut 21 22:52:16 program [180550]: Starting new HTTP connection (1): wawrzix.pl:80
+lut 21 22:52:26 program [180550]: http://wawrzix.pl
+lut 21 22:52:26 program [180550]: Starting new HTTP connection (1): laskobar.pl:80
+lut 21 22:52:26 program [180550]: http://laskobar.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:26 program [180550]: http://laskobar.pl
+lut 21 22:52:26 program [180550]: Starting new HTTP connection (1): piotr-rajmanski.pl:80
+lut 21 22:52:26 program [180550]: http://piotr-rajmanski.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:26 program [180550]: http://piotr-rajmanski.pl
+lut 21 22:52:26 program [180550]: Starting new HTTP connection (1): mi-st.pl:80
+lut 21 22:52:26 program [180550]: http://mi-st.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:26 program [180550]: http://mi-st.pl
+lut 21 22:52:26 program [180550]: Starting new HTTP connection (1): e-tokarczyk.pl:80
+lut 21 22:52:36 program [180550]: http://e-tokarczyk.pl
+lut 21 22:52:36 program [180550]: Starting new HTTP connection (1): kraina-zabawnego-chomika.pl:80
+lut 21 22:52:36 program [180550]: http://kraina-zabawnego-chomika.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:36 program [180550]: http://kraina-zabawnego-chomika.pl
+lut 21 22:52:36 program [180550]: Starting new HTTP connection (1): serafinmonika.pl:80
+lut 21 22:52:37 program [180550]: http://serafinmonika.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:37 program [180550]: http://serafinmonika.pl
+lut 21 22:52:37 program [180550]: Starting new HTTP connection (1): katarzyna-wolynska.pl:80
+lut 21 22:52:37 program [180550]: http://katarzyna-wolynska.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:37 program [180550]: http://katarzyna-wolynska.pl
+lut 21 22:52:37 program [180550]: Starting new HTTP connection (1): lusinski.pl:80
+lut 21 22:52:37 program [180550]: http://lusinski.pl:80 "GET / HTTP/1.1" 302 138
+lut 21 22:52:37 program [180550]: Starting new HTTP connection (1): www.lusinski.pl:80
+lut 21 22:52:37 program [180550]: http://www.lusinski.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:37 program [180550]: http://lusinski.pl
+lut 21 22:52:37 program [180550]: Starting new HTTP connection (1): piterkolod.pl:80
+lut 21 22:52:37 program [180550]: http://piterkolod.pl:80 "GET / HTTP/1.1" 500 290
+lut 21 22:52:37 program [180550]: http://piterkolod.pl
+lut 21 22:52:37 program [180550]: Starting new HTTP connection (1): program-mistyczny.pl:80
+lut 21 22:52:37 program [180550]: http://program-mistyczny.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:37 program [180550]: http://program-mistyczny.pl
+lut 21 22:52:37 program [180550]: Starting new HTTP connection (1): magdaslifierz.xyz:80
+lut 21 22:52:47 program [180550]: http://magdaslifierz.xyz
+lut 21 22:52:47 program [180550]: Starting new HTTP connection (1): marcinjanuszewski.pl:80
+lut 21 22:52:47 program [180550]: http://marcinjanuszewski.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:47 program [180550]: http://marcinjanuszewski.pl
+lut 21 22:52:47 program [180550]: Starting new HTTP connection (1): pmajek.online:80
+lut 21 22:52:47 program [180550]: http://pmajek.online:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:47 program [180550]: http://pmajek.online
+lut 21 22:52:47 program [180550]: Starting new HTTP connection (1): annre.pl:80
+lut 21 22:52:47 program [180550]: http://annre.pl
+lut 21 22:52:47 program [180550]: Starting new HTTP connection (1): ioutside.pl:80
+lut 21 22:52:47 program [180550]: http://ioutside.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:47 program [180550]: http://ioutside.pl
+lut 21 22:52:47 program [180550]: Starting new HTTP connection (1): wojtek-lbn.pl:80
+lut 21 22:52:47 program [180550]: http://wojtek-lbn.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:47 program [180550]: http://wojtek-lbn.pl
+lut 21 22:52:47 program [180550]: Starting new HTTP connection (1): programmingdemobyjacob.fun:80
+lut 21 22:52:47 program [180550]: http://programmingdemobyjacob.fun:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:47 program [180550]: http://programmingdemobyjacob.fun
+lut 21 22:52:47 program [180550]: Starting new HTTP connection (1): miniquee.pl:80
+lut 21 22:52:57 program [180550]: http://miniquee.pl
+lut 21 22:52:57 program [180550]: Starting new HTTP connection (1): matjek.pl:80
+lut 21 22:52:58 program [180550]: http://matjek.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:58 program [180550]: http://matjek.pl
+lut 21 22:52:58 program [180550]: Starting new HTTP connection (1): majadabkowska.pl:80
+lut 21 22:52:58 program [180550]: http://majadabkowska.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:52:58 program [180550]: http://majadabkowska.pl
+lut 21 22:52:58 program [180550]: Starting new HTTP connection (1): iotdev.pl:80
+lut 21 22:52:58 program [180550]: http://iotdev.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:58 program [180550]: http://iotdev.pl
+lut 21 22:52:58 program [180550]: Starting new HTTP connection (1): kilokota.pl:80
+lut 21 22:52:58 program [180550]: http://kilokota.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:58 program [180550]: http://kilokota.pl
+lut 21 22:52:58 program [180550]: Starting new HTTP connection (1): tamasmatczak.pl:80
+lut 21 22:52:58 program [180550]: http://tamasmatczak.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:58 program [180550]: http://tamasmatczak.pl
+lut 21 22:52:58 program [180550]: Starting new HTTP connection (1): tobitobisinski.pl:80
+lut 21 22:52:58 program [180550]: http://tobitobisinski.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:58 program [180550]: http://tobitobisinski.pl
+lut 21 22:52:58 program [180550]: Starting new HTTP connection (1): kung-fu-python.online:80
+lut 21 22:52:58 program [180550]: http://kung-fu-python.online:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:58 program [180550]: http://kung-fu-python.online
+lut 21 22:52:58 program [180550]: Starting new HTTP connection (1): pigulka-murti-binga.pl:80
+lut 21 22:52:58 program [180550]: http://pigulka-murti-binga.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:52:58 program [180550]: http://pigulka-murti-binga.pl
+lut 21 22:52:58 program [180550]: Starting new HTTP connection (1): sylwiawt.com.pl:80
+lut 21 22:53:08 program [180550]: http://sylwiawt.com.pl
+lut 21 22:53:08 program [180550]: Starting new HTTP connection (1): python.mozeciasteczko.pl:80
+lut 21 22:53:18 program [180550]: http://python.mozeciasteczko.pl
+lut 21 22:53:18 program [180550]: Starting new HTTP connection (1): e-security.cloud:80
+lut 21 22:53:18 program [180550]: http://e-security.cloud:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:18 program [180550]: http://E-security.cloud
+lut 21 22:53:18 program [180550]: Starting new HTTP connection (1): ranref.pl:80
+lut 21 22:53:18 program [180550]: http://ranref.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:18 program [180550]: http://ranref.pl
+lut 21 22:53:18 program [180550]: Starting new HTTP connection (1): virgointhesky.pl:80
+lut 21 22:53:18 program [180550]: http://virgointhesky.pl:80 "GET / HTTP/1.1" 200 3138
+lut 21 22:53:18 program [180550]: http://virgointhesky.pl
+lut 21 22:53:18 program [180550]: Starting new HTTP connection (1): krzysiek-xd.com.pl:80
+lut 21 22:53:19 program [180550]: http://krzysiek-xd.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:19 program [180550]: http://krzysiek-xd.com.pl
+lut 21 22:53:19 program [180550]: Starting new HTTP connection (1): vergol-gaming.pl:80
+lut 21 22:53:19 program [180550]: http://vergol-gaming.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:19 program [180550]: http://vergol-gaming.pl
+lut 21 22:53:19 program [180550]: Starting new HTTP connection (1): lps.info.pl:80
+lut 21 22:53:19 program [180550]: http://lps.info.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:19 program [180550]: http://lps.info.pl
+lut 21 22:53:19 program [180550]: Starting new HTTP connection (1): saraczyz.pl:80
+lut 21 22:53:19 program [180550]: http://saraczyz.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:19 program [180550]: http://saraczyz.pl
+lut 21 22:53:19 program [180550]: Starting new HTTP connection (1): stawiarska.com.pl:80
+lut 21 22:53:19 program [180550]: http://stawiarska.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:19 program [180550]: http://stawiarska.com.pl
+lut 21 22:53:19 program [180550]: Starting new HTTP connection (1): looper.com.pl:80
+lut 21 22:53:19 program [180550]: http://looper.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:19 program [180550]: http://looper.com.pl
+lut 21 22:53:19 program [180550]: Starting new HTTP connection (1): kacper-potocki.pl:80
+lut 21 22:53:19 program [180550]: http://kacper-potocki.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:53:19 program [180550]: http://kacper-potocki.pl
+lut 21 22:53:19 program [180550]: Starting new HTTP connection (1): vegenuary.pl:80
+lut 21 22:53:19 program [180550]: http://vegenuary.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:19 program [180550]: http://vegenuary.pl
+lut 21 22:53:19 program [180550]: Starting new HTTP connection (1): hycilo.pl:80
+lut 21 22:53:19 program [180550]: http://hycilo.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:19 program [180550]: http://hycilo.pl
+lut 21 22:53:19 program [180550]: Starting new HTTP connection (1): python-pocafasso.pl:80
+lut 21 22:53:19 program [180550]: http://python-pocafasso.pl
+lut 21 22:53:19 program [180550]: Starting new HTTP connection (1): rowerowabaza-24.pl:80
+lut 21 22:53:19 program [180550]: http://rowerowabaza-24.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:19 program [180550]: http://rowerowabaza-24.pl
+lut 21 22:53:19 program [180550]: Starting new HTTP connection (1): biourny.pl:80
+lut 21 22:53:29 program [180550]: http://biourny.pl
+lut 21 22:53:29 program [180550]: Starting new HTTP connection (1): joanna1984.pl:80
+lut 21 22:53:29 program [180550]: http://joanna1984.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:29 program [180550]: http://joanna1984.pl
+lut 21 22:53:29 program [180550]: Starting new HTTP connection (1): pytonschirmpilza.pl:80
+lut 21 22:53:29 program [180550]: http://pytonschirmpilza.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:29 program [180550]: http://pytonschirmpilza.pl
+lut 21 22:53:29 program [180550]: Starting new HTTP connection (1): kasia-python.pl:80
+lut 21 22:53:29 program [180550]: http://kasia-python.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:29 program [180550]: http://kasia-python.pl
+lut 21 22:53:29 program [180550]: Starting new HTTP connection (1): pawelmarkieta.pl:80
+lut 21 22:53:29 program [180550]: http://pawelmarkieta.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:53:29 program [180550]: http://pawelmarkieta.pl
+lut 21 22:53:29 program [180550]: Starting new HTTP connection (1): jamrush.fun:80
+lut 21 22:53:30 program [180550]: http://jamrush.fun:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:30 program [180550]: http://jamrush.fun
+lut 21 22:53:30 program [180550]: Starting new HTTP connection (1): witchesinorder.pl:80
+lut 21 22:53:30 program [180550]: http://witchesinorder.pl:80 "GET / HTTP/1.1" 200 1177
+lut 21 22:53:30 program [180550]: http://witchesinorder.pl
+lut 21 22:53:30 program [180550]: Starting new HTTP connection (1): makes-sense.website:80
+lut 21 22:53:30 program [180550]: http://makes-sense.website:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:30 program [180550]: http://makes-sense.website
+lut 21 22:53:30 program [180550]: Starting new HTTP connection (1): jagorl.fun:80
+lut 21 22:53:30 program [180550]: http://jagorl.fun:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:30 program [180550]: http://jagorl.fun
+lut 21 22:53:30 program [180550]: Starting new HTTP connection (1): grah.pl:80
+lut 21 22:53:30 program [180550]: http://grah.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:30 program [180550]: http://grah.pl
+lut 21 22:53:30 program [180550]: Starting new HTTP connection (1): mocjestznami.pl:80
+lut 21 22:53:40 program [180550]: http://mocjestznami.pl
+lut 21 22:53:40 program [180550]: Starting new HTTP connection (1): myjumble.pl:80
+lut 21 22:53:40 program [180550]: http://myjumble.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:40 program [180550]: http://myjumble.pl
+lut 21 22:53:40 program [180550]: Starting new HTTP connection (1): milenabogutalub.pl:80
+lut 21 22:53:41 program [180550]: http://milenabogutalub.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:53:41 program [180550]: http://milenabogutalub.pl
+lut 21 22:53:41 program [180550]: Starting new HTTP connection (1): hankas.pl:80
+lut 21 22:53:51 program [180550]: http://hankas.pl
+lut 21 22:53:51 program [180550]: Starting new HTTP connection (1): natalia-lepich.pl:80
+lut 21 22:54:01 program [180550]: http://natalia-lepich.pl
+lut 21 22:54:01 program [180550]: Starting new HTTP connection (1): kasiapolice82.pl:80
+lut 21 22:54:01 program [180550]: http://kasiapolice82.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:01 program [180550]: http://kasiapolice82.pl
+lut 21 22:54:01 program [180550]: Starting new HTTP connection (1): programowanie-kurs.pl:80
+lut 21 22:54:01 program [180550]: http://programowanie-kurs.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:01 program [180550]: http://programowanie-kurs.pl
+lut 21 22:54:01 program [180550]: Starting new HTTP connection (1): wiemcorobie.fun:80
+lut 21 22:54:01 program [180550]: http://wiemcorobie.fun:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:01 program [180550]: http://wiemcorobie.fun
+lut 21 22:54:01 program [180550]: Starting new HTTP connection (1): programowanie-python.online:80
+lut 21 22:54:01 program [180550]: http://programowanie-python.online:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:01 program [180550]: http://programowanie-python.online
+lut 21 22:54:01 program [180550]: Starting new HTTP connection (1): zdano1.pl:80
+lut 21 22:54:01 program [180550]: http://zdano1.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:01 program [180550]: http://zdano1.pl
+lut 21 22:54:01 program [180550]: Starting new HTTP connection (1): programistapython012022.pl:80
+lut 21 22:54:02 program [180550]: http://programistapython012022.pl
+lut 21 22:54:02 program [180550]: Starting new HTTP connection (1): ezu-python.pl:80
+lut 21 22:54:02 program [180550]: http://ezu-python.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:02 program [180550]: http://ezu-python.pl
+lut 21 22:54:02 program [180550]: Starting new HTTP connection (1): eultramax.pl:80
+lut 21 22:54:02 program [180550]: http://eultramax.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:54:02 program [180550]: http://eultramax.pl
+lut 21 22:54:02 program [180550]: Starting new HTTP connection (1): hajcik.pl:80
+lut 21 22:54:02 program [180550]: http://hajcik.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:02 program [180550]: http://hajcik.pl
+lut 21 22:54:02 program [180550]: Starting new HTTP connection (1): kosmalov.pl:80
+lut 21 22:54:12 program [180550]: http://kosmalov.pl
+lut 21 22:54:12 program [180550]: Starting new HTTP connection (1): fermenciarz.pl:80
+lut 21 22:54:12 program [180550]: http://fermenciarz.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:12 program [180550]: http://fermenciarz.pl
+lut 21 22:54:12 program [180550]: Starting new HTTP connection (1): bartechcoding.pl:80
+lut 21 22:54:12 program [180550]: http://bartechcoding.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:12 program [180550]: http://bartechcoding.pl
+lut 21 22:54:12 program [180550]: Starting new HTTP connection (1): misjapython.pl:80
+lut 21 22:54:12 program [180550]: http://misjapython.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:12 program [180550]: http://misjapython.pl
+lut 21 22:54:12 program [180550]: Starting new HTTP connection (1): jacekpython.pl:80
+lut 21 22:54:12 program [180550]: http://jacekpython.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:12 program [180550]: http://jacekpython.pl
+lut 21 22:54:12 program [180550]: Starting new HTTP connection (1): sanlina89.pl:80
+lut 21 22:54:12 program [180550]: http://sanlina89.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:12 program [180550]: http://sanlina89.pl
+lut 21 22:54:12 program [180550]: Starting new HTTP connection (1): styxu.pl:80
+lut 21 22:54:12 program [180550]: http://styxu.pl:80 "GET / HTTP/1.1" 301 178
+lut 21 22:54:12 program [180550]: Starting new HTTPS connection (1): styxu.pl:443
+lut 21 22:54:12 program [180550]: https://styxu.pl:443 "GET / HTTP/1.1" 200 None
+lut 21 22:54:12 program [180550]: http://styxu.pl
+lut 21 22:54:12 program [180550]: Starting new HTTP connection (1): wakeupandreset.pl:80
+lut 21 22:54:12 program [180550]: http://wakeupandreset.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:12 program [180550]: http://wakeupandreset.pl
+lut 21 22:54:12 program [180550]: Starting new HTTP connection (1): sanfi.pl:80
+lut 21 22:54:12 program [180550]: http://sanfi.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:12 program [180550]: http://sanfi.pl
+lut 21 22:54:12 program [180550]: Starting new HTTP connection (1): programistkapython.pl:80
+lut 21 22:54:12 program [180550]: http://programistkapython.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:12 program [180550]: http://programistkapython.pl
+lut 21 22:54:12 program [180550]: Starting new HTTP connection (1): ungiup.be:80
+lut 21 22:54:13 program [180550]: http://ungiup.be:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:13 program [180550]: http://ungiup.be
+lut 21 22:54:13 program [180550]: Starting new HTTP connection (1): forensic.edu.pl:80
+lut 21 22:54:13 program [180550]: http://forensic.edu.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:13 program [180550]: http://forensic.edu.pl
+lut 21 22:54:13 program [180550]: Starting new HTTP connection (1): beyondhoryzont.pl:80
+lut 21 22:54:13 program [180550]: http://beyondhoryzont.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:13 program [180550]: http://beyondhoryzont.pl
+lut 21 22:54:13 program [180550]: Starting new HTTP connection (1): inzmechstart.pl:80
+lut 21 22:54:13 program [180550]: http://inzmechstart.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:13 program [180550]: http://inzmechstart.pl
+lut 21 22:54:13 program [180550]: Starting new HTTP connection (1): pythonfun.pl:80
+lut 21 22:54:13 program [180550]: http://pythonfun.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:13 program [180550]: http://pythonfun.pl
+lut 21 22:54:13 program [180550]: Starting new HTTP connection (1): misiunia.pl:80
+lut 21 22:54:13 program [180550]: http://misiunia.pl
+lut 21 22:54:13 program [180550]: Starting new HTTP connection (1): test-klaudia-app.herokuapp.com:80
+lut 21 22:54:13 program [180550]: http://test-klaudia-app.herokuapp.com:80 "GET / HTTP/1.1" 502 2476
+lut 21 22:54:13 program [180550]: http://test-klaudia-app.herokuapp.com
+lut 21 22:54:13 program [180550]: Starting new HTTP connection (1): carbonoverkill.pl:80
+lut 21 22:54:13 program [180550]: http://carbonoverkill.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:13 program [180550]: http://carbonoverkill.pl
+lut 21 22:54:13 program [180550]: Starting new HTTP connection (1): tsyhankova.pl:80
+lut 21 22:54:13 program [180550]: http://tsyhankova.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:54:13 program [180550]: http://tsyhankova.pl
+lut 21 22:54:13 program [180550]: Starting new HTTP connection (1): dandi-design.pl:80
+lut 21 22:54:13 program [180550]: http://dandi-design.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:54:13 program [180550]: http://dandi-design.pl
+lut 21 22:54:13 program [180550]: Starting new HTTP connection (1): sylwiafijol.pl:80
+lut 21 22:54:13 program [180550]: http://sylwiafijol.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:13 program [180550]: http://sylwiafijol.pl
+lut 21 22:54:13 program [180550]: Starting new HTTP connection (1): roedeer.pl:80
+lut 21 22:54:13 program [180550]: http://roedeer.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:13 program [180550]: http://roedeer.pl
+lut 21 22:54:13 program [180550]: Starting new HTTP connection (1): angelikakubacka.pl:80
+lut 21 22:54:13 program [180550]: http://angelikakubacka.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:13 program [180550]: http://angelikakubacka.pl
+lut 21 22:54:13 program [180550]: Starting new HTTP connection (1): mkrzem.pl:80
+lut 21 22:54:13 program [180550]: http://mkrzem.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:13 program [180550]: http://mkrzem.pl
+lut 21 22:54:13 program [180550]: Starting new HTTP connection (1): klaudiajasko.pl:80
+lut 21 22:54:14 program [180550]: http://klaudiajasko.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:14 program [180550]: http://klaudiajasko.pl
+lut 21 22:54:14 program [180550]: Starting new HTTP connection (1): tloluvin.pl:80
+lut 21 22:54:14 program [180550]: http://tloluvin.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:14 program [180550]: http://tloluvin.pl
+lut 21 22:54:14 program [180550]: Starting new HTTP connection (1): jackheadph1.pl:80
+lut 21 22:54:14 program [180550]: http://jackheadph1.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:14 program [180550]: http://jackheadph1.pl
+lut 21 22:54:14 program [180550]: Starting new HTTP connection (1): ibruh.pl:80
+lut 21 22:54:14 program [180550]: http://ibruh.pl
+lut 21 22:54:14 program [180550]: Starting new HTTP connection (1): sekisekula.pl:80
+lut 21 22:54:14 program [180550]: http://sekisekula.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:14 program [180550]: http://sekisekula.pl
+lut 21 22:54:14 program [180550]: Starting new HTTP connection (1): pawlowski-filip.online:80
+lut 21 22:54:14 program [180550]: http://pawlowski-filip.online:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:14 program [180550]: http://pawlowski-filip.online
+lut 21 22:54:14 program [180550]: Starting new HTTP connection (1): crypto24h.eu:80
+lut 21 22:54:14 program [180550]: http://crypto24h.eu
+lut 21 22:54:14 program [180550]: Starting new HTTP connection (1): olaponeta.pl:80
+lut 21 22:54:14 program [180550]: http://olaponeta.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:54:14 program [180550]: http://olaponeta.pl
+lut 21 22:54:14 program [180550]: Starting new HTTP connection (1): dulewicz.site:80
+lut 21 22:54:14 program [180550]: http://dulewicz.site:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:14 program [180550]: http://dulewicz.site
+lut 21 22:54:14 program [180550]: Starting new HTTP connection (1): zyclone.pl:80
+lut 21 22:54:14 program [180550]: http://zyclone.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:14 program [180550]: http://zyclone.pl
+lut 21 22:54:14 program [180550]: Starting new HTTP connection (1): danielbich.pl:80
+lut 21 22:54:15 program [180550]: http://danielbich.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:15 program [180550]: http://danielbich.pl
+lut 21 22:54:15 program [180550]: Starting new HTTP connection (1): mechatohiks.pl:80
+lut 21 22:54:15 program [180550]: http://mechatohiks.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:15 program [180550]: http://mechatohiks.pl
+lut 21 22:54:15 program [180550]: Starting new HTTP connection (1): lemonfriday.pl:80
+lut 21 22:54:15 program [180550]: http://lemonfriday.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:15 program [180550]: http://lemonfriday.pl
+lut 21 22:54:15 program [180550]: Starting new HTTP connection (1): info-project.pl:80
+lut 21 22:54:15 program [180550]: http://info-project.pl:80 "GET / HTTP/1.1" 500 290
+lut 21 22:54:15 program [180550]: http://info-project.pl
+lut 21 22:54:15 program [180550]: Starting new HTTP connection (1): runpython.pl:80
+lut 21 22:54:15 program [180550]: http://runpython.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:15 program [180550]: http://runpython.pl
+lut 21 22:54:15 program [180550]: Starting new HTTP connection (1): konradptak.pl:80
+lut 21 22:54:15 program [180550]: http://konradptak.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:15 program [180550]: http://konradptak.pl
+lut 21 22:54:15 program [180550]: Starting new HTTP connection (1): ligao.pl:80
+lut 21 22:54:15 program [180550]: http://ligao.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:15 program [180550]: http://ligao.pl
+lut 21 22:54:15 program [180550]: Starting new HTTP connection (1): kubaxd.pl:80
+lut 21 22:54:15 program [180550]: http://kubaxd.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:15 program [180550]: http://kubaxd.pl
+lut 21 22:54:15 program [180550]: Starting new HTTP connection (1): weronika.online:80
+lut 21 22:54:15 program [180550]: http://weronika.online:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:15 program [180550]: http://weronika.online
+lut 21 22:54:15 program [180550]: Starting new HTTP connection (1): zrepopkulture.pl:80
+lut 21 22:54:15 program [180550]: http://zrepopkulture.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:15 program [180550]: http://zrepopkulture.pl
+lut 21 22:54:15 program [180550]: Starting new HTTP connection (1): kaaemes.pl:80
+lut 21 22:54:15 program [180550]: http://kaaemes.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:15 program [180550]: http://kaaemes.pl
+lut 21 22:54:15 program [180550]: Starting new HTTP connection (1): pepiush.pl:80
+lut 21 22:54:15 program [180550]: http://pepiush.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:15 program [180550]: http://pepiush.pl
+lut 21 22:54:15 program [180550]: Starting new HTTP connection (1): robniegadaj.pl:80
+lut 21 22:54:15 program [180550]: http://robniegadaj.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:15 program [180550]: http://robniegadaj.pl
+lut 21 22:54:15 program [180550]: Starting new HTTP connection (1): holemagic.pl:80
+lut 21 22:54:15 program [180550]: http://holemagic.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:15 program [180550]: http://holemagic.pl
+lut 21 22:54:15 program [180550]: Starting new HTTP connection (1): mateusz-wojaczek.pl:80
+lut 21 22:54:16 program [180550]: http://mateusz-wojaczek.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:16 program [180550]: http://mateusz-wojaczek.pl
+lut 21 22:54:16 program [180550]: Starting new HTTP connection (1): free.riichi.bet:80
+lut 21 22:54:26 program [180550]: http://free.riichi.bet
+lut 21 22:54:26 program [180550]: Starting new HTTP connection (1): mroczne-misie.pl:8099
+lut 21 22:54:27 program [180550]: http://mroczne-misie.pl:8099 "GET / HTTP/1.1" 200 165
+lut 21 22:54:27 program [180550]: http://mroczne-misie.pl:8099
+lut 21 22:54:27 program [180550]: Starting new HTTP connection (1): niewiempocotorobie.pl:80
+lut 21 22:54:27 program [180550]: http://niewiempocotorobie.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:27 program [180550]: http://niewiempocotorobie.pl
+lut 21 22:54:27 program [180550]: Starting new HTTP connection (1): michaelozard.com.pl:80
+lut 21 22:54:27 program [180550]: http://michaelozard.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:27 program [180550]: http://michaelozard.com.pl
+lut 21 22:54:27 program [180550]: Starting new HTTP connection (1): pythonnr1.herokuapp.com:80
+lut 21 22:54:34 program [180550]: http://pythonnr1.herokuapp.com:80 "GET / HTTP/1.1" 200 154
+lut 21 22:54:34 program [180550]: http://pythonnr1.herokuapp.com
+lut 21 22:54:34 program [180550]: Starting new HTTP connection (1): tomaszp-zxd.pl:80
+lut 21 22:54:34 program [180550]: http://tomaszp-zxd.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:34 program [180550]: http://tomaszp-zxd.pl
+lut 21 22:54:34 program [180550]: Starting new HTTP connection (1): dzatorski.pl:80
+lut 21 22:54:34 program [180550]: http://dzatorski.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:34 program [180550]: http://dzatorski.pl
+lut 21 22:54:34 program [180550]: Starting new HTTP connection (1): marixdemon.pl:80
+lut 21 22:54:34 program [180550]: http://marixdemon.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:34 program [180550]: http://marixdemon.pl
+lut 21 22:54:34 program [180550]: Starting new HTTP connection (1): danielrusak.pl:80
+lut 21 22:54:34 program [180550]: http://danielrusak.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:34 program [180550]: http://danielrusak.pl
+lut 21 22:54:34 program [180550]: Starting new HTTP connection (1): krystianlata.pl:80
+lut 21 22:54:34 program [180550]: http://krystianlata.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:34 program [180550]: http://krystianlata.pl
+lut 21 22:54:34 program [180550]: Starting new HTTP connection (1): vetch.pl:80
+lut 21 22:54:34 program [180550]: http://vetch.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:34 program [180550]: http://vetch.pl
+lut 21 22:54:34 program [180550]: Starting new HTTP connection (1): wygrajzglowa.pl:80
+lut 21 22:54:34 program [180550]: http://wygrajzglowa.pl
+lut 21 22:54:34 program [180550]: Starting new HTTP connection (1): jasama.fun:80
+lut 21 22:54:34 program [180550]: http://jasama.fun:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:34 program [180550]: http://jasama.fun
+lut 21 22:54:34 program [180550]: Starting new HTTP connection (1): magnetofon.com.pl:80
+lut 21 22:54:34 program [180550]: http://magnetofon.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:34 program [180550]: http://magnetofon.com.pl
+lut 21 22:54:34 program [180550]: Starting new HTTP connection (1): sylwar-python.pl:80
+lut 21 22:54:37 program [180550]: http://sylwar-python.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:37 program [180550]: http://sylwar-python.pl
+lut 21 22:54:37 program [180550]: Starting new HTTP connection (1): przemek2940.pl:80
+lut 21 22:54:37 program [180550]: http://przemek2940.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:37 program [180550]: http://przemek2940.pl
+lut 21 22:54:37 program [180550]: Starting new HTTP connection (1): projektpython.com.pl:80
+lut 21 22:54:38 program [180550]: http://projektpython.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:38 program [180550]: http://projektpython.com.pl
+lut 21 22:54:38 program [180550]: Starting new HTTP connection (1): techdomain.pl:80
+lut 21 22:54:48 program [180550]: http://techdomain.pl
+lut 21 22:54:48 program [180550]: Starting new HTTP connection (1): attomuffka.pl:80
+lut 21 22:54:48 program [180550]: http://attomuffka.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:48 program [180550]: http://attomuffka.pl
+lut 21 22:54:48 program [180550]: Starting new HTTP connection (1): aleksandrab.pl:80
+lut 21 22:54:48 program [180550]: http://aleksandrab.pl
+lut 21 22:54:48 program [180550]: Starting new HTTP connection (1): python-snake.pl:80
+lut 21 22:54:48 program [180550]: http://python-snake.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:48 program [180550]: http://python-snake.pl
+lut 21 22:54:48 program [180550]: Starting new HTTP connection (1): beetroot.com.pl:80
+lut 21 22:54:48 program [180550]: http://beetroot.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:48 program [180550]: http://beetroot.com.pl
+lut 21 22:54:48 program [180550]: Starting new HTTP connection (1): klaudianiemcewicz.pl:80
+lut 21 22:54:48 program [180550]: http://klaudianiemcewicz.pl:80 "GET / HTTP/1.1" 502 166
+lut 21 22:54:48 program [180550]: http://klaudianiemcewicz.pl
+lut 21 22:54:48 program [180550]: Starting new HTTP connection (1): handsinthetea.online:80
+lut 21 22:54:48 program [180550]: http://handsinthetea.online:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:48 program [180550]: http://handsinthetea.online
+lut 21 22:54:48 program [180550]: Starting new HTTP connection (1): mojetworzenie.pl:80
+lut 21 22:54:48 program [180550]: http://mojetworzenie.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:48 program [180550]: http://mojetworzenie.pl
+lut 21 22:54:48 program [180550]: Starting new HTTP connection (1): jkubex.pl:80
+lut 21 22:54:48 program [180550]: http://jkubex.pl
+lut 21 22:54:48 program [180550]: Starting new HTTP connection (1): kb-group.pl:80
+lut 21 22:54:48 program [180550]: http://kb-group.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:48 program [180550]: http://kb-group.pl
+lut 21 22:54:48 program [180550]: Starting new HTTP connection (1): krzyczhubson.pl:80
+lut 21 22:54:48 program [180550]: http://krzyczhubson.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:48 program [180550]: http://krzyczhubson.pl
+lut 21 22:54:48 program [180550]: Starting new HTTP connection (1): neftays.pl:80
+lut 21 22:54:48 program [180550]: http://neftays.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:48 program [180550]: http://neftays.pl
+lut 21 22:54:48 program [180550]: Starting new HTTP connection (1): lukaszremkowicz.pl:80
+lut 21 22:54:49 program [180550]: http://lukaszremkowicz.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:49 program [180550]: http://lukaszremkowicz.pl
+lut 21 22:54:49 program [180550]: Starting new HTTP connection (1): burnyashov.pl:80
+lut 21 22:54:49 program [180550]: http://burnyashov.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:49 program [180550]: http://burnyashov.pl
+lut 21 22:54:49 program [180550]: Starting new HTTP connection (1): pythonportfolio.pl:80
+lut 21 22:54:49 program [180550]: http://pythonportfolio.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:49 program [180550]: http://pythonportfolio.pl
+lut 21 22:54:49 program [180550]: Starting new HTTP connection (1): barbaraurbanczyk.pl:80
+lut 21 22:54:49 program [180550]: http://barbaraurbanczyk.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:49 program [180550]: http://barbaraurbanczyk.pl
+lut 21 22:54:49 program [180550]: Starting new HTTP connection (1): dawidpawlas.pl:80
+lut 21 22:54:59 program [180550]: http://dawidpawlas.pl
+lut 21 22:54:59 program [180550]: Starting new HTTP connection (1): unrealen.pl:80
+lut 21 22:54:59 program [180550]: http://unrealen.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:59 program [180550]: http://unrealen.pl
+lut 21 22:54:59 program [180550]: Starting new HTTP connection (1): reallynicethings.pl:80
+lut 21 22:54:59 program [180550]: http://reallynicethings.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:59 program [180550]: http://reallynicethings.pl
+lut 21 22:54:59 program [180550]: Starting new HTTP connection (1): pythonowanie.pl:80
+lut 21 22:54:59 program [180550]: http://pythonowanie.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:59 program [180550]: http://pythonowanie.pl
+lut 21 22:54:59 program [180550]: Starting new HTTP connection (1): teszkin.pl:80
+lut 21 22:54:59 program [180550]: http://teszkin.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:59 program [180550]: http://teszkin.pl
+lut 21 22:54:59 program [180550]: Starting new HTTP connection (1): mojsandbox.pl:80
+lut 21 22:54:59 program [180550]: http://mojsandbox.pl:80 "GET / HTTP/1.1" 301 707
+lut 21 22:54:59 program [180550]: Starting new HTTPS connection (1): mojsandbox.pl:443
+lut 21 22:54:59 program [180550]: https://mojsandbox.pl:443 "GET / HTTP/1.1" 200 1665
+lut 21 22:54:59 program [180550]: http://mojsandbox.pl
+lut 21 22:54:59 program [180550]: Starting new HTTP connection (1): cotamcotam.pl:80
+lut 21 22:54:59 program [180550]: http://cotamcotam.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:54:59 program [180550]: http://cotamcotam.pl
+lut 21 22:54:59 program [180550]: Starting new HTTP connection (1): micsiw.pl:80
+lut 21 22:55:00 program [180550]: http://micsiw.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:00 program [180550]: http://micsiw.pl
+lut 21 22:55:00 program [180550]: Starting new HTTP connection (1): difficultproblems-simplesolutions.pl:80
+lut 21 22:55:00 program [180550]: http://difficultproblems-simplesolutions.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:00 program [180550]: http://difficultproblems-simplesolutions.pl
+lut 21 22:55:00 program [180550]: Starting new HTTP connection (1): rafalujma.pl:80
+lut 21 22:55:00 program [180550]: http://rafalujma.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:00 program [180550]: http://rafalujma.pl
+lut 21 22:55:00 program [180550]: Starting new HTTP connection (1): wlocznik.pl:80
+lut 21 22:55:00 program [180550]: http://wlocznik.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:00 program [180550]: http://wlocznik.pl
+lut 21 22:55:00 program [180550]: Starting new HTTP connection (1): jjtest.pl:80
+lut 21 22:55:00 program [180550]: http://jjtest.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:00 program [180550]: http://jjtest.pl
+lut 21 22:55:00 program [180550]: Starting new HTTP connection (1): skszymon.online:80
+lut 21 22:55:01 program [180550]: http://skszymon.online:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:01 program [180550]: http://skszymon.online
+lut 21 22:55:01 program [180550]: Starting new HTTP connection (1): adamtupisze.pl:80
+lut 21 22:55:01 program [180550]: http://adamtupisze.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:01 program [180550]: http://adamtupisze.pl
+lut 21 22:55:01 program [180550]: Starting new HTTP connection (1): nikag.pl:80
+lut 21 22:55:01 program [180550]: http://nikag.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:55:01 program [180550]: http://nikag.pl
+lut 21 22:55:01 program [180550]: Starting new HTTP connection (1): przygodazpythonem.pl:80
+lut 21 22:55:01 program [180550]: http://przygodazpythonem.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:01 program [180550]: http://przygodazpythonem.pl
+lut 21 22:55:01 program [180550]: Starting new HTTP connection (1): leniwiecc.pl:80
+lut 21 22:55:01 program [180550]: http://leniwiecc.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:01 program [180550]: http://leniwiecc.pl
+lut 21 22:55:01 program [180550]: Starting new HTTP connection (1): kingape.pl:80
+lut 21 22:55:01 program [180550]: http://kingape.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:01 program [180550]: http://kingape.pl
+lut 21 22:55:01 program [180550]: Starting new HTTP connection (1): newbrand.com.pl:80
+lut 21 22:55:01 program [180550]: http://newbrand.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:01 program [180550]: http://newbrand.com.pl
+lut 21 22:55:01 program [180550]: Starting new HTTP connection (1): joannahurnowicz.pl:80
+lut 21 22:55:01 program [180550]: http://joannahurnowicz.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:01 program [180550]: http://joannahurnowicz.pl
+lut 21 22:55:01 program [180550]: Starting new HTTP connection (1): silmara.pl:80
+lut 21 22:55:01 program [180550]: http://silmara.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:01 program [180550]: http://silmara.pl
+lut 21 22:55:01 program [180550]: Starting new HTTP connection (1): dawidb7.pl:80
+lut 21 22:55:01 program [180550]: http://dawidb7.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:01 program [180550]: http://dawidb7.pl
+lut 21 22:55:01 program [180550]: Starting new HTTP connection (1): skepticalsnek.pl:80
+lut 21 22:55:01 program [180550]: http://skepticalsnek.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:01 program [180550]: http://skepticalsnek.pl
+lut 21 22:55:01 program [180550]: Starting new HTTP connection (1): project-x.com.pl:80
+lut 21 22:55:01 program [180550]: http://project-x.com.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:55:01 program [180550]: http://project-x.com.pl
+lut 21 22:55:01 program [180550]: Starting new HTTP connection (1): a9a.com.pl:80
+lut 21 22:55:02 program [180550]: http://a9a.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:02 program [180550]: http://a9a.com.pl
+lut 21 22:55:02 program [180550]: Starting new HTTP connection (1): zeus-dev.pl:80
+lut 21 22:55:02 program [180550]: http://zeus-dev.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:02 program [180550]: http://zeus-dev.pl
+lut 21 22:55:02 program [180550]: Starting new HTTP connection (1): bart-zpxd.pl:80
+lut 21 22:55:02 program [180550]: http://bart-zpxd.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:02 program [180550]: http://bart-zpxd.pl
+lut 21 22:55:02 program [180550]: Starting new HTTP connection (1): habiworld.pl:80
+lut 21 22:55:02 program [180550]: http://habiworld.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:02 program [180550]: http://habiworld.pl
+lut 21 22:55:02 program [180550]: Starting new HTTP connection (1): optimistiksnek.pl:80
+lut 21 22:55:12 program [180550]: http://optimistiksnek.pl
+lut 21 22:55:12 program [180550]: Starting new HTTP connection (1): sentinel-24.pl:80
+lut 21 22:55:12 program [180550]: http://sentinel-24.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:12 program [180550]: http://sentinel-24.pl
+lut 21 22:55:12 program [180550]: Starting new HTTP connection (1): projektypb.pl:80
+lut 21 22:55:12 program [180550]: http://projektypb.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:12 program [180550]: http://projektypb.pl
+lut 21 22:55:12 program [180550]: Starting new HTTP connection (1): programowanie.czest.pl:80
+lut 21 22:55:13 program [180550]: http://programowanie.czest.pl:80 "GET / HTTP/1.1" 502 166
+lut 21 22:55:13 program [180550]: http://programowanie.czest.pl
+lut 21 22:55:13 program [180550]: Starting new HTTP connection (1): jakubserafin.pl:80
+lut 21 22:55:13 program [180550]: http://jakubserafin.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:13 program [180550]: http://jakubserafin.pl
+lut 21 22:55:13 program [180550]: Starting new HTTP connection (1): martyna-zalewska.pl:80
+lut 21 22:55:13 program [180550]: http://martyna-zalewska.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:13 program [180550]: http://martyna-zalewska.pl
+lut 21 22:55:13 program [180550]: Starting new HTTP connection (1): tm-pytcourse.pl:80
+lut 21 22:55:13 program [180550]: http://tm-pytcourse.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:13 program [180550]: http://tm-pytcourse.pl
+lut 21 22:55:13 program [180550]: Starting new HTTP connection (1): mexicanseafood.pl:80
+lut 21 22:55:13 program [180550]: http://mexicanseafood.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:13 program [180550]: http://mexicanseafood.pl
+lut 21 22:55:13 program [180550]: Starting new HTTP connection (1): habigier.pl:80
+lut 21 22:55:13 program [180550]: http://habigier.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:13 program [180550]: http://habigier.pl
+lut 21 22:55:13 program [180550]: Starting new HTTP connection (1): gloom.com.pl:80
+lut 21 22:55:13 program [180550]: http://gloom.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:13 program [180550]: http://gloom.com.pl
+lut 21 22:55:13 program [180550]: Starting new HTTP connection (1): saratka.pl:80
+lut 21 22:55:13 program [180550]: http://saratka.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:13 program [180550]: http://saratka.pl
+lut 21 22:55:13 program [180550]: Starting new HTTP connection (1): e-filozoficzne-czwartki.pl:80
+lut 21 22:55:14 program [180550]: http://e-filozoficzne-czwartki.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:14 program [180550]: http://e-filozoficzne-czwartki.pl
+lut 21 22:55:14 program [180550]: Starting new HTTP connection (1): czywszystkojuzbylo.pl:80
+lut 21 22:55:14 program [180550]: http://czywszystkojuzbylo.pl
+lut 21 22:55:14 program [180550]: Starting new HTTP connection (1): artbit.com.pl:80
+lut 21 22:55:14 program [180550]: http://artbit.com.pl:80 "GET / HTTP/1.1" 302 5
+lut 21 22:55:14 program [180550]: Starting new HTTPS connection (1): artbit.com.pl:443
+lut 21 22:55:14 program [180550]: https://artbit.com.pl:443 "GET / HTTP/1.1" 404 19
+lut 21 22:55:14 program [180550]: http://artbit.com.pl
+lut 21 22:55:14 program [180550]: Starting new HTTP connection (1): raven-sxd.pl:80
+lut 21 22:55:14 program [180550]: http://raven-sxd.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:14 program [180550]: http://raven-sxd.pl
+lut 21 22:55:14 program [180550]: Starting new HTTP connection (1): vegalesha.pl:80
+lut 21 22:55:14 program [180550]: http://vegalesha.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:14 program [180550]: http://vegalesha.pl
+lut 21 22:55:14 program [180550]: Starting new HTTP connection (1): pustynnaryba.pl:80
+lut 21 22:55:14 program [180550]: http://pustynnaryba.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:14 program [180550]: http://pustynnaryba.pl
+lut 21 22:55:14 program [180550]: Starting new HTTP connection (1): kleszcz.site:80
+lut 21 22:55:14 program [180550]: http://kleszcz.site:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:14 program [180550]: http://kleszcz.site
+lut 21 22:55:14 program [180550]: Starting new HTTP connection (1): zakolorowanemysli.pl:80
+lut 21 22:55:14 program [180550]: http://zakolorowanemysli.pl:80 "GET / HTTP/1.1" 502 166
+lut 21 22:55:14 program [180550]: http://zakolorowanemysli.pl
+lut 21 22:55:14 program [180550]: Starting new HTTP connection (1): sirhaseus.com:80
+lut 21 22:55:14 program [180550]: http://sirhaseus.com:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:14 program [180550]: http://sirhaseus.com
+lut 21 22:55:14 program [180550]: Starting new HTTP connection (1): borsuczelegowisko.pl:80
+lut 21 22:55:14 program [180550]: http://borsuczelegowisko.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:14 program [180550]: http://borsuczelegowisko.pl
+lut 21 22:55:14 program [180550]: Starting new HTTP connection (1): pingwinskainkwizycja.pl:80
+lut 21 22:55:15 program [180550]: http://pingwinskainkwizycja.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:15 program [180550]: http://pingwinskainkwizycja.pl
+lut 21 22:55:15 program [180550]: Starting new HTTP connection (1): majos.online:80
+lut 21 22:55:15 program [180550]: http://majos.online:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:15 program [180550]: http://majos.online
+lut 21 22:55:15 program [180550]: Starting new HTTP connection (1): wiktorszewczyk.pl:80
+lut 21 22:55:25 program [180550]: http://wiktorszewczyk.pl
+lut 21 22:55:25 program [180550]: Starting new HTTP connection (1): vertha-workshop.pl:80
+lut 21 22:55:25 program [180550]: http://vertha-workshop.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:25 program [180550]: http://vertha-workshop.pl
+lut 21 22:55:25 program [180550]: Starting new HTTP connection (1): hybridtheory.com.pl:80
+lut 21 22:55:25 program [180550]: http://hybridtheory.com.pl
+lut 21 22:55:25 program [180550]: Starting new HTTP connection (1): przychlast.pl:80
+lut 21 22:55:25 program [180550]: http://przychlast.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:25 program [180550]: http://przychlast.pl
+lut 21 22:55:25 program [180550]: Starting new HTTP connection (1): ewastojaczyk.pl:80
+lut 21 22:55:25 program [180550]: http://ewastojaczyk.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:25 program [180550]: http://ewastojaczyk.pl
+lut 21 22:55:25 program [180550]: Starting new HTTP connection (1): polarysuje.pl:80
+lut 21 22:55:25 program [180550]: http://polarysuje.pl
+lut 21 22:55:25 program [180550]: Starting new HTTP connection (1): w124.com.pl:80
+lut 21 22:55:25 program [180550]: http://w124.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:25 program [180550]: http://w124.com.pl
+lut 21 22:55:25 program [180550]: Starting new HTTP connection (1): mholub.pl:80
+lut 21 22:55:25 program [180550]: http://mholub.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:25 program [180550]: http://mholub.pl
+lut 21 22:55:25 program [180550]: Starting new HTTP connection (1): xd.sysbite.pl:80
+lut 21 22:55:29 program [180550]: http://xd.sysbite.pl
+lut 21 22:55:29 program [180550]: Starting new HTTP connection (1): testtesttestxd.pl:80
+lut 21 22:55:39 program [180550]: http://testtesttestxd.pl
+lut 21 22:55:39 program [180550]: Starting new HTTP connection (1): niezlyprojekt.com.pl:80
+lut 21 22:55:39 program [180550]: http://niezlyprojekt.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:39 program [180550]: http://niezlyprojekt.com.pl
+lut 21 22:55:39 program [180550]: Starting new HTTP connection (1): admiral-benson.pl:80
+lut 21 22:55:39 program [180550]: http://admiral-benson.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:39 program [180550]: http://admiral-benson.pl
+lut 21 22:55:39 program [180550]: Starting new HTTP connection (1): konrad-wlodarczyk.pl:80
+lut 21 22:55:39 program [180550]: http://konrad-wlodarczyk.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:39 program [180550]: http://konrad-wlodarczyk.pl
+lut 21 22:55:39 program [180550]: Starting new HTTP connection (1): damie-c.pl:80
+lut 21 22:55:39 program [180550]: http://damie-c.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:39 program [180550]: http://damie-c.pl
+lut 21 22:55:39 program [180550]: Starting new HTTP connection (1): programistka.com.pl:80
+lut 21 22:55:49 program [180550]: http://programistka.com.pl
+lut 21 22:55:49 program [180550]: Starting new HTTP connection (1): bi-data.pl:80
+lut 21 22:55:49 program [180550]: http://bi-data.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:49 program [180550]: http://bi-data.pl
+lut 21 22:55:49 program [180550]: Starting new HTTP connection (1): oldprogrammer.pl:80
+lut 21 22:55:49 program [180550]: http://oldprogrammer.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:49 program [180550]: http://oldprogrammer.pl
+lut 21 22:55:49 program [180550]: Starting new HTTP connection (1): sgozdzinski.pl:80
+lut 21 22:55:49 program [180550]: http://sgozdzinski.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:49 program [180550]: http://sgozdzinski.pl
+lut 21 22:55:49 program [180550]: Starting new HTTP connection (1): portfolio-syna-kolezanki.pl:80
+lut 21 22:55:49 program [180550]: http://portfolio-syna-kolezanki.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:49 program [180550]: http://portfolio-syna-kolezanki.pl
+lut 21 22:55:49 program [180550]: Starting new HTTP connection (1): timingtrader.pl:80
+lut 21 22:55:49 program [180550]: http://timingtrader.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:49 program [180550]: http://timingtrader.pl
+lut 21 22:55:49 program [180550]: Starting new HTTP connection (1): data-development.site:80
+lut 21 22:55:49 program [180550]: http://data-development.site:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:49 program [180550]: http://data-development.site
+lut 21 22:55:49 program [180550]: Starting new HTTP connection (1): maciejbportfolio.pl:80
+lut 21 22:55:50 program [180550]: http://maciejbportfolio.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:50 program [180550]: http://maciejbportfolio.pl
+lut 21 22:55:50 program [180550]: Starting new HTTP connection (1): pertynakse.pl:80
+lut 21 22:55:50 program [180550]: http://pertynakse.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:55:50 program [180550]: http://pertynakse.pl
+lut 21 22:55:50 program [180550]: Starting new HTTP connection (1): milosz-xd.pl:80
+lut 21 22:55:50 program [180550]: http://milosz-xd.pl
+lut 21 22:55:50 program [180550]: Starting new HTTP connection (1): kowalewski.olsztyn.pl:80
+lut 21 22:56:00 program [180550]: http://kowalewski.olsztyn.pl
+lut 21 22:56:00 program [180550]: Starting new HTTP connection (1): trololololol.pl:80
+lut 21 22:56:00 program [180550]: http://trololololol.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:00 program [180550]: http://trololololol.pl
+lut 21 22:56:00 program [180550]: Starting new HTTP connection (1): kokopas.pl:80
+lut 21 22:56:00 program [180550]: http://kokopas.pl
+lut 21 22:56:00 program [180550]: Starting new HTTP connection (1): bogdangpython.com.pl:80
+lut 21 22:56:00 program [180550]: http://bogdangpython.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:00 program [180550]: http://bogdangpython.com.pl
+lut 21 22:56:00 program [180550]: Starting new HTTP connection (1): kacpertest.pl:80
+lut 21 22:56:00 program [180550]: http://kacpertest.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:56:00 program [180550]: http://kacpertest.pl
+lut 21 22:56:00 program [180550]: Starting new HTTP connection (1): dotms.pl:80
+lut 21 22:56:00 program [180550]: http://dotms.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:00 program [180550]: http://dotms.pl
+lut 21 22:56:00 program [180550]: Starting new HTTP connection (1): emotyl.pl:80
+lut 21 22:56:00 program [180550]: http://emotyl.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:00 program [180550]: http://emotyl.pl
+lut 21 22:56:00 program [180550]: Starting new HTTP connection (1): uberkosiarkowo.fun:80
+lut 21 22:56:00 program [180550]: http://uberkosiarkowo.fun:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:00 program [180550]: http://uberkosiarkowo.fun
+lut 21 22:56:00 program [180550]: Starting new HTTP connection (1): coderiot.pl:80
+lut 21 22:56:00 program [180550]: http://coderiot.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:00 program [180550]: http://coderiot.pl
+lut 21 22:56:00 program [180550]: Starting new HTTP connection (1): progromca-python.pl:80
+lut 21 22:56:00 program [180550]: http://progromca-python.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:00 program [180550]: http://progromca-python.pl
+lut 21 22:56:00 program [180550]: Starting new HTTP connection (1): aws.it-services-mj.eu:80
+lut 21 22:56:00 program [180550]: http://aws.it-services-mj.eu:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:00 program [180550]: http://aws.it-services-mj.eu
+lut 21 22:56:00 program [180550]: Starting new HTTP connection (1): cezary-bielinski.pl:80
+lut 21 22:56:00 program [180550]: http://cezary-bielinski.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:00 program [180550]: http://cezary-bielinski.pl
+lut 21 22:56:00 program [180550]: Starting new HTTP connection (1): baton-and-python.pl:80
+lut 21 22:56:01 program [180550]: http://baton-and-python.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:01 program [180550]: http://baton-and-python.pl
+lut 21 22:56:01 program [180550]: Starting new HTTP connection (1): softwarecode.pl:80
+lut 21 22:56:01 program [180550]: http://softwarecode.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:01 program [180550]: http://softwarecode.pl
+lut 21 22:56:01 program [180550]: Starting new HTTP connection (1): gabs0l.pl:80
+lut 21 22:56:01 program [180550]: http://gabs0l.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:01 program [180550]: http://gabs0l.pl
+lut 21 22:56:01 program [180550]: Starting new HTTP connection (1): 2306fpv.fun:80
+lut 21 22:56:01 program [180550]: http://2306fpv.fun:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:01 program [180550]: http://2306fpv.fun
+lut 21 22:56:01 program [180550]: Starting new HTTP connection (1): bezpotrzeby.pl:80
+lut 21 22:56:01 program [180550]: http://bezpotrzeby.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:01 program [180550]: http://bezpotrzeby.pl
+lut 21 22:56:01 program [180550]: Starting new HTTP connection (1): czasnapython.waw.pl:80
+lut 21 22:56:01 program [180550]: http://czasnapython.waw.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:01 program [180550]: http://czasnapython.waw.pl
+lut 21 22:56:01 program [180550]: Starting new HTTP connection (1): koliba.fun:80
+lut 21 22:56:01 program [180550]: http://koliba.fun:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:01 program [180550]: http://koliba.fun
+lut 21 22:56:01 program [180550]: Starting new HTTP connection (1): e-taya.site:80
+lut 21 22:56:01 program [180550]: http://e-taya.site:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:01 program [180550]: http://e-taya.site
+lut 21 22:56:01 program [180550]: Starting new HTTP connection (1): iwicher.pl:80
+lut 21 22:56:01 program [180550]: http://iwicher.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:01 program [180550]: http://iwicher.pl
+lut 21 22:56:01 program [180550]: Starting new HTTP connection (1): programistamati.pl:80
+lut 21 22:56:02 program [180550]: http://programistamati.pl
+lut 21 22:56:02 program [180550]: Starting new HTTP connection (1): r3dwood.pl:80
+lut 21 22:56:02 program [180550]: http://r3dwood.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:56:02 program [180550]: http://r3dwood.pl
+lut 21 22:56:02 program [180550]: Starting new HTTP connection (1): mojeprojekty.fun:80
+lut 21 22:56:02 program [180550]: http://mojeprojekty.fun:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:02 program [180550]: http://mojeprojekty.fun
+lut 21 22:56:02 program [180550]: Starting new HTTP connection (1): get-inspired.pl:80
+lut 21 22:56:02 program [180550]: http://get-inspired.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:02 program [180550]: http://get-inspired.pl
+lut 21 22:56:02 program [180550]: Starting new HTTP connection (1): moc5g.pl:80
+lut 21 22:56:02 program [180550]: http://moc5g.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:02 program [180550]: http://moc5g.pl
+lut 21 22:56:02 program [180550]: Starting new HTTP connection (1): tomznet.pl:80
+lut 21 22:56:02 program [180550]: http://tomznet.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:02 program [180550]: http://tomznet.pl
+lut 21 22:56:02 program [180550]: Starting new HTTP connection (1): gonecoding.pl:80
+lut 21 22:56:02 program [180550]: http://gonecoding.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:02 program [180550]: http://gonecoding.pl
+lut 21 22:56:02 program [180550]: Starting new HTTP connection (1): schwrc.pl:80
+lut 21 22:56:12 program [180550]: http://schwrc.pl
+lut 21 22:56:12 program [180550]: Starting new HTTP connection (1): alina.fun:80
+lut 21 22:56:12 program [180550]: http://alina.fun:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:12 program [180550]: http://alina.fun
+lut 21 22:56:12 program [180550]: Starting new HTTP connection (1): programowanie.jgora.pl:80
+lut 21 22:56:12 program [180550]: http://programowanie.jgora.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:12 program [180550]: http://programowanie.jgora.pl
+lut 21 22:56:12 program [180550]: Starting new HTTP connection (1): sylviazera.com:80
+lut 21 22:56:12 program [180550]: http://sylviazera.com:80 "GET / HTTP/1.1" 302 5
+lut 21 22:56:12 program [180550]: Starting new HTTPS connection (1): sylviazera.com:443
+lut 21 22:56:13 program [180550]: https://sylviazera.com:443 "GET / HTTP/1.1" 200 15925
+lut 21 22:56:13 program [180550]: http://sylviazera.com
+lut 21 22:56:13 program [180550]: Starting new HTTP connection (1): judy-website.pl:80
+lut 21 22:56:13 program [180550]: http://judy-website.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:13 program [180550]: http://judy-website.pl
+lut 21 22:56:13 program [180550]: Starting new HTTP connection (1): oczywidzauszyslyszaustamilcza.pl:80
+lut 21 22:56:13 program [180550]: http://oczywidzauszyslyszaustamilcza.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:13 program [180550]: http://oczywidzauszyslyszaustamilcza.pl
+lut 21 22:56:13 program [180550]: Starting new HTTP connection (1): aguled.pl:80
+lut 21 22:56:23 program [180550]: http://aguled.pl
+lut 21 22:56:23 program [180550]: Starting new HTTP connection (1): pythoned.pl:80
+lut 21 22:56:33 program [180550]: http://pythoned.pl
+lut 21 22:56:33 program [180550]: Starting new HTTP connection (1): paike.online:80
+lut 21 22:56:33 program [180550]: http://paike.online:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:33 program [180550]: http://paike.online
+lut 21 22:56:33 program [180550]: Starting new HTTP connection (1): kondiu.online:80
+lut 21 22:56:33 program [180550]: http://kondiu.online:80 "GET / HTTP/1.1" 502 182
+lut 21 22:56:33 program [180550]: http://kondiu.online
+lut 21 22:56:33 program [180550]: Starting new HTTP connection (1): andzejem.pl:80
+lut 21 22:56:33 program [180550]: http://andzejem.pl:80 "GET / HTTP/1.1" 502 166
+lut 21 22:56:33 program [180550]: http://andzejem.pl
+lut 21 22:56:33 program [180550]: Starting new HTTP connection (1): technicznie-hobbystycznie.pl:80
+lut 21 22:56:33 program [180550]: http://technicznie-hobbystycznie.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:33 program [180550]: http://technicznie-hobbystycznie.pl
+lut 21 22:56:33 program [180550]: Starting new HTTP connection (1): protazy.pl:80
+lut 21 22:56:33 program [180550]: http://protazy.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:33 program [180550]: http://protazy.pl
+lut 21 22:56:33 program [180550]: Starting new HTTP connection (1): artispace.pl:80
+lut 21 22:56:43 program [180550]: http://artispace.pl
+lut 21 22:56:43 program [180550]: Starting new HTTP connection (1): jerryntom.pl:80
+lut 21 22:56:43 program [180550]: http://jerryntom.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:43 program [180550]: http://jerryntom.pl
+lut 21 22:56:43 program [180550]: Starting new HTTP connection (1): nimfadora.pl:80
+lut 21 22:56:43 program [180550]: http://nimfadora.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:43 program [180550]: http://nimfadora.pl
+lut 21 22:56:43 program [180550]: Starting new HTTP connection (1): roisik-python.pl:80
+lut 21 22:56:43 program [180550]: http://roisik-python.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:43 program [180550]: http://roisik-python.pl
+lut 21 22:56:43 program [180550]: Starting new HTTP connection (1): ggorzki.pl:80
+lut 21 22:56:43 program [180550]: http://ggorzki.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:43 program [180550]: http://ggorzki.pl
+lut 21 22:56:43 program [180550]: Starting new HTTP connection (1): walkiria.dev:80
+lut 21 22:56:44 program [180550]: http://walkiria.dev:80 "GET / HTTP/1.1" 301 194
+lut 21 22:56:44 program [180550]: Starting new HTTPS connection (1): walkiria.dev:443
+lut 21 22:56:44 program [180550]: https://walkiria.dev:443 "GET / HTTP/1.1" 200 None
+lut 21 22:56:44 program [180550]: http://walkiria.dev
+lut 21 22:56:44 program [180550]: Starting new HTTP connection (1): sylwiaparkitna.pl:80
+lut 21 22:56:44 program [180550]: http://sylwiaparkitna.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:44 program [180550]: http://sylwiaparkitna.pl
+lut 21 22:56:44 program [180550]: Starting new HTTP connection (1): xantuss.pl:80
+lut 21 22:56:44 program [180550]: http://xantuss.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:44 program [180550]: http://xantuss.pl
+lut 21 22:56:44 program [180550]: Starting new HTTP connection (1): fizykadlateoretyka.pl:80
+lut 21 22:56:44 program [180550]: http://fizykadlateoretyka.pl
+lut 21 22:56:44 program [180550]: Starting new HTTP connection (1): macijawo.pl:80
+lut 21 22:56:44 program [180550]: http://macijawo.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:44 program [180550]: http://macijawo.pl
+lut 21 22:56:44 program [180550]: Starting new HTTP connection (1): sylwjia.pl:80
+lut 21 22:56:44 program [180550]: http://sylwjia.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:44 program [180550]: http://sylwjia.pl
+lut 21 22:56:44 program [180550]: Starting new HTTP connection (1): mineprosjekter.net:80
+lut 21 22:56:44 program [180550]: http://mineprosjekter.net:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:44 program [180550]: http://mineprosjekter.net
+lut 21 22:56:44 program [180550]: Starting new HTTP connection (1): s155774.site:80
+lut 21 22:56:44 program [180550]: http://s155774.site:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:44 program [180550]: http://s155774.site
+lut 21 22:56:44 program [180550]: Starting new HTTP connection (1): lukkasz323.site:80
+lut 21 22:56:44 program [180550]: http://lukkasz323.site:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:44 program [180550]: http://lukkasz323.site
+lut 21 22:56:44 program [180550]: Starting new HTTP connection (1): esarat.pl:80
+lut 21 22:56:44 program [180550]: http://esarat.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:44 program [180550]: http://esarat.pl
+lut 21 22:56:44 program [180550]: Starting new HTTP connection (1): deska.fun:80
+lut 21 22:56:44 program [180550]: http://deska.fun:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:44 program [180550]: http://deska.fun
+lut 21 22:56:44 program [180550]: Starting new HTTP connection (1): cyrkmp.pl:80
+lut 21 22:56:44 program [180550]: http://cyrkmp.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:44 program [180550]: http://cyrkmp.pl
+lut 21 22:56:44 program [180550]: Starting new HTTP connection (1): e-sus.pl:80
+lut 21 22:56:44 program [180550]: http://e-sus.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:44 program [180550]: http://e-sus.pl
+lut 21 22:56:44 program [180550]: Starting new HTTP connection (1): cryst.ovh:80
+lut 21 22:56:44 program [180550]: http://cryst.ovh
+lut 21 22:56:44 program [180550]: Starting new HTTP connection (1): e-tomson.pl:80
+lut 21 22:56:44 program [180550]: http://e-tomson.pl
+lut 21 22:56:44 program [180550]: Starting new HTTP connection (1): juliagarlacz.pl:80
+lut 21 22:56:45 program [180550]: http://juliagarlacz.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:45 program [180550]: http://juliagarlacz.pl
+lut 21 22:56:45 program [180550]: Starting new HTTP connection (1): infinityputhon.com:80
+lut 21 22:56:45 program [180550]: http://Infinityputhon.com
+lut 21 22:56:45 program [180550]: Starting new HTTP connection (1): kmpawlik.pl:80
+lut 21 22:56:55 program [180550]: http://kmpawlik.pl
+lut 21 22:56:55 program [180550]: Starting new HTTP connection (1): nakoncuprogramowania.pl:80
+lut 21 22:56:55 program [180550]: http://nakoncuprogramowania.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:56:55 program [180550]: http://nakoncuprogramowania.pl
+lut 21 22:56:55 program [180550]: Starting new HTTP connection (1): b4rt-zpxd.pl:80
+lut 21 22:57:05 program [180550]: http://b4rt-zpxd.pl
+lut 21 22:57:05 program [180550]: Starting new HTTP connection (1): rafal-szostek.pl:80
+lut 21 22:57:05 program [180550]: http://rafal-szostek.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:05 program [180550]: http://rafal-szostek.pl
+lut 21 22:57:05 program [180550]: Starting new HTTP connection (1): vermemortifero.pl:80
+lut 21 22:57:05 program [180550]: http://vermemortifero.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:05 program [180550]: http://vermemortifero.pl
+lut 21 22:57:05 program [180550]: Starting new HTTP connection (1): kubalis.pl:80
+lut 21 22:57:05 program [180550]: http://kubalis.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:05 program [180550]: http://kubalis.pl
+lut 21 22:57:05 program [180550]: Starting new HTTP connection (1): majki741.pl:80
+lut 21 22:57:05 program [180550]: http://majki741.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:05 program [180550]: http://majki741.pl
+lut 21 22:57:05 program [180550]: Starting new HTTP connection (1): solidny-analityk.pl:80
+lut 21 22:57:05 program [180550]: http://solidny-analityk.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:05 program [180550]: http://solidny-analityk.pl
+lut 21 22:57:05 program [180550]: Starting new HTTP connection (1): mathewlg.pl:80
+lut 21 22:57:05 program [180550]: http://mathewlg.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:05 program [180550]: http://mathewlg.pl
+lut 21 22:57:05 program [180550]: Starting new HTTP connection (1): konradlapka.site:80
+lut 21 22:57:05 program [180550]: http://konradlapka.site:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:05 program [180550]: http://konradlapka.site
+lut 21 22:57:05 program [180550]: Starting new HTTP connection (1): alawicki.pl:80
+lut 21 22:57:05 program [180550]: http://alawicki.pl:80 "GET / HTTP/1.1" 404 None
+lut 21 22:57:05 program [180550]: http://alawicki.pl
+lut 21 22:57:05 program [180550]: Starting new HTTP connection (1): kaasandra-programowanie.pl:80
+lut 21 22:57:06 program [180550]: http://kaasandra-programowanie.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:06 program [180550]: http://kaasandra-programowanie.pl
+lut 21 22:57:06 program [180550]: Starting new HTTP connection (1): orbito.pl:80
+lut 21 22:57:06 program [180550]: http://orbito.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:06 program [180550]: http://orbito.pl
+lut 21 22:57:06 program [180550]: Starting new HTTP connection (1): spiekanie.pl:80
+lut 21 22:57:06 program [180550]: http://spiekanie.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:06 program [180550]: http://spiekanie.pl
+lut 21 22:57:06 program [180550]: Starting new HTTP connection (1): angelzak.pl:80
+lut 21 22:57:16 program [180550]: http://angelzak.pl
+lut 21 22:57:16 program [180550]: Starting new HTTP connection (1): jebac-disa.pl:80
+lut 21 22:57:16 program [180550]: http://jebac-disa.pl:80 "GET / HTTP/1.1" 301 178
+lut 21 22:57:16 program [180550]: Starting new HTTPS connection (1): jebac-disa.pl:443
+lut 21 22:57:17 program [180550]: https://jebac-disa.pl:443 "GET / HTTP/1.1" 200 None
+lut 21 22:57:17 program [180550]: http://jebac-disa.pl
+lut 21 22:57:17 program [180550]: Starting new HTTP connection (1): kmleszczak.pl:80
+lut 21 22:57:17 program [180550]: http://kmleszczak.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:17 program [180550]: http://kmleszczak.pl
+lut 21 22:57:17 program [180550]: Starting new HTTP connection (1): trenertorun.pl:80
+lut 21 22:57:17 program [180550]: http://trenertorun.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:17 program [180550]: http://trenertorun.pl
+lut 21 22:57:17 program [180550]: Starting new HTTP connection (1): fcr-online.pl:80
+lut 21 22:57:17 program [180550]: http://fcr-online.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:17 program [180550]: http://fcr-online.pl
+lut 21 22:57:17 program [180550]: Starting new HTTP connection (1): zperkowska.pl:80
+lut 21 22:57:27 program [180550]: http://zperkowska.pl
+lut 21 22:57:27 program [180550]: Starting new HTTP connection (1): 40yoprogrammer.com:80
+lut 21 22:57:37 program [180550]: http://40yoprogrammer.com
+lut 21 22:57:37 program [180550]: Starting new HTTP connection (1): kulczor.pl:80
+lut 21 22:57:37 program [180550]: http://kulczor.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:37 program [180550]: http://kulczor.pl
+lut 21 22:57:37 program [180550]: Starting new HTTP connection (1): zostaneprogramistomxd.pl:80
+lut 21 22:57:37 program [180550]: http://zostaneprogramistomxd.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:37 program [180550]: http://zostaneprogramistomxd.pl
+lut 21 22:57:37 program [180550]: Starting new HTTP connection (1): iheavymetal.pl:80
+lut 21 22:57:37 program [180550]: http://iheavymetal.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:37 program [180550]: http://iheavymetal.pl
+lut 21 22:57:37 program [180550]: Starting new HTTP connection (1): theplannist.site:80
+lut 21 22:57:37 program [180550]: http://theplannist.site:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:37 program [180550]: http://theplannist.site
+lut 21 22:57:37 program [180550]: Starting new HTTP connection (1): gdziejestdawid.com.pl:80
+lut 21 22:57:48 program [180550]: http://gdziejestdawid.com.pl
+lut 21 22:57:48 program [180550]: Starting new HTTP connection (1): pythonnacodzien.pl:80
+lut 21 22:57:48 program [180550]: http://pythonnacodzien.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:48 program [180550]: http://pythonnacodzien.pl
+lut 21 22:57:48 program [180550]: Starting new HTTP connection (1): atrusia.pl:80
+lut 21 22:57:48 program [180550]: http://atrusia.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:48 program [180550]: http://atrusia.pl
+lut 21 22:57:48 program [180550]: Starting new HTTP connection (1): rozikjoanna.pl:80
+lut 21 22:57:48 program [180550]: http://rozikjoanna.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:48 program [180550]: http://rozikjoanna.pl
+lut 21 22:57:48 program [180550]: Starting new HTTP connection (1): little-things.site:80
+lut 21 22:57:48 program [180550]: http://little-things.site:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:48 program [180550]: http://little-things.site
+lut 21 22:57:48 program [180550]: Starting new HTTP connection (1): skarolinkakoduje.pl:80
+lut 21 22:57:48 program [180550]: http://skarolinkakoduje.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:48 program [180550]: http://skarolinkakoduje.pl
+lut 21 22:57:48 program [180550]: Starting new HTTP connection (1): quenrythaneart.pl:80
+lut 21 22:57:48 program [180550]: http://quenrythaneart.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:48 program [180550]: http://quenrythaneart.pl
+lut 21 22:57:48 program [180550]: Starting new HTTP connection (1): jkub.pl:80
+lut 21 22:57:48 program [180550]: http://jkub.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:48 program [180550]: http://jkub.pl
+lut 21 22:57:48 program [180550]: Starting new HTTP connection (1): klaudia-andrzejewska.pl:80
+lut 21 22:57:48 program [180550]: http://klaudia-andrzejewska.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:48 program [180550]: http://klaudia-andrzejewska.pl
+lut 21 22:57:48 program [180550]: Starting new HTTP connection (1): stanw.pl:80
+lut 21 22:57:48 program [180550]: http://stanw.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:48 program [180550]: http://stanw.pl
+lut 21 22:57:48 program [180550]: Starting new HTTP connection (1): rayuela-koduje.pl:80
+lut 21 22:57:49 program [180550]: http://rayuela-koduje.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:49 program [180550]: http://rayuela-koduje.pl
+lut 21 22:57:49 program [180550]: Starting new HTTP connection (1): mateuszbz.pl:80
+lut 21 22:57:49 program [180550]: http://mateuszbz.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:49 program [180550]: http://mateuszbz.pl
+lut 21 22:57:49 program [180550]: Starting new HTTP connection (1): programowanie-zalno.pl:80
+lut 21 22:57:59 program [180550]: http://programowanie-zalno.pl
+lut 21 22:57:59 program [180550]: Starting new HTTP connection (1): adrians-great-portfolio.online:80
+lut 21 22:57:59 program [180550]: http://adrians-great-portfolio.online:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:59 program [180550]: http://adrians-great-portfolio.online
+lut 21 22:57:59 program [180550]: Starting new HTTP connection (1): exito.shop.pl:80
+lut 21 22:57:59 program [180550]: http://exito.shop.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:59 program [180550]: http://exito.shop.pl
+lut 21 22:57:59 program [180550]: Starting new HTTP connection (1): borzymowski.com.pl:80
+lut 21 22:57:59 program [180550]: http://borzymowski.com.pl
+lut 21 22:57:59 program [180550]: Starting new HTTP connection (1): tajny-kot.pl:80
+lut 21 22:57:59 program [180550]: http://tajny-kot.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:59 program [180550]: http://tajny-kot.pl
+lut 21 22:57:59 program [180550]: Starting new HTTP connection (1): aleksandra-zochowska.pl:80
+lut 21 22:57:59 program [180550]: http://aleksandra-zochowska.pl:80 "GET / HTTP/1.1" 404 None
+lut 21 22:57:59 program [180550]: http://aleksandra-zochowska.pl
+lut 21 22:57:59 program [180550]: Starting new HTTP connection (1): mateusz-zdanowski.pl:80
+lut 21 22:57:59 program [180550]: http://mateusz-zdanowski.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:59 program [180550]: http://mateusz-zdanowski.pl
+lut 21 22:57:59 program [180550]: Starting new HTTP connection (1): po-prostu-adam.pl:80
+lut 21 22:57:59 program [180550]: http://po-prostu-adam.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:59 program [180550]: http://po-prostu-adam.pl
+lut 21 22:57:59 program [180550]: Starting new HTTP connection (1): witamwitam.pl:80
+lut 21 22:57:59 program [180550]: http://witamwitam.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:59 program [180550]: http://witamwitam.pl
+lut 21 22:57:59 program [180550]: Starting new HTTP connection (1): lewandowskimichal.tech:80
+lut 21 22:57:59 program [180550]: http://lewandowskimichal.tech:80 "GET / HTTP/1.1" 200 None
+lut 21 22:57:59 program [180550]: http://lewandowskimichal.tech
+lut 21 22:57:59 program [180550]: Starting new HTTP connection (1): michalpython.pl:80
+lut 21 22:57:59 program [180550]: http://michalpython.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:57:59 program [180550]: http://michalpython.pl
+lut 21 22:57:59 program [180550]: Starting new HTTP connection (1): remekgwc.pl:80
+lut 21 22:58:09 program [180550]: http://remekgwc.pl
+lut 21 22:58:09 program [180550]: Starting new HTTP connection (1): meandcode.pl:80
+lut 21 22:58:09 program [180550]: http://meandcode.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:58:09 program [180550]: http://meandcode.pl
+lut 21 22:58:09 program [180550]: Starting new HTTP connection (1): pracowniaren.pl:80
+lut 21 22:58:09 program [180550]: http://pracowniaren.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:09 program [180550]: http://pracowniaren.pl
+lut 21 22:58:09 program [180550]: Starting new HTTP connection (1): szturm.tomu.com.pl:80
+lut 21 22:58:10 program [180550]: http://szturm.tomu.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:10 program [180550]: http://szturm.tomu.com.pl
+lut 21 22:58:10 program [180550]: Starting new HTTP connection (1): popanato.bieda.it:80
+lut 21 22:58:10 program [180550]: http://popanato.bieda.it:80 "GET / HTTP/1.1" 500 None
+lut 21 22:58:10 program [180550]: http://popanato.bieda.it
+lut 21 22:58:10 program [180550]: Starting new HTTP connection (1): kamil-golebiowski.pl:80
+lut 21 22:58:10 program [180550]: http://kamil-golebiowski.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:10 program [180550]: http://kamil-golebiowski.pl
+lut 21 22:58:10 program [180550]: Starting new HTTP connection (1): novome.pl:80
+lut 21 22:58:10 program [180550]: http://novome.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:10 program [180550]: http://novome.pl
+lut 21 22:58:10 program [180550]: Starting new HTTP connection (1): pawelgorkowski.pl:80
+lut 21 22:58:20 program [180550]: http://pawelgorkowski.pl
+lut 21 22:58:20 program [180550]: Starting new HTTP connection (1): klasyd.pl:80
+lut 21 22:58:30 program [180550]: http://klasyd.pl
+lut 21 22:58:30 program [180550]: Starting new HTTP connection (1): tomjech.pl:80
+lut 21 22:58:30 program [180550]: http://tomjech.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:30 program [180550]: http://tomjech.pl
+lut 21 22:58:30 program [180550]: Starting new HTTP connection (1): pythonprogrammer.wroclaw.pl:80
+lut 21 22:58:30 program [180550]: http://pythonprogrammer.wroclaw.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:30 program [180550]: http://pythonprogrammer.wroclaw.pl
+lut 21 22:58:30 program [180550]: Starting new HTTP connection (1): vividlion.pl:80
+lut 21 22:58:40 program [180550]: http://vividlion.pl
+lut 21 22:58:40 program [180550]: Starting new HTTP connection (1): moonan.pl:80
+lut 21 22:58:41 program [180550]: http://moonan.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:41 program [180550]: http://moonan.pl
+lut 21 22:58:41 program [180550]: Starting new HTTP connection (1): humanistiksnek.fun:80
+lut 21 22:58:41 program [180550]: http://humanistiksnek.fun:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:41 program [180550]: http://humanistiksnek.fun
+lut 21 22:58:41 program [180550]: Starting new HTTP connection (1): willcheck.fun:80
+lut 21 22:58:41 program [180550]: http://willcheck.fun:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:41 program [180550]: http://willcheck.fun
+lut 21 22:58:41 program [180550]: Starting new HTTP connection (1): abejamaya.pl:80
+lut 21 22:58:51 program [180550]: http://abejamaya.pl
+lut 21 22:58:51 program [180550]: Starting new HTTP connection (1): czysteuprawy.pl:80
+lut 21 22:58:51 program [180550]: http://czysteuprawy.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:51 program [180550]: http://czysteuprawy.pl
+lut 21 22:58:51 program [180550]: Starting new HTTP connection (1): tersla.pl:80
+lut 21 22:58:51 program [180550]: http://tersla.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:51 program [180550]: http://tersla.pl
+lut 21 22:58:51 program [180550]: Starting new HTTP connection (1): szanujlas.pl:80
+lut 21 22:58:51 program [180550]: http://szanujlas.pl:80 "GET / HTTP/1.1" 301 178
+lut 21 22:58:51 program [180550]: Starting new HTTPS connection (1): szanujlas.pl:443
+lut 21 22:58:51 program [180550]: https://szanujlas.pl:443 "GET / HTTP/1.1" 200 None
+lut 21 22:58:51 program [180550]: http://szanujlas.pl
+lut 21 22:58:51 program [180550]: Starting new HTTP connection (1): thatswhatshesaid.pl:80
+lut 21 22:58:51 program [180550]: http://thatswhatshesaid.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:51 program [180550]: http://thatswhatshesaid.pl
+lut 21 22:58:51 program [180550]: Starting new HTTP connection (1): 3431.pl:80
+lut 21 22:58:52 program [180550]: http://3431.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:52 program [180550]: http://3431.pl
+lut 21 22:58:52 program [180550]: Starting new HTTP connection (1): sebasbobik.pl:80
+lut 21 22:58:52 program [180550]: http://sebasbobik.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:58:52 program [180550]: http://sebasbobik.pl
+lut 21 22:58:52 program [180550]: Starting new HTTP connection (1): adampalinski.pl:80
+lut 21 22:58:52 program [180550]: http://adampalinski.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:52 program [180550]: http://adampalinski.pl
+lut 21 22:58:52 program [180550]: Starting new HTTP connection (1): danielstepsworks.pl:80
+lut 21 22:58:52 program [180550]: http://danielstepsworks.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:52 program [180550]: http://danielstepsworks.pl
+lut 21 22:58:52 program [180550]: Starting new HTTP connection (1): chcemisiejesc.pl:80
+lut 21 22:58:52 program [180550]: http://chcemisiejesc.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:52 program [180550]: http://chcemisiejesc.pl
+lut 21 22:58:52 program [180550]: Starting new HTTP connection (1): kaczuszka-kwak.pl:80
+lut 21 22:58:52 program [180550]: http://kaczuszka-kwak.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:52 program [180550]: http://kaczuszka-kwak.pl
+lut 21 22:58:52 program [180550]: Starting new HTTP connection (1): svardeva.online:80
+lut 21 22:58:52 program [180550]: http://svardeva.online:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:52 program [180550]: http://svardeva.online
+lut 21 22:58:52 program [180550]: Starting new HTTP connection (1): milkatech.pl:80
+lut 21 22:58:53 program [180550]: http://milkatech.pl:80 "GET / HTTP/1.1" 500 290
+lut 21 22:58:53 program [180550]: http://milkatech.pl
+lut 21 22:58:53 program [180550]: Starting new HTTP connection (1): tresmil.pl:80
+lut 21 22:58:53 program [180550]: http://tresmil.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:58:53 program [180550]: http://tresmil.pl
+lut 21 22:58:53 program [180550]: Starting new HTTP connection (1): la-cozja.pl:80
+lut 21 22:58:53 program [180550]: http://la-cozja.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:58:53 program [180550]: http://la-cozja.pl
+lut 21 22:58:53 program [180550]: Starting new HTTP connection (1): guayaba.pl:80
+lut 21 22:59:03 program [180550]: http://guayaba.pl
+lut 21 22:59:03 program [180550]: Starting new HTTP connection (1): programistapython0122.pl:80
+lut 21 22:59:03 program [180550]: http://programistapython0122.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:03 program [180550]: http://programistapython0122.pl
+lut 21 22:59:03 program [180550]: Starting new HTTP connection (1): cdk.wtf:80
+lut 21 22:59:03 program [180550]: http://cdk.wtf:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:03 program [180550]: http://cdk.wtf
+lut 21 22:59:03 program [180550]: Starting new HTTP connection (1): wsamselbaudat.pl:80
+lut 21 22:59:03 program [180550]: http://wsamselbaudat.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:03 program [180550]: http://wsamselbaudat.pl
+lut 21 22:59:03 program [180550]: Starting new HTTP connection (1): theedison.pl:80
+lut 21 22:59:03 program [180550]: http://theedison.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:03 program [180550]: http://theedison.pl
+lut 21 22:59:03 program [180550]: Starting new HTTP connection (1): hauas.pl:80
+lut 21 22:59:03 program [180550]: http://hauas.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:03 program [180550]: http://hauas.pl
+lut 21 22:59:03 program [180550]: Starting new HTTP connection (1): miksawero.pl:80
+lut 21 22:59:13 program [180550]: http://miksawero.pl
+lut 21 22:59:13 program [180550]: Starting new HTTP connection (1): musisztozobaczyc.pl:80
+lut 21 22:59:13 program [180550]: http://musisztozobaczyc.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:13 program [180550]: http://musisztozobaczyc.pl
+lut 21 22:59:13 program [180550]: Starting new HTTP connection (1): app01.czopkai.pl:80
+lut 21 22:59:14 program [180550]: http://app01.czopkai.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:14 program [180550]: http://app01.czopkai.pl
+lut 21 22:59:14 program [180550]: Starting new HTTP connection (1): roszkowska-it.com.pl:80
+lut 21 22:59:14 program [180550]: http://roszkowska-it.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:14 program [180550]: http://roszkowska-it.com.pl
+lut 21 22:59:14 program [180550]: Starting new HTTP connection (1): roszkov.pl:80
+lut 21 22:59:14 program [180550]: http://roszkov.pl
+lut 21 22:59:14 program [180550]: Starting new HTTP connection (1): pp.marzec.eu:80
+lut 21 22:59:14 program [180550]: http://pp.marzec.eu:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:14 program [180550]: http://pp.marzec.eu
+lut 21 22:59:14 program [180550]: Starting new HTTP connection (1): panidanych.pl:80
+lut 21 22:59:14 program [180550]: http://panidanych.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 22:59:14 program [180550]: http://panidanych.pl
+lut 21 22:59:14 program [180550]: Starting new HTTP connection (1): ultraknur.pl:80
+lut 21 22:59:24 program [180550]: http://ultraknur.pl
+lut 21 22:59:24 program [180550]: Starting new HTTP connection (1): przemyslaw-sobol.pl:80
+lut 21 22:59:24 program [180550]: http://przemyslaw-sobol.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:24 program [180550]: http://przemyslaw-sobol.pl
+lut 21 22:59:24 program [180550]: Starting new HTTP connection (1): kompudawid.pl:80
+lut 21 22:59:24 program [180550]: http://kompudawid.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:24 program [180550]: http://kompudawid.pl
+lut 21 22:59:24 program [180550]: Starting new HTTP connection (1): stronakaroliny.pl:80
+lut 21 22:59:24 program [180550]: http://stronakaroliny.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:24 program [180550]: http://stronakaroliny.pl
+lut 21 22:59:24 program [180550]: Starting new HTTP connection (1): woch-dariusz.pl:80
+lut 21 22:59:24 program [180550]: http://woch-dariusz.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:24 program [180550]: http://woch-dariusz.pl
+lut 21 22:59:24 program [180550]: Starting new HTTP connection (1): bluszczyk-kurdybanek.pl:80
+lut 21 22:59:24 program [180550]: http://bluszczyk-kurdybanek.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:24 program [180550]: http://bluszczyk-kurdybanek.pl
+lut 21 22:59:24 program [180550]: Starting new HTTP connection (1): talaga-programer.pl:80
+lut 21 22:59:24 program [180550]: http://talaga-programer.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:24 program [180550]: http://talaga-programer.pl
+lut 21 22:59:24 program [180550]: Starting new HTTP connection (1): niye.pl:80
+lut 21 22:59:24 program [180550]: http://niye.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:24 program [180550]: http://niye.pl
+lut 21 22:59:24 program [180550]: Starting new HTTP connection (1): lukasz-motm.pl:80
+lut 21 22:59:25 program [180550]: http://lukasz-motm.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:25 program [180550]: http://lukasz-motm.pl
+lut 21 22:59:25 program [180550]: Starting new HTTP connection (1): karolinasliwa.pl:80
+lut 21 22:59:25 program [180550]: http://karolinasliwa.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:25 program [180550]: http://karolinasliwa.pl
+lut 21 22:59:25 program [180550]: Starting new HTTP connection (1): engineering-dev.pl:80
+lut 21 22:59:25 program [180550]: http://engineering-dev.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:25 program [180550]: http://engineering-dev.pl
+lut 21 22:59:25 program [180550]: Starting new HTTP connection (1): pyton-kaa.pl:80
+lut 21 22:59:25 program [180550]: http://pyton-kaa.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:25 program [180550]: http://pyton-kaa.pl
+lut 21 22:59:25 program [180550]: Starting new HTTP connection (1): nauka-pythona.pl:80
+lut 21 22:59:25 program [180550]: http://nauka-pythona.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:25 program [180550]: http://nauka-pythona.pl
+lut 21 22:59:25 program [180550]: Starting new HTTP connection (1): opivmofficial.pl:80
+lut 21 22:59:35 program [180550]: http://opivmofficial.pl
+lut 21 22:59:35 program [180550]: Starting new HTTP connection (1): programowanie.fun:80
+lut 21 22:59:35 program [180550]: http://programowanie.fun:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:35 program [180550]: http://programowanie.fun
+lut 21 22:59:35 program [180550]: Starting new HTTP connection (1): cryptonft.com.pl:80
+lut 21 22:59:45 program [180550]: http://cryptonft.com.pl
+lut 21 22:59:45 program [180550]: Starting new HTTP connection (1): idkk.pl:80
+lut 21 22:59:45 program [180550]: http://idkk.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:45 program [180550]: http://idkk.pl
+lut 21 22:59:45 program [180550]: Starting new HTTP connection (1): kamil-plichta.pl:80
+lut 21 22:59:45 program [180550]: http://kamil-plichta.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:45 program [180550]: http://kamil-plichta.pl
+lut 21 22:59:45 program [180550]: Starting new HTTP connection (1): selen-python.pl:80
+lut 21 22:59:45 program [180550]: http://selen-python.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:45 program [180550]: http://selen-python.pl
+lut 21 22:59:45 program [180550]: Starting new HTTP connection (1): czarny-czarlik.pl:80
+lut 21 22:59:45 program [180550]: http://czarny-czarlik.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:45 program [180550]: http://czarny-czarlik.pl
+lut 21 22:59:45 program [180550]: Starting new HTTP connection (1): ignatowska-paulina.pl:80
+lut 21 22:59:46 program [180550]: http://ignatowska-paulina.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:46 program [180550]: http://ignatowska-paulina.pl
+lut 21 22:59:46 program [180550]: Starting new HTTP connection (1): wysocmac.tk:80
+lut 21 22:59:46 program [180550]: http://wysocmac.tk:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:46 program [180550]: http://wysocmac.tk
+lut 21 22:59:46 program [180550]: Starting new HTTP connection (1): jsjdhd.online:80
+lut 21 22:59:46 program [180550]: http://jsjdhd.online:80 "GET / HTTP/1.1" 502 182
+lut 21 22:59:46 program [180550]: http://jsjdhd.online
+lut 21 22:59:46 program [180550]: Starting new HTTP connection (1): gigiguga.ga:80
+lut 21 22:59:46 program [180550]: http://gigiguga.ga:80 "GET / HTTP/1.1" 308 56
+lut 21 22:59:46 program [180550]: Starting new HTTPS connection (1): gigiguga.ga:443
+lut 21 22:59:56 program [180550]: https://gigiguga.ga:443 "GET / HTTP/1.1" 404 232
+lut 21 22:59:56 program [180550]: http://gigiguga.ga
+lut 21 22:59:56 program [180550]: Starting new HTTP connection (1): poldontesting.pl:80
+lut 21 22:59:56 program [180550]: http://poldontesting.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:56 program [180550]: http://poldontesting.pl
+lut 21 22:59:56 program [180550]: Starting new HTTP connection (1): akowalska.pl:80
+lut 21 22:59:56 program [180550]: http://akowalska.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:56 program [180550]: http://akowalska.pl
+lut 21 22:59:56 program [180550]: Starting new HTTP connection (1): sebastian-dulniawka.pl:80
+lut 21 22:59:56 program [180550]: http://sebastian-dulniawka.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:56 program [180550]: http://sebastian-dulniawka.pl
+lut 21 22:59:56 program [180550]: Starting new HTTP connection (1): miromiro129.site:80
+lut 21 22:59:56 program [180550]: http://miromiro129.site:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:56 program [180550]: http://miromiro129.site
+lut 21 22:59:56 program [180550]: Starting new HTTP connection (1): do-nauki.pl:80
+lut 21 22:59:56 program [180550]: http://do-nauki.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:56 program [180550]: http://do-nauki.pl
+lut 21 22:59:56 program [180550]: Starting new HTTP connection (1): wiedza-starych-ksiag.pl:80
+lut 21 22:59:56 program [180550]: http://wiedza-starych-ksiag.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:56 program [180550]: http://wiedza-starych-ksiag.pl
+lut 21 22:59:56 program [180550]: Starting new HTTP connection (1): lusankhya.pl:80
+lut 21 22:59:56 program [180550]: http://lusankhya.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:56 program [180550]: http://lusankhya.pl
+lut 21 22:59:56 program [180550]: Starting new HTTP connection (1): flaga.cryst.ovh:80
+lut 21 22:59:56 program [180550]: http://flaga.cryst.ovh:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:56 program [180550]: http://flaga.cryst.ovh
+lut 21 22:59:56 program [180550]: Starting new HTTP connection (1): marcinxd.pl:80
+lut 21 22:59:56 program [180550]: http://marcinxd.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:56 program [180550]: http://marcinxd.pl
+lut 21 22:59:56 program [180550]: Starting new HTTP connection (1): niczekniczek.warszawa.pl:80
+lut 21 22:59:56 program [180550]: http://niczekniczek.warszawa.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:56 program [180550]: http://niczekniczek.warszawa.pl
+lut 21 22:59:56 program [180550]: Starting new HTTP connection (1): maks-zpxd.pl:80
+lut 21 22:59:56 program [180550]: http://maks-zpxd.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:56 program [180550]: http://maks-zpxd.pl
+lut 21 22:59:56 program [180550]: Starting new HTTP connection (1): karolina-brzezinska.pl:80
+lut 21 22:59:56 program [180550]: http://karolina-brzezinska.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 22:59:56 program [180550]: http://karolina-brzezinska.pl
+lut 21 22:59:56 program [180550]: Starting new HTTP connection (1): python-master.pl:80
+lut 21 23:00:06 program [180550]: http://python-master.pl
+lut 21 23:00:06 program [180550]: Starting new HTTP connection (1): panna-hakasse.plp:80
+lut 21 23:00:06 program [180550]: http://panna-hakasse.plp
+lut 21 23:00:06 program [180550]: Starting new HTTP connection (1): panna-hakasse.pl:80
+lut 21 23:00:06 program [180550]: http://panna-hakasse.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:06 program [180550]: http://panna-hakasse.pl
+lut 21 23:00:06 program [180550]: Starting new HTTP connection (1): informatyka-patryka.pl:80
+lut 21 23:00:07 program [180550]: http://informatyka-patryka.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:07 program [180550]: http://informatyka-patryka.pl
+lut 21 23:00:07 program [180550]: Starting new HTTP connection (1): glodnapirania.pl:80
+lut 21 23:00:07 program [180550]: http://glodnapirania.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 23:00:07 program [180550]: http://glodnapirania.pl
+lut 21 23:00:07 program [180550]: Starting new HTTP connection (1): basia-zxd.pl:80
+lut 21 23:00:07 program [180550]: http://basia-zxd.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 23:00:07 program [180550]: http://basia-zxd.pl
+lut 21 23:00:07 program [180550]: Starting new HTTP connection (1): ilfenomeno.pl:80
+lut 21 23:00:07 program [180550]: http://ilfenomeno.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:07 program [180550]: http://ilfenomeno.pl
+lut 21 23:00:07 program [180550]: Starting new HTTP connection (1): ejdziewczyno.pl:80
+lut 21 23:00:17 program [180550]: http://ejdziewczyno.pl
+lut 21 23:00:17 program [180550]: Starting new HTTP connection (1): michalziemba.pl:80
+lut 21 23:00:17 program [180550]: http://michalziemba.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:17 program [180550]: http://michalziemba.pl
+lut 21 23:00:17 program [180550]: Starting new HTTP connection (1): volleyballvibes.pl:80
+lut 21 23:00:17 program [180550]: http://volleyballvibes.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 23:00:17 program [180550]: http://volleyballvibes.pl
+lut 21 23:00:17 program [180550]: Starting new HTTP connection (1): ewilczekprogramista.pl:80
+lut 21 23:00:17 program [180550]: http://ewilczekprogramista.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 23:00:17 program [180550]: http://ewilczekprogramista.pl
+lut 21 23:00:17 program [180550]: Starting new HTTP connection (1): pinecha.pl:80
+lut 21 23:00:18 program [180550]: http://pinecha.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:18 program [180550]: http://pinecha.pl
+lut 21 23:00:18 program [180550]: Starting new HTTP connection (1): yabadabadoo.pl:80
+lut 21 23:00:18 program [180550]: http://yabadabadoo.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:18 program [180550]: http://yabadabadoo.pl
+lut 21 23:00:18 program [180550]: Starting new HTTP connection (1): wiktoria-slomiany-portfolio.pl:80
+lut 21 23:00:18 program [180550]: http://wiktoria-slomiany-portfolio.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:18 program [180550]: http://wiktoria-slomiany-portfolio.pl
+lut 21 23:00:18 program [180550]: Starting new HTTP connection (1): sliving.pl:80
+lut 21 23:00:28 program [180550]: http://sliving.pl
+lut 21 23:00:28 program [180550]: Starting new HTTP connection (1): wpytke.pl:80
+lut 21 23:00:28 program [180550]: http://wpytke.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:28 program [180550]: http://wpytke.pl
+lut 21 23:00:28 program [180550]: Starting new HTTP connection (1): wojto.cloud:80
+lut 21 23:00:28 program [180550]: http://wojto.cloud:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:28 program [180550]: http://wojto.cloud
+lut 21 23:00:28 program [180550]: Starting new HTTP connection (1): krysiaklukasz.pl:80
+lut 21 23:00:28 program [180550]: http://krysiaklukasz.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:28 program [180550]: http://krysiaklukasz.pl
+lut 21 23:00:28 program [180550]: Starting new HTTP connection (1): patrycja-home.pl:80
+lut 21 23:00:28 program [180550]: http://patrycja-home.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:28 program [180550]: http://patrycja-home.pl
+lut 21 23:00:28 program [180550]: Starting new HTTP connection (1): mikson.xyz:80
+lut 21 23:00:28 program [180550]: http://mikson.xyz:80 "GET / HTTP/1.1" 301 162
+lut 21 23:00:28 program [180550]: Starting new HTTP connection (1): www.mikson.xyz:80
+lut 21 23:00:28 program [180550]: http://www.mikson.xyz:80 "GET / HTTP/1.1" 200 199
+lut 21 23:00:28 program [180550]: http://mikson.xyz
+lut 21 23:00:28 program [180550]: Starting new HTTP connection (1): laura-jammoul.pl:80
+lut 21 23:00:29 program [180550]: http://laura-jammoul.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:29 program [180550]: http://laura-jammoul.pl
+lut 21 23:00:29 program [180550]: Starting new HTTP connection (1): balumis.pl:80
+lut 21 23:00:29 program [180550]: http://balumis.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:29 program [180550]: http://balumis.pl
+lut 21 23:00:29 program [180550]: Starting new HTTP connection (1): dobrymoment.net.pl:80
+lut 21 23:00:29 program [180550]: http://dobrymoment.net.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:29 program [180550]: http://Dobrymoment.net.pl
+lut 21 23:00:29 program [180550]: Starting new HTTP connection (1): paciey.pl:80
+lut 21 23:00:29 program [180550]: http://paciey.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:29 program [180550]: http://paciey.pl
+lut 21 23:00:29 program [180550]: Starting new HTTP connection (1): wiosnalato.com.pl:80
+lut 21 23:00:29 program [180550]: http://wiosnalato.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:29 program [180550]: http://wiosnalato.com.pl
+lut 21 23:00:29 program [180550]: Starting new HTTP connection (1): 123fajnie.pl:80
+lut 21 23:00:29 program [180550]: http://123fajnie.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:29 program [180550]: http://123fajnie.pl
+lut 21 23:00:29 program [180550]: Starting new HTTP connection (1): marekkubiak.pl:80
+lut 21 23:00:29 program [180550]: http://marekkubiak.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:29 program [180550]: http://marekkubiak.pl
+lut 21 23:00:29 program [180550]: Starting new HTTP connection (1): patrykpetryszen.xyz:80
+lut 21 23:00:29 program [180550]: http://patrykpetryszen.xyz:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:29 program [180550]: http://patrykpetryszen.xyz
+lut 21 23:00:29 program [180550]: Starting new HTTP connection (1): grzesiek-mcfarland.pl:80
+lut 21 23:00:29 program [180550]: http://grzesiek-mcfarland.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:29 program [180550]: http://grzesiek-mcfarland.pl
+lut 21 23:00:29 program [180550]: Starting new HTTP connection (1): michalek123.pl:80
+lut 21 23:00:29 program [180550]: http://michalek123.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:29 program [180550]: http://michalek123.pl
+lut 21 23:00:29 program [180550]: Starting new HTTP connection (1): faktyopandemii.pl:80
+lut 21 23:00:29 program [180550]: http://faktyopandemii.pl
+lut 21 23:00:29 program [180550]: Starting new HTTP connection (1): myskills.szczecin.pl:80
+lut 21 23:00:30 program [180550]: http://myskills.szczecin.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:30 program [180550]: http://myskills.szczecin.pl
+lut 21 23:00:30 program [180550]: Starting new HTTP connection (1): ribijata.pl:80
+lut 21 23:00:30 program [180550]: http://ribijata.pl
+lut 21 23:00:30 program [180550]: Starting new HTTP connection (1): izadziuraprojekt.pl:80
+lut 21 23:00:30 program [180550]: http://izadziuraprojekt.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:30 program [180550]: http://izadziuraprojekt.pl
+lut 21 23:00:30 program [180550]: Starting new HTTP connection (1): emikot246.website:80
+lut 21 23:00:30 program [180550]: http://emikot246.website:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:30 program [180550]: http://emikot246.website
+lut 21 23:00:30 program [180550]: Starting new HTTP connection (1): cardecor.pl:80
+lut 21 23:00:30 program [180550]: http://cardecor.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 23:00:30 program [180550]: http://cardecor.pl
+lut 21 23:00:30 program [180550]: Starting new HTTP connection (1): eurisu.pl:80
+lut 21 23:00:30 program [180550]: http://eurisu.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:30 program [180550]: http://eurisu.pl
+lut 21 23:00:30 program [180550]: Starting new HTTP connection (1): brillowski.com.pl:80
+lut 21 23:00:40 program [180550]: http://brillowski.com.pl
+lut 21 23:00:40 program [180550]: Starting new HTTP connection (1): eazan.pl:80
+lut 21 23:00:40 program [180550]: http://eazan.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:40 program [180550]: http://eazan.pl
+lut 21 23:00:40 program [180550]: Starting new HTTP connection (1): maroprok.ddns.net:80
+lut 21 23:00:50 program [180550]: http://maroprok.ddns.net
+lut 21 23:00:50 program [180550]: Starting new HTTP connection (1): sromota.pl:80
+lut 21 23:00:50 program [180550]: http://sromota.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:00:50 program [180550]: http://sromota.pl
+lut 21 23:00:50 program [180550]: Starting new HTTP connection (1): naukapytonalamarteczka.biz.pl:80
+lut 21 23:01:00 program [180550]: http://naukapytonalamarteczka.biz.pl
+lut 21 23:01:00 program [180550]: Starting new HTTP connection (1): i-python.pl:80
+lut 21 23:01:00 program [180550]: http://i-python.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:00 program [180550]: http://i-python.pl
+lut 21 23:01:00 program [180550]: Starting new HTTP connection (1): c46.pl:80
+lut 21 23:01:10 program [180550]: http://c46.pl
+lut 21 23:01:10 program [180550]: Starting new HTTP connection (1): infinitypython.com:80
+lut 21 23:01:10 program [180550]: http://infinitypython.com:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:10 program [180550]: http://infinitypython.com
+lut 21 23:01:10 program [180550]: Starting new HTTP connection (1): luqas.pl:80
+lut 21 23:01:10 program [180550]: http://luqas.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:10 program [180550]: http://luqas.pl
+lut 21 23:01:10 program [180550]: Starting new HTTP connection (1): promat.waw.pl:80
+lut 21 23:01:11 program [180550]: http://promat.waw.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:11 program [180550]: http://promat.waw.pl
+lut 21 23:01:11 program [180550]: Starting new HTTP connection (1): mikasia.pl:80
+lut 21 23:01:11 program [180550]: http://mikasia.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:11 program [180550]: http://mikasia.pl
+lut 21 23:01:11 program [180550]: Starting new HTTP connection (1): epicki.cloud:80
+lut 21 23:01:11 program [180550]: http://epicki.cloud:80 "GET / HTTP/1.1" 502 182
+lut 21 23:01:11 program [180550]: http://epicki.cloud
+lut 21 23:01:11 program [180550]: Starting new HTTP connection (1): domenameha.pl:80
+lut 21 23:01:11 program [180550]: http://domenameha.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:11 program [180550]: http://domenameha.pl
+lut 21 23:01:11 program [180550]: Starting new HTTP connection (1): robmar.toadres.pl:80
+lut 21 23:01:11 program [180550]: http://robmar.toadres.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:11 program [180550]: http://robmar.toadres.pl
+lut 21 23:01:11 program [180550]: Starting new HTTP connection (1): mharasymowicz.pl:80
+lut 21 23:01:11 program [180550]: http://mharasymowicz.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:11 program [180550]: http://mharasymowicz.pl
+lut 21 23:01:11 program [180550]: Starting new HTTP connection (1): lopkarol.pl:80
+lut 21 23:01:11 program [180550]: http://lopkarol.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:11 program [180550]: http://lopkarol.pl
+lut 21 23:01:11 program [180550]: Starting new HTTP connection (1): zen-sekai.pl:80
+lut 21 23:01:11 program [180550]: http://zen-sekai.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:11 program [180550]: http://zen-sekai.pl
+lut 21 23:01:11 program [180550]: Starting new HTTP connection (1): progress-ab.pl:80
+lut 21 23:01:11 program [180550]: http://progress-ab.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:11 program [180550]: http://progress-ab.pl
+lut 21 23:01:11 program [180550]: Starting new HTTP connection (1): i-profil.pl:80
+lut 21 23:01:11 program [180550]: http://i-profil.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:11 program [180550]: http://i-profil.pl
+lut 21 23:01:11 program [180550]: Starting new HTTP connection (1): zadlo-prog.pl:80
+lut 21 23:01:11 program [180550]: http://zadlo-prog.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:11 program [180550]: http://zadlo-prog.pl
+lut 21 23:01:11 program [180550]: Starting new HTTP connection (1): kayman2115.pl:80
+lut 21 23:01:11 program [180550]: http://kayman2115.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:11 program [180550]: http://kayman2115.pl
+lut 21 23:01:11 program [180550]: Starting new HTTP connection (1): infiniteloop.site:80
+lut 21 23:01:12 program [180550]: http://infiniteloop.site:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:12 program [180550]: http://infiniteloop.site
+lut 21 23:01:12 program [180550]: Starting new HTTP connection (1): python-nanotechnologia.pl:80
+lut 21 23:01:12 program [180550]: http://python-nanotechnologia.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:12 program [180550]: http://python-nanotechnologia.pl
+lut 21 23:01:12 program [180550]: Starting new HTTP connection (1): porkair.pl:80
+lut 21 23:01:12 program [180550]: http://porkair.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:12 program [180550]: http://porkair.pl
+lut 21 23:01:12 program [180550]: Starting new HTTP connection (1): diablo-harry.pl:80
+lut 21 23:01:12 program [180550]: http://diablo-harry.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:12 program [180550]: http://diablo-harry.pl
+lut 21 23:01:12 program [180550]: Starting new HTTP connection (1): tengel.pl:80
+lut 21 23:01:12 program [180550]: http://tengel.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 23:01:12 program [180550]: http://tengel.pl
+lut 21 23:01:12 program [180550]: Starting new HTTP connection (1): serafind.pl:80
+lut 21 23:01:12 program [180550]: http://serafind.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:12 program [180550]: http://serafind.pl
+lut 21 23:01:12 program [180550]: Starting new HTTP connection (1): azielinski.eu:80
+lut 21 23:01:12 program [180550]: http://azielinski.eu:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:12 program [180550]: http://azielinski.eu
+lut 21 23:01:12 program [180550]: Starting new HTTP connection (1): domlhe.fun:80
+lut 21 23:01:12 program [180550]: http://domlhe.fun:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:12 program [180550]: http://domlhe.fun
+lut 21 23:01:12 program [180550]: Starting new HTTP connection (1): michal-python-xd.pl:80
+lut 21 23:01:12 program [180550]: http://michal-python-xd.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:12 program [180550]: http://michal-python-xd.pl
+lut 21 23:01:12 program [180550]: Starting new HTTP connection (1): bzentkow.pl:80
+lut 21 23:01:13 program [180550]: http://bzentkow.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:13 program [180550]: http://bzentkow.pl
+lut 21 23:01:13 program [180550]: Starting new HTTP connection (1): kurspython.herokuapp.com:80
+lut 21 23:01:20 program [180550]: http://kurspython.herokuapp.com:80 "GET / HTTP/1.1" 200 160
+lut 21 23:01:20 program [180550]: http://kurspython.herokuapp.com
+lut 21 23:01:20 program [180550]: Starting new HTTP connection (1): helenalawik.cloud:80
+lut 21 23:01:20 program [180550]: http://helenalawik.cloud:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:20 program [180550]: http://helenalawik.cloud
+lut 21 23:01:20 program [180550]: Starting new HTTP connection (1): brewutnia-to-taki-pies.pl:80
+lut 21 23:01:20 program [180550]: http://brewutnia-to-taki-pies.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:20 program [180550]: http://brewutnia-to-taki-pies.pl
+lut 21 23:01:20 program [180550]: Starting new HTTP connection (1): adrian-b.pl:80
+lut 21 23:01:20 program [180550]: http://adrian-b.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:20 program [180550]: http://adrian-b.pl
+lut 21 23:01:20 program [180550]: Starting new HTTP connection (1): xd.byteeater.pl:80
+lut 21 23:01:20 program [180550]: http://xd.byteeater.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:20 program [180550]: http://xd.byteeater.pl
+lut 21 23:01:20 program [180550]: Starting new HTTP connection (1): stronakwiecia.pl:80
+lut 21 23:01:20 program [180550]: http://stronakwiecia.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:20 program [180550]: http://stronakwiecia.pl
+lut 21 23:01:20 program [180550]: Starting new HTTP connection (1): laseczka-online.pl:80
+lut 21 23:01:21 program [180550]: http://laseczka-online.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:21 program [180550]: http://laseczka-online.pl
+lut 21 23:01:21 program [180550]: Starting new HTTP connection (1): lightbluebeagle.pl:80
+lut 21 23:01:21 program [180550]: http://lightbluebeagle.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:21 program [180550]: http://lightbluebeagle.pl
+lut 21 23:01:21 program [180550]: Starting new HTTP connection (1): adekdevcode.pl:80
+lut 21 23:01:21 program [180550]: http://adekdevcode.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:21 program [180550]: http://adekdevcode.pl
+lut 21 23:01:21 program [180550]: Starting new HTTP connection (1): wladek-py.pl:80
+lut 21 23:01:21 program [180550]: http://wladek-py.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:21 program [180550]: http://wladek-py.pl
+lut 21 23:01:21 program [180550]: Starting new HTTP connection (1): sulomon.pl:80
+lut 21 23:01:21 program [180550]: http://sulomon.pl:80 "GET / HTTP/1.1" 404 None
+lut 21 23:01:21 program [180550]: http://sulomon.pl
+lut 21 23:01:21 program [180550]: Starting new HTTP connection (1): voxu.pl:80
+lut 21 23:01:21 program [180550]: http://voxu.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:21 program [180550]: http://voxu.pl
+lut 21 23:01:21 program [180550]: Starting new HTTP connection (1): wizzie.pl:80
+lut 21 23:01:21 program [180550]: http://wizzie.pl:80 "GET / HTTP/1.1" 404 None
+lut 21 23:01:21 program [180550]: http://wizzie.pl
+lut 21 23:01:21 program [180550]: Starting new HTTP connection (1): bartekka.pl:80
+lut 21 23:01:21 program [180550]: http://bartekka.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:21 program [180550]: http://bartekka.pl
+lut 21 23:01:21 program [180550]: Starting new HTTP connection (1): arek-pe.pl:80
+lut 21 23:01:21 program [180550]: http://arek-pe.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:21 program [180550]: http://arek-pe.pl
+lut 21 23:01:21 program [180550]: Starting new HTTP connection (1): dzikiprojekt.pl:80
+lut 21 23:01:21 program [180550]: http://dzikiprojekt.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:21 program [180550]: http://dzikiprojekt.pl
+lut 21 23:01:21 program [180550]: Starting new HTTP connection (1): roccorob.pl:80
+lut 21 23:01:31 program [180550]: http://roccorob.pl
+lut 21 23:01:31 program [180550]: Starting new HTTP connection (1): domibukowska.pl:80
+lut 21 23:01:32 program [180550]: http://domibukowska.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:32 program [180550]: http://domibukowska.pl
+lut 21 23:01:32 program [180550]: Starting new HTTP connection (1): farmer-korycin.pl:80
+lut 21 23:01:32 program [180550]: http://farmer-korycin.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:32 program [180550]: http://farmer-korycin.pl
+lut 21 23:01:32 program [180550]: Starting new HTTP connection (1): szatan-antas.pl:80
+lut 21 23:01:32 program [180550]: http://szatan-antas.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:32 program [180550]: http://szatan-antas.pl
+lut 21 23:01:32 program [180550]: Starting new HTTP connection (1): testsite.ksiazek.xyz:80
+lut 21 23:01:32 program [180550]: http://testsite.ksiazek.xyz:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:32 program [180550]: http://testsite.ksiazek.xyz
+lut 21 23:01:32 program [180550]: Starting new HTTP connection (1): emorec.pl:80
+lut 21 23:01:32 program [180550]: http://emorec.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 23:01:32 program [180550]: http://emorec.pl
+lut 21 23:01:32 program [180550]: Starting new HTTP connection (1): jdobrzanski.pl:80
+lut 21 23:01:32 program [180550]: http://jdobrzanski.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:32 program [180550]: http://jdobrzanski.pl
+lut 21 23:01:32 program [180550]: Starting new HTTP connection (1): dzejkob.pl:80
+lut 21 23:01:42 program [180550]: http://dzejkob.pl
+lut 21 23:01:42 program [180550]: Starting new HTTP connection (1): mywebsiteonline.pl:80
+lut 21 23:01:42 program [180550]: http://mywebsiteonline.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:42 program [180550]: http://mywebsiteonline.pl
+lut 21 23:01:42 program [180550]: Starting new HTTP connection (1): hello-dev.pl:80
+lut 21 23:01:42 program [180550]: http://hello-dev.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:42 program [180550]: http://hello-dev.pl
+lut 21 23:01:42 program [180550]: Starting new HTTP connection (1): kazik-jot.pl:80
+lut 21 23:01:42 program [180550]: http://kazik-jot.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:42 program [180550]: http://kazik-jot.pl
+lut 21 23:01:42 program [180550]: Starting new HTTP connection (1): itscience.pl:80
+lut 21 23:01:42 program [180550]: http://itscience.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:42 program [180550]: http://itscience.pl
+lut 21 23:01:42 program [180550]: Starting new HTTP connection (1): mniejpopularnanazwadocwiczen.pl:80
+lut 21 23:01:42 program [180550]: http://mniejpopularnanazwadocwiczen.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:42 program [180550]: http://mniejpopularnanazwadocwiczen.pl
+lut 21 23:01:42 program [180550]: Starting new HTTP connection (1): balcerek.biz.pl:80
+lut 21 23:01:42 program [180550]: http://balcerek.biz.pl:80 "GET / HTTP/1.1" 500 290
+lut 21 23:01:42 program [180550]: http://balcerek.biz.pl
+lut 21 23:01:42 program [180550]: Starting new HTTP connection (1): dalana.pl:80
+lut 21 23:01:42 program [180550]: http://dalana.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:42 program [180550]: http://dalana.pl
+lut 21 23:01:42 program [180550]: Starting new HTTP connection (1): infmagazine.pl:80
+lut 21 23:01:42 program [180550]: http://infmagazine.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 23:01:42 program [180550]: http://infmagazine.pl
+lut 21 23:01:42 program [180550]: Starting new HTTP connection (1): resinandwoodworks.pl:80
+lut 21 23:01:52 program [180550]: http://resinandwoodworks.pl
+lut 21 23:01:52 program [180550]: Starting new HTTP connection (1): dvcbnz.pl:80
+lut 21 23:01:53 program [180550]: http://dvcbnz.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:01:53 program [180550]: http://dvcbnz.pl
+lut 21 23:01:53 program [180550]: Starting new HTTP connection (1): pikpok.eu:80
+lut 21 23:02:03 program [180550]: http://pikpok.eu
+lut 21 23:02:03 program [180550]: Starting new HTTP connection (1): lemgi.pl:80
+lut 21 23:02:03 program [180550]: http://lemgi.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:03 program [180550]: http://lemgi.pl
+lut 21 23:02:03 program [180550]: Starting new HTTP connection (1): projectpython.pl:80
+lut 21 23:02:03 program [180550]: http://projectpython.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:03 program [180550]: http://projectpython.pl
+lut 21 23:02:03 program [180550]: Starting new HTTP connection (1): haskus.pl:80
+lut 21 23:02:03 program [180550]: http://haskus.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:03 program [180550]: http://haskus.pl
+lut 21 23:02:03 program [180550]: Starting new HTTP connection (1): onlyfansfilomenka.pl:80
+lut 21 23:02:03 program [180550]: http://onlyfansfilomenka.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:03 program [180550]: http://onlyfansfilomenka.pl
+lut 21 23:02:03 program [180550]: Starting new HTTP connection (1): theriddle.pl:80
+lut 21 23:02:03 program [180550]: http://theriddle.pl:80 "GET / HTTP/1.1" 502 166
+lut 21 23:02:03 program [180550]: http://theriddle.pl
+lut 21 23:02:03 program [180550]: Starting new HTTP connection (1): herotin.pl:80
+lut 21 23:02:03 program [180550]: http://herotin.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:03 program [180550]: http://herotin.pl
+lut 21 23:02:03 program [180550]: Starting new HTTP connection (1): maksprojekt.pl:80
+lut 21 23:02:03 program [180550]: http://maksprojekt.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:03 program [180550]: http://maksprojekt.pl
+lut 21 23:02:03 program [180550]: Starting new HTTP connection (1): porananas.pl:80
+lut 21 23:02:03 program [180550]: http://porananas.pl:80 "GET / HTTP/1.1" 200 111
+lut 21 23:02:03 program [180550]: http://porananas.pl
+lut 21 23:02:03 program [180550]: Starting new HTTP connection (1): eszymi.pl:80
+lut 21 23:02:04 program [180550]: http://eszymi.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:04 program [180550]: http://eszymi.pl
+lut 21 23:02:04 program [180550]: Starting new HTTP connection (1): piotrleski.pl:80
+lut 21 23:02:04 program [180550]: http://piotrleski.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:04 program [180550]: http://piotrleski.pl
+lut 21 23:02:04 program [180550]: Starting new HTTP connection (1): ikosaedr.pl:80
+lut 21 23:02:04 program [180550]: http://ikosaedr.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:04 program [180550]: http://ikosaedr.pl
+lut 21 23:02:04 program [180550]: Starting new HTTP connection (1): rafjek.toadres.pl:80
+lut 21 23:02:04 program [180550]: http://rafjek.toadres.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:04 program [180550]: http://rafjek.toadres.pl
+lut 21 23:02:04 program [180550]: Starting new HTTP connection (1): edamian.pl:80
+lut 21 23:02:04 program [180550]: http://edamian.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:04 program [180550]: http://edamian.pl
+lut 21 23:02:04 program [180550]: Starting new HTTP connection (1): starshipsigma.pl:80
+lut 21 23:02:04 program [180550]: http://starshipsigma.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:04 program [180550]: http://starshipsigma.pl
+lut 21 23:02:04 program [180550]: Starting new HTTP connection (1): foxnox.pl:80
+lut 21 23:02:04 program [180550]: http://foxnox.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:04 program [180550]: http://foxnox.pl
+lut 21 23:02:04 program [180550]: Starting new HTTP connection (1): mjarz.pl:80
+lut 21 23:02:04 program [180550]: http://mjarz.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 23:02:04 program [180550]: http://mjarz.pl
+lut 21 23:02:04 program [180550]: Starting new HTTP connection (1): michalkokoszkiewicz.pl:80
+lut 21 23:02:04 program [180550]: http://michalkokoszkiewicz.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:04 program [180550]: http://michalkokoszkiewicz.pl
+lut 21 23:02:04 program [180550]: Starting new HTTP connection (1): gkonieczny.pl:80
+lut 21 23:02:04 program [180550]: http://gkonieczny.pl
+lut 21 23:02:04 program [180550]: Starting new HTTP connection (1): maxrossenberg.pl:80
+lut 21 23:02:05 program [180550]: http://maxrossenberg.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:05 program [180550]: http://maxrossenberg.pl
+lut 21 23:02:05 program [180550]: Starting new HTTP connection (1): joanna-portfolio.pl:80
+lut 21 23:02:05 program [180550]: http://joanna-portfolio.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:05 program [180550]: http://joanna-portfolio.pl
+lut 21 23:02:05 program [180550]: Starting new HTTP connection (1): hanuszkatworzy.pl:80
+lut 21 23:02:05 program [180550]: http://hanuszkatworzy.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:05 program [180550]: http://hanuszkatworzy.pl
+lut 21 23:02:05 program [180550]: Starting new HTTP connection (1): e-magdalena.pl:80
+lut 21 23:02:05 program [180550]: http://e-magdalena.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:05 program [180550]: http://e-magdalena.pl
+lut 21 23:02:05 program [180550]: Starting new HTTP connection (1): kpiaf.pl:80
+lut 21 23:02:05 program [180550]: http://kpiaf.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:05 program [180550]: http://kpiaf.pl
+lut 21 23:02:05 program [180550]: Starting new HTTP connection (1): digitalsoup.pl:80
+lut 21 23:02:05 program [180550]: http://digitalsoup.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 23:02:05 program [180550]: http://digitalsoup.pl
+lut 21 23:02:05 program [180550]: Starting new HTTP connection (1): piterwr.pl:80
+lut 21 23:02:15 program [180550]: http://piterwr.pl
+lut 21 23:02:15 program [180550]: Starting new HTTP connection (1): cyberprzemo.pl:80
+lut 21 23:02:15 program [180550]: http://cyberprzemo.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 23:02:15 program [180550]: http://cyberprzemo.pl
+lut 21 23:02:15 program [180550]: Starting new HTTP connection (1): katarzynagawel.pl:80
+lut 21 23:02:16 program [180550]: http://katarzynagawel.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 23:02:16 program [180550]: http://katarzynagawel.pl
+lut 21 23:02:16 program [180550]: Starting new HTTP connection (1): kaemi.site:80
+lut 21 23:02:16 program [180550]: http://kaemi.site:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:16 program [180550]: http://kaemi.site
+lut 21 23:02:16 program [180550]: Starting new HTTP connection (1): python.szczemar.tk:80
+lut 21 23:02:16 program [180550]: http://python.szczemar.tk:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:16 program [180550]: http://python.szczemar.tk
+lut 21 23:02:16 program [180550]: Starting new HTTP connection (1): rob3rt.pl:80
+lut 21 23:02:16 program [180550]: http://rob3rt.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 23:02:16 program [180550]: http://rob3rt.pl
+lut 21 23:02:16 program [180550]: Starting new HTTP connection (1): czapiewski.edu.pl:80
+lut 21 23:02:16 program [180550]: http://czapiewski.edu.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:16 program [180550]: http://czapiewski.edu.pl
+lut 21 23:02:16 program [180550]: Starting new HTTP connection (1): karozag.pl:80
+lut 21 23:02:16 program [180550]: http://karozag.pl:80 "GET / HTTP/1.1" 500 290
+lut 21 23:02:16 program [180550]: http://karozag.pl
+lut 21 23:02:16 program [180550]: Starting new HTTP connection (1): nuclearworkshop.pl:80
+lut 21 23:02:19 program [180550]: http://nuclearworkshop.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:19 program [180550]: http://nuclearworkshop.pl
+lut 21 23:02:19 program [180550]: Starting new HTTP connection (1): etycznyhacker.online:80
+lut 21 23:02:19 program [180550]: http://etycznyhacker.online:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:19 program [180550]: http://etycznyhacker.online
+lut 21 23:02:19 program [180550]: Starting new HTTP connection (1): mtpiotrowski.pl:80
+lut 21 23:02:19 program [180550]: http://mtpiotrowski.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:19 program [180550]: http://mtpiotrowski.pl
+lut 21 23:02:19 program [180550]: Starting new HTTP connection (1): krzyfoto.pl:80
+lut 21 23:02:29 program [180550]: http://krzyfoto.pl
+lut 21 23:02:29 program [180550]: Starting new HTTP connection (1): programistawojciech.pl:80
+lut 21 23:02:29 program [180550]: http://programistawojciech.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:29 program [180550]: http://programistawojciech.pl
+lut 21 23:02:29 program [180550]: Starting new HTTP connection (1): domenadonauki.pl:80
+lut 21 23:02:29 program [180550]: http://domenadonauki.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:29 program [180550]: http://domenadonauki.pl
+lut 21 23:02:29 program [180550]: Starting new HTTP connection (1): premyslav-coding.pl:80
+lut 21 23:02:30 program [180550]: http://premyslav-coding.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:30 program [180550]: http://premyslav-coding.pl
+lut 21 23:02:30 program [180550]: Starting new HTTP connection (1): dominik-pythoniarz.pl:80
+lut 21 23:02:30 program [180550]: http://dominik-pythoniarz.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:30 program [180550]: http://dominik-pythoniarz.pl
+lut 21 23:02:30 program [180550]: Starting new HTTP connection (1): jj-s.pl:80
+lut 21 23:02:30 program [180550]: http://jj-s.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:30 program [180550]: http://jj-s.pl
+lut 21 23:02:30 program [180550]: Starting new HTTP connection (1): roll-the-dice.pl:80
+lut 21 23:02:30 program [180550]: http://roll-the-dice.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:30 program [180550]: http://roll-the-dice.pl
+lut 21 23:02:30 program [180550]: Starting new HTTP connection (1): forumdeskorolkowe.pl:80
+lut 21 23:02:30 program [180550]: http://forumdeskorolkowe.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:30 program [180550]: http://forumdeskorolkowe.pl
+lut 21 23:02:30 program [180550]: Starting new HTTP connection (1): experientia.com.pl:80
+lut 21 23:02:30 program [180550]: http://experientia.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:30 program [180550]: http://experientia.com.pl
+lut 21 23:02:30 program [180550]: Starting new HTTP connection (1): botaniko.pl:80
+lut 21 23:02:30 program [180550]: http://botaniko.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:30 program [180550]: http://botaniko.pl
+lut 21 23:02:30 program [180550]: Starting new HTTP connection (1): mamasitha.pl:80
+lut 21 23:02:30 program [180550]: http://mamasitha.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:30 program [180550]: http://mamasitha.pl
+lut 21 23:02:30 program [180550]: Starting new HTTP connection (1): cheswawprograms.pl:80
+lut 21 23:02:30 program [180550]: http://cheswawprograms.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:30 program [180550]: http://cheswawprograms.pl
+lut 21 23:02:30 program [180550]: Starting new HTTP connection (1): niezlypythonbrachu.pl:80
+lut 21 23:02:30 program [180550]: http://niezlypythonbrachu.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:30 program [180550]: http://niezlypythonbrachu.pl
+lut 21 23:02:30 program [180550]: Starting new HTTP connection (1): wiseowlstudio.xyz:80
+lut 21 23:02:31 program [180550]: http://wiseowlstudio.xyz:80 "GET / HTTP/1.1" 502 182
+lut 21 23:02:31 program [180550]: http://wiseowlstudio.xyz
+lut 21 23:02:31 program [180550]: Starting new HTTP connection (1): stronadonaukipythona.pl:80
+lut 21 23:02:31 program [180550]: http://stronadonaukipythona.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:31 program [180550]: http://stronadonaukipythona.pl
+lut 21 23:02:31 program [180550]: Starting new HTTP connection (1): hdh36997.pl:80
+lut 21 23:02:31 program [180550]: http://hdh36997.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:31 program [180550]: http://hdh36997.pl
+lut 21 23:02:31 program [180550]: Starting new HTTP connection (1): alamakotaipsa.pl:80
+lut 21 23:02:31 program [180550]: http://alamakotaipsa.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:31 program [180550]: http://alamakotaipsa.pl
+lut 21 23:02:31 program [180550]: Starting new HTTP connection (1): mspython.pl:80
+lut 21 23:02:31 program [180550]: http://mspython.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:31 program [180550]: http://mspython.pl
+lut 21 23:02:31 program [180550]: Starting new HTTP connection (1): py-projects.pl:80
+lut 21 23:02:31 program [180550]: http://py-projects.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:31 program [180550]: http://py-projects.pl
+lut 21 23:02:31 program [180550]: Starting new HTTP connection (1): ekdevops.pl:80
+lut 21 23:02:31 program [180550]: http://ekdevops.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:31 program [180550]: http://ekdevops.pl
+lut 21 23:02:31 program [180550]: Starting new HTTP connection (1): izabela-nowak.pl:80
+lut 21 23:02:31 program [180550]: http://izabela-nowak.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:31 program [180550]: http://izabela-nowak.pl
+lut 21 23:02:31 program [180550]: Starting new HTTP connection (1): picor.pl:80
+lut 21 23:02:31 program [180550]: http://picor.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:31 program [180550]: http://picor.pl
+lut 21 23:02:31 program [180550]: Starting new HTTP connection (1): arslovibre.pl:80
+lut 21 23:02:42 program [180550]: http://arslovibre.pl
+lut 21 23:02:42 program [180550]: Starting new HTTP connection (1): grubykleofas.pl:80
+lut 21 23:02:42 program [180550]: http://grubykleofas.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:42 program [180550]: http://grubykleofas.pl
+lut 21 23:02:42 program [180550]: Starting new HTTP connection (1): alemery.pl:80
+lut 21 23:02:42 program [180550]: http://alemery.pl:80 "GET / HTTP/1.1" 500 290
+lut 21 23:02:42 program [180550]: http://alemery.pl
+lut 21 23:02:42 program [180550]: Starting new HTTP connection (1): pasieka-sypniewo.pl:80
+lut 21 23:02:42 program [180550]: http://pasieka-sypniewo.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:42 program [180550]: http://pasieka-sypniewo.pl
+lut 21 23:02:42 program [180550]: Starting new HTTP connection (1): piotrorlinski.pl:80
+lut 21 23:02:42 program [180550]: http://piotrorlinski.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:42 program [180550]: http://piotrorlinski.pl
+lut 21 23:02:42 program [180550]: Starting new HTTP connection (1): testowanie-i-programowanie.pl:80
+lut 21 23:02:42 program [180550]: http://testowanie-i-programowanie.pl:80 "GET / HTTP/1.1" 502 166
+lut 21 23:02:42 program [180550]: http://testowanie-i-programowanie.pl
+lut 21 23:02:42 program [180550]: Starting new HTTP connection (1): mives.pl:80
+lut 21 23:02:52 program [180550]: http://mives.pl
+lut 21 23:02:52 program [180550]: Starting new HTTP connection (1): bxrtxs.pl:80
+lut 21 23:02:52 program [180550]: http://bxrtxs.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:52 program [180550]: http://bxrtxs.pl
+lut 21 23:02:52 program [180550]: Starting new HTTP connection (1): test4kuba.pl:80
+lut 21 23:02:52 program [180550]: http://test4kuba.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:52 program [180550]: http://test4kuba.pl
+lut 21 23:02:52 program [180550]: Starting new HTTP connection (1): kubapython.pl:80
+lut 21 23:02:52 program [180550]: http://kubapython.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:52 program [180550]: http://kubapython.pl
+lut 21 23:02:52 program [180550]: Starting new HTTP connection (1): wiktorstachowiak.online:80
+lut 21 23:02:52 program [180550]: http://wiktorstachowiak.online:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:52 program [180550]: http://wiktorstachowiak.online
+lut 21 23:02:52 program [180550]: Starting new HTTP connection (1): martaprogramuje.pl:80
+lut 21 23:02:52 program [180550]: http://martaprogramuje.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:52 program [180550]: http://martaprogramuje.pl
+lut 21 23:02:52 program [180550]: Starting new HTTP connection (1): ichimokumaster.pl:80
+lut 21 23:02:52 program [180550]: http://ichimokumaster.pl
+lut 21 23:02:52 program [180550]: Starting new HTTP connection (1): kahalina.pl:80
+lut 21 23:02:52 program [180550]: http://kahalina.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:52 program [180550]: http://kahalina.pl
+lut 21 23:02:52 program [180550]: Starting new HTTP connection (1): masterofdisaster.com.pl:80
+lut 21 23:02:53 program [180550]: http://masterofdisaster.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:53 program [180550]: http://masterofdisaster.com.pl
+lut 21 23:02:53 program [180550]: Starting new HTTP connection (1): paythi.pl:80
+lut 21 23:02:53 program [180550]: http://paythi.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:53 program [180550]: http://paythi.pl
+lut 21 23:02:53 program [180550]: Starting new HTTP connection (1): meaningless.pl:80
+lut 21 23:02:53 program [180550]: http://meaningless.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:53 program [180550]: http://meaningless.pl
+lut 21 23:02:53 program [180550]: Starting new HTTP connection (1): kolsut94.pl:80
+lut 21 23:02:53 program [180550]: http://kolsut94.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:53 program [180550]: http://kolsut94.pl
+lut 21 23:02:53 program [180550]: Starting new HTTP connection (1): teszka.pl:80
+lut 21 23:02:53 program [180550]: http://teszka.pl
+lut 21 23:02:53 program [180550]: Starting new HTTP connection (1): zuzannaprzychoda.pl:80
+lut 21 23:02:53 program [180550]: http://zuzannaprzychoda.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:53 program [180550]: http://zuzannaprzychoda.pl
+lut 21 23:02:53 program [180550]: Starting new HTTP connection (1): pocztowkiani.pl:80
+lut 21 23:02:53 program [180550]: http://pocztowkiani.pl:80 "GET / HTTP/1.1" 404 None
+lut 21 23:02:53 program [180550]: http://pocztowkiani.pl
+lut 21 23:02:53 program [180550]: Starting new HTTP connection (1): yashi-python-steps.pl:80
+lut 21 23:02:53 program [180550]: http://yashi-python-steps.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:02:53 program [180550]: http://yashi-python-steps.pl
+lut 21 23:02:53 program [180550]: Starting new HTTP connection (1): szymon-domena.pl:80
+lut 21 23:02:53 program [180550]: http://szymon-domena.pl
+lut 21 23:02:53 program [180550]: Starting new HTTP connection (1): tygrysrozbrykany.pl:80
+lut 21 23:03:03 program [180550]: http://tygrysrozbrykany.pl
+lut 21 23:03:03 program [180550]: Starting new HTTP connection (1): tap-tap.pl:80
+lut 21 23:03:04 program [180550]: http://tap-tap.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:04 program [180550]: http://tap-tap.pl
+lut 21 23:03:04 program [180550]: Starting new HTTP connection (1): julianwitkowski.pl:80
+lut 21 23:03:04 program [180550]: http://julianwitkowski.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:04 program [180550]: http://julianwitkowski.pl
+lut 21 23:03:04 program [180550]: Starting new HTTP connection (1): littlewitch32.pl:80
+lut 21 23:03:04 program [180550]: http://littlewitch32.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:04 program [180550]: http://littlewitch32.pl
+lut 21 23:03:04 program [180550]: Starting new HTTP connection (1): paulina-koduje-pythona.pl:80
+lut 21 23:03:04 program [180550]: http://paulina-koduje-pythona.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:04 program [180550]: http://paulina-koduje-pythona.pl
+lut 21 23:03:04 program [180550]: Starting new HTTP connection (1): tscibek.pl:80
+lut 21 23:03:04 program [180550]: http://tscibek.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:04 program [180550]: http://tscibek.pl
+lut 21 23:03:04 program [180550]: Starting new HTTP connection (1): swempix.pl:80
+lut 21 23:03:04 program [180550]: http://swempix.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:04 program [180550]: http://swempix.pl
+lut 21 23:03:04 program [180550]: Starting new HTTP connection (1): emocrec.pl:80
+lut 21 23:03:04 program [180550]: http://emocrec.pl
+lut 21 23:03:04 program [180550]: Starting new HTTP connection (1): runningwarrior.pl:80
+lut 21 23:03:04 program [180550]: http://runningwarrior.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:04 program [180550]: http://runningwarrior.pl
+lut 21 23:03:04 program [180550]: Starting new HTTP connection (1): foremka.tk:80
+lut 21 23:03:04 program [180550]: http://foremka.tk:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:04 program [180550]: http://foremka.tk
+lut 21 23:03:04 program [180550]: Starting new HTTP connection (1): junioronly.com:80
+lut 21 23:03:14 program [180550]: http://junioronly.com
+lut 21 23:03:14 program [180550]: Starting new HTTP connection (1): python-cave.pl:80
+lut 21 23:03:14 program [180550]: http://python-cave.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:14 program [180550]: http://python-cave.pl
+lut 21 23:03:14 program [180550]: Starting new HTTP connection (1): korneliusz-burian.pl:80
+lut 21 23:03:14 program [180550]: http://korneliusz-burian.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:14 program [180550]: http://korneliusz-burian.pl
+lut 21 23:03:14 program [180550]: Starting new HTTP connection (1): malinowapogoda.edu.pl:80
+lut 21 23:03:14 program [180550]: http://malinowapogoda.edu.pl
+lut 21 23:03:14 program [180550]: Starting new HTTP connection (1): andysz.bieda.it:80
+lut 21 23:03:15 program [180550]: http://andysz.bieda.it:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:15 program [180550]: http://andysz.bieda.it
+lut 21 23:03:15 program [180550]: Starting new HTTP connection (1): python-programming.marzec.eu:80
+lut 21 23:03:25 program [180550]: http://python-programming.marzec.eu
+lut 21 23:03:25 program [180550]: Starting new HTTP connection (1): wozyweselne.pl:80
+lut 21 23:03:25 program [180550]: http://wozyweselne.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:25 program [180550]: http://wozyweselne.pl
+lut 21 23:03:25 program [180550]: Starting new HTTP connection (1): cryptella.pl:80
+lut 21 23:03:25 program [180550]: http://cryptella.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:25 program [180550]: http://cryptella.pl
+lut 21 23:03:25 program [180550]: Starting new HTTP connection (1): em45.pl:80
+lut 21 23:03:35 program [180550]: http://em45.pl
+lut 21 23:03:35 program [180550]: Starting new HTTP connection (1): damianbialas.pl:80
+lut 21 23:03:35 program [180550]: http://damianbialas.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:35 program [180550]: http://damianbialas.pl
+lut 21 23:03:35 program [180550]: Starting new HTTP connection (1): rclimate.pl:80
+lut 21 23:03:35 program [180550]: http://rclimate.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:35 program [180550]: http://rclimate.pl
+lut 21 23:03:35 program [180550]: Starting new HTTP connection (1): mojapierwszadomena.pl:80
+lut 21 23:03:35 program [180550]: http://mojapierwszadomena.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:35 program [180550]: http://mojapierwszadomena.pl
+lut 21 23:03:35 program [180550]: Starting new HTTP connection (1): test.konradlapka.site:80
+lut 21 23:03:35 program [180550]: http://test.konradlapka.site
+lut 21 23:03:35 program [180550]: Starting new HTTP connection (1): pythontu.pl:80
+lut 21 23:03:45 program [180550]: http://pythontu.pl
+lut 21 23:03:45 program [180550]: Starting new HTTP connection (1): dt3.eu:80
+lut 21 23:03:45 program [180550]: http://dt3.eu:80 "GET / HTTP/1.1" 301 0
+lut 21 23:03:45 program [180550]: Starting new HTTP connection (1): www.dt3.pl:80
+lut 21 23:03:46 program [180550]: http://www.dt3.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:46 program [180550]: http://dt3.eu
+lut 21 23:03:46 program [180550]: Starting new HTTP connection (1): flag.artbit.com.pl:80
+lut 21 23:03:46 program [180550]: http://flag.artbit.com.pl:80 "GET / HTTP/1.1" 301 17
+lut 21 23:03:46 program [180550]: Starting new HTTPS connection (1): flag.artbit.com.pl:443
+lut 21 23:03:46 program [180550]: https://flag.artbit.com.pl:443 "GET / HTTP/1.1" 200 192
+lut 21 23:03:46 program [180550]: http://flag.artbit.com.pl
+lut 21 23:03:46 program [180550]: Starting new HTTP connection (1): kamilzeglen.pl:80
+lut 21 23:03:56 program [180550]: http://kamilzeglen.pl
+lut 21 23:03:56 program [180550]: Starting new HTTP connection (1): torododendron.pl:80
+lut 21 23:03:56 program [180550]: http://torododendron.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:56 program [180550]: http://torododendron.pl
+lut 21 23:03:56 program [180550]: Starting new HTTP connection (1): ribjata.pl:80
+lut 21 23:03:56 program [180550]: http://ribjata.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:03:56 program [180550]: http://ribjata.pl
+lut 21 23:03:56 program [180550]: Starting new HTTP connection (1): gosiatesterka.pl:80
+lut 21 23:04:06 program [180550]: http://gosiatesterka.pl
+lut 21 23:04:06 program [180550]: Starting new HTTP connection (1): mrmoose.com.pl:80
+lut 21 23:04:06 program [180550]: http://mrmoose.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:06 program [180550]: http://mrmoose.com.pl
+lut 21 23:04:06 program [180550]: Starting new HTTP connection (1): pigalu.pl:80
+lut 21 23:04:06 program [180550]: http://pigalu.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:06 program [180550]: http://pigalu.pl
+lut 21 23:04:06 program [180550]: Starting new HTTP connection (1): niebyt.pl:80
+lut 21 23:04:06 program [180550]: http://niebyt.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:06 program [180550]: http://niebyt.pl
+lut 21 23:04:06 program [180550]: Starting new HTTP connection (1): uczesieprogramowac.pl:80
+lut 21 23:04:16 program [180550]: http://uczesieprogramowac.pl
+lut 21 23:04:16 program [180550]: Starting new HTTP connection (1): projekty-patrycjaksmrz.pl:80
+lut 21 23:04:16 program [180550]: http://projekty-patrycjaksmrz.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:16 program [180550]: http://projekty-patrycjaksmrz.pl
+lut 21 23:04:16 program [180550]: Starting new HTTP connection (1): test.wykrywaj.pl:80
+lut 21 23:04:16 program [180550]: http://test.wykrywaj.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:16 program [180550]: http://test.wykrywaj.pl
+lut 21 23:04:16 program [180550]: Starting new HTTP connection (1): lubuskieklunkry.pl:80
+lut 21 23:04:16 program [180550]: http://lubuskieklunkry.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:16 program [180550]: http://lubuskieklunkry.pl
+lut 21 23:04:16 program [180550]: Starting new HTTP connection (1): wyqp.pl:80
+lut 21 23:04:17 program [180550]: http://wyqp.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:17 program [180550]: http://wyqp.pl
+lut 21 23:04:17 program [180550]: Starting new HTTP connection (1): bookreview.pl:80
+lut 21 23:04:27 program [180550]: http://bookreview.pl
+lut 21 23:04:27 program [180550]: Starting new HTTP connection (1): plusart.pro:80
+lut 21 23:04:27 program [180550]: http://plusart.pro:80 "GET / HTTP/1.1" 200 756
+lut 21 23:04:27 program [180550]: http://plusart.pro
+lut 21 23:04:27 program [180550]: Starting new HTTP connection (1): danielekwafelek.pl:80
+lut 21 23:04:27 program [180550]: http://danielekwafelek.pl:80 "GET / HTTP/1.1" 200 157
+lut 21 23:04:27 program [180550]: http://danielekwafelek.pl
+lut 21 23:04:27 program [180550]: Starting new HTTP connection (1): lukasz-blechar.pl:80
+lut 21 23:04:27 program [180550]: http://lukasz-blechar.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:27 program [180550]: http://lukasz-blechar.pl
+lut 21 23:04:27 program [180550]: Starting new HTTP connection (1): kocilegat.pl:80
+lut 21 23:04:27 program [180550]: http://kocilegat.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:27 program [180550]: http://kocilegat.pl
+lut 21 23:04:27 program [180550]: Starting new HTTP connection (1): edukodu.pl:80
+lut 21 23:04:27 program [180550]: http://edukodu.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:27 program [180550]: http://edukodu.pl
+lut 21 23:04:27 program [180550]: Starting new HTTP connection (1): emobox.pl:80
+lut 21 23:04:27 program [180550]: http://emobox.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:27 program [180550]: http://emobox.pl
+lut 21 23:04:27 program [180550]: Starting new HTTP connection (1): dt3.pl:80
+lut 21 23:04:27 program [180550]: http://dt3.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:27 program [180550]: http://dt3.pl
+lut 21 23:04:27 program [180550]: Starting new HTTP connection (1): trzydwatrzy.pl:80
+lut 21 23:04:27 program [180550]: http://trzydwatrzy.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:27 program [180550]: http://trzydwatrzy.pl
+lut 21 23:04:27 program [180550]: Starting new HTTP connection (1): agnieszkaf.pl:80
+lut 21 23:04:28 program [180550]: http://agnieszkaf.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:28 program [180550]: http://agnieszkaf.pl
+lut 21 23:04:28 program [180550]: Starting new HTTP connection (1): ehoze-developer.pl:80
+lut 21 23:04:28 program [180550]: http://ehoze-developer.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:28 program [180550]: http://ehoze-developer.pl
+lut 21 23:04:28 program [180550]: Starting new HTTP connection (1): dominisiaczkowo.pl:80
+lut 21 23:04:38 program [180550]: http://dominisiaczkowo.pl
+lut 21 23:04:38 program [180550]: Starting new HTTP connection (1): yabol2137.pl:80
+lut 21 23:04:48 program [180550]: http://yabol2137.pl
+lut 21 23:04:48 program [180550]: Starting new HTTP connection (1): mikropatolog.pl:80
+lut 21 23:04:48 program [180550]: http://mikropatolog.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:48 program [180550]: http://mikropatolog.pl
+lut 21 23:04:48 program [180550]: Starting new HTTP connection (1): puunina.szczecin.pl:80
+lut 21 23:04:48 program [180550]: http://puunina.szczecin.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 23:04:48 program [180550]: http://puunina.szczecin.pl
+lut 21 23:04:48 program [180550]: Starting new HTTP connection (1): hlwnv.com.pl:80
+lut 21 23:04:48 program [180550]: http://hlwnv.com.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:48 program [180550]: http://hlwnv.com.pl
+lut 21 23:04:48 program [180550]: Starting new HTTP connection (1): borovski.e-qov.pl:80
+lut 21 23:04:58 program [180550]: http://borovski.e-qov.pl
+lut 21 23:04:58 program [180550]: Starting new HTTP connection (1): ab-solution.pl:80
+lut 21 23:04:58 program [180550]: http://ab-solution.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:58 program [180550]: http://ab-solution.pl
+lut 21 23:04:58 program [180550]: Starting new HTTP connection (1): masterofsnakes.pl:80
+lut 21 23:04:58 program [180550]: http://masterofsnakes.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:58 program [180550]: http://masterofsnakes.pl
+lut 21 23:04:58 program [180550]: Starting new HTTP connection (1): wetwater.pl:80
+lut 21 23:04:58 program [180550]: http://wetwater.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:04:58 program [180550]: http://wetwater.pl
+lut 21 23:04:58 program [180550]: Starting new HTTP connection (1): youras.pl:80
+lut 21 23:05:08 program [180550]: http://youras.pl
+lut 21 23:05:08 program [180550]: Starting new HTTP connection (1): przemekwrona.pl:80
+lut 21 23:05:09 program [180550]: http://przemekwrona.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:09 program [180550]: http://przemekwrona.pl
+lut 21 23:05:09 program [180550]: Starting new HTTP connection (1): pytonportfolio.pl:80
+lut 21 23:05:09 program [180550]: http://pytonportfolio.pl
+lut 21 23:05:09 program [180550]: Starting new HTTP connection (1): ng-python.pl:80
+lut 21 23:05:09 program [180550]: http://ng-python.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:09 program [180550]: http://ng-python.pl
+lut 21 23:05:09 program [180550]: Starting new HTTP connection (1): soczkowato.pl:80
+lut 21 23:05:09 program [180550]: http://soczkowato.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:09 program [180550]: http://soczkowato.pl
+lut 21 23:05:09 program [180550]: Starting new HTTP connection (1): python-learning.pl:80
+lut 21 23:05:09 program [180550]: http://python-learning.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:09 program [180550]: http://python-learning.pl
+lut 21 23:05:09 program [180550]: Starting new HTTP connection (1): python.weselle.pl:80
+lut 21 23:05:09 program [180550]: http://python.weselle.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:09 program [180550]: http://python.weselle.pl
+lut 21 23:05:09 program [180550]: Starting new HTTP connection (1): despresso.pl:80
+lut 21 23:05:09 program [180550]: http://despresso.pl:80 "GET / HTTP/1.1" 502 182
+lut 21 23:05:09 program [180550]: http://despresso.pl
+lut 21 23:05:09 program [180550]: Starting new HTTP connection (1): programatorek.pl:80
+lut 21 23:05:09 program [180550]: http://programatorek.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:09 program [180550]: http://programatorek.pl
+lut 21 23:05:09 program [180550]: Starting new HTTP connection (1): daco-python.pl:80
+lut 21 23:05:19 program [180550]: http://daco-python.pl
+lut 21 23:05:19 program [180550]: Starting new HTTP connection (1): cyfrowydzik.pl:80
+lut 21 23:05:19 program [180550]: http://cyfrowydzik.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:19 program [180550]: http://cyfrowydzik.pl
+lut 21 23:05:19 program [180550]: Starting new HTTP connection (1): do-it-today.pl:80
+lut 21 23:05:19 program [180550]: http://do-it-today.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:19 program [180550]: http://do-it-today.pl
+lut 21 23:05:19 program [180550]: Starting new HTTP connection (1): piotrekxd.pl:80
+lut 21 23:05:20 program [180550]: http://piotrekxd.pl
+lut 21 23:05:20 program [180550]: Starting new HTTP connection (1): pimpa.pl:80
+lut 21 23:05:30 program [180550]: http://pimpa.pl
+lut 21 23:05:30 program [180550]: Starting new HTTP connection (1): kingvszka.pl:80
+lut 21 23:05:30 program [180550]: http://kingvszka.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:30 program [180550]: http://kingvszka.pl
+lut 21 23:05:30 program [180550]: Starting new HTTP connection (1): adavxcq.pl:80
+lut 21 23:05:30 program [180550]: http://adavxcq.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:30 program [180550]: http://adavxcq.pl
+lut 21 23:05:30 program [180550]: Starting new HTTP connection (1): e-security.cloud:80
+lut 21 23:05:30 program [180550]: http://e-security.cloud:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:30 program [180550]: http://e-security.cloud
+lut 21 23:05:30 program [180550]: Starting new HTTP connection (1): szimilandia.pl:80
+lut 21 23:05:30 program [180550]: http://szimilandia.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:30 program [180550]: http://szimilandia.pl
+lut 21 23:05:30 program [180550]: Starting new HTTP connection (1): isp7.pl:80
+lut 21 23:05:30 program [180550]: http://isp7.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:30 program [180550]: http://isp7.pl
+lut 21 23:05:30 program [180550]: Starting new HTTP connection (1): w-dziedzic.pl:80
+lut 21 23:05:30 program [180550]: http://w-dziedzic.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:30 program [180550]: http://w-dziedzic.pl
+lut 21 23:05:30 program [180550]: Starting new HTTP connection (1): maczupikczu.online:80
+lut 21 23:05:31 program [180550]: http://maczupikczu.online:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:31 program [180550]: http://maczupikczu.online
+lut 21 23:05:31 program [180550]: Starting new HTTP connection (1): urszkam.pl:80
+lut 21 23:05:31 program [180550]: http://urszkam.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:31 program [180550]: http://urszkam.pl
+lut 21 23:05:31 program [180550]: Starting new HTTP connection (1): hadr.tk:80
+lut 21 23:05:41 program [180550]: http://hadr.tk
+lut 21 23:05:41 program [180550]: Starting new HTTP connection (1): jestemjonson.pl:80
+lut 21 23:05:41 program [180550]: http://jestemjonson.pl:80 "GET / HTTP/1.1" 502 166
+lut 21 23:05:41 program [180550]: http://jestemjonson.pl
+lut 21 23:05:41 program [180550]: Starting new HTTP connection (1): gregkozicki.pl:80
+lut 21 23:05:51 program [180550]: http://gregkozicki.pl
+lut 21 23:05:51 program [180550]: Starting new HTTP connection (1): pvtrk.pl:80
+lut 21 23:05:51 program [180550]: http://pvtrk.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:51 program [180550]: http://pvtrk.pl
+lut 21 23:05:51 program [180550]: Starting new HTTP connection (1): inzpython.pl:80
+lut 21 23:05:52 program [180550]: http://inzpython.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:52 program [180550]: http://inzpython.pl
+lut 21 23:05:52 program [180550]: Starting new HTTP connection (1): tomekpython.online:80
+lut 21 23:05:52 program [180550]: http://tomekpython.online:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:52 program [180550]: http://tomekpython.online
+lut 21 23:05:52 program [180550]: Starting new HTTP connection (1): zulos.pl:80
+lut 21 23:05:52 program [180550]: http://zulos.pl:80 "GET / HTTP/1.1" 200 None
+lut 21 23:05:52 program [180550]: http://zulos.pl
+lut 21 23:05:52 program [180550]: Starting new HTTP connection (1): dupa.twojadomena.pl:80
+lut 21 23:06:01 program [180550]: http://dupa.twojadomena.pl
