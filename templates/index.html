@@ -1,21 +1,67 @@
 <html>
-    <head>
-        <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        </style>
-    </head>
-    <body>
-        
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="kubus_puchatek">News</a></li>
-            <li><a href="flagi">Contact</a></li>
-            <li><a href="doc">About</a></li>
-        </ul>
+	<head>
+		<title>Kurs Programowania w Pythonie - index page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		body {
+				background-color: #112b41;
+		}
+		ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+		}
 
-    </body>
+		.vertical-menu {
+			width: 25vw;
+		}
+
+		.vertical-menu a {
+			background-color: #112b41;
+			color: #fdfdfd;
+			display: block;
+			padding: 12px;
+			text-decoration: none;
+		}
+
+		.vertical-menu a:hover {
+			background-color: #395ccf;
+		}
+
+		.vertical-menu a.active {
+			background-color: #04AA6D;
+			color: rgb(221, 41, 41);
+		}
+		.left-col {
+			width: 25vw;
+			margin-left: 25vw;
+		}
+		.right-col {
+			width: 25vw;
+			margin-left: 25vw;
+		}
+		.right-col-hr {
+			width: 25vw;
+    	float: right;
+		}
+		.center-col {
+			width: 25vw;
+			margin-left: 25vw;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="left-col"><hr></div>
+		<div class="center-col">
+		<ul class="vertical-menu">
+			<li class="active"><a href="/">Home {{text}}</a></li>
+			<li><a href="kubus_puchatek">Kubuś Puchatek</a></li>
+			<li><a href="flagi">Flagi page</a></li>
+			<li><a href="doc">Dokumantacja</a></li>
+			<li><a href="xd">xD page</a></li>
+		</ul>
+	</div>
+		<div class="right-col"><hr class="right-col-hr"></div>
+	</body>
 </html>

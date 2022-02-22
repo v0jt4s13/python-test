@@ -20,11 +20,11 @@ kubus_linie = [l.strip() for l in kubus_text.split('</p>')]
 start = 1000
 end = 1100
 str_out = 'Działa jak natura chciała ;) '
-tajemniczy_bohater = 'Cyber Przemo'
-bohater_2 = 'dot MS'
-bohater_3 = 'Sylwia W'
-new_krzys = 'Wojtek'
-new_krzys2 = "Wojtka"
+tajemniczy_bohater = '<span style="background-color:red;color:white">Cyber Przemo</span>'
+bohater_2 = '<span style="background-color:blue;color:white">dot MS</span>'
+bohater_3 = '<span style="background-color:green;color:white">Sylwek</span>'
+new_krzys = '<span style="background-color:yellow;color:red">Wojtek</span>'
+new_krzys2 = '<span style="background-color:yellow;color:red">Wojtka</span>'
 for index, linia in enumerate( kubus_linie):
     if index >= start and index < end:
 
