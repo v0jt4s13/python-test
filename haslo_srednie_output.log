@@ -27,3 +27,44 @@ Feb 15 02:16:02 program [102483]: # rand_number=6 -> first:9 -> last:2
 Feb 15 02:16:02 program [102483]: # rand_number=7 -> first:5 -> last:8
 Feb 15 02:16:02 program [102483]: # rand_number=6 -> first:2 -> last:7
 Feb 15 02:16:02 program [102483]: # rand_number=0 -> first:8 -> last:5
+Feb 22 09:12:25 program [246841]: =====>START<====
+Feb 22 09:12:31 program [246841]: # rand_number=6 -> first:1 -> last:3
+Feb 22 09:12:31 program [246841]: # rand_number=6 -> first:4 -> last:7
+Feb 22 09:12:31 program [246841]: # rand_number=7 -> first:9 -> last:8
+Feb 22 09:12:31 program [246841]: # rand_number=1 -> first:8 -> last:5
+Feb 22 09:12:54 program [247022]: =====>START<====
+Feb 22 09:13:31 program [247022]: # rand_number=5 -> first:5 -> last:3
+Feb 22 09:13:31 program [247022]: # rand_number=2 -> first:6 -> last:2
+Feb 22 09:13:31 program [247022]: # rand_number=1 -> first:2 -> last:5
+Feb 22 09:13:31 program [247022]: # rand_number=3 -> first:2 -> last:5
+Feb 22 09:13:34 program [247213]: =====>START<====
+Feb 22 09:14:12 program [247213]: # rand_number=2 -> first:1 -> last:3
+Feb 22 09:14:12 program [247213]: # rand_number=5 -> first:3 -> last:3
+Feb 22 09:14:12 program [247213]: # rand_number=2 -> first:3 -> last:6
+Feb 22 09:14:12 program [247213]: # rand_number=7 -> first:3 -> last:2
+Feb 22 09:14:14 program [247390]: =====>START<====
+Feb 22 09:14:19 program [247390]: # rand_number=1 -> first:4 -> last:6
+Feb 22 09:14:19 program [247390]: # rand_number=3 -> first:6 -> last:5
+Feb 22 09:14:19 program [247390]: # rand_number=7 -> first:2 -> last:6
+Feb 22 09:14:19 program [247390]: # rand_number=1 -> first:2 -> last:5
+Feb 22 09:14:44 program [247551]: =====>START<====
+Feb 22 09:15:10 program [247551]: # rand_number=1 -> first:3 -> last:4
+Feb 22 09:15:10 program [247551]: # rand_number=7 -> first:2 -> last:7
+Feb 22 09:15:10 program [247551]: # rand_number=1 -> first:1 -> last:6
+Feb 22 09:15:10 program [247551]: # rand_number=5 -> first:5 -> last:1
+Feb 22 09:15:13 program [247706]: =====>START<====
+Feb 22 09:51:55 program [247706]: # rand_number=8 -> first:7 -> last:7
+Feb 22 09:51:55 program [247706]: # rand_number=3 -> first:8 -> last:1
+Feb 22 09:51:55 program [247706]: # rand_number=2 -> first:4 -> last:4
+Feb 22 09:51:55 program [247706]: # rand_number=7 -> first:5 -> last:6
+Feb 22 09:51:57 program [254552]: =====>START<====
+Feb 22 09:53:04 program [254802]: =====>START<====
+Feb 22 09:53:04 program [254802]: # rand_number=7 -> first:1 -> last:9
+Feb 22 09:53:04 program [254802]: # rand_number=8 -> first:9 -> last:1
+Feb 22 09:53:04 program [254802]: # rand_number=3 -> first:8 -> last:4
+Feb 22 09:53:04 program [254802]: # rand_number=4 -> first:3 -> last:3
+Feb 22 09:53:43 program [254967]: =====>START<====
+Feb 22 09:53:43 program [254967]: # rand_number=3 -> first:9 -> last:8
+Feb 22 09:53:43 program [254967]: # rand_number=0 -> first:8 -> last:1
+Feb 22 09:53:43 program [254967]: # rand_number=7 -> first:3 -> last:6
+Feb 22 09:53:43 program [254967]: # rand_number=7 -> first:8 -> last:6

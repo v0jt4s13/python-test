@@ -44,16 +44,19 @@ def listRandomSort(lista):
 def main(argv):
 	#console.clear()
 	
-	print('Number of arguments:', len(argv), 'arguments.')
-	print('Argument List:', str(argv))
+	#print('Number of arguments:', len(argv), 'arguments.')
+	#print('Argument List:', str(argv))
+	#print(type(int(argv[1])))
+	if len(argv) == 0 or type(int(argv[1])) != int:
+		print("\n\n")
+		print("\t\t\t####### Generator haseł #######")
+		print("\t\t\tWstępne założenia: min 8 znakow, a w tym: 2 duże litery, 2 małe litery, 2 cyfry oraz 2 znaki specjalne")
+		print()
+		ilosc_znakow = int(input("\t\t\tPodaj dlugość hasła, pomiędzy 8 a 20 znaków: "))
+	else:
+		ilosc_znakow = int(argv[1])
 
-	print("\n\n")
-	print("\t\t\t####### Generator haseł #######")
-	print("\t\t\tWstępne założenia: min 8 znakow, a w tym: 2 duże litery, 2 małe litery, 2 cyfry oraz 2 znaki specjalne")
-	print()
-	ilosc_znakow = int(input("\t\t\tPodaj dlugość hasła, pomiędzy 8 a 20 znaków: "))
 	punctuation = "!#$%&*+,.:;=?@" #string.punctuation
-
 	haslo_znaki_lista = []
 	xx = 0
 	while xx < 2:
@@ -92,13 +95,16 @@ def main(argv):
 
 	haslo = [''.join(haslo_znaki_lista)]
 	haslo.append(listRandomSort(haslo_znaki_lista))
-	print('\t\t\tPierwsze wylosowane znaki hasła, aby uzyskać min. 8 znaków\n\t\t\t(DUZE-2;małe-2;cyfry-2;znaki specj-2):\n\t\t\t\t\t %s' %str(first8char))
-	print()
-	print('\t\t\tWygenerowane hasło, %s znaków: %s' %(ilosc_znakow,str(haslo[0])))
-	print('\t\t\tDodatkowo przesortowane randomowo: %s' %str(haslo[1]))
-	print()
-	print('************************************************************************************')
-	print()
+	if len(argv) == 0 or type(int(argv[1])) != int:
+		print('\t\t\tPierwsze wylosowane znaki hasła, aby uzyskać min. 8 znaków\n\t\t\t(DUZE-2;małe-2;cyfry-2;znaki specj-2):\n\t\t\t\t\t %s' %str(first8char))
+		print()
+		print('\t\t\tWygenerowane hasło, %s znaków: %s' %(ilosc_znakow,str(haslo[0])))
+		print('\t\t\tDodatkowo przesortowane randomowo: %s' %str(haslo[1]))
+		print()
+		print('************************************************************************************')
+		print()
+	else:
+		print(str(haslo[1]))
 
 if __name__ == '__main__':
   main(sys.argv)

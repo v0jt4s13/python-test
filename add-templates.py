@@ -15,7 +15,7 @@ def main():
 	USER = "ubuntu"
 	GROUP = "www-data"
 	SERWER_TEMPLATES_PATH = "/var/www/flaga"
-	HOME_TEMPLATES_PATH = "/$HOME/python-test/templates"
+	HOME_TEMPLATES_PATH = "/home/ubuntu/python-test/templates"
 	#########################################################
 	
 	print('\n\n')
@@ -30,8 +30,8 @@ def main():
 		HOME_TEMPLATES_PATH = tmp_home_templates_path
 
 	if file_name in ("rsync",""):
-		os.system('sudo rsync -avzh '+HOME_TEMPLATES_PATH+' '+SERWER_TEMPLATES_PATH)
-		print('Synchronizacja wykonana, trwa reboot serwera .... ')
+		os.system('rsync -avzh '+HOME_TEMPLATES_PATH+' '+SERWER_TEMPLATES_PATH)
+		print('Synchronizacja:\n sudo rsync -avzh '+HOME_TEMPLATES_PATH+' '+SERWER_TEMPLATES_PATH+' \n wykonana, trwa reboot serwera .... ')
 	else:	
 		file_path = SERWER_TEMPLATES_PATH+"/templates/"+file_name+".html"
 
