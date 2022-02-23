@@ -42,10 +42,9 @@ def main(argv):
 			change_user_resp = os.setuid(uid)
 			print("Real user ID after changes:", os.getuid())
 			#change_user_resp = subprocess.check_output(change_user_resp, shell=True)
-			print(change_user_resp)
-			new_user = subprocess.check_output('whoami', shell=True)
-			print(os.system('cd '+init_dir))
-			print(os.system('pwd'))
+			#print(change_user_resp)
+			#new_user = subprocess.check_output('whoami', shell=True)
+			os.system('cd '+init_dir+' && pwd')
 
 		print(os.system('git add -A .; git commit -m "'+commit_text+'"; git push'))
 		print('Wypchanie kodu na GitHub:\n git add -A .; git commit -m "'+commit_text+'"; git push')
