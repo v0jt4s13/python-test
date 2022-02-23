@@ -10,6 +10,7 @@ def current_milli_time():
 	return round(time.time() * 1000)
 
 def main():
+	import subprocess
 	console.clear()
 	############## kilka linijek konfiguracyjnych ###########
 	USER = "ubuntu"
@@ -20,14 +21,15 @@ def main():
 	
 	print('\n\n')
 	option_nr = console.input("\t\t\t\t*** Wybierz jedną z poniższych opcji: \n\t\t\t\t*** 1. nazwe pliku html \n\t\t\t\t*** 2. wykonaj synchronizacje (rsync) \n\t\t\t\t*** 3. wypchnij kod na GitHub\n\t\t\t\t*** ")
-	if option_nr == 1:
+	file_name = ""
+	if option_nr == "1":
 		file_name = console.input("\t\t\t\t*** Podaj nazwę pliku html (bez rozszerzenia): \n\t\t\t\t*** ")
-	elif option_nr == 3:
+	elif option_nr == "3":
 		commit_text = console.input("\t\t\t\t*** Wpisz opis dla 'git commit': \n\t\t\t\t*** ")
 		print(os.system('git add -A .; git commit -m "'+commit_text+'"; git push'))
 		print('Wypchanie kodu na GitHub:\n git add -A .; git commit -m "'+commit_text+'"; git push')
 	
-	if option_nr != 3:
+	if option_nr != "3":
 		tmp_serwer_templates_path = console.input("\t\t\t\t*** Wpisz scieżke do katalogu templates na serwerze lub wciśnij ENTER\n\t\t\t\t\t (default: "+SERWER_TEMPLATES_PATH+")\n\t\t\t\t*** ")
 		if tmp_serwer_templates_path != "":
 			SERWER_TEMPLATES_PATH = tmp_serwer_templates_path
@@ -36,9 +38,14 @@ def main():
 		if tmp_home_templates_path != "":
 			HOME_TEMPLATES_PATH = tmp_home_templates_path
 
-		if option_nr == 3:
-			os.system('rsync -avzh '+HOME_TEMPLATES_PATH+' '+SERWER_TEMPLATES_PATH)
-			print('Synchronizacja:\n sudo rsync -avzh '+HOME_TEMPLATES_PATH+' '+SERWER_TEMPLATES_PATH+' \n wykonana, trwa reboot serwera .... ')
+		if option_nr == "2":
+			#wynik = os.system('rsync -avzh '+HOME_TEMPLATES_PATH+' '+SERWER_TEMPLATES_PATH)
+			wynik = subprocess.check_output('rsync -avzh '+HOME_TEMPLATES_PATH+' '+SERWER_TEMPLATES_PATH, shell=True)
+			str_wynik = str(wynik)
+			str_wynik = str_wynik.replace('\n', '\n\t\t\t\t*** ')
+
+			print('\t\t\t\t*** %s' %str_wynik)
+			print('\n\t\t\t\t*** Synchronizacja:\n\t\t\t\t*** sudo rsync -avzh '+HOME_TEMPLATES_PATH+' '+SERWER_TEMPLATES_PATH+' \n\t\t\t\t*** wykonana, trwa reboot serwera .... \n\n')
 		else:	
 			file_path = SERWER_TEMPLATES_PATH+"/templates/"+file_name+".html"
 			html_str = "<html>\n\t<head>\n\t\t<style>\n\n\t\t</style>\n\t</head>\n\t<body>"+file_name+".html {{text}}\n\n\t</body>\n</html>"
@@ -117,7 +124,7 @@ def main():
 	os.system('sudo systemctl restart nginx')
 	os.system('sudo systemctl restart flaga.service')
 
-	if option_nr == 1:
+	if option_nr == "1":
 		os.system('sudo chown '+USER+'.'+GROUP+' '+file_path)
 		print(os.system('ls -l '+SERWER_TEMPLATES_PATH+'/templates'))
 		#print(os.system('nano '+file_path))
