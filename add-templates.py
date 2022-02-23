@@ -38,8 +38,9 @@ def main(argv):
 		print('==>'+init_user+'<==='+init_dir+'===>'+str(uid))
 		print()
 		if init_user == "root":
-			
+			print("Real user ID of the current process:", os.getuid())
 			change_user_resp = os.setuid(uid)
+			print("Real user ID after changes:", os.getuid())
 			#change_user_resp = subprocess.check_output(change_user_resp, shell=True)
 			print(change_user_resp)
 			new_user = subprocess.check_output('whoami', shell=True)
