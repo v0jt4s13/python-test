@@ -30,14 +30,18 @@ def main(argv):
 	
 	if len(argv) > 1 and argv[1] == "3":
 		commit_text = console.input("\t\t\t\t*** Wpisz opis dla 'git commit': \n\t\t\t\t*** ")
-		init_user = os.system('whoami')
-		print(init_user)
-		print(os.system('pwd'))
-		if os.system('whoami') == "root":
-			print(os.setuid(const_var('UID')))
-			#print(os.system('su ubuntu -c'))
-			print(os.system('cd /$HOME/'+os.system('whoami')+' && pwd'))
-			
+		init_user = subprocess.check_output('whoami', shell=True)
+		init_dir = subprocess.check_output('pwd', shell=True)
+		init_user = init_user.decode().replace('\n','') #, os.system('pwd'))
+		init_dir = init_dir.decode().replace('\n','')
+		print('==>'+init_user+'<==='+init_dir)
+		print()
+		if init_user == "root":
+			os.setuid(const_var('UID'))
+			new_user = subprocess.check_output('whoami', shell=True)
+			print(os.system('cd '+init_dir))
+			print(os.system('pwd'))
+
 		print(os.system('git add -A .; git commit -m "'+commit_text+'"; git push'))
 		print('Wypchanie kodu na GitHub:\n git add -A .; git commit -m "'+commit_text+'"; git push')
 	else:
