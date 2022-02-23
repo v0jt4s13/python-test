@@ -29,6 +29,8 @@ def main(argv):
 	if len(argv) > 1 and argv[1] == "3":
 		commit_text = console.input("\t\t\t\t*** Wpisz opis dla 'git commit': \n\t\t\t\t*** ")
 		print(os.system('whoami'))
+		print(os.system('su ubuntu -c'))
+		print(os.system('whoami'))
 		print(os.system('git add -A .; git commit -m "'+commit_text+'"; git push'))
 		print('Wypchanie kodu na GitHub:\n git add -A .; git commit -m "'+commit_text+'"; git push')
 	else:
