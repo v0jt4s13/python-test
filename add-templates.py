@@ -47,7 +47,7 @@ def main(argv):
 			os.system('cd '+init_dir+' && pwd')
 
 		git_out = subprocess.check_output('git add -A .; git commit -m "'+commit_text+'"; git push', shell=True)
-		print(git_out)
+		print(git_out.decode())
 		print('Wypchanie kodu na GitHub:\n git add -A .; git commit -m "'+commit_text+'"; git push')
 	else:
 		print('\n\n')
