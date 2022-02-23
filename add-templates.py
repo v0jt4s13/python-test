@@ -34,10 +34,12 @@ def main(argv):
 		init_dir = subprocess.check_output('pwd', shell=True)
 		init_user = init_user.decode().replace('\n','') #, os.system('pwd'))
 		init_dir = init_dir.decode().replace('\n','')
-		print('==>'+init_user+'<==='+init_dir)
+		uid = const_var('UID')
+		print('==>'+init_user+'<==='+init_dir+'===>'+str(uid))
 		print()
 		if init_user == "root":
-			change_user_resp = os.setuid(const_var('UID'))
+			
+			change_user_resp = os.setuid(uid)
 			#change_user_resp = subprocess.check_output(change_user_resp, shell=True)
 			print(change_user_resp)
 			new_user = subprocess.check_output('whoami', shell=True)
