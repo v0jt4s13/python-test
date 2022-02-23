@@ -48,7 +48,7 @@ def main(argv):
 
 		git_out = subprocess.check_output('git add -A .; git commit -m "'+commit_text+'"; git push', shell=True)
 		print(git_out.decode())
-		print('Wypchanie kodu na GitHub:\n git add -A .; git commit -m "'+commit_text+'"; git push')
+		print('Wypchanie kodu na GitHub:\n git add -A .; git commit -m "'+commit_text+'"; git push\n\n')
 	else:
 		print('\n\n')
 		option_nr = console.input("\t\t\t\t*** Wybierz jedną z poniższych opcji: \n\t\t\t\t*** 1. nazwe pliku html \n\t\t\t\t*** 2. wykonaj synchronizacje (rsync) \n\t\t\t\t*** 3. wypchnij kod na GitHub\n\t\t\t\t*** ")
