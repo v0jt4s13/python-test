@@ -11,6 +11,8 @@ def const_var(str_p):
 	############## kilka linijek konfiguracyjnych ###########
 	if str_p == "USER":
 		return "ubuntu"
+	if str_p == "UID":
+		return 1000 # uid uzytkownika -> :$ id ubuntu
 	if str_p == "GROUP":
 		return "www-data"
 	if str_p == "SERWER_TEMPLATES_PATH":
@@ -28,11 +30,14 @@ def main(argv):
 	
 	if len(argv) > 1 and argv[1] == "3":
 		commit_text = console.input("\t\t\t\t*** Wpisz opis dla 'git commit': \n\t\t\t\t*** ")
-		print(os.system('whoami'))
-		print(os.getgid())
-		print(os.getuid())
-		#print(os.system('su ubuntu -c'))
-		print(os.system('whoami'))
+		init_user = os.system('whoami')
+		print(init_user)
+		print(os.system('pwd'))
+		if os.system('whoami') == "root":
+			print(os.setuid(const_var('UID')))
+			#print(os.system('su ubuntu -c'))
+			print(os.system('cd /$HOME/'+os.system('whoami')+' && pwd'))
+			
 		print(os.system('git add -A .; git commit -m "'+commit_text+'"; git push'))
 		print('Wypchanie kodu na GitHub:\n git add -A .; git commit -m "'+commit_text+'"; git push')
 	else:
