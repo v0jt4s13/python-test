@@ -19,86 +19,105 @@ def main():
 	#########################################################
 	
 	print('\n\n')
-	file_name = console.input("\t\t\t\t*** Podaj nazwe pliku html lub wykonaj synchronizacje (rsync) - ENTER\n\t\t\t\t*** ")
+	option_nr = console.input("\t\t\t\t*** Wybierz jedną z poniższych opcji: \n\t\t\t\t*** 1. nazwe pliku html \n\t\t\t\t*** 2. wykonaj synchronizacje (rsync) \n\t\t\t\t*** 3. wypchnij kod na GitHub\n\t\t\t\t*** ")
+	if option_nr == 1:
+		file_name = console.input("\t\t\t\t*** Podaj nazwę pliku html (bez rozszerzenia): \n\t\t\t\t*** ")
+	elif option_nr == 3:
+		commit_text = console.input("\t\t\t\t*** Wpisz opis dla 'git commit': \n\t\t\t\t*** ")
+		print(os.system('git add -A .; git commit -m "'+commit_text+'"; git push'))
+		print('Wypchanie kodu na GitHub:\n git add -A .; git commit -m "'+commit_text+'"; git push')
+	
+	if option_nr != 3:
+		tmp_serwer_templates_path = console.input("\t\t\t\t*** Wpisz scieżke do katalogu templates na serwerze lub wciśnij ENTER\n\t\t\t\t\t (default: "+SERWER_TEMPLATES_PATH+")\n\t\t\t\t*** ")
+		if tmp_serwer_templates_path != "":
+			SERWER_TEMPLATES_PATH = tmp_serwer_templates_path
 
-	tmp_serwer_templates_path = console.input("\t\t\t\t*** Wpisz scieżke do katalogu templates na serwerze lub wciśnij ENTER\n\t\t\t\t\t (default: "+SERWER_TEMPLATES_PATH+")\n\t\t\t\t*** ")
-	if tmp_serwer_templates_path != "":
-		SERWER_TEMPLATES_PATH = tmp_serwer_templates_path
+		tmp_home_templates_path = console.input("\t\t\t\t*** Wpisz scieżke do katalogu templates z repozytorium lub wciśnij ENTER\n\t\t\t\t\t (default: "+HOME_TEMPLATES_PATH+")\n\t\t\t\t*** ")
+		if tmp_home_templates_path != "":
+			HOME_TEMPLATES_PATH = tmp_home_templates_path
 
-	tmp_home_templates_path = console.input("\t\t\t\t*** Wpisz scieżke do katalogu templates z repozytorium lub wciśnij ENTER\n\t\t\t\t\t (default: "+HOME_TEMPLATES_PATH+")\n\t\t\t\t*** ")
-	if tmp_home_templates_path != "":
-		HOME_TEMPLATES_PATH = tmp_home_templates_path
+		if option_nr == 3:
+			os.system('rsync -avzh '+HOME_TEMPLATES_PATH+' '+SERWER_TEMPLATES_PATH)
+			print('Synchronizacja:\n sudo rsync -avzh '+HOME_TEMPLATES_PATH+' '+SERWER_TEMPLATES_PATH+' \n wykonana, trwa reboot serwera .... ')
+		else:	
+			file_path = SERWER_TEMPLATES_PATH+"/templates/"+file_name+".html"
+			html_str = "<html>\n\t<head>\n\t\t<style>\n\n\t\t</style>\n\t</head>\n\t<body>"+file_name+".html {{text}}\n\n\t</body>\n</html>"
 
-	if file_name in ("rsync",""):
-		os.system('rsync -avzh '+HOME_TEMPLATES_PATH+' '+SERWER_TEMPLATES_PATH)
-		print('Synchronizacja:\n sudo rsync -avzh '+HOME_TEMPLATES_PATH+' '+SERWER_TEMPLATES_PATH+' \n wykonana, trwa reboot serwera .... ')
-	else:	
-		file_path = SERWER_TEMPLATES_PATH+"/templates/"+file_name+".html"
+			pomin_dodawanie = 0
+			tmp_file_exist = ""
+			if os.path.exists(file_path):
+				tmp_file_exist = console.input("\t\t\t\t\t\t*** !!! UWAGA !!! ***\n\t\t\t\t*** Plik "+file_name+" już istnieje, czy nadpisać plik? \n\t\t\t\t\t (default: Y)\n\t\t\t\t*** ")
+				pomin_dodawanie = 1
+				#os.remove("demofile.txt")
 
-		html_str = "<html>\n\t<head>\n\t\t<style>\n\n\t\t</style>\n\t</head>\n\t<body>"+file_name+".html {{text}}\n\n\t</body>\n</html>"
+			if tmp_file_exist in ("t","T","Y","y",""):
+				tmp_extra_txt_file = console.input("\t\t\t\t*** Wpisz nazwe pliku textowego jezeli takowy ma byc dolaczony lub wciśnij ENTER\n\t\t\t\t*** ")
+				if tmp_extra_txt_file != "":
+					tmp_extra_txt_str = console.input("\t\t\t\t*** Wpisz zawartość pliku textowego \n\t\t\t\t*** ")	
+					tmp_extra_txt_file = SERWER_TEMPLATES_PATH+"/"+tmp_extra_txt_file+".txt"
+					with open(tmp_extra_txt_file, 'w') as file:
+						file.write(tmp_extra_txt_str)
+					file.close()
+					os.system('sudo chown '+USER+'.'+GROUP+' '+tmp_extra_txt_file)
+					print('Plik utworzony .... ')
 
-		pomin_dodawanie = 0
-		tmp_file_exist = ""
-		if os.path.exists(file_path):
-			tmp_file_exist = console.input("\t\t\t\t\t\t*** !!! UWAGA !!! ***\n\t\t\t\t*** Plik "+file_name+" już istnieje, czy nadpisać plik? \n\t\t\t\t\t (default: Y)\n\t\t\t\t*** ")
-			pomin_dodawanie = 1
-			#os.remove("demofile.txt")
-
-		if tmp_file_exist in ("t","T","Y","y",""):
-
-			with open(file_path, 'w') as file:
-				file.write(html_str)
-			file.close()
-			print('Zapisane, trwa reboot serwera .... ')
+				with open(file_path, 'w') as file:
+					file.write(html_str)
+				file.close()
+				print('Zapisane, trwa reboot serwera .... ')
+				
+				flask_app_path = "/var/www/flaga/app.py"
+				# file backup
+				milli_time = str(current_milli_time())
+				shutil.copy(flask_app_path, flask_app_path+'.backup.'+milli_time)
+				with open(flask_app_path, 'r+') as file:
+					line_list = file.readlines()
+				file.close()
+				count = 0
+				new_list = []
+				max_row = len(line_list)
+				start_new_line = max_row-1
+				#print('************ '+str(max_row)+' ******')
+				# Strips the newline character
+				for line in line_list:
+					count += 1
+					if pomin_dodawanie == 0:
+						if count == start_new_line:
+							new_list.append('@app.route(\'/'+file_name+'\')')
+							new_list.append('def '+file_name+'():')
+							if tmp_extra_txt_file != "":
+								new_list.append('    jakis_text = open("'+tmp_extra_txt_file+'",encoding=\'utf8\').read()')
+								new_list.append('    return render_template("'+file_name+'.html", text=jakis_text)')
+							else:
+								new_list.append('    return render_template("'+file_name+'.html")')
+							new_list.append('')
+					#new_list.append(line.strip())
+					new_list.append(line)
+					#print("line=%s >> line.strip=%s" %(line,line.strip()))
+					#print("Line{}: {}".format(count, line.strip()))
+				
+				count = 0
+				max_row = len(new_list)
+				start_last_line = max_row-1
+				#print('************ '+str(max_row)+' ****** '+new_list)
+				file1 = open(flask_app_path, 'w')
+				for new_line in new_list:
+					count += 1
+					if count >= start_new_line and count < start_last_line:
+						#print(new_line)
+						file1.write(new_line)
+						file1.write('\n')
+					else:
+						#print(new_line)
+						file1.write(new_line)
 			
-			flask_app_path = "/var/www/flaga/app.py"
-			# file backup
-			milli_time = str(current_milli_time())
-			shutil.copy(flask_app_path, flask_app_path+'.backup.'+milli_time)
-			with open(flask_app_path, 'r+') as file:
-				line_list = file.readlines()
-			file.close()
-			count = 0
-			new_list = []
-			max_row = len(line_list)
-			start_new_line = max_row-1
-			#print('************ '+str(max_row)+' ******')
-			# Strips the newline character
-			for line in line_list:
-				count += 1
-				if pomin_dodawanie == 0:
-					if count == start_new_line:
-						new_list.append('@app.route(\'/'+file_name+'\')')
-						new_list.append('def '+file_name+'():')
-						new_list.append('    return render_template("'+file_name+'.html")')
-						new_list.append('')
-				#new_list.append(line.strip())
-				new_list.append(line)
-				#print("line=%s >> line.strip=%s" %(line,line.strip()))
-				#print("Line{}: {}".format(count, line.strip()))
-			
-			count = 0
-			max_row = len(new_list)
-			start_last_line = max_row-1
-			#print('************ '+str(max_row)+' ****** '+new_list)
-			file1 = open(flask_app_path, 'w')
-			for new_line in new_list:
-				count += 1
-				if count >= start_new_line and count < start_last_line:
-					#print(new_line)
-					file1.write(new_line)
-					file1.write('\n')
-				else:
-					#print(new_line)
-					file1.write(new_line)
-		
-			file1.close()
+				file1.close()
 
 	os.system('sudo systemctl daemon-reload')
 	os.system('sudo systemctl restart nginx')
 	os.system('sudo systemctl restart flaga.service')
 
-	if file_name not in ("rsync",""):
+	if option_nr == 1:
 		os.system('sudo chown '+USER+'.'+GROUP+' '+file_path)
 		print(os.system('ls -l '+SERWER_TEMPLATES_PATH+'/templates'))
 		#print(os.system('nano '+file_path))

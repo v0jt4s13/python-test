@@ -6,6 +6,7 @@
 		<style>
 		body {
 				background-color: #112b41;
+				font-size: large;
 		}
 		ul {
 				list-style-type: none;
@@ -15,6 +16,8 @@
 
 		.vertical-menu {
 			width: 25vw;
+			min-width: 250px;
+			padding-top: 2vh;
 		}
 
 		.vertical-menu a {
@@ -37,17 +40,50 @@
 			width: 25vw;
 			margin-left: 25vw;
 		}
+		.left-col hr {
+			width: 25vw;
+			min-width: 250px;
+			float: right;
+		}
 		.right-col {
 			width: 25vw;
 			margin-left: 25vw;
 		}
-		.right-col-hr {
+		.right-col hr {
 			width: 25vw;
-    	float: right;
+			min-width: 250px;
+    		float: right;
 		}
 		.center-col {
 			width: 25vw;
 			margin-left: 25vw;
+			/*border-style: double;*/
+    		min-width: 250px;
+		}
+		@media screen and (max-width: 600px) {
+			.center-col {
+				width: 80vw;
+				margin-left: 10vw;
+			}
+			.left-col {
+				width: 10vw;
+				margin-left: 10vw;
+			}
+			.left-col hr {
+				width: 50vw;
+				margin-left: -5vw;
+				float: left;
+			}
+			.right-col {
+				width: 10vw;
+				margin-right: 10vw;
+				/*float: right;*/
+			}
+			.right-col hr {
+				width: 50vw;
+				margin-left: -20vw;
+				float: left;
+			}
 		}
 		</style>
 	</head>
