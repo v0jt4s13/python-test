@@ -37,7 +37,9 @@ def main(argv):
 		print('==>'+init_user+'<==='+init_dir)
 		print()
 		if init_user == "root":
-			os.setuid(const_var('UID'))
+			change_user_resp = os.setuid(const_var('UID'))
+			#change_user_resp = subprocess.check_output(change_user_resp, shell=True)
+			print(change_user_resp)
 			new_user = subprocess.check_output('whoami', shell=True)
 			print(os.system('cd '+init_dir))
 			print(os.system('pwd'))
