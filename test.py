@@ -1,82 +1,41 @@
-import requests
+import json
+import subprocess
 
-# Pobranie tekstu ze strony (jako tafla tesktu).
-orangutan = 'https://zajecia-programowania-xd.pl/flagi'
-surowe_info = requests.get( orangutan)
-text = surowe_info.text
+def const_var(str_p):
+	############## kilka linijek konfiguracyjnych ###########
+	if str_p == "USER":
+		return "ubuntu"
+	if str_p == "UID":
+		return 1000 # uid uzytkownika -> :$ id ubuntu
+	if str_p == "GROUP":
+		return "www-data"
+	if str_p == "SERWER_TEMPLATES_PATH":
+		return "/var/www/flaga"
+	if str_p == "HOME_TEMPLATES_PATH":
+		return "/home/ubuntu/python-test/templates"
+	if str_p == "DOMAIN":
+		return "pp.marzec.eu"
+	#########################################################
 
-# Przygotowanie listy linków ze strony 🙂
-lista_linii = text.split('</p>')
-linki = []
-for linia in lista_linii:
 
-    link = linia.replace('<p>', '')
-    link = link.replace('- ', '')
-    link = link.strip()
-    link = link.rstrip('.')
+git_out = "" #subprocess.check_output('git clone https://github.com/v0jt4s13/python-test ./github-clone/', shell=True)
 
-    if ' ' in link or '<' in link:
-        continue
-    linki.append(link)
+rsync_executed_line = 'rsync -Pavp --rsh="ssh -i ~/.ssh/aws-python-xd.pem" '+const_var('USER')+'@'+const_var('DOMAIN')+':~/ ./rsync-home-directory/'
+#print('rsync -Pavp --rsh="ssh -i ~/.ssh/aws-python-xd.pem" ubuntu@pp.marzec.eu:~/python-test/ ./rsync-files/')
 
-lista_domen = linki 
-#lista_domen = ["poz.jeden", "poz.pl", "poz.jedenascie", "pozkolejna.pl", "pozycjabezkropki"]
+rsync_wynik = subprocess.check_output(rsync_executed_line, shell=True)
+import_lines_list = subprocess.check_output('less github-clone/*.py |grep import', shell=True)
 
-def ilosc_domen(lista_domen):
-    bad_list = []
-    nowa_lista = []
-    nowa_lista_all = []
-    for domena in lista_domen:
-        try:
-            tmp_list = domena.split('.')
-            if len(tmp_list) > 1:
-                d_ext = tmp_list[-1]
-            else:
-                d_ext = "error"
-        except:
-            d_ext = "error"
-        #print('1. %s' %qq)
-        nowa_lista_all.append(d_ext)
-        if ":" in d_ext or "/" in d_ext:
-            bad_list.append(domena)
-        elif d_ext not in nowa_lista and d_ext != "error":
-            nowa_lista.append(d_ext)
-            #print('2. %s' %qq)
-        #else:
-            #res1 = d_ext in (item for sublist in nowa_lista for item in sublist)
-            #print(d_ext+' ==> jest poz:'+str(nowa_lista.count(d_ext)))
+print(rsync_wynik)
 
-    print('\n\n\tIlosc unikatowych rozszerzeń domen: '+str(len(nowa_lista)))
-    print('\tBłędne domeny: %s \n\n' %str(bad_list))
-    licz = 0
-    nowa_lista2 = []
-    for poz in nowa_lista:
-        nowa_lista2.append([poz, nowa_lista_all.count(poz)])
-        licz+= 1
-        #print(str(licz)+'. '+poz)
-    #print(nowa_lista2)
-    return nowa_lista2
 
-uni_ext_list = ilosc_domen(lista_domen)
-
-# function to return the second element of the
-# two elements passed as the parameter
-def sortSecond(val):
-    return val[1] 
-
-uni_ext_list.sort(key = sortSecond, reverse = True) 
-#print(uni_ext_list)
-
-print("\tRozszerzenie\t  Ilość szt.")
-print("      =============================== ")
-for value in uni_ext_list:
-    key = value[0]
-    val = value[1]
-    if len(key) > 6:
-        print("\t."+key+"\t| "+str(val)+" szt.")
-    else:
-        print("\t."+key+"\t\t| "+str(val)+" szt.")
-
-#for domena in lista_domen:
-#    pozycja = lista[lista.index('.'):]
-#ValueError: substring not found
+#print(git_out,rsync_wynik,import_lines_list)
+#Usage: rsync [OPTION]... SRC [SRC]... DEST
+#  or   rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST
+#  or   rsync [OPTION]... SRC [SRC]... [USER@]HOST::DEST
+#  or   rsync [OPTION]... SRC [SRC]... rsync://[USER@]HOST[:PORT]/DEST
+#  or   rsync [OPTION]... [USER@]HOST:SRC [DEST]
+#  or   rsync [OPTION]... [USER@]HOST::SRC [DEST]
+#  or   rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
+#The ':' usages connect via remote shell, while '::' & 'rsync://' usages connect
+#to an rsync daemon, and require SRC or DEST to start with a module name.
