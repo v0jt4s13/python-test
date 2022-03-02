@@ -1,6 +1,7 @@
 import json
 import subprocess
 import os
+import sys
 import configparser
 from os.path import exists
 
@@ -365,15 +366,93 @@ def main():
 	print('\t\t\t* * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
 
 def maine():
-    
-    get_cwd = os.getcwd()
-    print('Aktualny folder: %s' %get_cwd)
-    folders_list = subprocess.check_output('du -s *', shell=True).decode().lstrip().split('\n')
-    folders_size_list = []
-    for val in folders_list:
-        line_list = val.split('\t')
-        if len(line_list) == 2: folders_size_list.append([int(line_list[0]),line_list[1]])
-    print(folders_size_list)
- 
+	from pathlib import Path
+
+	# https://www.pythontutorial.net/python-basics/python-filter-list/
+	"""
+ 	carts = [['SmartPhone', 400],['Tablet', 450],['Laptop', 700]]
+	TAX = 0.1
+	carts = map(lambda item: [item[0], item[1], item[1] * TAX], carts)
+	print(list(carts))
+	high_value = filter(lambda v: v[1] > 500, carts)
+	print(list(high_value))
+	"""
+
+
+	def searchFoldersAndFiles(du_data_list):
+		files_py_list = []
+		files_others_list = []
+		dir_list = []
+		folders_size_list = []
+		for val in du_data_list:
+			line_list = val.split('\t')
+			if len(line_list) == 2: 
+				folders_size_list.append([int(line_list[0]),line_list[1]])
+				path_to_file = line_list[1]
+				path = Path(path_to_file)
+
+				if path.is_file() and path_to_file.split('.')[-1] == "py":
+					#print('The file %s exists' %path_to_file)
+					files_py_list.append(path_to_file)
+				elif path.is_file():
+					files_others_list.append(path_to_file)
+				else:
+					#print(f'The file {path_to_file} does not exist')
+					dir_list.append(path_to_file)
+		return files_py_list,files_others_list,dir_list
+
+
+	get_cwd = os.getcwd()
+	print('\n\n\t\t\t\tStart - aktualny folder: %s \n\n' %get_cwd)
+	du_data_list = subprocess.check_output('du -s *', shell=True).decode().lstrip().split('\n')
+	files_py_list = []
+	files_others_list = []
+	dir_list = []
+	new_dir_list = []
+
+	xx = 0
+	while True:
+		if len(dir_list) == 0:
+			list_py,list_other,list_dir = searchFoldersAndFiles(du_data_list)
+			print('\t\t\t\t1. folders: ',list_dir)
+			for val in list_py: files_py_list.append(val)
+			for val in list_other: files_others_list.append(val)
+			for val in list_dir: new_dir_list.append(val)
+		else:
+			print('\n\n\n\t\t\t\tdir_list ==> %s' %dir_list)
+			for dir in dir_list:
+				tmp_get_cwd = get_cwd+"/"+dir
+				print('\t\t\t\tKrok %i - bieżący folder: %s' %(xx,tmp_get_cwd))
+				du_data_str = 'du -s '+tmp_get_cwd+'/*'
+				du_data_list = subprocess.check_output(du_data_str, shell=True).decode().lstrip().split('\n')
+
+				list_py,list_other,list_dir = searchFoldersAndFiles(du_data_list)
+				print('\t\t\t\t2. folders: ','\n\t\t\t\t\t     '.join(list_dir).replace('/home/voj/projects/',''),'\n\t\t\t\t\t\t****************\n\n\n')
+				for val in list_py: files_py_list.append(val)
+				for val in list_other: files_others_list.append(val)
+				for val in list_dir: new_dir_list.append(val)
+				xx+= 1
+		
+		if len(list_dir) > 0:
+			for val in list_dir:
+				dir_list.append(val)
+		else:
+			False
+		#print('\n\t\t\t\t*************\n\t\t\t\t<* * * * * * * * * * * all list.clear() * * * * * * * * * * * *>\n\t\t\t\tdir_list => ',dir_list,'\n\t\t\t\t*************')
+		list_py.clear()
+		list_other.clear()
+		list_dir.clear()
+
+		xx+= 1
+		if xx > 5: 
+			False
+			break
+
+	print('\n\n')
+	#print(folders_size_list)
+
 if __name__ == '__main__':
-	main()
+	if len(sys.argv) > 1:
+		maine()
+	else:
+		main()
