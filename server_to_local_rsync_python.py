@@ -41,6 +41,17 @@ def findDuplicateInList(str,lista):
 
 def rsyncDataBetweenLocalAndRemote():
 
+<<<<<<< HEAD
+=======
+	config = configparser.ConfigParser()
+	config.read(path_to_config_file)
+	conf_user = config['rsync_conf']['conf_user']
+	conf_domain = config['rsync_conf']['conf_domain']
+	conf_ssh_key_file_name = config['rsync_conf']['conf_ssh_key_file_name']
+	conf_local_user_name = config['rsync_conf']['conf_local_user_name']
+	conf_local_rsync_path = config['rsync_conf']['conf_local_rsync_path']
+ 
+>>>>>>> 6b98702bb3ca087149eebb25b16e7659c5270528
 	rsync_str = "rsync -Pavp --rsh=\"ssh -i /home/"+conf_local_user_name+"/.ssh/"+conf_ssh_key_file_name+"\" "
 	rsync_str+= conf_user+"@"+conf_domain+":/home/"+conf_user+"/ ./"+conf_local_rsync_path
 	rsync_executed_line_list = []
@@ -72,6 +83,7 @@ def findStringInPythonFiles():
 	"""print('findStringInPythonFiles')
 	print(conf_local_rsync_path)
 	print(conf_local_python_dir)"""
+<<<<<<< HEAD
 	tmp_pwd = subprocess.check_output('pwd').decode()
 	main_dir_list = subprocess.check_output('ls -d */', shell=True).decode().split('\n')
 	#print(main_dir_list)
@@ -99,6 +111,70 @@ def findStringInPythonFiles():
 	while xx < len(search_wynik_list):
 		for lib_name in search_wynik_list[xx]:
 			lib_name = lib_name.lstrip()
+=======
+
+	tmp_pwd = subprocess.check_output('pwd').decode().replace('\n','')
+	#main_dir_list = subprocess.check_output('ls -d */', shell=True).decode().split('\n')
+	search_main_dir_path = 'find . -maxdepth 3 -type d -not -path "*/.*" -exec ls -d "{}" \;'
+	main_dir_list = subprocess.check_output(search_main_dir_path, shell=True).decode().split('\n')
+ 
+	#print(main_dir_list) # ['.', '', './python-test', './templates', './rsync-home-directory', './rsync-home-directory/python-test', './rsync-home-directory/python-test/templates', './rsync-home-directory/python-test/rsync-home-directory', './rsync-home-directory/python-test/github-clone', './rsync-home-directory/ipython-in-depth', './rsync-home-directory/ipython-in-depth/tools', './rsync-home-directory/ipython-in-depth/examples', './rsync-home-directory/ipython-in-depth/binder', './rsync-home-directory/ipython-in-depth/exercises']
+	search_dir_list = []
+	tmp_founded_str_list = []
+	import_modules_list = []
+	for dir in main_dir_list:
+		if dir in ('.',''):
+			continue
+		#print('dir: '+dir)
+		tmp_find_py_file_line = "find "+dir+" -name \"*.py\" -type f |wc -l"
+		tmp_find_py_file_count = int(subprocess.check_output(tmp_find_py_file_line, shell=True).decode().lstrip().replace('\n',''))
+		#print(type(tmp_find_py_file_count),tmp_find_py_file_count) #+' ===> 0')
+		if tmp_find_py_file_count == 0:
+			continue
+		try:
+			search_line = 'less '+dir+'/*.py |grep '+search_word
+			#print('AAAAAAAAAAAAA==>%s' %search_line)
+			#print(str(tmp_find_py_file_count)) #+' ===> '+search_line)
+			tmp_founded_str_list = subprocess.check_output(search_line, shell=True).decode().lstrip().split('\n')
+			#print('BBBBBBBBBBBBBB==>%s' %search_line)
+			for line in tmp_founded_str_list:
+				import_modules_list.append(line)
+		except ValueError as e:
+			print('1. Error in: %s' %search_line)
+		except:
+			print('2. Error in: %s' %search_line)
+			continue
+		
+		#print(len(tmp_founded_str_list),len(import_modules_list))
+  
+	xx = 0
+	tmp_lib_name_list = []
+	
+	tmp_find_py_file_line = 'find . -maxdepth 4 -type f -name "*.py" -not -path "*/.*" -exec grep import {} \;'
+	#tmp_find_py_file_line = "find "+dir+" -name \"*.py\" -type f |wc -l"
+	#tmp_find_py_file_count = int(subprocess.check_output(tmp_find_py_file_line, shell=True).decode().lstrip().replace('\n',''))
+	#print(len(subprocess.check_output(tmp_find_py_file_line, shell=True).decode().lstrip().split('\n')))
+	tmp_find_py_file_list = subprocess.check_output(tmp_find_py_file_line, shell=True).decode().lstrip().split('\n')
+
+	#print(len(import_modules_list),len(tmp_find_py_file_list))
+	lib_name_extracted_metod1_list = []
+	lib_name_extracted_metod1_list.append(pullOutLibNameFromMessList(import_modules_list))
+	lib_name_extracted_metod1_list.append(pullOutLibNameFromMessList(tmp_find_py_file_list))
+	#print(len(lib_name_extracted_metod1_list[0]),len(lib_name_extracted_metod1_list[1]))
+
+	return lib_name_extracted_metod1_list
+
+def pullOutLibNameFromMessList(import_modules_list):
+
+	waste_list = []
+	lib_name_list = []
+	xx = 0
+	#print(import_modules_list) #[0].strip(),import_modules_list[1].strip(),import_modules_list[2].strip())
+	for lib_name in import_modules_list:
+		lib_name = lib_name.strip().replace('\t','')
+		if lib_name != "":
+			#print(lib_name)
+>>>>>>> 6b98702bb3ca087149eebb25b16e7659c5270528
 			if lib_name[:1] != "#" and lib_name[:7] == "import ":
 				tmp_lib_name = lib_name[7:]
 				if len(tmp_lib_name.split('.')) == 2:
@@ -151,7 +227,11 @@ def findStringInPythonFiles():
 								lib_name_list.append(['5.',type(tmp_lib_name[1]),tmp_lib_name[1],lib_name])
 						#if len(lib_name_list) > 0:
 				else:
+<<<<<<< HEAD
 					qq_list.append(['RESZTA=>'+lib_name[:6],type(tmp_lib_name),lib_name])
+=======
+					waste_list.append(['RESZTA=>'+lib_name[:6],type(tmp_lib_name),lib_name])
+>>>>>>> 6b98702bb3ca087149eebb25b16e7659c5270528
 
 			elif lib_name[:1] != "#" and lib_name[:4] == "from":
 				tmp_lib_name_list = lib_name.split(' ')
@@ -168,7 +248,11 @@ def findStringInPythonFiles():
 						#print('==================> bez kropki =>'+tmp_lib_name)
 						lib_name_list.append(['7.',type(tmp_lib_name),tmp_lib_name,lib_name])
 			else:
+<<<<<<< HEAD
 				qq_list.append(['5.',type(lib_name),lib_name])
+=======
+				waste_list.append(['5.',type(lib_name),lib_name])
+>>>>>>> 6b98702bb3ca087149eebb25b16e7659c5270528
 		xx+= 1
 	return lib_name_list
  
@@ -208,7 +292,11 @@ def installLostModules(biblioteki_do_importu_list):
 		for val in biblioteki_do_importu_list:
 			try:
 				install_str = 'pip3 install '+val
+<<<<<<< HEAD
 				installed_lib_resp = subprocess.check_output('pip3 install ', shell=True)
+=======
+				installed_lib_resp = subprocess.check_output(install_str, shell=True)
+>>>>>>> 6b98702bb3ca087149eebb25b16e7659c5270528
 				print('\t\t'+installed_lib_resp)
 			except ValueError as e:
 				print(e)
@@ -308,6 +396,7 @@ def main():
 	sync_start = input("\n\n\t\t\t* Czas na synchronizację katalogów, może to trochę potrwać. Go (T/N)? ")
 	if sync_start in ("t","T","y","Y"):
 		rsyncDataBetweenLocalAndRemote()
+<<<<<<< HEAD
 	
 	lib_name_list = findStringInPythonFiles()
 	biblioteki_do_importu_list = findLostModules(lib_name_list)
@@ -316,6 +405,31 @@ def main():
 
 	print('\n\n\t\t\t* \t I to na tyle, Twoje projekty mają teraz lokalną kopię zapasową.')
 	print('\t\t\t* * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
+=======
+
+	xx = 0
+	for lib_name_list in findStringInPythonFiles():
+		xx+= 1
+		biblioteki_do_importu_list = findLostModules(lib_name_list)
+		lib_count = len(biblioteki_do_importu_list)
+		print('Metoda %i - %i bibliotek' %(xx,lib_count))
+		if lib_count > 0:
+			installLostModules(biblioteki_do_importu_list)
+
+	print('\n\n\t\t\t* \t I to na tyle, Twoje projekty mają teraz lokalną kopię zapasową.')
+	print('\t\t\t* * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
+
+def maine():
+    
+    get_cwd = os.getcwd()
+    print('Aktualny folder: %s' %get_cwd)
+    folders_list = subprocess.check_output('du -s *', shell=True).decode().lstrip().split('\n')
+    folders_size_list = []
+    for val in folders_list:
+        line_list = val.split('\t')
+        if len(line_list) == 2: folders_size_list.append([int(line_list[0]),line_list[1]])
+    print(folders_size_list)
+>>>>>>> 6b98702bb3ca087149eebb25b16e7659c5270528
  
 if __name__ == '__main__':
 	main()
