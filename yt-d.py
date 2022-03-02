@@ -98,6 +98,7 @@ def Browse():
 	# argument is optional Retrieving the
 	# user-input destination directory and
 	# storing it in downloadDirectory
+
 	import os
 	download_Directory = filedialog.askdirectory(
 		initialdir = "/home/"+os.getlogin()+"/Videos/fromYouTube/", title="Save Video")

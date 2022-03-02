@@ -24,6 +24,7 @@ lista_domen = linki
 #lista_domen = ["poz.jeden", "poz.pl", "poz.jedenascie", "pozkolejna.pl", "pozycjabezkropki"]
 
 def ilosc_domen(lista_domen):
+
     bad_list = []
     unique_ext_list = []
     all_domain_ext_list = []

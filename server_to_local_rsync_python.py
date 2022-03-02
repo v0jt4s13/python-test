@@ -41,6 +41,8 @@ def findDuplicateInList(str,lista):
 
 def rsyncDataBetweenLocalAndRemote():
 
+<<<<<<< HEAD
+=======
 	config = configparser.ConfigParser()
 	config.read(path_to_config_file)
 	conf_user = config['rsync_conf']['conf_user']
@@ -49,6 +51,7 @@ def rsyncDataBetweenLocalAndRemote():
 	conf_local_user_name = config['rsync_conf']['conf_local_user_name']
 	conf_local_rsync_path = config['rsync_conf']['conf_local_rsync_path']
  
+>>>>>>> 6b98702bb3ca087149eebb25b16e7659c5270528
 	rsync_str = "rsync -Pavp --rsh=\"ssh -i /home/"+conf_local_user_name+"/.ssh/"+conf_ssh_key_file_name+"\" "
 	rsync_str+= conf_user+"@"+conf_domain+":/home/"+conf_user+"/ ./"+conf_local_rsync_path
 	rsync_executed_line_list = []
@@ -80,6 +83,35 @@ def findStringInPythonFiles():
 	"""print('findStringInPythonFiles')
 	print(conf_local_rsync_path)
 	print(conf_local_python_dir)"""
+<<<<<<< HEAD
+	tmp_pwd = subprocess.check_output('pwd').decode()
+	main_dir_list = subprocess.check_output('ls -d */', shell=True).decode().split('\n')
+	#print(main_dir_list)
+	for dir in main_dir_list:
+		tmp_local_dir = tmp_pwd+'/'+dir
+		tmp_local_dir = tmp_local_dir.replace('\n','')
+
+		print('\n\n\t\t\tPrzeszukujemy pliki .py w poszukiwaniu ciągu \'%s\' \n\t\t\tw lokalizacji: %s ' %(search_word,tmp_local_dir))
+		search_lines_list = []
+		search_lines_list.append('less '+tmp_local_dir+'*.py |grep '+search_word)
+		search_wynik_list = []
+
+	for search_line in search_lines_list:
+		try:
+			#print(search_line)
+			tmp_str = subprocess.check_output(search_line, shell=True)
+			search_wynik_list.append(tmp_str.decode().lstrip().split('\n'))
+		except ValueError as e:
+			print('\n\n\t\t\t* \tNie znalazłem szukanego słowa: '+search_word)
+
+	xx = 0
+	tmp_lib_name_list = []
+	lib_name_list = []
+	qq_list = []
+	while xx < len(search_wynik_list):
+		for lib_name in search_wynik_list[xx]:
+			lib_name = lib_name.lstrip()
+=======
 
 	tmp_pwd = subprocess.check_output('pwd').decode().replace('\n','')
 	#main_dir_list = subprocess.check_output('ls -d */', shell=True).decode().split('\n')
@@ -142,6 +174,7 @@ def pullOutLibNameFromMessList(import_modules_list):
 		lib_name = lib_name.strip().replace('\t','')
 		if lib_name != "":
 			#print(lib_name)
+>>>>>>> 6b98702bb3ca087149eebb25b16e7659c5270528
 			if lib_name[:1] != "#" and lib_name[:7] == "import ":
 				tmp_lib_name = lib_name[7:]
 				if len(tmp_lib_name.split('.')) == 2:
@@ -194,7 +227,11 @@ def pullOutLibNameFromMessList(import_modules_list):
 								lib_name_list.append(['5.',type(tmp_lib_name[1]),tmp_lib_name[1],lib_name])
 						#if len(lib_name_list) > 0:
 				else:
+<<<<<<< HEAD
+					qq_list.append(['RESZTA=>'+lib_name[:6],type(tmp_lib_name),lib_name])
+=======
 					waste_list.append(['RESZTA=>'+lib_name[:6],type(tmp_lib_name),lib_name])
+>>>>>>> 6b98702bb3ca087149eebb25b16e7659c5270528
 
 			elif lib_name[:1] != "#" and lib_name[:4] == "from":
 				tmp_lib_name_list = lib_name.split(' ')
@@ -211,7 +248,11 @@ def pullOutLibNameFromMessList(import_modules_list):
 						#print('==================> bez kropki =>'+tmp_lib_name)
 						lib_name_list.append(['7.',type(tmp_lib_name),tmp_lib_name,lib_name])
 			else:
+<<<<<<< HEAD
+				qq_list.append(['5.',type(lib_name),lib_name])
+=======
 				waste_list.append(['5.',type(lib_name),lib_name])
+>>>>>>> 6b98702bb3ca087149eebb25b16e7659c5270528
 		xx+= 1
 	return lib_name_list
  
@@ -251,7 +292,11 @@ def installLostModules(biblioteki_do_importu_list):
 		for val in biblioteki_do_importu_list:
 			try:
 				install_str = 'pip3 install '+val
+<<<<<<< HEAD
+				installed_lib_resp = subprocess.check_output('pip3 install ', shell=True)
+=======
 				installed_lib_resp = subprocess.check_output(install_str, shell=True)
+>>>>>>> 6b98702bb3ca087149eebb25b16e7659c5270528
 				print('\t\t'+installed_lib_resp)
 			except ValueError as e:
 				print(e)
@@ -351,6 +396,16 @@ def main():
 	sync_start = input("\n\n\t\t\t* Czas na synchronizację katalogów, może to trochę potrwać. Go (T/N)? ")
 	if sync_start in ("t","T","y","Y"):
 		rsyncDataBetweenLocalAndRemote()
+<<<<<<< HEAD
+	
+	lib_name_list = findStringInPythonFiles()
+	biblioteki_do_importu_list = findLostModules(lib_name_list)
+	if len(biblioteki_do_importu_list) > 0:
+		installLostModules(biblioteki_do_importu_list)
+
+	print('\n\n\t\t\t* \t I to na tyle, Twoje projekty mają teraz lokalną kopię zapasową.')
+	print('\t\t\t* * * * * * * * * * * * * * * * * * * * * * * * * * * * *')
+=======
 
 	xx = 0
 	for lib_name_list in findStringInPythonFiles():
@@ -374,6 +429,7 @@ def maine():
         line_list = val.split('\t')
         if len(line_list) == 2: folders_size_list.append([int(line_list[0]),line_list[1]])
     print(folders_size_list)
+>>>>>>> 6b98702bb3ca087149eebb25b16e7659c5270528
  
 if __name__ == '__main__':
 	main()
