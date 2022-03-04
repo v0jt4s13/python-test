@@ -48,7 +48,7 @@ def wyszukajUrlWStringu(str):
 		#print('==================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  em=',em[0])
 		return em[0]
 	else:
-		print('String nie jest poprawnym adresem URI: ',str)
+		print('String nie jest poprawnym adresem URI: ',em)
 		return ""
 
 #################################
@@ -70,16 +70,6 @@ def webRequest(url):
 def showLogs(n, str):
 	if n == 1:
 		print(str)
-
-
-def wyszukajUrlWStringu(str):
-	em = re.findall(r"(?:http(?:s?)://)?(?:[a-zA-Z0-9_-]+\.)+[a-zA-Z]+(?::\d{1,5})?$",str)
-	if len(em) > 0:
-		#print('==================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  em=',em[0])
-		return em[0]
-	else:
-		print('String nie jest poprawnym adresem URI: ',str)
-		return ""
 
 def urlsList(link,resp_count,base_url):
 	import requests
@@ -130,7 +120,8 @@ def urlsList(link,resp_count,base_url):
 				url_build = base_url+"/ad?ad_id="+str(ad_id)
 				url_list = url_build
 				curl_url = "curl -sIS " + url_list
-				os.system(curl_url)
+				print(url_list)
+#				os.system(curl_url)
 
 			if xx >= resp_count and resp_count > 0:
 				break
@@ -164,15 +155,21 @@ def urlsPaginationList(link,resp_count,base_url):
 	print('Stron do przetworzenia: %i' %last_page_nr)
 	yy = 0
 	#last_page_nr = 1
+	tmp_url = base_url+"/view-ads?start="+str(yy)+"&cat=1"
+	
+	print('urlsList('+tmp_url+',',resp_count,','+base_url+')')
+	urlsList(tmp_url,resp_count,base_url)
+ 
 	while yy < last_page_nr:
 		yy+= 1
 		tmp_url = base_url+"/view-ads?start="+str(yy)+"&cat=1"
-		urlsList(tmp_url,resp_count,base_url)
+		#urlsList(tmp_url,resp_count,base_url)
 
 	print('Przetworzonych stron: %i' %yy)
 
 def main(argv):
 	console.clear()
+ 
 	if len(argv) == 3:
 		resp_count = int(argv[1])
 		if argv[2] in ("j","J","t","T","y","Y"):
@@ -192,7 +189,23 @@ def main(argv):
 	resp_count = int(resp_count)
 	#print('resp_count==>',resp_count,' type=',type(resp_count))
 	print('\n')
-
+	if argv[1] == "ads":
+		ads_section_list = {
+      		"accommodation" : ["cat=1", "start="],
+      		"accommodation" : ["cat=2", "start="],
+      		"accommodation" : ["cat=3", "start="],
+      		"accommodation" : ["cat=4", "start="],
+			"jobs" : ["start="],
+			"jobseekers" : ["start="],
+			"business" : ["index", "start="],
+			"automotive" : ["cat=1", "start="],
+			"automotive" : ["cat=2", "start="],
+			"automotive" : ["cat=3", "start="],
+			"buysell" : ["cat=1", "start="],
+			"buysell" : ["cat=2", "start="],
+			"personals" : ["start="],
+		}
+  
 	base_url = "https://627-dev.aws.londynek.net/"+argv[1]
 	link = base_url+'/view-ads'
 	#link = 'http://localhost/narzedzia/local/flagi'
@@ -205,7 +218,9 @@ def main(argv):
 	##################################################################
 	##################### urlsPaginationList #########################
 	##################################################################
-	val_list = urlsPaginationList(link,resp_count,base_url)
+	print(ads_section_list)
+	#val_list = urlsPaginationList(link,resp_count,base_url)
+
 	##################################################################
 	##################### urlsPaginationList #########################
 	##################################################################

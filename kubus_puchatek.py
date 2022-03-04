@@ -36,6 +36,12 @@ for index, linia in enumerate( kubus_linie):
         linia = linia.replace('Krzysia', new_krzys2)
         str_out = str_out+linia+'</p>'
 
+word_long_count_list = str_out.split(' ')
+
+one = word_long_count_list[0]
+word_long_count_list.sort()
+last = word_long_count_list[0]
+print(one,len(word_long_count_list),last)
 str_out = str_out+'<p>Czytała Krystyna Czubówna</p>'
 #print( len( kubus_linie ) ) 
 with open('/var/www/flaga/templates/kubus_puchatek.html','w') as file: 
