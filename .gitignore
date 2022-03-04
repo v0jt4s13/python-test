@@ -1,8 +1,4 @@
 github-clone
 *.log
-<<<<<<< HEAD
-*.json
-=======
 *.json
 *.ini
->>>>>>> 0588b8df759f1c29d1e7ff3bfdf4912ffd0f75cf
