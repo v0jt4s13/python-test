@@ -1,9 +1,12 @@
+from pickle import NONE
 import subprocess
 import os
 
-def readJournalctl(line_count):
-	#execute_line = "journalctl |head -"+str(line_count)
-	execute_line = "journalctl |tail -"+str(line_count)
+def readJournalctl(line_count,order_by,output_type):
+	if order_by == "o":
+		execute_line = "journalctl |head -"+str(line_count)
+	else:
+		execute_line = "journalctl |tail -"+str(line_count)
 	#out = os.system(execute_line)
 
 	out_list = subprocess.getoutput(execute_line).split('\n')
@@ -30,31 +33,65 @@ def readJournalctl(line_count):
 	Mar 04 00:17:39 ip-172-31-29-165 systemd[1]: Starting Cleanup of rTemporary Directories...
 	"""
 	ip_list = []
+	just_ip_list = []
+	start_date = ""
+	end_date = ""
+	xx = 0
 	for line in out_list:
-		
-		line_left = line.split('[')[0]
-		line_right = line.split('[')[0]
+		cut_line = line.split('[')
+		line_left = cut_line[0]
+
+		line_left_split = line_left.split(' ')
+		if start_date == "" and xx > 0:
+			start_date = line_left_split[0]+" "+line_left_split[1]+" "+line_left_split[2]
+		end_date = line_left_split[0]+" "+line_left_split[1]+" "+line_left_split[2]
+		try:
+			line_right = cut_line[1]
+		except:
+			line_right = ""
+   
 		executed_metod = line_left.split(' ')[-1]
 		if executed_metod in ("sshd"): #, "systemd"):
 			right_list = line_right.split(' ')
-			if right_list[0] == "Invalid":
-				xx = 0
-				for tmp_line in right_list:
-					if len(tmp_line.split('.')) == 3:
-						if right_list[xx+1] == "port":
-							if right_list[xx] not in ip_list:
-								ip_list.append(right_list[xx])
-								break
-				xx+= 1
 
-			print(line_left)
+			try:			
+				if right_list[1] == "Invalid":
+					#print(right_list)
+					xx = 0
+					while xx < len(right_list):
+						
+						if len(right_list[xx].split('.')) == 4:
+							#print(len(right_list[xx].split('.')),right_list[xx+1])
+							if right_list[xx+1] == "port":
+								if right_list[xx] not in just_ip_list:
+									ip_list.append([right_list[xx], right_list[xx-2]])
+									just_ip_list.append(right_list[xx])
+									break
+						xx+= 1
+			except:
+				pass
 
-	print('\n'.join(ip_list))
+	print('\t\t*** Przetworzonych linii:',len(out_list),'***')
+	if output_type in ("T","t"):
+		print('\t*** '+start_date+' ***\n')
+		for line in ip_list:
+			print('\n\t\t** '+line[0]+' \t\t'+line[1])
+	print('\n\t*** '+start_date+' - '+end_date+' ',len(ip_list),'roznych IP ***')
 
 def main():
-	line_count = 10000
-	print('******************')
-	readJournalctl(line_count)
+	print('\t*','*'*55)
+	line_count = input("\t* Ilosc linii kodu do analizy (default: 2500): ")
+	if line_count == "":
+		line_count = 2500
+	order_by = input("\t* Sprawdzac od najnowszych(n) czy od najstarszych(o)? ")
+	if order_by == "":
+		order_by = "n"
+	output_type = input("\t* Pokazać liste IP (T/N)? ")
+	if output_type == "":
+		output_type = "N"
+
+	print('\t*','*'*55)
+	readJournalctl(line_count,order_by,output_type)
 
 if __name__ == '__main__':
 	main()
