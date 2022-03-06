@@ -2,6 +2,7 @@ github-clone
 *.log
 *.json
 *.ini
+*.lprof
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
