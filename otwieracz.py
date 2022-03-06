@@ -244,7 +244,7 @@ read_file = input(" Podaj pelna sciezke dostepu lub nazwe pliku do przeszukania.
 print( " Jakiego textu szukasz? " )
 find_text = input()
 
-file_name_out = "emails_list"
+file_name_out = "emails_list.log.json"
 file_to_read = '/home/voj/.icedove/chbv6831.default/ImapMail/imap.gmail-3.com/INBOX.sbd/MailDeliveryFail2'
 #file_to_read = "test_emails_file"
 
