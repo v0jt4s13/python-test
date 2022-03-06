@@ -22883,3 +22883,2292 @@ Mar 03 09:37:05 program [118962]: https://627-dev.aws.londynek.net:443 "GET /bus
 Mar 03 09:37:05 program [118962]: Starting new HTTPS connection (1): 627-dev.aws.londynek.net:443
 Mar 03 09:37:06 program [118962]: https://627-dev.aws.londynek.net:443 "GET /business/view-ads?start=0&cat=1 HTTP/1.1" 200 89043
 >>>>>>> 69f81f869522f1fd9738ba542864fa21ce838fc5
+Mar 05 16:59:28 program [5794]: Starting new HTTP connection (1): zajecia-programowania-xd.pl:80
+Mar 05 16:59:28 program [5794]: http://zajecia-programowania-xd.pl:80 "GET /flagi HTTP/1.1" 301 194
+Mar 05 16:59:28 program [5794]: Starting new HTTPS connection (1): zajecia-programowania-xd.pl:443
+Mar 05 16:59:28 program [5794]: https://zajecia-programowania-xd.pl:443 "GET /flagi HTTP/1.1" 200 None
+Mar 05 16:59:28 program [5794]: Starting new HTTP connection (1): etyczne-dziennikarstwo.pl:80
+Mar 05 16:59:28 program [5794]: http://etyczne-dziennikarstwo.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:28 program [5794]: http://etyczne-dziennikarstwo.pl
+Mar 05 16:59:28 program [5794]: Starting new HTTP connection (1): telusmikolaj.com:80
+Mar 05 16:59:38 program [5794]: http://telusmikolaj.com
+Mar 05 16:59:38 program [5794]: Starting new HTTP connection (1): adrianeight.tech:80
+Mar 05 16:59:38 program [5794]: http://adrianeight.tech:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:38 program [5794]: http://adrianeight.tech
+Mar 05 16:59:38 program [5794]: Starting new HTTP connection (1): pythonistaxd.pl:80
+Mar 05 16:59:38 program [5794]: http://pythonistaxd.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:38 program [5794]: http://pythonistaxd.pl
+Mar 05 16:59:38 program [5794]: Starting new HTTP connection (1): aws.programista.warszawa.pl:80
+Mar 05 16:59:39 program [5794]: http://aws.programista.warszawa.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:39 program [5794]: http://aws.programista.warszawa.pl
+Mar 05 16:59:39 program [5794]: Starting new HTTP connection (1): animuscreations.pl:80
+Mar 05 16:59:39 program [5794]: http://animuscreations.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:39 program [5794]: http://animuscreations.pl
+Mar 05 16:59:39 program [5794]: Starting new HTTP connection (1): t-mike.pl:80
+Mar 05 16:59:39 program [5794]: http://t-mike.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:39 program [5794]: http://t-mike.pl
+Mar 05 16:59:39 program [5794]: Starting new HTTP connection (1): wurcu.pl:80
+Mar 05 16:59:39 program [5794]: http://wurcu.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:39 program [5794]: http://wurcu.pl
+Mar 05 16:59:39 program [5794]: Starting new HTTP connection (1): karolina-jedrzejak.com.pl:80
+Mar 05 16:59:39 program [5794]: http://karolina-jedrzejak.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:39 program [5794]: http://karolina-jedrzejak.com.pl
+Mar 05 16:59:39 program [5794]: Starting new HTTP connection (1): brownmilleryt.pl:80
+Mar 05 16:59:39 program [5794]: http://brownmilleryt.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:39 program [5794]: http://brownmilleryt.pl
+Mar 05 16:59:39 program [5794]: Starting new HTTP connection (1): aws.r80.pl:80
+Mar 05 16:59:39 program [5794]: http://aws.r80.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:39 program [5794]: http://aws.r80.pl
+Mar 05 16:59:39 program [5794]: Starting new HTTP connection (1): internet-online.pl:80
+Mar 05 16:59:39 program [5794]: http://internet-online.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:39 program [5794]: http://internet-online.pl
+Mar 05 16:59:39 program [5794]: Starting new HTTP connection (1): domenafb.pl:80
+Mar 05 16:59:39 program [5794]: http://domenafb.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:39 program [5794]: http://domenafb.pl
+Mar 05 16:59:39 program [5794]: Starting new HTTP connection (1): rafalsygut.pl:80
+Mar 05 16:59:39 program [5794]: http://rafalsygut.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:39 program [5794]: http://rafalsygut.pl
+Mar 05 16:59:39 program [5794]: Starting new HTTP connection (1): xd.netadmins.pl:80
+Mar 05 16:59:49 program [5794]: http://xd.netadmins.pl
+Mar 05 16:59:49 program [5794]: Starting new HTTP connection (1): mrozinscyolawa.pl:80
+Mar 05 16:59:49 program [5794]: http://mrozinscyolawa.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:49 program [5794]: http://mrozinscyolawa.pl
+Mar 05 16:59:49 program [5794]: Starting new HTTP connection (1): kavata.pl:80
+Mar 05 16:59:49 program [5794]: http://kavata.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:49 program [5794]: http://kavata.pl
+Mar 05 16:59:49 program [5794]: Starting new HTTP connection (1): xyder-dlgdaw.pl:80
+Mar 05 16:59:50 program [5794]: http://xyder-dlgdaw.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:50 program [5794]: http://xyder-dlgdaw.pl
+Mar 05 16:59:50 program [5794]: Starting new HTTP connection (1): malgorzata-swiatkowska.pl:80
+Mar 05 16:59:50 program [5794]: http://malgorzata-swiatkowska.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:50 program [5794]: http://malgorzata-swiatkowska.pl
+Mar 05 16:59:50 program [5794]: Starting new HTTP connection (1): e-lodoherbata.pl:80
+Mar 05 16:59:50 program [5794]: http://e-lodoherbata.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:50 program [5794]: http://e-lodoherbata.pl
+Mar 05 16:59:50 program [5794]: Starting new HTTP connection (1): joamad.pl:80
+Mar 05 16:59:50 program [5794]: http://joamad.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:50 program [5794]: http://joamad.pl
+Mar 05 16:59:50 program [5794]: Starting new HTTP connection (1): webdepp.net:80
+Mar 05 16:59:50 program [5794]: http://webdepp.net:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:50 program [5794]: http://webdepp.net
+Mar 05 16:59:50 program [5794]: Starting new HTTP connection (1): stripeshirt.pl:80
+Mar 05 16:59:50 program [5794]: http://stripeshirt.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:50 program [5794]: http://stripeshirt.pl
+Mar 05 16:59:50 program [5794]: Starting new HTTP connection (1): mkaptur.pl:80
+Mar 05 16:59:51 program [5794]: http://mkaptur.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:51 program [5794]: http://mkaptur.pl
+Mar 05 16:59:51 program [5794]: Starting new HTTP connection (1): python-programming-project.pl:80
+Mar 05 16:59:51 program [5794]: http://python-programming-project.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:51 program [5794]: http://python-programming-project.pl
+Mar 05 16:59:51 program [5794]: Starting new HTTP connection (1): xwhoami.pl:80
+Mar 05 16:59:51 program [5794]: http://xwhoami.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:51 program [5794]: http://xwhoami.pl
+Mar 05 16:59:51 program [5794]: Starting new HTTP connection (1): blinkiemoon.pl:80
+Mar 05 16:59:51 program [5794]: http://blinkiemoon.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:51 program [5794]: http://blinkiemoon.pl
+Mar 05 16:59:51 program [5794]: Starting new HTTP connection (1): boringdev.pl:80
+Mar 05 16:59:51 program [5794]: http://boringdev.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:51 program [5794]: http://boringdev.pl
+Mar 05 16:59:51 program [5794]: Starting new HTTP connection (1): wulpi.pl:80
+Mar 05 16:59:51 program [5794]: http://wulpi.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:51 program [5794]: http://wulpi.pl
+Mar 05 16:59:51 program [5794]: Starting new HTTP connection (1): pelczarskimateusz.pl:80
+Mar 05 16:59:51 program [5794]: http://pelczarskimateusz.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:51 program [5794]: http://pelczarskimateusz.pl
+Mar 05 16:59:51 program [5794]: Starting new HTTP connection (1): dacraft.pl:80
+Mar 05 16:59:51 program [5794]: http://dacraft.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:51 program [5794]: http://dacraft.pl
+Mar 05 16:59:51 program [5794]: Starting new HTTP connection (1): kingwaw.pl:80
+Mar 05 16:59:52 program [5794]: http://kingwaw.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:52 program [5794]: http://kingwaw.pl
+Mar 05 16:59:52 program [5794]: Starting new HTTP connection (1): wojrep.actuna.pl:80
+Mar 05 16:59:52 program [5794]: http://wojrep.actuna.pl:80 "GET / HTTP/1.1" 502 166
+Mar 05 16:59:52 program [5794]: http://wojrep.actuna.pl
+Mar 05 16:59:52 program [5794]: Starting new HTTP connection (1): studentmetina.pl:80
+Mar 05 16:59:52 program [5794]: http://studentmetina.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:52 program [5794]: http://studentmetina.pl
+Mar 05 16:59:52 program [5794]: Starting new HTTP connection (1): jstrozniak.pl:80
+Mar 05 16:59:52 program [5794]: http://jstrozniak.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 16:59:52 program [5794]: http://jstrozniak.pl
+Mar 05 16:59:52 program [5794]: Starting new HTTP connection (1): coddiwomple.cloud:80
+Mar 05 17:00:02 program [5794]: http://coddiwomple.cloud
+Mar 05 17:00:02 program [5794]: Starting new HTTP connection (1): yavin.daryo.in:80
+Mar 05 17:00:03 program [5794]: http://yavin.daryo.in:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:03 program [5794]: http://yavin.daryo.in
+Mar 05 17:00:03 program [5794]: Starting new HTTP connection (1): polish-your-russian.pl:80
+Mar 05 17:00:03 program [5794]: http://polish-your-russian.pl:80 "GET / HTTP/1.1" 200 3138
+Mar 05 17:00:03 program [5794]: http://polish-your-russian.pl
+Mar 05 17:00:03 program [5794]: Starting new HTTP connection (1): ewelina-k.pl:80
+Mar 05 17:00:04 program [5794]: http://ewelina-k.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:04 program [5794]: http://ewelina-k.pl
+Mar 05 17:00:04 program [5794]: Starting new HTTP connection (1): vadimdev.pl:80
+Mar 05 17:00:04 program [5794]: http://vadimdev.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:04 program [5794]: http://vadimdev.pl
+Mar 05 17:00:04 program [5794]: Starting new HTTP connection (1): bardzoprostytrik.pl:80
+Mar 05 17:00:04 program [5794]: http://bardzoprostytrik.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:04 program [5794]: http://bardzoprostytrik.pl
+Mar 05 17:00:04 program [5794]: Starting new HTTP connection (1): tenteteges.pl:80
+Mar 05 17:00:04 program [5794]: http://tenteteges.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:04 program [5794]: http://tenteteges.pl
+Mar 05 17:00:04 program [5794]: Starting new HTTP connection (1): szymonfraczek.pl:80
+Mar 05 17:00:04 program [5794]: http://szymonfraczek.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:04 program [5794]: http://szymonfraczek.pl
+Mar 05 17:00:04 program [5794]: Starting new HTTP connection (1): wyspany-jestem.com.pl:80
+Mar 05 17:00:04 program [5794]: http://wyspany-jestem.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:04 program [5794]: http://wyspany-jestem.com.pl
+Mar 05 17:00:04 program [5794]: Starting new HTTP connection (1): projekty-karoli.pl:80
+Mar 05 17:00:04 program [5794]: http://projekty-karoli.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:04 program [5794]: http://projekty-karoli.pl
+Mar 05 17:00:04 program [5794]: Starting new HTTP connection (1): ignacy.site:80
+Mar 05 17:00:05 program [5794]: http://ignacy.site:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:05 program [5794]: http://ignacy.site
+Mar 05 17:00:05 program [5794]: Starting new HTTP connection (1): dbys.pl:80
+Mar 05 17:00:05 program [5794]: http://dbys.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:05 program [5794]: http://dbys.pl
+Mar 05 17:00:05 program [5794]: Starting new HTTP connection (1): akarnas.pl:80
+Mar 05 17:00:05 program [5794]: http://akarnas.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:05 program [5794]: http://akarnas.pl
+Mar 05 17:00:05 program [5794]: Starting new HTTP connection (1): moje-programowanie.pl:80
+Mar 05 17:00:05 program [5794]: http://moje-programowanie.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:05 program [5794]: http://moje-programowanie.pl
+Mar 05 17:00:05 program [5794]: Starting new HTTP connection (1): michael-jeziorski.pl:80
+Mar 05 17:00:05 program [5794]: http://michael-jeziorski.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:05 program [5794]: http://michael-jeziorski.pl
+Mar 05 17:00:05 program [5794]: Starting new HTTP connection (1): awojcieszek.pl:80
+Mar 05 17:00:05 program [5794]: http://awojcieszek.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:05 program [5794]: http://awojcieszek.pl
+Mar 05 17:00:05 program [5794]: Starting new HTTP connection (1): 0kompleks.pl:80
+Mar 05 17:00:05 program [5794]: http://0kompleks.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:05 program [5794]: http://0kompleks.pl
+Mar 05 17:00:05 program [5794]: Starting new HTTP connection (1): pawelpolaszk.pl:80
+Mar 05 17:00:05 program [5794]: http://pawelpolaszk.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:05 program [5794]: http://pawelpolaszk.pl
+Mar 05 17:00:05 program [5794]: Starting new HTTP connection (1): rjgsite.pl:80
+Mar 05 17:00:15 program [5794]: http://rjgsite.pl
+Mar 05 17:00:15 program [5794]: Starting new HTTP connection (1): mamiya.pl:80
+Mar 05 17:00:15 program [5794]: http://mamiya.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:15 program [5794]: http://mamiya.pl
+Mar 05 17:00:15 program [5794]: Starting new HTTP connection (1): mcbiru.pl:80
+Mar 05 17:00:15 program [5794]: http://mcbiru.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:15 program [5794]: http://mcbiru.pl
+Mar 05 17:00:15 program [5794]: Starting new HTTP connection (1): tomczakowe-programowanie.pl:80
+Mar 05 17:00:15 program [5794]: http://tomczakowe-programowanie.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:15 program [5794]: http://tomczakowe-programowanie.pl
+Mar 05 17:00:15 program [5794]: Starting new HTTP connection (1): akwarelaitusz.pl:80
+Mar 05 17:00:26 program [5794]: http://akwarelaitusz.pl
+Mar 05 17:00:26 program [5794]: Starting new HTTP connection (1): pythonologia.pl:80
+Mar 05 17:00:26 program [5794]: http://pythonologia.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:26 program [5794]: http://pythonologia.pl
+Mar 05 17:00:26 program [5794]: Starting new HTTP connection (1): lounalevittoux.pl:80
+Mar 05 17:00:26 program [5794]: http://lounalevittoux.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:00:26 program [5794]: http://lounalevittoux.pl
+Mar 05 17:00:26 program [5794]: Starting new HTTP connection (1): trellomorelo.pl:80
+Mar 05 17:00:26 program [5794]: http://trellomorelo.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:00:26 program [5794]: http://trellomorelo.pl
+Mar 05 17:00:26 program [5794]: Starting new HTTP connection (1): xd.oskarkwidzinski.pl:80
+Mar 05 17:00:26 program [5794]: http://xd.oskarkwidzinski.pl
+Mar 05 17:00:26 program [5794]: Starting new HTTP connection (1): zeleznik.pl:80
+Mar 05 17:00:26 program [5794]: http://zeleznik.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:26 program [5794]: http://zeleznik.pl
+Mar 05 17:00:26 program [5794]: Starting new HTTP connection (1): flatearthsociety.pl:80
+Mar 05 17:00:26 program [5794]: http://flatearthsociety.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:26 program [5794]: http://flatearthsociety.pl
+Mar 05 17:00:26 program [5794]: Starting new HTTP connection (1): naukapythona.pl:80
+Mar 05 17:00:26 program [5794]: http://naukapythona.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:26 program [5794]: http://naukapythona.pl
+Mar 05 17:00:26 program [5794]: Starting new HTTP connection (1): dominikak.pl:80
+Mar 05 17:00:26 program [5794]: http://dominikak.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:26 program [5794]: http://dominikak.pl
+Mar 05 17:00:26 program [5794]: Starting new HTTP connection (1): codechallenger.pl:80
+Mar 05 17:00:27 program [5794]: http://codechallenger.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:27 program [5794]: http://codechallenger.pl
+Mar 05 17:00:27 program [5794]: Starting new HTTP connection (1): lamentyiodmety.pl:80
+Mar 05 17:00:27 program [5794]: http://lamentyiodmety.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:27 program [5794]: http://lamentyiodmety.pl
+Mar 05 17:00:27 program [5794]: Starting new HTTP connection (1): igaprogramuje.pl:80
+Mar 05 17:00:37 program [5794]: http://igaprogramuje.pl
+Mar 05 17:00:37 program [5794]: Starting new HTTP connection (1): laboratorium-projektu.pl:80
+Mar 05 17:00:37 program [5794]: http://laboratorium-projektu.pl:80 "GET / HTTP/1.1" 500 290
+Mar 05 17:00:37 program [5794]: http://laboratorium-projektu.pl
+Mar 05 17:00:37 program [5794]: Starting new HTTP connection (1): pythonarea.com:80
+Mar 05 17:00:37 program [5794]: http://pythonarea.com:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:37 program [5794]: http://pythonarea.com
+Mar 05 17:00:37 program [5794]: Starting new HTTP connection (1): crowely.pl:80
+Mar 05 17:00:37 program [5794]: http://crowely.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:37 program [5794]: http://crowely.pl
+Mar 05 17:00:37 program [5794]: Starting new HTTP connection (1): tomaszfigura-zpxd.pl:80
+Mar 05 17:00:37 program [5794]: http://tomaszfigura-zpxd.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:37 program [5794]: http://tomaszfigura-zpxd.pl
+Mar 05 17:00:37 program [5794]: Starting new HTTP connection (1): duszyczkirazjela.pl:80
+Mar 05 17:00:37 program [5794]: http://duszyczkirazjela.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:37 program [5794]: http://duszyczkirazjela.pl
+Mar 05 17:00:37 program [5794]: Starting new HTTP connection (1): onecodetwo.pl:80
+Mar 05 17:00:37 program [5794]: http://onecodetwo.pl:80 "GET / HTTP/1.1" 301 169
+Mar 05 17:00:37 program [5794]: Starting new HTTPS connection (1): onecodetwo.pl:443
+Mar 05 17:00:37 program [5794]: https://onecodetwo.pl:443 "GET / HTTP/1.1" 302 0
+Mar 05 17:00:37 program [5794]: https://onecodetwo.pl:443 "GET /keycloak/login?next=/ HTTP/1.1" 302 0
+Mar 05 17:00:37 program [5794]: Starting new HTTPS connection (1): awssimaamgen.pkiapps.net:443
+Mar 05 17:00:37 program [5794]: https://awssimaamgen.pkiapps.net:443 "GET /auth/realms/SImA/protocol/openid-connect/auth?client_id=sima&redirect_uri=https%3A%2F%2Fonecodetwo.pl%2Fkeycloak%2Flogin-complete&response_type=code&scope=openid&state=ce1827f7-f649-4148-8a87-b3184a6ed29f HTTP/1.1" 200 3544
+Mar 05 17:00:37 program [5794]: http://onecodetwo.pl
+Mar 05 17:00:37 program [5794]: Starting new HTTP connection (1): sledzkulture.pl:80
+Mar 05 17:00:38 program [5794]: http://sledzkulture.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:38 program [5794]: http://sledzkulture.pl
+Mar 05 17:00:38 program [5794]: Starting new HTTP connection (1): theblackjok3r.pl:80
+Mar 05 17:00:38 program [5794]: http://theblackjok3r.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:38 program [5794]: http://theblackjok3r.pl
+Mar 05 17:00:38 program [5794]: Starting new HTTP connection (1): ewelinamuzal.pl:80
+Mar 05 17:00:38 program [5794]: http://ewelinamuzal.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:38 program [5794]: http://ewelinamuzal.pl
+Mar 05 17:00:38 program [5794]: Starting new HTTP connection (1): derdak.pl:80
+Mar 05 17:00:38 program [5794]: http://derdak.pl
+Mar 05 17:00:38 program [5794]: Starting new HTTP connection (1): kotkisafajne.pl:80
+Mar 05 17:00:38 program [5794]: http://kotkisafajne.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:38 program [5794]: http://kotkisafajne.pl
+Mar 05 17:00:38 program [5794]: Starting new HTTP connection (1): dziedzic.me:80
+Mar 05 17:00:48 program [5794]: http://dziedzic.me
+Mar 05 17:00:48 program [5794]: Starting new HTTP connection (1): andrewfan.pl:80
+Mar 05 17:00:48 program [5794]: http://andrewfan.pl
+Mar 05 17:00:48 program [5794]: Starting new HTTP connection (1): morphads.pl:80
+Mar 05 17:00:48 program [5794]: http://morphads.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:48 program [5794]: http://morphads.pl
+Mar 05 17:00:48 program [5794]: Starting new HTTP connection (1): saramichalska.pl:80
+Mar 05 17:00:58 program [5794]: http://saramichalska.pl
+Mar 05 17:00:58 program [5794]: Starting new HTTP connection (1): obiekt-626.pl:80
+Mar 05 17:00:58 program [5794]: http://obiekt-626.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:58 program [5794]: http://obiekt-626.pl
+Mar 05 17:00:58 program [5794]: Starting new HTTP connection (1): paulinawierzchowskalublin.pl:80
+Mar 05 17:00:58 program [5794]: http://paulinawierzchowskalublin.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:58 program [5794]: http://paulinawierzchowskalublin.pl
+Mar 05 17:00:58 program [5794]: Starting new HTTP connection (1): botul.tech:80
+Mar 05 17:00:58 program [5794]: http://botul.tech:80 "GET / HTTP/1.1" 301 None
+Mar 05 17:00:58 program [5794]: Starting new HTTPS connection (1): botul.tech:443
+Mar 05 17:00:58 program [5794]: https://botul.tech:443 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:58 program [5794]: http://botul.tech
+Mar 05 17:00:58 program [5794]: Starting new HTTP connection (1): robiefajnerzeczywpythonie.pl:80
+Mar 05 17:00:59 program [5794]: http://robiefajnerzeczywpythonie.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:00:59 program [5794]: http://robiefajnerzeczywpythonie.pl
+Mar 05 17:00:59 program [5794]: Starting new HTTP connection (1): maksworks.pl:80
+Mar 05 17:00:59 program [5794]: http://maksworks.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:59 program [5794]: http://maksworks.pl
+Mar 05 17:00:59 program [5794]: Starting new HTTP connection (1): 3dradar.pl:80
+Mar 05 17:00:59 program [5794]: http://3dradar.pl:80 "GET / HTTP/1.1" 404 None
+Mar 05 17:00:59 program [5794]: http://3dradar.pl
+Mar 05 17:00:59 program [5794]: Starting new HTTP connection (1): jedrzejnowaczyk.pl:80
+Mar 05 17:00:59 program [5794]: http://jedrzejnowaczyk.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:59 program [5794]: http://jedrzejnowaczyk.pl
+Mar 05 17:00:59 program [5794]: Starting new HTTP connection (1): pythonprodigy.pl:80
+Mar 05 17:00:59 program [5794]: http://pythonprodigy.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:59 program [5794]: http://pythonprodigy.pl
+Mar 05 17:00:59 program [5794]: Starting new HTTP connection (1): rafalbryzek.pl:80
+Mar 05 17:00:59 program [5794]: http://rafalbryzek.pl:80 "GET / HTTP/1.1" 200 3138
+Mar 05 17:00:59 program [5794]: http://rafalbryzek.pl
+Mar 05 17:00:59 program [5794]: Starting new HTTP connection (1): zadaj.pythanie.pl:80
+Mar 05 17:00:59 program [5794]: http://zadaj.pythanie.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:00:59 program [5794]: http://zadaj.pythanie.pl
+Mar 05 17:00:59 program [5794]: Starting new HTTP connection (1): faberze-litosci.pl:80
+Mar 05 17:01:09 program [5794]: http://faberze-litosci.pl
+Mar 05 17:01:09 program [5794]: Starting new HTTP connection (1): ebajabongo.pl:80
+Mar 05 17:01:09 program [5794]: http://ebajabongo.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:09 program [5794]: http://ebajabongo.pl
+Mar 05 17:01:09 program [5794]: Starting new HTTP connection (1): jakubdusza.pl:80
+Mar 05 17:01:09 program [5794]: http://jakubdusza.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:09 program [5794]: http://jakubdusza.pl
+Mar 05 17:01:09 program [5794]: Starting new HTTP connection (1): sassy85.pl:80
+Mar 05 17:01:19 program [5794]: http://sassy85.pl
+Mar 05 17:01:19 program [5794]: Starting new HTTP connection (1): kdomanski.pl:80
+Mar 05 17:01:19 program [5794]: http://kdomanski.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:19 program [5794]: http://kdomanski.pl
+Mar 05 17:01:19 program [5794]: Starting new HTTP connection (1): adventureit.pl:80
+Mar 05 17:01:20 program [5794]: http://adventureit.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:20 program [5794]: http://adventureit.pl
+Mar 05 17:01:20 program [5794]: Starting new HTTP connection (1): paulinaorm.site:80
+Mar 05 17:01:20 program [5794]: http://paulinaorm.site:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:20 program [5794]: http://paulinaorm.site
+Mar 05 17:01:20 program [5794]: Starting new HTTP connection (1): jokuna.pl:80
+Mar 05 17:01:20 program [5794]: http://jokuna.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:20 program [5794]: http://jokuna.pl
+Mar 05 17:01:20 program [5794]: Starting new HTTP connection (1): bubobengalis.pl:80
+Mar 05 17:01:20 program [5794]: http://bubobengalis.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:20 program [5794]: http://bubobengalis.pl
+Mar 05 17:01:20 program [5794]: Starting new HTTP connection (1): kalafior.site:80
+Mar 05 17:01:20 program [5794]: http://kalafior.site:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:20 program [5794]: http://kalafior.site
+Mar 05 17:01:20 program [5794]: Starting new HTTP connection (1): dziaga.pl:80
+Mar 05 17:01:20 program [5794]: http://dziaga.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:20 program [5794]: http://dziaga.pl
+Mar 05 17:01:20 program [5794]: Starting new HTTP connection (1): kursprogrmowania.online:80
+Mar 05 17:01:20 program [5794]: http://kursprogrmowania.online:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:20 program [5794]: http://kursprogrmowania.online
+Mar 05 17:01:20 program [5794]: Starting new HTTP connection (1): patrykignaczak.com:80
+Mar 05 17:01:30 program [5794]: http://patrykignaczak.com
+Mar 05 17:01:30 program [5794]: Starting new HTTP connection (1): drogadosukcesu.com.pl:80
+Mar 05 17:01:30 program [5794]: http://drogadosukcesu.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:30 program [5794]: http://drogadosukcesu.com.pl
+Mar 05 17:01:30 program [5794]: Starting new HTTP connection (1): dziamska.com:80
+Mar 05 17:01:31 program [5794]: http://dziamska.com:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:31 program [5794]: http://dziamska.com
+Mar 05 17:01:31 program [5794]: Starting new HTTP connection (1): svingel.website:80
+Mar 05 17:01:31 program [5794]: http://svingel.website:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:31 program [5794]: http://svingel.website
+Mar 05 17:01:31 program [5794]: Starting new HTTP connection (1): swietochowska.pl:80
+Mar 05 17:01:31 program [5794]: http://swietochowska.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:31 program [5794]: http://swietochowska.pl
+Mar 05 17:01:31 program [5794]: Starting new HTTP connection (1): wawrzix.pl:80
+Mar 05 17:01:41 program [5794]: http://wawrzix.pl
+Mar 05 17:01:41 program [5794]: Starting new HTTP connection (1): laskobar.pl:80
+Mar 05 17:01:41 program [5794]: http://laskobar.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:41 program [5794]: http://laskobar.pl
+Mar 05 17:01:41 program [5794]: Starting new HTTP connection (1): piotr-rajmanski.pl:80
+Mar 05 17:01:41 program [5794]: http://piotr-rajmanski.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:41 program [5794]: http://piotr-rajmanski.pl
+Mar 05 17:01:41 program [5794]: Starting new HTTP connection (1): mi-st.pl:80
+Mar 05 17:01:41 program [5794]: http://mi-st.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:41 program [5794]: http://mi-st.pl
+Mar 05 17:01:41 program [5794]: Starting new HTTP connection (1): e-tokarczyk.pl:80
+Mar 05 17:01:51 program [5794]: http://e-tokarczyk.pl
+Mar 05 17:01:51 program [5794]: Starting new HTTP connection (1): kraina-zabawnego-chomika.pl:80
+Mar 05 17:01:51 program [5794]: http://kraina-zabawnego-chomika.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:51 program [5794]: http://kraina-zabawnego-chomika.pl
+Mar 05 17:01:51 program [5794]: Starting new HTTP connection (1): serafinmonika.pl:80
+Mar 05 17:01:51 program [5794]: http://serafinmonika.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:51 program [5794]: http://serafinmonika.pl
+Mar 05 17:01:51 program [5794]: Starting new HTTP connection (1): katarzyna-wolynska.pl:80
+Mar 05 17:01:51 program [5794]: http://katarzyna-wolynska.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:51 program [5794]: http://katarzyna-wolynska.pl
+Mar 05 17:01:51 program [5794]: Starting new HTTP connection (1): lusinski.pl:80
+Mar 05 17:01:52 program [5794]: http://lusinski.pl:80 "GET / HTTP/1.1" 302 138
+Mar 05 17:01:52 program [5794]: Starting new HTTP connection (1): www.lusinski.pl:80
+Mar 05 17:01:52 program [5794]: http://www.lusinski.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:52 program [5794]: http://lusinski.pl
+Mar 05 17:01:52 program [5794]: Starting new HTTP connection (1): piterkolod.pl:80
+Mar 05 17:01:52 program [5794]: http://piterkolod.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:52 program [5794]: http://piterkolod.pl
+Mar 05 17:01:52 program [5794]: Starting new HTTP connection (1): program-mistyczny.pl:80
+Mar 05 17:01:52 program [5794]: http://program-mistyczny.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:52 program [5794]: http://program-mistyczny.pl
+Mar 05 17:01:52 program [5794]: Starting new HTTP connection (1): magdaslifierz.xyz:80
+Mar 05 17:01:52 program [5794]: http://magdaslifierz.xyz:80 "GET / HTTP/1.1" 502 166
+Mar 05 17:01:52 program [5794]: http://magdaslifierz.xyz
+Mar 05 17:01:52 program [5794]: Starting new HTTP connection (1): marcinjanuszewski.pl:80
+Mar 05 17:01:52 program [5794]: http://marcinjanuszewski.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:52 program [5794]: http://marcinjanuszewski.pl
+Mar 05 17:01:52 program [5794]: Starting new HTTP connection (1): pmajek.online:80
+Mar 05 17:01:52 program [5794]: http://pmajek.online:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:52 program [5794]: http://pmajek.online
+Mar 05 17:01:52 program [5794]: Starting new HTTP connection (1): annre.pl:80
+Mar 05 17:01:52 program [5794]: http://annre.pl
+Mar 05 17:01:52 program [5794]: Starting new HTTP connection (1): ioutside.pl:80
+Mar 05 17:01:52 program [5794]: http://ioutside.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:01:52 program [5794]: http://ioutside.pl
+Mar 05 17:01:52 program [5794]: Starting new HTTP connection (1): wojtek-lbn.pl:80
+Mar 05 17:02:02 program [5794]: http://wojtek-lbn.pl
+Mar 05 17:02:02 program [5794]: Starting new HTTP connection (1): programmingdemobyjacob.fun:80
+Mar 05 17:02:02 program [5794]: http://programmingdemobyjacob.fun:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:02 program [5794]: http://programmingdemobyjacob.fun
+Mar 05 17:02:02 program [5794]: Starting new HTTP connection (1): miniquee.pl:80
+Mar 05 17:02:12 program [5794]: http://miniquee.pl
+Mar 05 17:02:12 program [5794]: Starting new HTTP connection (1): matjek.pl:80
+Mar 05 17:02:13 program [5794]: http://matjek.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:13 program [5794]: http://matjek.pl
+Mar 05 17:02:13 program [5794]: Starting new HTTP connection (1): majadabkowska.pl:80
+Mar 05 17:02:13 program [5794]: http://majadabkowska.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:13 program [5794]: http://majadabkowska.pl
+Mar 05 17:02:13 program [5794]: Starting new HTTP connection (1): iotdev.pl:80
+Mar 05 17:02:13 program [5794]: http://iotdev.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:13 program [5794]: http://iotdev.pl
+Mar 05 17:02:13 program [5794]: Starting new HTTP connection (1): kilokota.pl:80
+Mar 05 17:02:13 program [5794]: http://kilokota.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:13 program [5794]: http://kilokota.pl
+Mar 05 17:02:13 program [5794]: Starting new HTTP connection (1): tamasmatczak.pl:80
+Mar 05 17:02:13 program [5794]: http://tamasmatczak.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:13 program [5794]: http://tamasmatczak.pl
+Mar 05 17:02:13 program [5794]: Starting new HTTP connection (1): tobitobisinski.pl:80
+Mar 05 17:02:13 program [5794]: http://tobitobisinski.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:13 program [5794]: http://tobitobisinski.pl
+Mar 05 17:02:13 program [5794]: Starting new HTTP connection (1): kung-fu-python.online:80
+Mar 05 17:02:13 program [5794]: http://kung-fu-python.online:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:13 program [5794]: http://kung-fu-python.online
+Mar 05 17:02:13 program [5794]: Starting new HTTP connection (1): pigulka-murti-binga.pl:80
+Mar 05 17:02:13 program [5794]: http://pigulka-murti-binga.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:13 program [5794]: http://pigulka-murti-binga.pl
+Mar 05 17:02:13 program [5794]: Starting new HTTP connection (1): sylwiawt.com.pl:80
+Mar 05 17:02:23 program [5794]: http://sylwiawt.com.pl
+Mar 05 17:02:23 program [5794]: Starting new HTTP connection (1): python.mozeciasteczko.pl:80
+Mar 05 17:02:33 program [5794]: http://python.mozeciasteczko.pl
+Mar 05 17:02:33 program [5794]: Starting new HTTP connection (1): e-security.cloud:80
+Mar 05 17:02:33 program [5794]: http://e-security.cloud:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:33 program [5794]: http://E-security.cloud
+Mar 05 17:02:33 program [5794]: Starting new HTTP connection (1): ranref.pl:80
+Mar 05 17:02:33 program [5794]: http://ranref.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:33 program [5794]: http://ranref.pl
+Mar 05 17:02:33 program [5794]: Starting new HTTP connection (1): virgointhesky.pl:80
+Mar 05 17:02:34 program [5794]: http://virgointhesky.pl:80 "GET / HTTP/1.1" 404 None
+Mar 05 17:02:34 program [5794]: http://virgointhesky.pl
+Mar 05 17:02:34 program [5794]: Starting new HTTP connection (1): krzysiek-xd.com.pl:80
+Mar 05 17:02:34 program [5794]: http://krzysiek-xd.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:34 program [5794]: http://krzysiek-xd.com.pl
+Mar 05 17:02:34 program [5794]: Starting new HTTP connection (1): vergol-gaming.pl:80
+Mar 05 17:02:34 program [5794]: http://vergol-gaming.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:34 program [5794]: http://vergol-gaming.pl
+Mar 05 17:02:34 program [5794]: Starting new HTTP connection (1): lps.info.pl:80
+Mar 05 17:02:34 program [5794]: http://lps.info.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:34 program [5794]: http://lps.info.pl
+Mar 05 17:02:34 program [5794]: Starting new HTTP connection (1): saraczyz.pl:80
+Mar 05 17:02:44 program [5794]: http://saraczyz.pl
+Mar 05 17:02:44 program [5794]: Starting new HTTP connection (1): stawiarska.com.pl:80
+Mar 05 17:02:44 program [5794]: http://stawiarska.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:44 program [5794]: http://stawiarska.com.pl
+Mar 05 17:02:44 program [5794]: Starting new HTTP connection (1): looper.com.pl:80
+Mar 05 17:02:44 program [5794]: http://looper.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:44 program [5794]: http://looper.com.pl
+Mar 05 17:02:44 program [5794]: Starting new HTTP connection (1): kacper-potocki.pl:80
+Mar 05 17:02:44 program [5794]: http://kacper-potocki.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:02:44 program [5794]: http://kacper-potocki.pl
+Mar 05 17:02:44 program [5794]: Starting new HTTP connection (1): vegenuary.pl:80
+Mar 05 17:02:44 program [5794]: http://vegenuary.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:44 program [5794]: http://vegenuary.pl
+Mar 05 17:02:44 program [5794]: Starting new HTTP connection (1): hycilo.pl:80
+Mar 05 17:02:54 program [5794]: http://hycilo.pl
+Mar 05 17:02:54 program [5794]: Starting new HTTP connection (1): python-pocafasso.pl:80
+Mar 05 17:02:54 program [5794]: http://python-pocafasso.pl
+Mar 05 17:02:54 program [5794]: Starting new HTTP connection (1): rowerowabaza-24.pl:80
+Mar 05 17:02:54 program [5794]: http://rowerowabaza-24.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:02:54 program [5794]: http://rowerowabaza-24.pl
+Mar 05 17:02:54 program [5794]: Starting new HTTP connection (1): biourny.pl:80
+Mar 05 17:03:04 program [5794]: http://biourny.pl
+Mar 05 17:03:04 program [5794]: Starting new HTTP connection (1): joanna1984.pl:80
+Mar 05 17:03:04 program [5794]: http://joanna1984.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:03:04 program [5794]: http://joanna1984.pl
+Mar 05 17:03:04 program [5794]: Starting new HTTP connection (1): pytonschirmpilza.pl:80
+Mar 05 17:03:04 program [5794]: http://pytonschirmpilza.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:03:04 program [5794]: http://pytonschirmpilza.pl
+Mar 05 17:03:04 program [5794]: Starting new HTTP connection (1): kasia-python.pl:80
+Mar 05 17:03:04 program [5794]: http://kasia-python.pl:80 "GET / HTTP/1.1" 502 166
+Mar 05 17:03:04 program [5794]: http://kasia-python.pl
+Mar 05 17:03:04 program [5794]: Starting new HTTP connection (1): pawelmarkieta.pl:80
+Mar 05 17:03:04 program [5794]: http://pawelmarkieta.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:03:04 program [5794]: http://pawelmarkieta.pl
+Mar 05 17:03:04 program [5794]: Starting new HTTP connection (1): jamrush.fun:80
+Mar 05 17:03:05 program [5794]: http://jamrush.fun:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:03:05 program [5794]: http://jamrush.fun
+Mar 05 17:03:05 program [5794]: Starting new HTTP connection (1): witchesinorder.pl:80
+Mar 05 17:03:05 program [5794]: http://witchesinorder.pl:80 "GET / HTTP/1.1" 200 1177
+Mar 05 17:03:05 program [5794]: http://witchesinorder.pl
+Mar 05 17:03:05 program [5794]: Starting new HTTP connection (1): makes-sense.website:80
+Mar 05 17:03:15 program [5794]: http://makes-sense.website
+Mar 05 17:03:15 program [5794]: Starting new HTTP connection (1): jagorl.fun:80
+Mar 05 17:03:15 program [5794]: http://jagorl.fun:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:03:15 program [5794]: http://jagorl.fun
+Mar 05 17:03:15 program [5794]: Starting new HTTP connection (1): grah.pl:80
+Mar 05 17:03:15 program [5794]: http://grah.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:03:15 program [5794]: http://grah.pl
+Mar 05 17:03:15 program [5794]: Starting new HTTP connection (1): mocjestznami.pl:80
+Mar 05 17:03:25 program [5794]: http://mocjestznami.pl
+Mar 05 17:03:25 program [5794]: Starting new HTTP connection (1): myjumble.pl:80
+Mar 05 17:03:25 program [5794]: http://myjumble.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:03:25 program [5794]: http://myjumble.pl
+Mar 05 17:03:25 program [5794]: Starting new HTTP connection (1): milenabogutalub.pl:80
+Mar 05 17:03:35 program [5794]: http://milenabogutalub.pl
+Mar 05 17:03:35 program [5794]: Starting new HTTP connection (1): hankas.pl:80
+Mar 05 17:03:45 program [5794]: http://hankas.pl
+Mar 05 17:03:45 program [5794]: Starting new HTTP connection (1): natalia-lepich.pl:80
+Mar 05 17:03:55 program [5794]: http://natalia-lepich.pl
+Mar 05 17:03:55 program [5794]: Starting new HTTP connection (1): kasiapolice82.pl:80
+Mar 05 17:03:55 program [5794]: http://kasiapolice82.pl:80 "GET / HTTP/1.1" 502 166
+Mar 05 17:03:55 program [5794]: http://kasiapolice82.pl
+Mar 05 17:03:55 program [5794]: Starting new HTTP connection (1): programowanie-kurs.pl:80
+Mar 05 17:03:55 program [5794]: http://programowanie-kurs.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:03:55 program [5794]: http://programowanie-kurs.pl
+Mar 05 17:03:55 program [5794]: Starting new HTTP connection (1): wiemcorobie.fun:80
+Mar 05 17:03:55 program [5794]: http://wiemcorobie.fun:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:03:55 program [5794]: http://wiemcorobie.fun
+Mar 05 17:03:55 program [5794]: Starting new HTTP connection (1): programowanie-python.online:80
+Mar 05 17:03:55 program [5794]: http://programowanie-python.online:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:03:55 program [5794]: http://programowanie-python.online
+Mar 05 17:03:55 program [5794]: Starting new HTTP connection (1): zdano1.pl:80
+Mar 05 17:03:56 program [5794]: http://zdano1.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:03:56 program [5794]: http://zdano1.pl
+Mar 05 17:03:56 program [5794]: Starting new HTTP connection (1): programistapython012022.pl:80
+Mar 05 17:03:56 program [5794]: http://programistapython012022.pl
+Mar 05 17:03:56 program [5794]: Starting new HTTP connection (1): ezu-python.pl:80
+Mar 05 17:03:56 program [5794]: http://ezu-python.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:03:56 program [5794]: http://ezu-python.pl
+Mar 05 17:03:56 program [5794]: Starting new HTTP connection (1): eultramax.pl:80
+Mar 05 17:03:56 program [5794]: http://eultramax.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:03:56 program [5794]: http://eultramax.pl
+Mar 05 17:03:56 program [5794]: Starting new HTTP connection (1): hajcik.pl:80
+Mar 05 17:03:56 program [5794]: http://hajcik.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:03:56 program [5794]: http://hajcik.pl
+Mar 05 17:03:56 program [5794]: Starting new HTTP connection (1): kosmalov.pl:80
+Mar 05 17:04:06 program [5794]: http://kosmalov.pl
+Mar 05 17:04:06 program [5794]: Starting new HTTP connection (1): fermenciarz.pl:80
+Mar 05 17:04:06 program [5794]: http://fermenciarz.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:06 program [5794]: http://fermenciarz.pl
+Mar 05 17:04:06 program [5794]: Starting new HTTP connection (1): bartechcoding.pl:80
+Mar 05 17:04:06 program [5794]: http://bartechcoding.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:06 program [5794]: http://bartechcoding.pl
+Mar 05 17:04:06 program [5794]: Starting new HTTP connection (1): misjapython.pl:80
+Mar 05 17:04:06 program [5794]: http://misjapython.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:06 program [5794]: http://misjapython.pl
+Mar 05 17:04:06 program [5794]: Starting new HTTP connection (1): jacekpython.pl:80
+Mar 05 17:04:06 program [5794]: http://jacekpython.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:06 program [5794]: http://jacekpython.pl
+Mar 05 17:04:06 program [5794]: Starting new HTTP connection (1): sanlina89.pl:80
+Mar 05 17:04:06 program [5794]: http://sanlina89.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:06 program [5794]: http://sanlina89.pl
+Mar 05 17:04:06 program [5794]: Starting new HTTP connection (1): styxu.pl:80
+Mar 05 17:04:06 program [5794]: http://styxu.pl:80 "GET / HTTP/1.1" 301 178
+Mar 05 17:04:06 program [5794]: Starting new HTTPS connection (1): styxu.pl:443
+Mar 05 17:04:06 program [5794]: https://styxu.pl:443 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:06 program [5794]: http://styxu.pl
+Mar 05 17:04:06 program [5794]: Starting new HTTP connection (1): wakeupandreset.pl:80
+Mar 05 17:04:06 program [5794]: http://wakeupandreset.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:06 program [5794]: http://wakeupandreset.pl
+Mar 05 17:04:06 program [5794]: Starting new HTTP connection (1): sanfi.pl:80
+Mar 05 17:04:06 program [5794]: http://sanfi.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:06 program [5794]: http://sanfi.pl
+Mar 05 17:04:06 program [5794]: Starting new HTTP connection (1): programistkapython.pl:80
+Mar 05 17:04:06 program [5794]: http://programistkapython.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:06 program [5794]: http://programistkapython.pl
+Mar 05 17:04:06 program [5794]: Starting new HTTP connection (1): ungiup.be:80
+Mar 05 17:04:06 program [5794]: http://ungiup.be:80 "GET / HTTP/1.1" 502 166
+Mar 05 17:04:06 program [5794]: http://ungiup.be
+Mar 05 17:04:06 program [5794]: Starting new HTTP connection (1): forensic.edu.pl:80
+Mar 05 17:04:07 program [5794]: http://forensic.edu.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:07 program [5794]: http://forensic.edu.pl
+Mar 05 17:04:07 program [5794]: Starting new HTTP connection (1): beyondhoryzont.pl:80
+Mar 05 17:04:07 program [5794]: http://beyondhoryzont.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:07 program [5794]: http://beyondhoryzont.pl
+Mar 05 17:04:07 program [5794]: Starting new HTTP connection (1): inzmechstart.pl:80
+Mar 05 17:04:07 program [5794]: http://inzmechstart.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:07 program [5794]: http://inzmechstart.pl
+Mar 05 17:04:07 program [5794]: Starting new HTTP connection (1): pythonfun.pl:80
+Mar 05 17:04:07 program [5794]: http://pythonfun.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:04:07 program [5794]: http://pythonfun.pl
+Mar 05 17:04:07 program [5794]: Starting new HTTP connection (1): misiunia.pl:80
+Mar 05 17:04:07 program [5794]: http://misiunia.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:07 program [5794]: http://misiunia.pl
+Mar 05 17:04:07 program [5794]: Starting new HTTP connection (1): test-klaudia-app.herokuapp.com:80
+Mar 05 17:04:07 program [5794]: http://test-klaudia-app.herokuapp.com:80 "GET / HTTP/1.1" 502 2476
+Mar 05 17:04:07 program [5794]: http://test-klaudia-app.herokuapp.com
+Mar 05 17:04:07 program [5794]: Starting new HTTP connection (1): carbonoverkill.pl:80
+Mar 05 17:04:07 program [5794]: http://carbonoverkill.pl
+Mar 05 17:04:07 program [5794]: Starting new HTTP connection (1): tsyhankova.pl:80
+Mar 05 17:04:07 program [5794]: http://tsyhankova.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:04:07 program [5794]: http://tsyhankova.pl
+Mar 05 17:04:07 program [5794]: Starting new HTTP connection (1): dandi-design.pl:80
+Mar 05 17:04:07 program [5794]: http://dandi-design.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:04:07 program [5794]: http://dandi-design.pl
+Mar 05 17:04:07 program [5794]: Starting new HTTP connection (1): sylwiafijol.pl:80
+Mar 05 17:04:07 program [5794]: http://sylwiafijol.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:07 program [5794]: http://sylwiafijol.pl
+Mar 05 17:04:07 program [5794]: Starting new HTTP connection (1): roedeer.pl:80
+Mar 05 17:04:07 program [5794]: http://roedeer.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:07 program [5794]: http://roedeer.pl
+Mar 05 17:04:07 program [5794]: Starting new HTTP connection (1): angelikakubacka.pl:80
+Mar 05 17:04:07 program [5794]: http://angelikakubacka.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:07 program [5794]: http://angelikakubacka.pl
+Mar 05 17:04:07 program [5794]: Starting new HTTP connection (1): angelikakubacka.pl:80
+Mar 05 17:04:07 program [5794]: http://angelikakubacka.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:07 program [5794]: http://angelikakubacka.pl
+Mar 05 17:04:07 program [5794]: Starting new HTTP connection (1): mkrzem.pl:80
+Mar 05 17:04:09 program [5794]: http://mkrzem.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:09 program [5794]: http://mkrzem.pl
+Mar 05 17:04:09 program [5794]: Starting new HTTP connection (1): klaudiajasko.pl:80
+Mar 05 17:04:09 program [5794]: http://klaudiajasko.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:09 program [5794]: http://klaudiajasko.pl
+Mar 05 17:04:09 program [5794]: Starting new HTTP connection (1): tloluvin.pl:80
+Mar 05 17:04:09 program [5794]: http://tloluvin.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:09 program [5794]: http://tloluvin.pl
+Mar 05 17:04:09 program [5794]: Starting new HTTP connection (1): jackheadph1.pl:80
+Mar 05 17:04:09 program [5794]: http://jackheadph1.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:09 program [5794]: http://jackheadph1.pl
+Mar 05 17:04:09 program [5794]: Starting new HTTP connection (1): ibruh.pl:80
+Mar 05 17:04:09 program [5794]: http://ibruh.pl
+Mar 05 17:04:09 program [5794]: Starting new HTTP connection (1): sekisekula.pl:80
+Mar 05 17:04:09 program [5794]: http://sekisekula.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:09 program [5794]: http://sekisekula.pl
+Mar 05 17:04:09 program [5794]: Starting new HTTP connection (1): pawlowski-filip.online:80
+Mar 05 17:04:09 program [5794]: http://pawlowski-filip.online:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:09 program [5794]: http://pawlowski-filip.online
+Mar 05 17:04:09 program [5794]: Starting new HTTP connection (1): crypto24h.eu:80
+Mar 05 17:04:09 program [5794]: http://crypto24h.eu
+Mar 05 17:04:09 program [5794]: Starting new HTTP connection (1): olaponeta.pl:80
+Mar 05 17:04:09 program [5794]: http://olaponeta.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:04:09 program [5794]: http://olaponeta.pl
+Mar 05 17:04:09 program [5794]: Starting new HTTP connection (1): dulewicz.site:80
+Mar 05 17:04:09 program [5794]: http://dulewicz.site:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:09 program [5794]: http://dulewicz.site
+Mar 05 17:04:09 program [5794]: Starting new HTTP connection (1): zyclone.pl:80
+Mar 05 17:04:10 program [5794]: http://zyclone.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:10 program [5794]: http://zyclone.pl
+Mar 05 17:04:10 program [5794]: Starting new HTTP connection (1): danielbich.pl:80
+Mar 05 17:04:10 program [5794]: http://danielbich.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:10 program [5794]: http://danielbich.pl
+Mar 05 17:04:10 program [5794]: Starting new HTTP connection (1): mechatohiks.pl:80
+Mar 05 17:04:10 program [5794]: http://mechatohiks.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:10 program [5794]: http://mechatohiks.pl
+Mar 05 17:04:10 program [5794]: Starting new HTTP connection (1): lemonfriday.pl:80
+Mar 05 17:04:10 program [5794]: http://lemonfriday.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:10 program [5794]: http://lemonfriday.pl
+Mar 05 17:04:10 program [5794]: Starting new HTTP connection (1): info-project.pl:80
+Mar 05 17:04:10 program [5794]: http://info-project.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:10 program [5794]: http://info-project.pl
+Mar 05 17:04:10 program [5794]: Starting new HTTP connection (1): runpython.pl:80
+Mar 05 17:04:10 program [5794]: http://runpython.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:10 program [5794]: http://runpython.pl
+Mar 05 17:04:10 program [5794]: Starting new HTTP connection (1): konradptak.pl:80
+Mar 05 17:04:10 program [5794]: http://konradptak.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:10 program [5794]: http://konradptak.pl
+Mar 05 17:04:10 program [5794]: Starting new HTTP connection (1): ligao.pl:80
+Mar 05 17:04:10 program [5794]: http://ligao.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:10 program [5794]: http://ligao.pl
+Mar 05 17:04:10 program [5794]: Starting new HTTP connection (1): kubaxd.pl:80
+Mar 05 17:04:10 program [5794]: http://kubaxd.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:10 program [5794]: http://kubaxd.pl
+Mar 05 17:04:10 program [5794]: Starting new HTTP connection (1): weronika.online:80
+Mar 05 17:04:10 program [5794]: http://weronika.online:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:10 program [5794]: http://weronika.online
+Mar 05 17:04:10 program [5794]: Starting new HTTP connection (1): zrepopkulture.pl:80
+Mar 05 17:04:10 program [5794]: http://zrepopkulture.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:10 program [5794]: http://zrepopkulture.pl
+Mar 05 17:04:10 program [5794]: Starting new HTTP connection (1): kaaemes.pl:80
+Mar 05 17:04:10 program [5794]: http://kaaemes.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:10 program [5794]: http://kaaemes.pl
+Mar 05 17:04:10 program [5794]: Starting new HTTP connection (1): pepiush.pl:80
+Mar 05 17:04:10 program [5794]: http://pepiush.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:10 program [5794]: http://pepiush.pl
+Mar 05 17:04:10 program [5794]: Starting new HTTP connection (1): robniegadaj.pl:80
+Mar 05 17:04:10 program [5794]: http://robniegadaj.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:10 program [5794]: http://robniegadaj.pl
+Mar 05 17:04:10 program [5794]: Starting new HTTP connection (1): holemagic.pl:80
+Mar 05 17:04:11 program [5794]: http://holemagic.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:11 program [5794]: http://holemagic.pl
+Mar 05 17:04:11 program [5794]: Starting new HTTP connection (1): mateusz-wojaczek.pl:80
+Mar 05 17:04:11 program [5794]: http://mateusz-wojaczek.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:11 program [5794]: http://mateusz-wojaczek.pl
+Mar 05 17:04:11 program [5794]: Starting new HTTP connection (1): free.riichi.bet:80
+Mar 05 17:04:21 program [5794]: http://free.riichi.bet
+Mar 05 17:04:21 program [5794]: Starting new HTTP connection (1): mroczne-misie.pl:8099
+Mar 05 17:04:31 program [5794]: http://mroczne-misie.pl:8099
+Mar 05 17:04:31 program [5794]: Starting new HTTP connection (1): niewiempocotorobie.pl:80
+Mar 05 17:04:31 program [5794]: http://niewiempocotorobie.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:31 program [5794]: http://niewiempocotorobie.pl
+Mar 05 17:04:31 program [5794]: Starting new HTTP connection (1): michaelozard.com.pl:80
+Mar 05 17:04:31 program [5794]: http://michaelozard.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:31 program [5794]: http://michaelozard.com.pl
+Mar 05 17:04:31 program [5794]: Starting new HTTP connection (1): pythonnr1.herokuapp.com:80
+Mar 05 17:04:38 program [5794]: http://pythonnr1.herokuapp.com:80 "GET / HTTP/1.1" 200 154
+Mar 05 17:04:38 program [5794]: http://pythonnr1.herokuapp.com
+Mar 05 17:04:38 program [5794]: Starting new HTTP connection (1): tomaszp-zxd.pl:80
+Mar 05 17:04:39 program [5794]: http://tomaszp-zxd.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:39 program [5794]: http://tomaszp-zxd.pl
+Mar 05 17:04:39 program [5794]: Starting new HTTP connection (1): dzatorski.pl:80
+Mar 05 17:04:39 program [5794]: http://dzatorski.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:39 program [5794]: http://dzatorski.pl
+Mar 05 17:04:39 program [5794]: Starting new HTTP connection (1): marixdemon.pl:80
+Mar 05 17:04:39 program [5794]: http://marixdemon.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:39 program [5794]: http://marixdemon.pl
+Mar 05 17:04:39 program [5794]: Starting new HTTP connection (1): danielrusak.pl:80
+Mar 05 17:04:39 program [5794]: http://danielrusak.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:39 program [5794]: http://danielrusak.pl
+Mar 05 17:04:39 program [5794]: Starting new HTTP connection (1): krystianlata.pl:80
+Mar 05 17:04:39 program [5794]: http://krystianlata.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:39 program [5794]: http://krystianlata.pl
+Mar 05 17:04:39 program [5794]: Starting new HTTP connection (1): vetch.pl:80
+Mar 05 17:04:39 program [5794]: http://vetch.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:39 program [5794]: http://vetch.pl
+Mar 05 17:04:39 program [5794]: Starting new HTTP connection (1): wygrajzglowa.pl:80
+Mar 05 17:04:39 program [5794]: http://wygrajzglowa.pl
+Mar 05 17:04:39 program [5794]: Starting new HTTP connection (1): jasama.fun:80
+Mar 05 17:04:39 program [5794]: http://jasama.fun:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:39 program [5794]: http://jasama.fun
+Mar 05 17:04:39 program [5794]: Starting new HTTP connection (1): magnetofon.com.pl:80
+Mar 05 17:04:39 program [5794]: http://magnetofon.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:39 program [5794]: http://magnetofon.com.pl
+Mar 05 17:04:39 program [5794]: Starting new HTTP connection (1): sylwar-python.pl:80
+Mar 05 17:04:42 program [5794]: http://sylwar-python.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:42 program [5794]: http://sylwar-python.pl
+Mar 05 17:04:42 program [5794]: Starting new HTTP connection (1): przemek2940.pl:80
+Mar 05 17:04:42 program [5794]: http://przemek2940.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:42 program [5794]: http://przemek2940.pl
+Mar 05 17:04:42 program [5794]: Starting new HTTP connection (1): projektpython.com.pl:80
+Mar 05 17:04:43 program [5794]: http://projektpython.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:43 program [5794]: http://projektpython.com.pl
+Mar 05 17:04:43 program [5794]: Starting new HTTP connection (1): techdomain.pl:80
+Mar 05 17:04:43 program [5794]: http://techdomain.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:43 program [5794]: http://techdomain.pl
+Mar 05 17:04:43 program [5794]: Starting new HTTP connection (1): attomuffka.pl:80
+Mar 05 17:04:43 program [5794]: http://attomuffka.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:43 program [5794]: http://attomuffka.pl
+Mar 05 17:04:43 program [5794]: Starting new HTTP connection (1): aleksandrab.pl:80
+Mar 05 17:04:43 program [5794]: http://aleksandrab.pl
+Mar 05 17:04:43 program [5794]: Starting new HTTP connection (1): python-snake.pl:80
+Mar 05 17:04:43 program [5794]: http://python-snake.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:43 program [5794]: http://python-snake.pl
+Mar 05 17:04:43 program [5794]: Starting new HTTP connection (1): beetroot.com.pl:80
+Mar 05 17:04:43 program [5794]: http://beetroot.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:43 program [5794]: http://beetroot.com.pl
+Mar 05 17:04:43 program [5794]: Starting new HTTP connection (1): klaudianiemcewicz.pl:80
+Mar 05 17:04:43 program [5794]: http://klaudianiemcewicz.pl:80 "GET / HTTP/1.1" 502 166
+Mar 05 17:04:43 program [5794]: http://klaudianiemcewicz.pl
+Mar 05 17:04:43 program [5794]: Starting new HTTP connection (1): handsinthetea.online:80
+Mar 05 17:04:43 program [5794]: http://handsinthetea.online:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:43 program [5794]: http://handsinthetea.online
+Mar 05 17:04:43 program [5794]: Starting new HTTP connection (1): mojetworzenie.pl:80
+Mar 05 17:04:43 program [5794]: http://mojetworzenie.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:43 program [5794]: http://mojetworzenie.pl
+Mar 05 17:04:43 program [5794]: Starting new HTTP connection (1): jkubex.pl:80
+Mar 05 17:04:43 program [5794]: http://jkubex.pl
+Mar 05 17:04:43 program [5794]: Starting new HTTP connection (1): kb-group.pl:80
+Mar 05 17:04:43 program [5794]: http://kb-group.pl:80 "GET / HTTP/1.1" 502 166
+Mar 05 17:04:43 program [5794]: http://kb-group.pl
+Mar 05 17:04:43 program [5794]: Starting new HTTP connection (1): krzyczhubson.pl:80
+Mar 05 17:04:43 program [5794]: http://krzyczhubson.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:43 program [5794]: http://krzyczhubson.pl
+Mar 05 17:04:43 program [5794]: Starting new HTTP connection (1): neftays.pl:80
+Mar 05 17:04:43 program [5794]: http://neftays.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:43 program [5794]: http://neftays.pl
+Mar 05 17:04:43 program [5794]: Starting new HTTP connection (1): lukaszremkowicz.pl:80
+Mar 05 17:04:44 program [5794]: http://lukaszremkowicz.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:44 program [5794]: http://lukaszremkowicz.pl
+Mar 05 17:04:44 program [5794]: Starting new HTTP connection (1): burnyashov.pl:80
+Mar 05 17:04:44 program [5794]: http://burnyashov.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:44 program [5794]: http://burnyashov.pl
+Mar 05 17:04:44 program [5794]: Starting new HTTP connection (1): pythonportfolio.pl:80
+Mar 05 17:04:44 program [5794]: http://pythonportfolio.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:44 program [5794]: http://pythonportfolio.pl
+Mar 05 17:04:44 program [5794]: Starting new HTTP connection (1): barbaraurbanczyk.pl:80
+Mar 05 17:04:44 program [5794]: http://barbaraurbanczyk.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:44 program [5794]: http://barbaraurbanczyk.pl
+Mar 05 17:04:44 program [5794]: Starting new HTTP connection (1): dawidpawlas.pl:80
+Mar 05 17:04:44 program [5794]: http://dawidpawlas.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:44 program [5794]: http://dawidpawlas.pl
+Mar 05 17:04:44 program [5794]: Starting new HTTP connection (1): unrealen.pl:80
+Mar 05 17:04:44 program [5794]: http://unrealen.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:44 program [5794]: http://unrealen.pl
+Mar 05 17:04:44 program [5794]: Starting new HTTP connection (1): reallynicethings.pl:80
+Mar 05 17:04:44 program [5794]: http://reallynicethings.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:44 program [5794]: http://reallynicethings.pl
+Mar 05 17:04:44 program [5794]: Starting new HTTP connection (1): pythonowanie.pl:80
+Mar 05 17:04:44 program [5794]: http://pythonowanie.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:44 program [5794]: http://pythonowanie.pl
+Mar 05 17:04:44 program [5794]: Starting new HTTP connection (1): teszkin.pl:80
+Mar 05 17:04:44 program [5794]: http://teszkin.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:44 program [5794]: http://teszkin.pl
+Mar 05 17:04:44 program [5794]: Starting new HTTP connection (1): mojsandbox.pl:80
+Mar 05 17:04:44 program [5794]: http://mojsandbox.pl:80 "GET / HTTP/1.1" 301 707
+Mar 05 17:04:44 program [5794]: Starting new HTTPS connection (1): mojsandbox.pl:443
+Mar 05 17:04:44 program [5794]: https://mojsandbox.pl:443 "GET / HTTP/1.1" 200 1665
+Mar 05 17:04:44 program [5794]: http://mojsandbox.pl
+Mar 05 17:04:44 program [5794]: Starting new HTTP connection (1): cotamcotam.pl:80
+Mar 05 17:04:45 program [5794]: http://cotamcotam.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:45 program [5794]: http://cotamcotam.pl
+Mar 05 17:04:45 program [5794]: Starting new HTTP connection (1): micsiw.pl:80
+Mar 05 17:04:45 program [5794]: http://micsiw.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:45 program [5794]: http://micsiw.pl
+Mar 05 17:04:45 program [5794]: Starting new HTTP connection (1): difficultproblems-simplesolutions.pl:80
+Mar 05 17:04:55 program [5794]: http://difficultproblems-simplesolutions.pl
+Mar 05 17:04:55 program [5794]: Starting new HTTP connection (1): rafalujma.pl:80
+Mar 05 17:04:55 program [5794]: http://rafalujma.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:55 program [5794]: http://rafalujma.pl
+Mar 05 17:04:55 program [5794]: Starting new HTTP connection (1): wlocznik.pl:80
+Mar 05 17:04:55 program [5794]: http://wlocznik.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:55 program [5794]: http://wlocznik.pl
+Mar 05 17:04:55 program [5794]: Starting new HTTP connection (1): jjtest.pl:80
+Mar 05 17:04:55 program [5794]: http://jjtest.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:55 program [5794]: http://jjtest.pl
+Mar 05 17:04:55 program [5794]: Starting new HTTP connection (1): skszymon.online:80
+Mar 05 17:04:56 program [5794]: http://skszymon.online:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:56 program [5794]: http://skszymon.online
+Mar 05 17:04:56 program [5794]: Starting new HTTP connection (1): adamtupisze.pl:80
+Mar 05 17:04:56 program [5794]: http://adamtupisze.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:56 program [5794]: http://adamtupisze.pl
+Mar 05 17:04:56 program [5794]: Starting new HTTP connection (1): nikag.pl:80
+Mar 05 17:04:56 program [5794]: http://nikag.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:56 program [5794]: http://nikag.pl
+Mar 05 17:04:56 program [5794]: Starting new HTTP connection (1): przygodazpythonem.pl:80
+Mar 05 17:04:56 program [5794]: http://przygodazpythonem.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:56 program [5794]: http://przygodazpythonem.pl
+Mar 05 17:04:56 program [5794]: Starting new HTTP connection (1): leniwiecc.pl:80
+Mar 05 17:04:56 program [5794]: http://leniwiecc.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:56 program [5794]: http://leniwiecc.pl
+Mar 05 17:04:56 program [5794]: Starting new HTTP connection (1): kingape.pl:80
+Mar 05 17:04:56 program [5794]: http://kingape.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:56 program [5794]: http://kingape.pl
+Mar 05 17:04:56 program [5794]: Starting new HTTP connection (1): newbrand.com.pl:80
+Mar 05 17:04:56 program [5794]: http://newbrand.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:56 program [5794]: http://newbrand.com.pl
+Mar 05 17:04:56 program [5794]: Starting new HTTP connection (1): joannahurnowicz.pl:80
+Mar 05 17:04:56 program [5794]: http://joannahurnowicz.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:56 program [5794]: http://joannahurnowicz.pl
+Mar 05 17:04:56 program [5794]: Starting new HTTP connection (1): silmara.pl:80
+Mar 05 17:04:56 program [5794]: http://silmara.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:56 program [5794]: http://silmara.pl
+Mar 05 17:04:56 program [5794]: Starting new HTTP connection (1): dawidb7.pl:80
+Mar 05 17:04:56 program [5794]: http://dawidb7.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:56 program [5794]: http://dawidb7.pl
+Mar 05 17:04:56 program [5794]: Starting new HTTP connection (1): skepticalsnek.pl:80
+Mar 05 17:04:56 program [5794]: http://skepticalsnek.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:56 program [5794]: http://skepticalsnek.pl
+Mar 05 17:04:56 program [5794]: Starting new HTTP connection (1): project-x.com.pl:80
+Mar 05 17:04:56 program [5794]: http://project-x.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:56 program [5794]: http://project-x.com.pl
+Mar 05 17:04:56 program [5794]: Starting new HTTP connection (1): a9a.com.pl:80
+Mar 05 17:04:56 program [5794]: http://a9a.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:56 program [5794]: http://a9a.com.pl
+Mar 05 17:04:56 program [5794]: Starting new HTTP connection (1): zeus-dev.pl:80
+Mar 05 17:04:57 program [5794]: http://zeus-dev.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:57 program [5794]: http://zeus-dev.pl
+Mar 05 17:04:57 program [5794]: Starting new HTTP connection (1): bart-zpxd.pl:80
+Mar 05 17:04:57 program [5794]: http://bart-zpxd.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:57 program [5794]: http://bart-zpxd.pl
+Mar 05 17:04:57 program [5794]: Starting new HTTP connection (1): habiworld.pl:80
+Mar 05 17:04:57 program [5794]: http://habiworld.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:57 program [5794]: http://habiworld.pl
+Mar 05 17:04:57 program [5794]: Starting new HTTP connection (1): optimistiksnek.pl:80
+Mar 05 17:04:57 program [5794]: http://optimistiksnek.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:57 program [5794]: http://optimistiksnek.pl
+Mar 05 17:04:57 program [5794]: Starting new HTTP connection (1): sentinel-24.pl:80
+Mar 05 17:04:57 program [5794]: http://sentinel-24.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:57 program [5794]: http://sentinel-24.pl
+Mar 05 17:04:57 program [5794]: Starting new HTTP connection (1): projektypb.pl:80
+Mar 05 17:04:57 program [5794]: http://projektypb.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:57 program [5794]: http://projektypb.pl
+Mar 05 17:04:57 program [5794]: Starting new HTTP connection (1): programowanie.czest.pl:80
+Mar 05 17:04:57 program [5794]: http://programowanie.czest.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:57 program [5794]: http://programowanie.czest.pl
+Mar 05 17:04:57 program [5794]: Starting new HTTP connection (1): jakubserafin.pl:80
+Mar 05 17:04:58 program [5794]: http://jakubserafin.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:58 program [5794]: http://jakubserafin.pl
+Mar 05 17:04:58 program [5794]: Starting new HTTP connection (1): martyna-zalewska.pl:80
+Mar 05 17:04:58 program [5794]: http://martyna-zalewska.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:58 program [5794]: http://martyna-zalewska.pl
+Mar 05 17:04:58 program [5794]: Starting new HTTP connection (1): tm-pytcourse.pl:80
+Mar 05 17:04:58 program [5794]: http://tm-pytcourse.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:58 program [5794]: http://tm-pytcourse.pl
+Mar 05 17:04:58 program [5794]: Starting new HTTP connection (1): mexicanseafood.pl:80
+Mar 05 17:04:58 program [5794]: http://mexicanseafood.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:58 program [5794]: http://mexicanseafood.pl
+Mar 05 17:04:58 program [5794]: Starting new HTTP connection (1): habigier.pl:80
+Mar 05 17:04:58 program [5794]: http://habigier.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:58 program [5794]: http://habigier.pl
+Mar 05 17:04:58 program [5794]: Starting new HTTP connection (1): gloom.com.pl:80
+Mar 05 17:04:58 program [5794]: http://gloom.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:58 program [5794]: http://gloom.com.pl
+Mar 05 17:04:58 program [5794]: Starting new HTTP connection (1): saratka.pl:80
+Mar 05 17:04:58 program [5794]: http://saratka.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:58 program [5794]: http://saratka.pl
+Mar 05 17:04:58 program [5794]: Starting new HTTP connection (1): e-filozoficzne-czwartki.pl:80
+Mar 05 17:04:58 program [5794]: http://e-filozoficzne-czwartki.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:58 program [5794]: http://e-filozoficzne-czwartki.pl
+Mar 05 17:04:58 program [5794]: Starting new HTTP connection (1): czywszystkojuzbylo.pl:80
+Mar 05 17:04:58 program [5794]: http://czywszystkojuzbylo.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:58 program [5794]: http://czywszystkojuzbylo.pl
+Mar 05 17:04:58 program [5794]: Starting new HTTP connection (1): artbit.com.pl:80
+Mar 05 17:04:59 program [5794]: http://artbit.com.pl:80 "GET / HTTP/1.1" 302 5
+Mar 05 17:04:59 program [5794]: Starting new HTTPS connection (1): artbit.com.pl:443
+Mar 05 17:04:59 program [5794]: https://artbit.com.pl:443 "GET / HTTP/1.1" 404 19
+Mar 05 17:04:59 program [5794]: http://artbit.com.pl
+Mar 05 17:04:59 program [5794]: Starting new HTTP connection (1): raven-sxd.pl:80
+Mar 05 17:04:59 program [5794]: http://raven-sxd.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:59 program [5794]: http://raven-sxd.pl
+Mar 05 17:04:59 program [5794]: Starting new HTTP connection (1): vegalesha.pl:80
+Mar 05 17:04:59 program [5794]: http://vegalesha.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:59 program [5794]: http://vegalesha.pl
+Mar 05 17:04:59 program [5794]: Starting new HTTP connection (1): pustynnaryba.pl:80
+Mar 05 17:04:59 program [5794]: http://pustynnaryba.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:59 program [5794]: http://pustynnaryba.pl
+Mar 05 17:04:59 program [5794]: Starting new HTTP connection (1): kleszcz.site:80
+Mar 05 17:04:59 program [5794]: http://kleszcz.site:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:04:59 program [5794]: http://kleszcz.site
+Mar 05 17:04:59 program [5794]: Starting new HTTP connection (1): zakolorowanemysli.pl:80
+Mar 05 17:04:59 program [5794]: http://zakolorowanemysli.pl
+Mar 05 17:04:59 program [5794]: Starting new HTTP connection (1): sirhaseus.com:80
+Mar 05 17:05:09 program [5794]: http://sirhaseus.com
+Mar 05 17:05:09 program [5794]: Starting new HTTP connection (1): borsuczelegowisko.pl:80
+Mar 05 17:05:09 program [5794]: http://borsuczelegowisko.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:09 program [5794]: http://borsuczelegowisko.pl
+Mar 05 17:05:09 program [5794]: Starting new HTTP connection (1): pingwinskainkwizycja.pl:80
+Mar 05 17:05:09 program [5794]: http://pingwinskainkwizycja.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:09 program [5794]: http://pingwinskainkwizycja.pl
+Mar 05 17:05:09 program [5794]: Starting new HTTP connection (1): majos.online:80
+Mar 05 17:05:09 program [5794]: http://majos.online:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:09 program [5794]: http://majos.online
+Mar 05 17:05:09 program [5794]: Starting new HTTP connection (1): wiktorszewczyk.pl:80
+Mar 05 17:05:19 program [5794]: http://wiktorszewczyk.pl
+Mar 05 17:05:19 program [5794]: Starting new HTTP connection (1): vertha-workshop.pl:80
+Mar 05 17:05:20 program [5794]: http://vertha-workshop.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:20 program [5794]: http://vertha-workshop.pl
+Mar 05 17:05:20 program [5794]: Starting new HTTP connection (1): hybridtheory.com.pl:80
+Mar 05 17:05:20 program [5794]: http://hybridtheory.com.pl
+Mar 05 17:05:20 program [5794]: Starting new HTTP connection (1): przychlast.pl:80
+Mar 05 17:05:20 program [5794]: http://przychlast.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:20 program [5794]: http://przychlast.pl
+Mar 05 17:05:20 program [5794]: Starting new HTTP connection (1): ewastojaczyk.pl:80
+Mar 05 17:05:20 program [5794]: http://ewastojaczyk.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:20 program [5794]: http://ewastojaczyk.pl
+Mar 05 17:05:20 program [5794]: Starting new HTTP connection (1): polarysuje.pl:80
+Mar 05 17:05:20 program [5794]: http://polarysuje.pl
+Mar 05 17:05:20 program [5794]: Starting new HTTP connection (1): w124.com.pl:80
+Mar 05 17:05:20 program [5794]: http://w124.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:20 program [5794]: http://w124.com.pl
+Mar 05 17:05:20 program [5794]: Starting new HTTP connection (1): mholub.pl:80
+Mar 05 17:05:20 program [5794]: http://mholub.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:20 program [5794]: http://mholub.pl
+Mar 05 17:05:20 program [5794]: Starting new HTTP connection (1): xd.sysbite.pl:80
+Mar 05 17:05:23 program [5794]: http://xd.sysbite.pl
+Mar 05 17:05:23 program [5794]: Starting new HTTP connection (1): testtesttestxd.pl:80
+Mar 05 17:05:33 program [5794]: http://testtesttestxd.pl
+Mar 05 17:05:33 program [5794]: Starting new HTTP connection (1): niezlyprojekt.com.pl:80
+Mar 05 17:05:34 program [5794]: http://niezlyprojekt.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:34 program [5794]: http://niezlyprojekt.com.pl
+Mar 05 17:05:34 program [5794]: Starting new HTTP connection (1): admiral-benson.pl:80
+Mar 05 17:05:34 program [5794]: http://admiral-benson.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:34 program [5794]: http://admiral-benson.pl
+Mar 05 17:05:34 program [5794]: Starting new HTTP connection (1): konrad-wlodarczyk.pl:80
+Mar 05 17:05:34 program [5794]: http://konrad-wlodarczyk.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:34 program [5794]: http://konrad-wlodarczyk.pl
+Mar 05 17:05:34 program [5794]: Starting new HTTP connection (1): damie-c.pl:80
+Mar 05 17:05:34 program [5794]: http://damie-c.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:34 program [5794]: http://damie-c.pl
+Mar 05 17:05:34 program [5794]: Starting new HTTP connection (1): programistka.com.pl:80
+Mar 05 17:05:44 program [5794]: http://programistka.com.pl
+Mar 05 17:05:44 program [5794]: Starting new HTTP connection (1): bi-data.pl:80
+Mar 05 17:05:44 program [5794]: http://bi-data.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:44 program [5794]: http://bi-data.pl
+Mar 05 17:05:44 program [5794]: Starting new HTTP connection (1): oldprogrammer.pl:80
+Mar 05 17:05:44 program [5794]: http://oldprogrammer.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:44 program [5794]: http://oldprogrammer.pl
+Mar 05 17:05:44 program [5794]: Starting new HTTP connection (1): sgozdzinski.pl:80
+Mar 05 17:05:44 program [5794]: http://sgozdzinski.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:44 program [5794]: http://sgozdzinski.pl
+Mar 05 17:05:44 program [5794]: Starting new HTTP connection (1): portfolio-syna-kolezanki.pl:80
+Mar 05 17:05:44 program [5794]: http://portfolio-syna-kolezanki.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:44 program [5794]: http://portfolio-syna-kolezanki.pl
+Mar 05 17:05:44 program [5794]: Starting new HTTP connection (1): timingtrader.pl:80
+Mar 05 17:05:44 program [5794]: http://timingtrader.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:44 program [5794]: http://timingtrader.pl
+Mar 05 17:05:44 program [5794]: Starting new HTTP connection (1): data-development.site:80
+Mar 05 17:05:45 program [5794]: http://data-development.site:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:45 program [5794]: http://data-development.site
+Mar 05 17:05:45 program [5794]: Starting new HTTP connection (1): maciejbportfolio.pl:80
+Mar 05 17:05:45 program [5794]: http://maciejbportfolio.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:45 program [5794]: http://maciejbportfolio.pl
+Mar 05 17:05:45 program [5794]: Starting new HTTP connection (1): pertynakse.pl:80
+Mar 05 17:05:45 program [5794]: http://pertynakse.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:05:45 program [5794]: http://pertynakse.pl
+Mar 05 17:05:45 program [5794]: Starting new HTTP connection (1): milosz-xd.pl:80
+Mar 05 17:05:55 program [5794]: http://milosz-xd.pl
+Mar 05 17:05:55 program [5794]: Starting new HTTP connection (1): kowalewski.olsztyn.pl:80
+Mar 05 17:06:05 program [5794]: http://kowalewski.olsztyn.pl
+Mar 05 17:06:05 program [5794]: Starting new HTTP connection (1): trololololol.pl:80
+Mar 05 17:06:05 program [5794]: http://trololololol.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:05 program [5794]: http://trololololol.pl
+Mar 05 17:06:05 program [5794]: Starting new HTTP connection (1): kokopas.pl:80
+Mar 05 17:06:05 program [5794]: http://kokopas.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:05 program [5794]: http://kokopas.pl
+Mar 05 17:06:05 program [5794]: Starting new HTTP connection (1): bogdangpython.com.pl:80
+Mar 05 17:06:05 program [5794]: http://bogdangpython.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:05 program [5794]: http://bogdangpython.com.pl
+Mar 05 17:06:05 program [5794]: Starting new HTTP connection (1): kacpertest.pl:80
+Mar 05 17:06:05 program [5794]: http://kacpertest.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:05 program [5794]: http://kacpertest.pl
+Mar 05 17:06:05 program [5794]: Starting new HTTP connection (1): dotms.pl:80
+Mar 05 17:06:05 program [5794]: http://dotms.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:05 program [5794]: http://dotms.pl
+Mar 05 17:06:05 program [5794]: Starting new HTTP connection (1): emotyl.pl:80
+Mar 05 17:06:05 program [5794]: http://emotyl.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:05 program [5794]: http://emotyl.pl
+Mar 05 17:06:05 program [5794]: Starting new HTTP connection (1): uberkosiarkowo.fun:80
+Mar 05 17:06:05 program [5794]: http://uberkosiarkowo.fun:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:05 program [5794]: http://uberkosiarkowo.fun
+Mar 05 17:06:05 program [5794]: Starting new HTTP connection (1): coderiot.pl:80
+Mar 05 17:06:06 program [5794]: http://coderiot.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:06 program [5794]: http://coderiot.pl
+Mar 05 17:06:06 program [5794]: Starting new HTTP connection (1): progromca-python.pl:80
+Mar 05 17:06:06 program [5794]: http://progromca-python.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:06 program [5794]: http://progromca-python.pl
+Mar 05 17:06:06 program [5794]: Starting new HTTP connection (1): aws.it-services-mj.eu:80
+Mar 05 17:06:06 program [5794]: http://aws.it-services-mj.eu:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:06 program [5794]: http://aws.it-services-mj.eu
+Mar 05 17:06:06 program [5794]: Starting new HTTP connection (1): cezary-bielinski.pl:80
+Mar 05 17:06:06 program [5794]: http://cezary-bielinski.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:06 program [5794]: http://cezary-bielinski.pl
+Mar 05 17:06:06 program [5794]: Starting new HTTP connection (1): baton-and-python.pl:80
+Mar 05 17:06:06 program [5794]: http://baton-and-python.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:06 program [5794]: http://baton-and-python.pl
+Mar 05 17:06:06 program [5794]: Starting new HTTP connection (1): softwarecode.pl:80
+Mar 05 17:06:06 program [5794]: http://softwarecode.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:06 program [5794]: http://softwarecode.pl
+Mar 05 17:06:06 program [5794]: Starting new HTTP connection (1): gabs0l.pl:80
+Mar 05 17:06:06 program [5794]: http://gabs0l.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:06 program [5794]: http://gabs0l.pl
+Mar 05 17:06:06 program [5794]: Starting new HTTP connection (1): 2306fpv.fun:80
+Mar 05 17:06:06 program [5794]: http://2306fpv.fun:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:06 program [5794]: http://2306fpv.fun
+Mar 05 17:06:06 program [5794]: Starting new HTTP connection (1): bezpotrzeby.pl:80
+Mar 05 17:06:07 program [5794]: http://bezpotrzeby.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:07 program [5794]: http://bezpotrzeby.pl
+Mar 05 17:06:07 program [5794]: Starting new HTTP connection (1): czasnapython.waw.pl:80
+Mar 05 17:06:07 program [5794]: http://czasnapython.waw.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:07 program [5794]: http://czasnapython.waw.pl
+Mar 05 17:06:07 program [5794]: Starting new HTTP connection (1): koliba.fun:80
+Mar 05 17:06:07 program [5794]: http://koliba.fun:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:07 program [5794]: http://koliba.fun
+Mar 05 17:06:07 program [5794]: Starting new HTTP connection (1): e-taya.site:80
+Mar 05 17:06:07 program [5794]: http://e-taya.site:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:07 program [5794]: http://e-taya.site
+Mar 05 17:06:07 program [5794]: Starting new HTTP connection (1): iwicher.pl:80
+Mar 05 17:06:07 program [5794]: http://iwicher.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:06:07 program [5794]: http://iwicher.pl
+Mar 05 17:06:07 program [5794]: Starting new HTTP connection (1): programistamati.pl:80
+Mar 05 17:06:07 program [5794]: http://programistamati.pl
+Mar 05 17:06:07 program [5794]: Starting new HTTP connection (1): r3dwood.pl:80
+Mar 05 17:06:07 program [5794]: http://r3dwood.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:06:07 program [5794]: http://r3dwood.pl
+Mar 05 17:06:07 program [5794]: Starting new HTTP connection (1): mojeprojekty.fun:80
+Mar 05 17:06:07 program [5794]: http://mojeprojekty.fun:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:07 program [5794]: http://mojeprojekty.fun
+Mar 05 17:06:07 program [5794]: Starting new HTTP connection (1): get-inspired.pl:80
+Mar 05 17:06:07 program [5794]: http://get-inspired.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:07 program [5794]: http://get-inspired.pl
+Mar 05 17:06:07 program [5794]: Starting new HTTP connection (1): moc5g.pl:80
+Mar 05 17:06:07 program [5794]: http://moc5g.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:07 program [5794]: http://moc5g.pl
+Mar 05 17:06:07 program [5794]: Starting new HTTP connection (1): tomznet.pl:80
+Mar 05 17:06:07 program [5794]: http://tomznet.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:07 program [5794]: http://tomznet.pl
+Mar 05 17:06:07 program [5794]: Starting new HTTP connection (1): gonecoding.pl:80
+Mar 05 17:06:07 program [5794]: http://gonecoding.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:07 program [5794]: http://gonecoding.pl
+Mar 05 17:06:07 program [5794]: Starting new HTTP connection (1): schwrc.pl:80
+Mar 05 17:06:17 program [5794]: http://schwrc.pl
+Mar 05 17:06:17 program [5794]: Starting new HTTP connection (1): alina.fun:80
+Mar 05 17:06:18 program [5794]: http://alina.fun:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:18 program [5794]: http://alina.fun
+Mar 05 17:06:18 program [5794]: Starting new HTTP connection (1): programowanie.jgora.pl:80
+Mar 05 17:06:18 program [5794]: http://programowanie.jgora.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:18 program [5794]: http://programowanie.jgora.pl
+Mar 05 17:06:18 program [5794]: Starting new HTTP connection (1): sylviazera.com:80
+Mar 05 17:06:18 program [5794]: http://sylviazera.com:80 "GET / HTTP/1.1" 302 5
+Mar 05 17:06:18 program [5794]: Starting new HTTPS connection (1): sylviazera.com:443
+Mar 05 17:06:18 program [5794]: https://sylviazera.com:443 "GET / HTTP/1.1" 200 16490
+Mar 05 17:06:18 program [5794]: http://sylviazera.com
+Mar 05 17:06:18 program [5794]: Starting new HTTP connection (1): sylviazera.com:80
+Mar 05 17:06:18 program [5794]: http://sylviazera.com:80 "GET / HTTP/1.1" 302 5
+Mar 05 17:06:18 program [5794]: Starting new HTTPS connection (1): sylviazera.com:443
+Mar 05 17:06:19 program [5794]: https://sylviazera.com:443 "GET / HTTP/1.1" 200 16490
+Mar 05 17:06:19 program [5794]: http://sylviazera.com
+Mar 05 17:06:19 program [5794]: Starting new HTTP connection (1): judy-website.pl:80
+Mar 05 17:06:19 program [5794]: http://judy-website.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:19 program [5794]: http://judy-website.pl
+Mar 05 17:06:19 program [5794]: Starting new HTTP connection (1): oczywidzauszyslyszaustamilcza.pl:80
+Mar 05 17:06:19 program [5794]: http://oczywidzauszyslyszaustamilcza.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:19 program [5794]: http://oczywidzauszyslyszaustamilcza.pl
+Mar 05 17:06:19 program [5794]: Starting new HTTP connection (1): aguled.pl:80
+Mar 05 17:06:29 program [5794]: http://aguled.pl
+Mar 05 17:06:29 program [5794]: Starting new HTTP connection (1): pythoned.pl:80
+Mar 05 17:06:29 program [5794]: http://pythoned.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:29 program [5794]: http://pythoned.pl
+Mar 05 17:06:29 program [5794]: Starting new HTTP connection (1): paike.online:80
+Mar 05 17:06:29 program [5794]: http://paike.online:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:29 program [5794]: http://paike.online
+Mar 05 17:06:29 program [5794]: Starting new HTTP connection (1): kondiu.online:80
+Mar 05 17:06:29 program [5794]: http://kondiu.online:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:06:29 program [5794]: http://kondiu.online
+Mar 05 17:06:29 program [5794]: Starting new HTTP connection (1): andzejem.pl:80
+Mar 05 17:06:29 program [5794]: http://andzejem.pl:80 "GET / HTTP/1.1" 502 166
+Mar 05 17:06:29 program [5794]: http://andzejem.pl
+Mar 05 17:06:29 program [5794]: Starting new HTTP connection (1): technicznie-hobbystycznie.pl:80
+Mar 05 17:06:29 program [5794]: http://technicznie-hobbystycznie.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:29 program [5794]: http://technicznie-hobbystycznie.pl
+Mar 05 17:06:29 program [5794]: Starting new HTTP connection (1): protazy.pl:80
+Mar 05 17:06:29 program [5794]: http://protazy.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:29 program [5794]: http://protazy.pl
+Mar 05 17:06:29 program [5794]: Starting new HTTP connection (1): artispace.pl:80
+Mar 05 17:06:39 program [5794]: http://artispace.pl
+Mar 05 17:06:39 program [5794]: Starting new HTTP connection (1): jerryntom.pl:80
+Mar 05 17:06:39 program [5794]: http://jerryntom.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:39 program [5794]: http://jerryntom.pl
+Mar 05 17:06:39 program [5794]: Starting new HTTP connection (1): nimfadora.pl:80
+Mar 05 17:06:39 program [5794]: http://nimfadora.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:39 program [5794]: http://nimfadora.pl
+Mar 05 17:06:39 program [5794]: Starting new HTTP connection (1): roisik-python.pl:80
+Mar 05 17:06:39 program [5794]: http://roisik-python.pl:80 "GET / HTTP/1.1" 302 5
+Mar 05 17:06:39 program [5794]: Starting new HTTPS connection (1): roisik-python.pl:443
+Mar 05 17:06:39 program [5794]: https://roisik-python.pl:443 "GET / HTTP/1.1" 301 None
+Mar 05 17:06:39 program [5794]: http://roisik-python.pl:80 "GET /player-spm HTTP/1.1" 302 5
+Mar 05 17:06:39 program [5794]: https://roisik-python.pl:443 "GET /player-spm HTTP/1.1" 301 169
+Mar 05 17:06:39 program [5794]: http://roisik-python.pl:80 "GET /player-spm/ HTTP/1.1" 302 5
+Mar 05 17:06:39 program [5794]: https://roisik-python.pl:443 "GET /player-spm/ HTTP/1.1" 200 729
+Mar 05 17:06:39 program [5794]: http://roisik-python.pl
+Mar 05 17:06:39 program [5794]: Starting new HTTP connection (1): ggorzki.pl:80
+Mar 05 17:06:39 program [5794]: http://ggorzki.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:39 program [5794]: http://ggorzki.pl
+Mar 05 17:06:39 program [5794]: Starting new HTTP connection (1): walkiria.dev:80
+Mar 05 17:06:39 program [5794]: http://walkiria.dev:80 "GET / HTTP/1.1" 301 194
+Mar 05 17:06:39 program [5794]: Starting new HTTPS connection (1): walkiria.dev:443
+Mar 05 17:06:39 program [5794]: https://walkiria.dev:443 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:39 program [5794]: http://walkiria.dev
+Mar 05 17:06:39 program [5794]: Starting new HTTP connection (1): sylwiaparkitna.pl:80
+Mar 05 17:06:40 program [5794]: http://sylwiaparkitna.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:40 program [5794]: http://sylwiaparkitna.pl
+Mar 05 17:06:40 program [5794]: Starting new HTTP connection (1): xantuss.pl:80
+Mar 05 17:06:40 program [5794]: http://xantuss.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:40 program [5794]: http://xantuss.pl
+Mar 05 17:06:40 program [5794]: Starting new HTTP connection (1): fizykadlateoretyka.pl:80
+Mar 05 17:06:40 program [5794]: http://fizykadlateoretyka.pl
+Mar 05 17:06:40 program [5794]: Starting new HTTP connection (1): macijawo.pl:80
+Mar 05 17:06:40 program [5794]: http://macijawo.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:40 program [5794]: http://macijawo.pl
+Mar 05 17:06:40 program [5794]: Starting new HTTP connection (1): sylwjia.pl:80
+Mar 05 17:06:40 program [5794]: http://sylwjia.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:40 program [5794]: http://sylwjia.pl
+Mar 05 17:06:40 program [5794]: Starting new HTTP connection (1): mineprosjekter.net:80
+Mar 05 17:06:40 program [5794]: http://mineprosjekter.net:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:40 program [5794]: http://mineprosjekter.net
+Mar 05 17:06:40 program [5794]: Starting new HTTP connection (1): s155774.site:80
+Mar 05 17:06:40 program [5794]: http://s155774.site:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:40 program [5794]: http://s155774.site
+Mar 05 17:06:40 program [5794]: Starting new HTTP connection (1): lukkasz323.site:80
+Mar 05 17:06:40 program [5794]: http://lukkasz323.site:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:40 program [5794]: http://lukkasz323.site
+Mar 05 17:06:40 program [5794]: Starting new HTTP connection (1): esarat.pl:80
+Mar 05 17:06:40 program [5794]: http://esarat.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:40 program [5794]: http://esarat.pl
+Mar 05 17:06:40 program [5794]: Starting new HTTP connection (1): deska.fun:80
+Mar 05 17:06:40 program [5794]: http://deska.fun:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:40 program [5794]: http://deska.fun
+Mar 05 17:06:40 program [5794]: Starting new HTTP connection (1): cyrkmp.pl:80
+Mar 05 17:06:40 program [5794]: http://cyrkmp.pl:80 "GET / HTTP/1.1" 301 194
+Mar 05 17:06:40 program [5794]: Starting new HTTPS connection (1): cyrkmp.pl:443
+Mar 05 17:06:40 program [5794]: https://cyrkmp.pl:443 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:40 program [5794]: http://cyrkmp.pl
+Mar 05 17:06:40 program [5794]: Starting new HTTP connection (1): e-sus.pl:80
+Mar 05 17:06:40 program [5794]: http://e-sus.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:06:40 program [5794]: http://e-sus.pl
+Mar 05 17:06:40 program [5794]: Starting new HTTP connection (1): cryst.ovh:80
+Mar 05 17:06:41 program [5794]: http://cryst.ovh
+Mar 05 17:06:41 program [5794]: Starting new HTTP connection (1): e-tomson.pl:80
+Mar 05 17:06:41 program [5794]: http://e-tomson.pl
+Mar 05 17:06:41 program [5794]: Starting new HTTP connection (1): juliagarlacz.pl:80
+Mar 05 17:06:51 program [5794]: http://juliagarlacz.pl
+Mar 05 17:06:51 program [5794]: Starting new HTTP connection (1): infinityputhon.com:80
+Mar 05 17:06:51 program [5794]: http://Infinityputhon.com
+Mar 05 17:06:51 program [5794]: Starting new HTTP connection (1): kmpawlik.pl:80
+Mar 05 17:07:01 program [5794]: http://kmpawlik.pl
+Mar 05 17:07:01 program [5794]: Starting new HTTP connection (1): nakoncuprogramowania.pl:80
+Mar 05 17:07:11 program [5794]: http://nakoncuprogramowania.pl
+Mar 05 17:07:11 program [5794]: Starting new HTTP connection (1): b4rt-zpxd.pl:80
+Mar 05 17:07:21 program [5794]: http://b4rt-zpxd.pl
+Mar 05 17:07:21 program [5794]: Starting new HTTP connection (1): rafal-szostek.pl:80
+Mar 05 17:07:21 program [5794]: http://rafal-szostek.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:07:21 program [5794]: http://rafal-szostek.pl
+Mar 05 17:07:21 program [5794]: Starting new HTTP connection (1): vermemortifero.pl:80
+Mar 05 17:07:21 program [5794]: http://vermemortifero.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:07:21 program [5794]: http://vermemortifero.pl
+Mar 05 17:07:21 program [5794]: Starting new HTTP connection (1): kubalis.pl:80
+Mar 05 17:07:21 program [5794]: http://kubalis.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:07:21 program [5794]: http://kubalis.pl
+Mar 05 17:07:21 program [5794]: Starting new HTTP connection (1): majki741.pl:80
+Mar 05 17:07:31 program [5794]: http://majki741.pl
+Mar 05 17:07:31 program [5794]: Starting new HTTP connection (1): solidny-analityk.pl:80
+Mar 05 17:07:31 program [5794]: http://solidny-analityk.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:07:31 program [5794]: http://solidny-analityk.pl
+Mar 05 17:07:31 program [5794]: Starting new HTTP connection (1): mathewlg.pl:80
+Mar 05 17:07:31 program [5794]: http://mathewlg.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:07:31 program [5794]: http://mathewlg.pl
+Mar 05 17:07:31 program [5794]: Starting new HTTP connection (1): konradlapka.site:80
+Mar 05 17:07:31 program [5794]: http://konradlapka.site:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:07:31 program [5794]: http://konradlapka.site
+Mar 05 17:07:31 program [5794]: Starting new HTTP connection (1): alawicki.pl:80
+Mar 05 17:07:31 program [5794]: http://alawicki.pl:80 "GET / HTTP/1.1" 404 None
+Mar 05 17:07:31 program [5794]: http://alawicki.pl
+Mar 05 17:07:31 program [5794]: Starting new HTTP connection (1): kaasandra-programowanie.pl:80
+Mar 05 17:07:32 program [5794]: http://kaasandra-programowanie.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:07:32 program [5794]: http://kaasandra-programowanie.pl
+Mar 05 17:07:32 program [5794]: Starting new HTTP connection (1): orbito.pl:80
+Mar 05 17:07:32 program [5794]: http://orbito.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:07:32 program [5794]: http://orbito.pl
+Mar 05 17:07:32 program [5794]: Starting new HTTP connection (1): spiekanie.pl:80
+Mar 05 17:07:32 program [5794]: http://spiekanie.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:07:32 program [5794]: http://spiekanie.pl
+Mar 05 17:07:32 program [5794]: Starting new HTTP connection (1): angelzak.pl:80
+Mar 05 17:07:42 program [5794]: http://angelzak.pl
+Mar 05 17:07:42 program [5794]: Starting new HTTP connection (1): jebac-disa.pl:80
+Mar 05 17:07:42 program [5794]: http://jebac-disa.pl:80 "GET / HTTP/1.1" 301 178
+Mar 05 17:07:42 program [5794]: Starting new HTTPS connection (1): jebac-disa.pl:443
+Mar 05 17:07:43 program [5794]: https://jebac-disa.pl:443 "GET / HTTP/1.1" 200 None
+Mar 05 17:07:43 program [5794]: http://jebac-disa.pl
+Mar 05 17:07:43 program [5794]: Starting new HTTP connection (1): kmleszczak.pl:80
+Mar 05 17:07:53 program [5794]: http://kmleszczak.pl
+Mar 05 17:07:53 program [5794]: Starting new HTTP connection (1): trenertorun.pl:80
+Mar 05 17:07:53 program [5794]: http://trenertorun.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:07:53 program [5794]: http://trenertorun.pl
+Mar 05 17:07:53 program [5794]: Starting new HTTP connection (1): fcr-online.pl:80
+Mar 05 17:07:53 program [5794]: http://fcr-online.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:07:53 program [5794]: http://fcr-online.pl
+Mar 05 17:07:53 program [5794]: Starting new HTTP connection (1): zperkowska.pl:80
+Mar 05 17:07:53 program [5794]: http://zperkowska.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:07:53 program [5794]: http://zperkowska.pl
+Mar 05 17:07:53 program [5794]: Starting new HTTP connection (1): 40yoprogrammer.com:80
+Mar 05 17:08:03 program [5794]: http://40yoprogrammer.com
+Mar 05 17:08:03 program [5794]: Starting new HTTP connection (1): kulczor.pl:80
+Mar 05 17:08:03 program [5794]: http://kulczor.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:03 program [5794]: http://kulczor.pl
+Mar 05 17:08:03 program [5794]: Starting new HTTP connection (1): zostaneprogramistomxd.pl:80
+Mar 05 17:08:03 program [5794]: http://zostaneprogramistomxd.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:03 program [5794]: http://zostaneprogramistomxd.pl
+Mar 05 17:08:03 program [5794]: Starting new HTTP connection (1): iheavymetal.pl:80
+Mar 05 17:08:04 program [5794]: http://iheavymetal.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:04 program [5794]: http://iheavymetal.pl
+Mar 05 17:08:04 program [5794]: Starting new HTTP connection (1): theplannist.site:80
+Mar 05 17:08:04 program [5794]: http://theplannist.site:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:04 program [5794]: http://theplannist.site
+Mar 05 17:08:04 program [5794]: Starting new HTTP connection (1): gdziejestdawid.com.pl:80
+Mar 05 17:08:14 program [5794]: http://gdziejestdawid.com.pl
+Mar 05 17:08:14 program [5794]: Starting new HTTP connection (1): pythonnacodzien.pl:80
+Mar 05 17:08:14 program [5794]: http://pythonnacodzien.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:14 program [5794]: http://pythonnacodzien.pl
+Mar 05 17:08:14 program [5794]: Starting new HTTP connection (1): atrusia.pl:80
+Mar 05 17:08:14 program [5794]: http://atrusia.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:14 program [5794]: http://atrusia.pl
+Mar 05 17:08:14 program [5794]: Starting new HTTP connection (1): rozikjoanna.pl:80
+Mar 05 17:08:24 program [5794]: http://rozikjoanna.pl
+Mar 05 17:08:24 program [5794]: Starting new HTTP connection (1): little-things.site:80
+Mar 05 17:08:24 program [5794]: http://little-things.site:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:24 program [5794]: http://little-things.site
+Mar 05 17:08:24 program [5794]: Starting new HTTP connection (1): skarolinkakoduje.pl:80
+Mar 05 17:08:24 program [5794]: http://skarolinkakoduje.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:24 program [5794]: http://skarolinkakoduje.pl
+Mar 05 17:08:24 program [5794]: Starting new HTTP connection (1): quenrythaneart.pl:80
+Mar 05 17:08:24 program [5794]: http://quenrythaneart.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:24 program [5794]: http://quenrythaneart.pl
+Mar 05 17:08:24 program [5794]: Starting new HTTP connection (1): jkub.pl:80
+Mar 05 17:08:24 program [5794]: http://jkub.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:24 program [5794]: http://jkub.pl
+Mar 05 17:08:24 program [5794]: Starting new HTTP connection (1): klaudia-andrzejewska.pl:80
+Mar 05 17:08:24 program [5794]: http://klaudia-andrzejewska.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:24 program [5794]: http://klaudia-andrzejewska.pl
+Mar 05 17:08:24 program [5794]: Starting new HTTP connection (1): stanw.pl:80
+Mar 05 17:08:25 program [5794]: http://stanw.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:25 program [5794]: http://stanw.pl
+Mar 05 17:08:25 program [5794]: Starting new HTTP connection (1): rayuela-koduje.pl:80
+Mar 05 17:08:25 program [5794]: http://rayuela-koduje.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:25 program [5794]: http://rayuela-koduje.pl
+Mar 05 17:08:25 program [5794]: Starting new HTTP connection (1): mateuszbz.pl:80
+Mar 05 17:08:25 program [5794]: http://mateuszbz.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:25 program [5794]: http://mateuszbz.pl
+Mar 05 17:08:25 program [5794]: Starting new HTTP connection (1): programowanie-zalno.pl:80
+Mar 05 17:08:35 program [5794]: http://programowanie-zalno.pl
+Mar 05 17:08:35 program [5794]: Starting new HTTP connection (1): adrians-great-portfolio.online:80
+Mar 05 17:08:35 program [5794]: http://adrians-great-portfolio.online:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:35 program [5794]: http://adrians-great-portfolio.online
+Mar 05 17:08:35 program [5794]: Starting new HTTP connection (1): exito.shop.pl:80
+Mar 05 17:08:35 program [5794]: http://exito.shop.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:35 program [5794]: http://exito.shop.pl
+Mar 05 17:08:35 program [5794]: Starting new HTTP connection (1): borzymowski.com.pl:80
+Mar 05 17:08:35 program [5794]: http://borzymowski.com.pl
+Mar 05 17:08:35 program [5794]: Starting new HTTP connection (1): tajny-kot.pl:80
+Mar 05 17:08:35 program [5794]: http://tajny-kot.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:08:35 program [5794]: http://tajny-kot.pl
+Mar 05 17:08:35 program [5794]: Starting new HTTP connection (1): aleksandra-zochowska.pl:80
+Mar 05 17:08:35 program [5794]: http://aleksandra-zochowska.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:35 program [5794]: http://aleksandra-zochowska.pl
+Mar 05 17:08:35 program [5794]: Starting new HTTP connection (1): mateusz-zdanowski.pl:80
+Mar 05 17:08:35 program [5794]: http://mateusz-zdanowski.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:35 program [5794]: http://mateusz-zdanowski.pl
+Mar 05 17:08:35 program [5794]: Starting new HTTP connection (1): po-prostu-adam.pl:80
+Mar 05 17:08:35 program [5794]: http://po-prostu-adam.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:35 program [5794]: http://po-prostu-adam.pl
+Mar 05 17:08:35 program [5794]: Starting new HTTP connection (1): witamwitam.pl:80
+Mar 05 17:08:45 program [5794]: http://witamwitam.pl
+Mar 05 17:08:45 program [5794]: Starting new HTTP connection (1): lewandowskimichal.tech:80
+Mar 05 17:08:45 program [5794]: http://lewandowskimichal.tech:80 "GET / HTTP/1.1" 502 166
+Mar 05 17:08:45 program [5794]: http://lewandowskimichal.tech
+Mar 05 17:08:45 program [5794]: Starting new HTTP connection (1): michalpython.pl:80
+Mar 05 17:08:45 program [5794]: http://michalpython.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:45 program [5794]: http://michalpython.pl
+Mar 05 17:08:45 program [5794]: Starting new HTTP connection (1): remekgwc.pl:80
+Mar 05 17:08:55 program [5794]: http://remekgwc.pl
+Mar 05 17:08:55 program [5794]: Starting new HTTP connection (1): meandcode.pl:80
+Mar 05 17:08:55 program [5794]: http://meandcode.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:55 program [5794]: http://meandcode.pl
+Mar 05 17:08:55 program [5794]: Starting new HTTP connection (1): pracowniaren.pl:80
+Mar 05 17:08:56 program [5794]: http://pracowniaren.pl:80 "GET / HTTP/1.1" 502 166
+Mar 05 17:08:56 program [5794]: http://pracowniaren.pl
+Mar 05 17:08:56 program [5794]: Starting new HTTP connection (1): szturm.tomu.com.pl:80
+Mar 05 17:08:56 program [5794]: http://szturm.tomu.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:56 program [5794]: http://szturm.tomu.com.pl
+Mar 05 17:08:56 program [5794]: Starting new HTTP connection (1): popanato.bieda.it:80
+Mar 05 17:08:56 program [5794]: http://popanato.bieda.it:80 "GET / HTTP/1.1" 500 None
+Mar 05 17:08:56 program [5794]: http://popanato.bieda.it
+Mar 05 17:08:56 program [5794]: Starting new HTTP connection (1): kamil-golebiowski.pl:80
+Mar 05 17:08:56 program [5794]: http://kamil-golebiowski.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:56 program [5794]: http://kamil-golebiowski.pl
+Mar 05 17:08:56 program [5794]: Starting new HTTP connection (1): novome.pl:80
+Mar 05 17:08:56 program [5794]: http://novome.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:08:56 program [5794]: http://novome.pl
+Mar 05 17:08:56 program [5794]: Starting new HTTP connection (1): pawelgorkowski.pl:80
+Mar 05 17:09:06 program [5794]: http://pawelgorkowski.pl
+Mar 05 17:09:06 program [5794]: Starting new HTTP connection (1): klasyd.pl:80
+Mar 05 17:09:16 program [5794]: http://klasyd.pl
+Mar 05 17:09:16 program [5794]: Starting new HTTP connection (1): tomjech.pl:80
+Mar 05 17:09:26 program [5794]: http://tomjech.pl
+Mar 05 17:09:26 program [5794]: Starting new HTTP connection (1): pythonprogrammer.wroclaw.pl:80
+Mar 05 17:09:27 program [5794]: http://pythonprogrammer.wroclaw.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:09:27 program [5794]: http://pythonprogrammer.wroclaw.pl
+Mar 05 17:09:27 program [5794]: Starting new HTTP connection (1): vividlion.pl:80
+Mar 05 17:09:37 program [5794]: http://vividlion.pl
+Mar 05 17:09:37 program [5794]: Starting new HTTP connection (1): moonan.pl:80
+Mar 05 17:09:37 program [5794]: http://moonan.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:09:37 program [5794]: http://moonan.pl
+Mar 05 17:09:37 program [5794]: Starting new HTTP connection (1): humanistiksnek.fun:80
+Mar 05 17:09:37 program [5794]: http://humanistiksnek.fun:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:09:37 program [5794]: http://humanistiksnek.fun
+Mar 05 17:09:37 program [5794]: Starting new HTTP connection (1): willcheck.fun:80
+Mar 05 17:09:37 program [5794]: http://willcheck.fun:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:09:37 program [5794]: http://willcheck.fun
+Mar 05 17:09:37 program [5794]: Starting new HTTP connection (1): abejamaya.pl:80
+Mar 05 17:09:37 program [5794]: http://abejamaya.pl:80 "GET / HTTP/1.1" 502 166
+Mar 05 17:09:37 program [5794]: http://abejamaya.pl
+Mar 05 17:09:37 program [5794]: Starting new HTTP connection (1): czysteuprawy.pl:80
+Mar 05 17:09:37 program [5794]: http://czysteuprawy.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:09:37 program [5794]: http://czysteuprawy.pl
+Mar 05 17:09:37 program [5794]: Starting new HTTP connection (1): tersla.pl:80
+Mar 05 17:09:37 program [5794]: http://tersla.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:09:37 program [5794]: http://tersla.pl
+Mar 05 17:09:37 program [5794]: Starting new HTTP connection (1): szanujlas.pl:80
+Mar 05 17:09:47 program [5794]: http://szanujlas.pl
+Mar 05 17:09:47 program [5794]: Starting new HTTP connection (1): thatswhatshesaid.pl:80
+Mar 05 17:09:47 program [5794]: http://thatswhatshesaid.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:09:47 program [5794]: http://thatswhatshesaid.pl
+Mar 05 17:09:47 program [5794]: Starting new HTTP connection (1): 3431.pl:80
+Mar 05 17:09:57 program [5794]: http://3431.pl
+Mar 05 17:09:57 program [5794]: Starting new HTTP connection (1): sebasbobik.pl:80
+Mar 05 17:09:58 program [5794]: http://sebasbobik.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:09:58 program [5794]: http://sebasbobik.pl
+Mar 05 17:09:58 program [5794]: Starting new HTTP connection (1): adampalinski.pl:80
+Mar 05 17:09:58 program [5794]: http://adampalinski.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:09:58 program [5794]: http://adampalinski.pl
+Mar 05 17:09:58 program [5794]: Starting new HTTP connection (1): danielstepsworks.pl:80
+Mar 05 17:09:58 program [5794]: http://danielstepsworks.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:09:58 program [5794]: http://danielstepsworks.pl
+Mar 05 17:09:58 program [5794]: Starting new HTTP connection (1): chcemisiejesc.pl:80
+Mar 05 17:09:58 program [5794]: http://chcemisiejesc.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:09:58 program [5794]: http://chcemisiejesc.pl
+Mar 05 17:09:58 program [5794]: Starting new HTTP connection (1): kaczuszka-kwak.pl:80
+Mar 05 17:09:58 program [5794]: http://kaczuszka-kwak.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:09:58 program [5794]: http://kaczuszka-kwak.pl
+Mar 05 17:09:58 program [5794]: Starting new HTTP connection (1): svardeva.online:80
+Mar 05 17:10:08 program [5794]: http://svardeva.online
+Mar 05 17:10:08 program [5794]: Starting new HTTP connection (1): milkatech.pl:80
+Mar 05 17:10:08 program [5794]: http://milkatech.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:08 program [5794]: http://milkatech.pl
+Mar 05 17:10:08 program [5794]: Starting new HTTP connection (1): tresmil.pl:80
+Mar 05 17:10:08 program [5794]: http://tresmil.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:10:08 program [5794]: http://tresmil.pl
+Mar 05 17:10:08 program [5794]: Starting new HTTP connection (1): la-cozja.pl:80
+Mar 05 17:10:18 program [5794]: http://la-cozja.pl
+Mar 05 17:10:18 program [5794]: Starting new HTTP connection (1): guayaba.pl:80
+Mar 05 17:10:28 program [5794]: http://guayaba.pl
+Mar 05 17:10:28 program [5794]: Starting new HTTP connection (1): programistapython0122.pl:80
+Mar 05 17:10:28 program [5794]: http://programistapython0122.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:28 program [5794]: http://programistapython0122.pl
+Mar 05 17:10:28 program [5794]: Starting new HTTP connection (1): cdk.wtf:80
+Mar 05 17:10:28 program [5794]: http://cdk.wtf:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:28 program [5794]: http://cdk.wtf
+Mar 05 17:10:28 program [5794]: Starting new HTTP connection (1): wsamselbaudat.pl:80
+Mar 05 17:10:29 program [5794]: http://wsamselbaudat.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:29 program [5794]: http://wsamselbaudat.pl
+Mar 05 17:10:29 program [5794]: Starting new HTTP connection (1): theedison.pl:80
+Mar 05 17:10:29 program [5794]: http://theedison.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:29 program [5794]: http://theedison.pl
+Mar 05 17:10:29 program [5794]: Starting new HTTP connection (1): hauas.pl:80
+Mar 05 17:10:29 program [5794]: http://hauas.pl:80 "GET / HTTP/1.1" 404 48
+Mar 05 17:10:29 program [5794]: http://hauas.pl
+Mar 05 17:10:29 program [5794]: Starting new HTTP connection (1): miksawero.pl:80
+Mar 05 17:10:39 program [5794]: http://miksawero.pl
+Mar 05 17:10:39 program [5794]: Starting new HTTP connection (1): musisztozobaczyc.pl:80
+Mar 05 17:10:39 program [5794]: http://musisztozobaczyc.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:39 program [5794]: http://musisztozobaczyc.pl
+Mar 05 17:10:39 program [5794]: Starting new HTTP connection (1): app01.czopkai.pl:80
+Mar 05 17:10:39 program [5794]: http://app01.czopkai.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:39 program [5794]: http://app01.czopkai.pl
+Mar 05 17:10:39 program [5794]: Starting new HTTP connection (1): roszkowska-it.com.pl:80
+Mar 05 17:10:39 program [5794]: http://roszkowska-it.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:39 program [5794]: http://roszkowska-it.com.pl
+Mar 05 17:10:39 program [5794]: Starting new HTTP connection (1): roszkov.pl:80
+Mar 05 17:10:40 program [5794]: http://roszkov.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:40 program [5794]: http://roszkov.pl
+Mar 05 17:10:40 program [5794]: Starting new HTTP connection (1): pp.marzec.eu:80
+Mar 05 17:10:40 program [5794]: http://pp.marzec.eu:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:40 program [5794]: http://pp.marzec.eu
+Mar 05 17:10:40 program [5794]: Starting new HTTP connection (1): panidanych.pl:80
+Mar 05 17:10:40 program [5794]: http://panidanych.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:10:40 program [5794]: http://panidanych.pl
+Mar 05 17:10:40 program [5794]: Starting new HTTP connection (1): ultraknur.pl:80
+Mar 05 17:10:40 program [5794]: http://ultraknur.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:40 program [5794]: http://ultraknur.pl
+Mar 05 17:10:40 program [5794]: Starting new HTTP connection (1): przemyslaw-sobol.pl:80
+Mar 05 17:10:40 program [5794]: http://przemyslaw-sobol.pl:80 "GET / HTTP/1.1" 200 3138
+Mar 05 17:10:40 program [5794]: http://przemyslaw-sobol.pl
+Mar 05 17:10:40 program [5794]: Starting new HTTP connection (1): kompudawid.pl:80
+Mar 05 17:10:40 program [5794]: http://kompudawid.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:40 program [5794]: http://kompudawid.pl
+Mar 05 17:10:40 program [5794]: Starting new HTTP connection (1): stronakaroliny.pl:80
+Mar 05 17:10:40 program [5794]: http://stronakaroliny.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:40 program [5794]: http://stronakaroliny.pl
+Mar 05 17:10:40 program [5794]: Starting new HTTP connection (1): woch-dariusz.pl:80
+Mar 05 17:10:40 program [5794]: http://woch-dariusz.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:40 program [5794]: http://woch-dariusz.pl
+Mar 05 17:10:40 program [5794]: Starting new HTTP connection (1): bluszczyk-kurdybanek.pl:80
+Mar 05 17:10:40 program [5794]: http://bluszczyk-kurdybanek.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:40 program [5794]: http://bluszczyk-kurdybanek.pl
+Mar 05 17:10:40 program [5794]: Starting new HTTP connection (1): talaga-programer.pl:80
+Mar 05 17:10:40 program [5794]: http://talaga-programer.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:40 program [5794]: http://talaga-programer.pl
+Mar 05 17:10:40 program [5794]: Starting new HTTP connection (1): niye.pl:80
+Mar 05 17:10:40 program [5794]: http://niye.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:40 program [5794]: http://niye.pl
+Mar 05 17:10:40 program [5794]: Starting new HTTP connection (1): lukasz-motm.pl:80
+Mar 05 17:10:40 program [5794]: http://lukasz-motm.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:40 program [5794]: http://lukasz-motm.pl
+Mar 05 17:10:40 program [5794]: Starting new HTTP connection (1): karolinasliwa.pl:80
+Mar 05 17:10:40 program [5794]: http://karolinasliwa.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:40 program [5794]: http://karolinasliwa.pl
+Mar 05 17:10:40 program [5794]: Starting new HTTP connection (1): engineering-dev.pl:80
+Mar 05 17:10:50 program [5794]: http://engineering-dev.pl
+Mar 05 17:10:50 program [5794]: Starting new HTTP connection (1): pyton-kaa.pl:80
+Mar 05 17:10:50 program [5794]: http://pyton-kaa.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:50 program [5794]: http://pyton-kaa.pl
+Mar 05 17:10:50 program [5794]: Starting new HTTP connection (1): nauka-pythona.pl:80
+Mar 05 17:10:51 program [5794]: http://nauka-pythona.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:10:51 program [5794]: http://nauka-pythona.pl
+Mar 05 17:10:51 program [5794]: Starting new HTTP connection (1): opivmofficial.pl:80
+Mar 05 17:11:01 program [5794]: http://opivmofficial.pl
+Mar 05 17:11:01 program [5794]: Starting new HTTP connection (1): programowanie.fun:80
+Mar 05 17:11:01 program [5794]: http://programowanie.fun:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:01 program [5794]: http://programowanie.fun
+Mar 05 17:11:01 program [5794]: Starting new HTTP connection (1): cryptonft.com.pl:80
+Mar 05 17:11:11 program [5794]: http://cryptonft.com.pl
+Mar 05 17:11:11 program [5794]: Starting new HTTP connection (1): idkk.pl:80
+Mar 05 17:11:11 program [5794]: http://idkk.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:11 program [5794]: http://idkk.pl
+Mar 05 17:11:11 program [5794]: Starting new HTTP connection (1): kamil-plichta.pl:80
+Mar 05 17:11:11 program [5794]: http://kamil-plichta.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:11 program [5794]: http://kamil-plichta.pl
+Mar 05 17:11:11 program [5794]: Starting new HTTP connection (1): selen-python.pl:80
+Mar 05 17:11:11 program [5794]: http://selen-python.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:11 program [5794]: http://selen-python.pl
+Mar 05 17:11:11 program [5794]: Starting new HTTP connection (1): czarny-czarlik.pl:80
+Mar 05 17:11:11 program [5794]: http://czarny-czarlik.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:11 program [5794]: http://czarny-czarlik.pl
+Mar 05 17:11:11 program [5794]: Starting new HTTP connection (1): ignatowska-paulina.pl:80
+Mar 05 17:11:21 program [5794]: http://ignatowska-paulina.pl
+Mar 05 17:11:21 program [5794]: Starting new HTTP connection (1): wysocmac.tk:80
+Mar 05 17:11:22 program [5794]: http://wysocmac.tk:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:22 program [5794]: http://wysocmac.tk
+Mar 05 17:11:22 program [5794]: Starting new HTTP connection (1): jsjdhd.online:80
+Mar 05 17:11:32 program [5794]: http://jsjdhd.online
+Mar 05 17:11:32 program [5794]: Starting new HTTP connection (1): gigiguga.ga:80
+Mar 05 17:11:32 program [5794]: http://gigiguga.ga:80 "GET / HTTP/1.1" 308 56
+Mar 05 17:11:32 program [5794]: Starting new HTTPS connection (1): gigiguga.ga:443
+Mar 05 17:11:42 program [5794]: http://gigiguga.ga
+Mar 05 17:11:42 program [5794]: Starting new HTTP connection (1): poldontesting.pl:80
+Mar 05 17:11:42 program [5794]: http://poldontesting.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:42 program [5794]: http://poldontesting.pl
+Mar 05 17:11:42 program [5794]: Starting new HTTP connection (1): akowalska.pl:80
+Mar 05 17:11:42 program [5794]: http://akowalska.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:42 program [5794]: http://akowalska.pl
+Mar 05 17:11:42 program [5794]: Starting new HTTP connection (1): sebastian-dulniawka.pl:80
+Mar 05 17:11:43 program [5794]: http://sebastian-dulniawka.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:43 program [5794]: http://sebastian-dulniawka.pl
+Mar 05 17:11:43 program [5794]: Starting new HTTP connection (1): miromiro129.site:80
+Mar 05 17:11:43 program [5794]: http://miromiro129.site:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:43 program [5794]: http://miromiro129.site
+Mar 05 17:11:43 program [5794]: Starting new HTTP connection (1): do-nauki.pl:80
+Mar 05 17:11:43 program [5794]: http://do-nauki.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:43 program [5794]: http://do-nauki.pl
+Mar 05 17:11:43 program [5794]: Starting new HTTP connection (1): wiedza-starych-ksiag.pl:80
+Mar 05 17:11:43 program [5794]: http://wiedza-starych-ksiag.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:43 program [5794]: http://wiedza-starych-ksiag.pl
+Mar 05 17:11:43 program [5794]: Starting new HTTP connection (1): lusankhya.pl:80
+Mar 05 17:11:43 program [5794]: http://lusankhya.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:43 program [5794]: http://lusankhya.pl
+Mar 05 17:11:43 program [5794]: Starting new HTTP connection (1): flaga.cryst.ovh:80
+Mar 05 17:11:43 program [5794]: http://flaga.cryst.ovh:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:43 program [5794]: http://flaga.cryst.ovh
+Mar 05 17:11:43 program [5794]: Starting new HTTP connection (1): marcinxd.pl:80
+Mar 05 17:11:43 program [5794]: http://marcinxd.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:43 program [5794]: http://marcinxd.pl
+Mar 05 17:11:43 program [5794]: Starting new HTTP connection (1): niczekniczek.warszawa.pl:80
+Mar 05 17:11:43 program [5794]: http://niczekniczek.warszawa.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:43 program [5794]: http://niczekniczek.warszawa.pl
+Mar 05 17:11:43 program [5794]: Starting new HTTP connection (1): maks-zpxd.pl:80
+Mar 05 17:11:43 program [5794]: http://maks-zpxd.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:43 program [5794]: http://maks-zpxd.pl
+Mar 05 17:11:43 program [5794]: Starting new HTTP connection (1): karolina-brzezinska.pl:80
+Mar 05 17:11:43 program [5794]: http://karolina-brzezinska.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:43 program [5794]: http://karolina-brzezinska.pl
+Mar 05 17:11:43 program [5794]: Starting new HTTP connection (1): python-master.pl:80
+Mar 05 17:11:43 program [5794]: http://python-master.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:11:43 program [5794]: http://python-master.pl
+Mar 05 17:11:43 program [5794]: Starting new HTTP connection (1): panna-hakasse.plp:80
+Mar 05 17:11:43 program [5794]: http://panna-hakasse.plp
+Mar 05 17:11:43 program [5794]: Starting new HTTP connection (1): panna-hakasse.pl:80
+Mar 05 17:11:43 program [5794]: http://panna-hakasse.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:43 program [5794]: http://panna-hakasse.pl
+Mar 05 17:11:43 program [5794]: Starting new HTTP connection (1): informatyka-patryka.pl:80
+Mar 05 17:11:43 program [5794]: http://informatyka-patryka.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:43 program [5794]: http://informatyka-patryka.pl
+Mar 05 17:11:43 program [5794]: Starting new HTTP connection (1): glodnapirania.pl:80
+Mar 05 17:11:43 program [5794]: http://glodnapirania.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:11:43 program [5794]: http://glodnapirania.pl
+Mar 05 17:11:43 program [5794]: Starting new HTTP connection (1): glodnapirania.pl:80
+Mar 05 17:11:43 program [5794]: http://glodnapirania.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:11:43 program [5794]: http://glodnapirania.pl
+Mar 05 17:11:43 program [5794]: Starting new HTTP connection (1): basia-zxd.pl:80
+Mar 05 17:11:44 program [5794]: http://basia-zxd.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:11:44 program [5794]: http://basia-zxd.pl
+Mar 05 17:11:44 program [5794]: Starting new HTTP connection (1): ilfenomeno.pl:80
+Mar 05 17:11:44 program [5794]: http://ilfenomeno.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:44 program [5794]: http://ilfenomeno.pl
+Mar 05 17:11:44 program [5794]: Starting new HTTP connection (1): ejdziewczyno.pl:80
+Mar 05 17:11:54 program [5794]: http://ejdziewczyno.pl
+Mar 05 17:11:54 program [5794]: Starting new HTTP connection (1): michalziemba.pl:80
+Mar 05 17:11:54 program [5794]: http://michalziemba.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:54 program [5794]: http://michalziemba.pl
+Mar 05 17:11:54 program [5794]: Starting new HTTP connection (1): volleyballvibes.pl:80
+Mar 05 17:11:54 program [5794]: http://volleyballvibes.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:54 program [5794]: http://volleyballvibes.pl
+Mar 05 17:11:54 program [5794]: Starting new HTTP connection (1): ewilczekprogramista.pl:80
+Mar 05 17:11:54 program [5794]: http://ewilczekprogramista.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:11:54 program [5794]: http://ewilczekprogramista.pl
+Mar 05 17:11:54 program [5794]: Starting new HTTP connection (1): pinecha.pl:80
+Mar 05 17:11:54 program [5794]: http://pinecha.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:54 program [5794]: http://pinecha.pl
+Mar 05 17:11:54 program [5794]: Starting new HTTP connection (1): yabadabadoo.pl:80
+Mar 05 17:11:54 program [5794]: http://yabadabadoo.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:11:54 program [5794]: http://yabadabadoo.pl
+Mar 05 17:11:54 program [5794]: Starting new HTTP connection (1): wiktoria-slomiany-portfolio.pl:80
+Mar 05 17:11:54 program [5794]: http://wiktoria-slomiany-portfolio.pl
+Mar 05 17:11:54 program [5794]: Starting new HTTP connection (1): sliving.pl:80
+Mar 05 17:12:04 program [5794]: http://sliving.pl
+Mar 05 17:12:04 program [5794]: Starting new HTTP connection (1): wpytke.pl:80
+Mar 05 17:12:05 program [5794]: http://wpytke.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:05 program [5794]: http://wpytke.pl
+Mar 05 17:12:05 program [5794]: Starting new HTTP connection (1): wojto.cloud:80
+Mar 05 17:12:05 program [5794]: http://wojto.cloud:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:05 program [5794]: http://wojto.cloud
+Mar 05 17:12:05 program [5794]: Starting new HTTP connection (1): krysiaklukasz.pl:80
+Mar 05 17:12:05 program [5794]: http://krysiaklukasz.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:05 program [5794]: http://krysiaklukasz.pl
+Mar 05 17:12:05 program [5794]: Starting new HTTP connection (1): patrycja-home.pl:80
+Mar 05 17:12:05 program [5794]: http://patrycja-home.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:05 program [5794]: http://patrycja-home.pl
+Mar 05 17:12:05 program [5794]: Starting new HTTP connection (1): mikson.xyz:80
+Mar 05 17:12:05 program [5794]: http://mikson.xyz:80 "GET / HTTP/1.1" 301 162
+Mar 05 17:12:05 program [5794]: Starting new HTTP connection (1): www.mikson.xyz:80
+Mar 05 17:12:05 program [5794]: http://www.mikson.xyz:80 "GET / HTTP/1.1" 200 291
+Mar 05 17:12:05 program [5794]: http://mikson.xyz
+Mar 05 17:12:05 program [5794]: Starting new HTTP connection (1): laura-jammoul.pl:80
+Mar 05 17:12:15 program [5794]: http://laura-jammoul.pl
+Mar 05 17:12:15 program [5794]: Starting new HTTP connection (1): balumis.pl:80
+Mar 05 17:12:15 program [5794]: http://balumis.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:15 program [5794]: http://balumis.pl
+Mar 05 17:12:15 program [5794]: Starting new HTTP connection (1): dobrymoment.net.pl:80
+Mar 05 17:12:15 program [5794]: http://dobrymoment.net.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:15 program [5794]: http://Dobrymoment.net.pl
+Mar 05 17:12:15 program [5794]: Starting new HTTP connection (1): paciey.pl:80
+Mar 05 17:12:15 program [5794]: http://paciey.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:15 program [5794]: http://paciey.pl
+Mar 05 17:12:15 program [5794]: Starting new HTTP connection (1): wiosnalato.com.pl:80
+Mar 05 17:12:25 program [5794]: http://wiosnalato.com.pl
+Mar 05 17:12:25 program [5794]: Starting new HTTP connection (1): 123fajnie.pl:80
+Mar 05 17:12:25 program [5794]: http://123fajnie.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:25 program [5794]: http://123fajnie.pl
+Mar 05 17:12:25 program [5794]: Starting new HTTP connection (1): marekkubiak.pl:80
+Mar 05 17:12:35 program [5794]: http://marekkubiak.pl
+Mar 05 17:12:35 program [5794]: Starting new HTTP connection (1): patrykpetryszen.xyz:80
+Mar 05 17:12:35 program [5794]: http://patrykpetryszen.xyz:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:35 program [5794]: http://patrykpetryszen.xyz
+Mar 05 17:12:35 program [5794]: Starting new HTTP connection (1): grzesiek-mcfarland.pl:80
+Mar 05 17:12:35 program [5794]: http://grzesiek-mcfarland.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:35 program [5794]: http://grzesiek-mcfarland.pl
+Mar 05 17:12:35 program [5794]: Starting new HTTP connection (1): michalek123.pl:80
+Mar 05 17:12:36 program [5794]: http://michalek123.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:36 program [5794]: http://michalek123.pl
+Mar 05 17:12:36 program [5794]: Starting new HTTP connection (1): faktyopandemii.pl:80
+Mar 05 17:12:36 program [5794]: http://faktyopandemii.pl
+Mar 05 17:12:36 program [5794]: Starting new HTTP connection (1): myskills.szczecin.pl:80
+Mar 05 17:12:36 program [5794]: http://myskills.szczecin.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:36 program [5794]: http://myskills.szczecin.pl
+Mar 05 17:12:36 program [5794]: Starting new HTTP connection (1): ribijata.pl:80
+Mar 05 17:12:36 program [5794]: http://ribijata.pl
+Mar 05 17:12:36 program [5794]: Starting new HTTP connection (1): izadziuraprojekt.pl:80
+Mar 05 17:12:36 program [5794]: http://izadziuraprojekt.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:36 program [5794]: http://izadziuraprojekt.pl
+Mar 05 17:12:36 program [5794]: Starting new HTTP connection (1): emikot246.website:80
+Mar 05 17:12:36 program [5794]: http://emikot246.website:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:36 program [5794]: http://emikot246.website
+Mar 05 17:12:36 program [5794]: Starting new HTTP connection (1): cardecor.pl:80
+Mar 05 17:12:36 program [5794]: http://cardecor.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:12:36 program [5794]: http://cardecor.pl
+Mar 05 17:12:36 program [5794]: Starting new HTTP connection (1): eurisu.pl:80
+Mar 05 17:12:36 program [5794]: http://eurisu.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:36 program [5794]: http://eurisu.pl
+Mar 05 17:12:36 program [5794]: Starting new HTTP connection (1): brillowski.com.pl:80
+Mar 05 17:12:46 program [5794]: http://brillowski.com.pl
+Mar 05 17:12:46 program [5794]: Starting new HTTP connection (1): eazan.pl:80
+Mar 05 17:12:46 program [5794]: http://eazan.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:46 program [5794]: http://eazan.pl
+Mar 05 17:12:46 program [5794]: Starting new HTTP connection (1): maroprok.ddns.net:80
+Mar 05 17:12:56 program [5794]: http://maroprok.ddns.net
+Mar 05 17:12:56 program [5794]: Starting new HTTP connection (1): sromota.pl:80
+Mar 05 17:12:56 program [5794]: http://sromota.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:56 program [5794]: http://sromota.pl
+Mar 05 17:12:56 program [5794]: Starting new HTTP connection (1): sromota.pl:80
+Mar 05 17:12:56 program [5794]: http://sromota.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:56 program [5794]: http://sromota.pl
+Mar 05 17:12:56 program [5794]: Starting new HTTP connection (1): naukapytonalamarteczka.biz.pl:80
+Mar 05 17:12:57 program [5794]: http://naukapytonalamarteczka.biz.pl:80 "GET / HTTP/1.1" 502 166
+Mar 05 17:12:57 program [5794]: http://naukapytonalamarteczka.biz.pl
+Mar 05 17:12:57 program [5794]: Starting new HTTP connection (1): i-python.pl:80
+Mar 05 17:12:57 program [5794]: http://i-python.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:57 program [5794]: http://i-python.pl
+Mar 05 17:12:57 program [5794]: Starting new HTTP connection (1): c46.pl:80
+Mar 05 17:12:57 program [5794]: http://c46.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:57 program [5794]: http://c46.pl
+Mar 05 17:12:57 program [5794]: Starting new HTTP connection (1): infinitypython.com:80
+Mar 05 17:12:57 program [5794]: http://infinitypython.com:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:57 program [5794]: http://infinitypython.com
+Mar 05 17:12:57 program [5794]: Starting new HTTP connection (1): luqas.pl:80
+Mar 05 17:12:57 program [5794]: http://luqas.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:57 program [5794]: http://luqas.pl
+Mar 05 17:12:57 program [5794]: Starting new HTTP connection (1): promat.waw.pl:80
+Mar 05 17:12:57 program [5794]: http://promat.waw.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:12:57 program [5794]: http://promat.waw.pl
+Mar 05 17:12:57 program [5794]: Starting new HTTP connection (1): mikasia.pl:80
+Mar 05 17:13:07 program [5794]: http://mikasia.pl
+Mar 05 17:13:07 program [5794]: Starting new HTTP connection (1): epicki.cloud:80
+Mar 05 17:13:07 program [5794]: http://epicki.cloud:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:07 program [5794]: http://epicki.cloud
+Mar 05 17:13:07 program [5794]: Starting new HTTP connection (1): domenameha.pl:80
+Mar 05 17:13:07 program [5794]: http://domenameha.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:07 program [5794]: http://domenameha.pl
+Mar 05 17:13:07 program [5794]: Starting new HTTP connection (1): robmar.toadres.pl:80
+Mar 05 17:13:07 program [5794]: http://robmar.toadres.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:07 program [5794]: http://robmar.toadres.pl
+Mar 05 17:13:07 program [5794]: Starting new HTTP connection (1): mharasymowicz.pl:80
+Mar 05 17:13:07 program [5794]: http://mharasymowicz.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:07 program [5794]: http://mharasymowicz.pl
+Mar 05 17:13:07 program [5794]: Starting new HTTP connection (1): lopkarol.pl:80
+Mar 05 17:13:07 program [5794]: http://lopkarol.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:07 program [5794]: http://lopkarol.pl
+Mar 05 17:13:07 program [5794]: Starting new HTTP connection (1): zen-sekai.pl:80
+Mar 05 17:13:07 program [5794]: http://zen-sekai.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:07 program [5794]: http://zen-sekai.pl
+Mar 05 17:13:07 program [5794]: Starting new HTTP connection (1): progress-ab.pl:80
+Mar 05 17:13:08 program [5794]: http://progress-ab.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:08 program [5794]: http://progress-ab.pl
+Mar 05 17:13:08 program [5794]: Starting new HTTP connection (1): i-profil.pl:80
+Mar 05 17:13:08 program [5794]: http://i-profil.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:08 program [5794]: http://i-profil.pl
+Mar 05 17:13:08 program [5794]: Starting new HTTP connection (1): zadlo-prog.pl:80
+Mar 05 17:13:08 program [5794]: http://zadlo-prog.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:08 program [5794]: http://zadlo-prog.pl
+Mar 05 17:13:08 program [5794]: Starting new HTTP connection (1): kayman2115.pl:80
+Mar 05 17:13:08 program [5794]: http://kayman2115.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:08 program [5794]: http://kayman2115.pl
+Mar 05 17:13:08 program [5794]: Starting new HTTP connection (1): infiniteloop.site:80
+Mar 05 17:13:08 program [5794]: http://infiniteloop.site:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:08 program [5794]: http://infiniteloop.site
+Mar 05 17:13:08 program [5794]: Starting new HTTP connection (1): python-nanotechnologia.pl:80
+Mar 05 17:13:18 program [5794]: http://python-nanotechnologia.pl
+Mar 05 17:13:18 program [5794]: Starting new HTTP connection (1): porkair.pl:80
+Mar 05 17:13:18 program [5794]: http://porkair.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:18 program [5794]: http://porkair.pl
+Mar 05 17:13:18 program [5794]: Starting new HTTP connection (1): diablo-harry.pl:80
+Mar 05 17:13:18 program [5794]: http://diablo-harry.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:18 program [5794]: http://diablo-harry.pl
+Mar 05 17:13:18 program [5794]: Starting new HTTP connection (1): tengel.pl:80
+Mar 05 17:13:18 program [5794]: http://tengel.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:13:18 program [5794]: http://tengel.pl
+Mar 05 17:13:18 program [5794]: Starting new HTTP connection (1): serafind.pl:80
+Mar 05 17:13:19 program [5794]: http://serafind.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:19 program [5794]: http://serafind.pl
+Mar 05 17:13:19 program [5794]: Starting new HTTP connection (1): azielinski.eu:80
+Mar 05 17:13:19 program [5794]: http://azielinski.eu:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:19 program [5794]: http://azielinski.eu
+Mar 05 17:13:19 program [5794]: Starting new HTTP connection (1): domlhe.fun:80
+Mar 05 17:13:29 program [5794]: http://domlhe.fun
+Mar 05 17:13:29 program [5794]: Starting new HTTP connection (1): michal-python-xd.pl:80
+Mar 05 17:13:29 program [5794]: http://michal-python-xd.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:29 program [5794]: http://michal-python-xd.pl
+Mar 05 17:13:29 program [5794]: Starting new HTTP connection (1): bzentkow.pl:80
+Mar 05 17:13:29 program [5794]: http://bzentkow.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:29 program [5794]: http://bzentkow.pl
+Mar 05 17:13:29 program [5794]: Starting new HTTP connection (1): kurspython.herokuapp.com:80
+Mar 05 17:13:36 program [5794]: http://kurspython.herokuapp.com:80 "GET / HTTP/1.1" 200 160
+Mar 05 17:13:36 program [5794]: http://kurspython.herokuapp.com
+Mar 05 17:13:36 program [5794]: Starting new HTTP connection (1): helenalawik.cloud:80
+Mar 05 17:13:36 program [5794]: http://helenalawik.cloud:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:36 program [5794]: http://helenalawik.cloud
+Mar 05 17:13:36 program [5794]: Starting new HTTP connection (1): brewutnia-to-taki-pies.pl:80
+Mar 05 17:13:37 program [5794]: http://brewutnia-to-taki-pies.pl:80 "GET / HTTP/1.1" 200 3138
+Mar 05 17:13:37 program [5794]: http://brewutnia-to-taki-pies.pl
+Mar 05 17:13:37 program [5794]: Starting new HTTP connection (1): adrian-b.pl:80
+Mar 05 17:13:37 program [5794]: http://adrian-b.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:37 program [5794]: http://adrian-b.pl
+Mar 05 17:13:37 program [5794]: Starting new HTTP connection (1): xd.byteeater.pl:80
+Mar 05 17:13:37 program [5794]: http://xd.byteeater.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:37 program [5794]: http://xd.byteeater.pl
+Mar 05 17:13:37 program [5794]: Starting new HTTP connection (1): stronakwiecia.pl:80
+Mar 05 17:13:37 program [5794]: http://stronakwiecia.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:37 program [5794]: http://stronakwiecia.pl
+Mar 05 17:13:37 program [5794]: Starting new HTTP connection (1): laseczka-online.pl:80
+Mar 05 17:13:37 program [5794]: http://laseczka-online.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:37 program [5794]: http://laseczka-online.pl
+Mar 05 17:13:37 program [5794]: Starting new HTTP connection (1): lightbluebeagle.pl:80
+Mar 05 17:13:37 program [5794]: http://lightbluebeagle.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:13:37 program [5794]: http://lightbluebeagle.pl
+Mar 05 17:13:37 program [5794]: Starting new HTTP connection (1): adekdevcode.pl:80
+Mar 05 17:13:37 program [5794]: http://adekdevcode.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:37 program [5794]: http://adekdevcode.pl
+Mar 05 17:13:37 program [5794]: Starting new HTTP connection (1): wladek-py.pl:80
+Mar 05 17:13:37 program [5794]: http://wladek-py.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:37 program [5794]: http://wladek-py.pl
+Mar 05 17:13:37 program [5794]: Starting new HTTP connection (1): sulomon.pl:80
+Mar 05 17:13:37 program [5794]: http://sulomon.pl:80 "GET / HTTP/1.1" 404 None
+Mar 05 17:13:37 program [5794]: http://sulomon.pl
+Mar 05 17:13:37 program [5794]: Starting new HTTP connection (1): voxu.pl:80
+Mar 05 17:13:37 program [5794]: http://voxu.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:37 program [5794]: http://voxu.pl
+Mar 05 17:13:37 program [5794]: Starting new HTTP connection (1): wizzie.pl:80
+Mar 05 17:13:37 program [5794]: http://wizzie.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:37 program [5794]: http://wizzie.pl
+Mar 05 17:13:37 program [5794]: Starting new HTTP connection (1): bartekka.pl:80
+Mar 05 17:13:37 program [5794]: http://bartekka.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:37 program [5794]: http://bartekka.pl
+Mar 05 17:13:37 program [5794]: Starting new HTTP connection (1): arek-pe.pl:80
+Mar 05 17:13:38 program [5794]: http://arek-pe.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:38 program [5794]: http://arek-pe.pl
+Mar 05 17:13:38 program [5794]: Starting new HTTP connection (1): dzikiprojekt.pl:80
+Mar 05 17:13:38 program [5794]: http://dzikiprojekt.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:38 program [5794]: http://dzikiprojekt.pl
+Mar 05 17:13:38 program [5794]: Starting new HTTP connection (1): roccorob.pl:80
+Mar 05 17:13:48 program [5794]: http://roccorob.pl
+Mar 05 17:13:48 program [5794]: Starting new HTTP connection (1): domibukowska.pl:80
+Mar 05 17:13:48 program [5794]: http://domibukowska.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:48 program [5794]: http://domibukowska.pl
+Mar 05 17:13:48 program [5794]: Starting new HTTP connection (1): mrmoose.com.pl:80
+Mar 05 17:13:48 program [5794]: http://mrmoose.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:48 program [5794]: http://mrmoose.com.pl
+Mar 05 17:13:48 program [5794]: Starting new HTTP connection (1): kubuulek-python.pl:80
+Mar 05 17:13:48 program [5794]: http://kubuulek-python.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:48 program [5794]: http://kubuulek-python.pl
+Mar 05 17:13:48 program [5794]: Starting new HTTP connection (1): projectpython.pl:80
+Mar 05 17:13:48 program [5794]: http://projectpython.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:48 program [5794]: http://projectpython.pl
+Mar 05 17:13:48 program [5794]: Starting new HTTP connection (1): eszymi.pl:80
+Mar 05 17:13:48 program [5794]: http://eszymi.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:48 program [5794]: http://eszymi.pl
+Mar 05 17:13:48 program [5794]: Starting new HTTP connection (1): michalkokoszkiewicz.pl:80
+Mar 05 17:13:48 program [5794]: http://michalkokoszkiewicz.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:48 program [5794]: http://michalkokoszkiewicz.pl
+Mar 05 17:13:48 program [5794]: Starting new HTTP connection (1): zuzannaprzychoda.pl:80
+Mar 05 17:13:49 program [5794]: http://zuzannaprzychoda.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:49 program [5794]: http://zuzannaprzychoda.pl
+Mar 05 17:13:49 program [5794]: Starting new HTTP connection (1): mtpiotrowski.pl:80
+Mar 05 17:13:49 program [5794]: http://mtpiotrowski.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:49 program [5794]: http://mtpiotrowski.pl
+Mar 05 17:13:49 program [5794]: Starting new HTTP connection (1): hanuszkatworzy.pl:80
+Mar 05 17:13:49 program [5794]: http://hanuszkatworzy.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:49 program [5794]: http://hanuszkatworzy.pl
+Mar 05 17:13:49 program [5794]: Starting new HTTP connection (1): infmagazine.pl:80
+Mar 05 17:13:49 program [5794]: http://infmagazine.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:13:49 program [5794]: http://infmagazine.pl
+Mar 05 17:13:49 program [5794]: Starting new HTTP connection (1): ichimokumaster.pl:80
+Mar 05 17:13:49 program [5794]: http://ichimokumaster.pl
+Mar 05 17:13:49 program [5794]: Starting new HTTP connection (1): edamian.pl:80
+Mar 05 17:13:49 program [5794]: http://edamian.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:49 program [5794]: http://edamian.pl
+Mar 05 17:13:49 program [5794]: Starting new HTTP connection (1): domenadonauki.pl:80
+Mar 05 17:13:49 program [5794]: http://domenadonauki.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:49 program [5794]: http://domenadonauki.pl
+Mar 05 17:13:49 program [5794]: Starting new HTTP connection (1): masterofdisaster.com.pl:80
+Mar 05 17:13:50 program [5794]: http://masterofdisaster.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:50 program [5794]: http://masterofdisaster.com.pl
+Mar 05 17:13:50 program [5794]: Starting new HTTP connection (1): forumdeskorolkowe.pl:80
+Mar 05 17:13:50 program [5794]: http://forumdeskorolkowe.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:50 program [5794]: http://forumdeskorolkowe.pl
+Mar 05 17:13:50 program [5794]: Starting new HTTP connection (1): dalana.pl:80
+Mar 05 17:13:50 program [5794]: http://dalana.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:50 program [5794]: http://dalana.pl
+Mar 05 17:13:50 program [5794]: Starting new HTTP connection (1): farmer-korycin.pl:80
+Mar 05 17:13:50 program [5794]: http://farmer-korycin.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:50 program [5794]: http://farmer-korycin.pl
+Mar 05 17:13:50 program [5794]: Starting new HTTP connection (1): rob3rt.pl:80
+Mar 05 17:13:50 program [5794]: http://rob3rt.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:13:50 program [5794]: http://rob3rt.pl
+Mar 05 17:13:50 program [5794]: Starting new HTTP connection (1): lemgi.pl:80
+Mar 05 17:13:50 program [5794]: http://lemgi.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:50 program [5794]: http://lemgi.pl
+Mar 05 17:13:50 program [5794]: Starting new HTTP connection (1): digitalsoup.pl:80
+Mar 05 17:13:50 program [5794]: http://digitalsoup.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:13:50 program [5794]: http://digitalsoup.pl
+Mar 05 17:13:50 program [5794]: Starting new HTTP connection (1): onlyfansfilomenka.pl:80
+Mar 05 17:13:50 program [5794]: http://onlyfansfilomenka.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:50 program [5794]: http://onlyfansfilomenka.pl
+Mar 05 17:13:50 program [5794]: Starting new HTTP connection (1): teszka.pl:80
+Mar 05 17:13:50 program [5794]: http://teszka.pl
+Mar 05 17:13:50 program [5794]: Starting new HTTP connection (1): emorec.pl:80
+Mar 05 17:13:51 program [5794]: http://emorec.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:51 program [5794]: http://emorec.pl
+Mar 05 17:13:51 program [5794]: Starting new HTTP connection (1): mspython.pl:80
+Mar 05 17:13:51 program [5794]: http://mspython.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:51 program [5794]: http://mspython.pl
+Mar 05 17:13:51 program [5794]: Starting new HTTP connection (1): julianwitkowski.pl:80
+Mar 05 17:13:51 program [5794]: http://julianwitkowski.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:13:51 program [5794]: http://julianwitkowski.pl
+Mar 05 17:13:51 program [5794]: Starting new HTTP connection (1): dzejkob.pl:80
+Mar 05 17:14:01 program [5794]: http://dzejkob.pl
+Mar 05 17:14:01 program [5794]: Starting new HTTP connection (1): python.szczemar.tk:80
+Mar 05 17:14:01 program [5794]: http://python.szczemar.tk:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:01 program [5794]: http://python.szczemar.tk
+Mar 05 17:14:01 program [5794]: Starting new HTTP connection (1): theriddle.pl:80
+Mar 05 17:14:01 program [5794]: http://theriddle.pl:80 "GET / HTTP/1.1" 502 166
+Mar 05 17:14:01 program [5794]: http://theriddle.pl
+Mar 05 17:14:01 program [5794]: Starting new HTTP connection (1): kahalina.pl:80
+Mar 05 17:14:01 program [5794]: http://kahalina.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:01 program [5794]: http://kahalina.pl
+Mar 05 17:14:01 program [5794]: Starting new HTTP connection (1): pocztowkiani.pl:80
+Mar 05 17:14:01 program [5794]: http://pocztowkiani.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:01 program [5794]: http://pocztowkiani.pl
+Mar 05 17:14:01 program [5794]: Starting new HTTP connection (1): dvcbnz.pl:80
+Mar 05 17:14:01 program [5794]: http://dvcbnz.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:01 program [5794]: http://dvcbnz.pl
+Mar 05 17:14:01 program [5794]: Starting new HTTP connection (1): paythi.pl:80
+Mar 05 17:14:01 program [5794]: http://paythi.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:01 program [5794]: http://paythi.pl
+Mar 05 17:14:01 program [5794]: Starting new HTTP connection (1): tscibek.pl:80
+Mar 05 17:14:01 program [5794]: http://tscibek.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:01 program [5794]: http://tscibek.pl
+Mar 05 17:14:01 program [5794]: Starting new HTTP connection (1): mjarz.pl:80
+Mar 05 17:14:11 program [5794]: http://mjarz.pl
+Mar 05 17:14:11 program [5794]: Starting new HTTP connection (1): alemery.pl:80
+Mar 05 17:14:11 program [5794]: http://alemery.pl:80 "GET / HTTP/1.1" 500 290
+Mar 05 17:14:11 program [5794]: http://alemery.pl
+Mar 05 17:14:11 program [5794]: Starting new HTTP connection (1): test4kuba.pl:80
+Mar 05 17:14:22 program [5794]: http://test4kuba.pl
+Mar 05 17:14:22 program [5794]: Starting new HTTP connection (1): jj-s.pl:80
+Mar 05 17:14:22 program [5794]: http://jj-s.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:22 program [5794]: http://jj-s.pl
+Mar 05 17:14:22 program [5794]: Starting new HTTP connection (1): yashi-python-steps.pl:80
+Mar 05 17:14:22 program [5794]: http://yashi-python-steps.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:22 program [5794]: http://yashi-python-steps.pl
+Mar 05 17:14:22 program [5794]: Starting new HTTP connection (1): balcerek.biz.pl:80
+Mar 05 17:14:22 program [5794]: http://balcerek.biz.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:22 program [5794]: http://balcerek.biz.pl
+Mar 05 17:14:22 program [5794]: Starting new HTTP connection (1): premyslav-coding.pl:80
+Mar 05 17:14:22 program [5794]: http://premyslav-coding.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:22 program [5794]: http://premyslav-coding.pl
+Mar 05 17:14:22 program [5794]: Starting new HTTP connection (1): nuclearworkshop.pl:80
+Mar 05 17:14:25 program [5794]: http://nuclearworkshop.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:25 program [5794]: http://nuclearworkshop.pl
+Mar 05 17:14:25 program [5794]: Starting new HTTP connection (1): arslovibre.pl:80
+Mar 05 17:14:35 program [5794]: http://arslovibre.pl
+Mar 05 17:14:35 program [5794]: Starting new HTTP connection (1): cheswawprograms.pl:80
+Mar 05 17:14:35 program [5794]: http://cheswawprograms.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:35 program [5794]: http://cheswawprograms.pl
+Mar 05 17:14:35 program [5794]: Starting new HTTP connection (1): kpiaf.pl:80
+Mar 05 17:14:35 program [5794]: http://kpiaf.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:35 program [5794]: http://kpiaf.pl
+Mar 05 17:14:35 program [5794]: Starting new HTTP connection (1): mniejpopularnanazwadocwiczen.pl:80
+Mar 05 17:14:35 program [5794]: http://mniejpopularnanazwadocwiczen.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:35 program [5794]: http://mniejpopularnanazwadocwiczen.pl
+Mar 05 17:14:35 program [5794]: Starting new HTTP connection (1): rafjek.toadres.pl:80
+Mar 05 17:14:35 program [5794]: http://rafjek.toadres.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:35 program [5794]: http://rafjek.toadres.pl
+Mar 05 17:14:35 program [5794]: Starting new HTTP connection (1): mives.pl:80
+Mar 05 17:14:45 program [5794]: http://mives.pl
+Mar 05 17:14:45 program [5794]: Starting new HTTP connection (1): itscience.pl:80
+Mar 05 17:14:45 program [5794]: http://itscience.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:45 program [5794]: http://itscience.pl
+Mar 05 17:14:45 program [5794]: Starting new HTTP connection (1): tygrysrozbrykany.pl:80
+Mar 05 17:14:55 program [5794]: http://tygrysrozbrykany.pl
+Mar 05 17:14:55 program [5794]: Starting new HTTP connection (1): izabela-nowak.pl:80
+Mar 05 17:14:56 program [5794]: http://izabela-nowak.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:56 program [5794]: http://izabela-nowak.pl
+Mar 05 17:14:56 program [5794]: Starting new HTTP connection (1): swempix.pl:80
+Mar 05 17:14:56 program [5794]: http://swempix.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:56 program [5794]: http://swempix.pl
+Mar 05 17:14:56 program [5794]: Starting new HTTP connection (1): bxrtxs.pl:80
+Mar 05 17:14:56 program [5794]: http://bxrtxs.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:56 program [5794]: http://bxrtxs.pl
+Mar 05 17:14:56 program [5794]: Starting new HTTP connection (1): botaniko.pl:80
+Mar 05 17:14:56 program [5794]: http://botaniko.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:56 program [5794]: http://botaniko.pl
+Mar 05 17:14:56 program [5794]: Starting new HTTP connection (1): grubykleofas.pl:80
+Mar 05 17:14:56 program [5794]: http://grubykleofas.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:14:56 program [5794]: http://grubykleofas.pl
+Mar 05 17:14:56 program [5794]: Starting new HTTP connection (1): mamasitha.pl:80
+Mar 05 17:15:06 program [5794]: http://mamasitha.pl
+Mar 05 17:15:06 program [5794]: Starting new HTTP connection (1): starshipsigma.pl:80
+Mar 05 17:15:06 program [5794]: http://starshipsigma.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:15:06 program [5794]: http://starshipsigma.pl
+Mar 05 17:15:06 program [5794]: Starting new HTTP connection (1): czapiewski.edu.pl:80
+Mar 05 17:15:06 program [5794]: http://czapiewski.edu.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:15:06 program [5794]: http://czapiewski.edu.pl
+Mar 05 17:15:06 program [5794]: Starting new HTTP connection (1): resinandwoodworks.pl:80
+Mar 05 17:15:16 program [5794]: http://resinandwoodworks.pl
+Mar 05 17:15:16 program [5794]: Starting new HTTP connection (1): littlewitch32.pl:80
+Mar 05 17:15:16 program [5794]: http://littlewitch32.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:15:16 program [5794]: http://littlewitch32.pl
+Mar 05 17:15:16 program [5794]: Starting new HTTP connection (1): wiseowlstudio.xyz:80
+Mar 05 17:15:17 program [5794]: http://wiseowlstudio.xyz:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:15:17 program [5794]: http://wiseowlstudio.xyz
+Mar 05 17:15:17 program [5794]: Starting new HTTP connection (1): programistawojciech.pl:80
+Mar 05 17:15:17 program [5794]: http://programistawojciech.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:15:17 program [5794]: http://programistawojciech.pl
+Mar 05 17:15:17 program [5794]: Starting new HTTP connection (1): py-projects.pl:80
+Mar 05 17:15:27 program [5794]: http://py-projects.pl
+Mar 05 17:15:27 program [5794]: Starting new HTTP connection (1): ikosaedr.pl:80
+Mar 05 17:15:27 program [5794]: http://ikosaedr.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:15:27 program [5794]: http://ikosaedr.pl
+Mar 05 17:15:27 program [5794]: Starting new HTTP connection (1): pasieka-sypniewo.pl:80
+Mar 05 17:15:37 program [5794]: http://pasieka-sypniewo.pl
+Mar 05 17:15:37 program [5794]: Starting new HTTP connection (1): roll-the-dice.pl:80
+Mar 05 17:15:37 program [5794]: http://roll-the-dice.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:15:37 program [5794]: http://roll-the-dice.pl
+Mar 05 17:15:37 program [5794]: Starting new HTTP connection (1): kubapython.pl:80
+Mar 05 17:15:37 program [5794]: http://kubapython.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:15:37 program [5794]: http://kubapython.pl
+Mar 05 17:15:37 program [5794]: Starting new HTTP connection (1): testsite.ksiazek.xyz:80
+Mar 05 17:15:37 program [5794]: http://testsite.ksiazek.xyz:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:15:37 program [5794]: http://testsite.ksiazek.xyz
+Mar 05 17:15:37 program [5794]: Starting new HTTP connection (1): meaningless.pl:80
+Mar 05 17:15:37 program [5794]: http://meaningless.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:15:37 program [5794]: http://meaningless.pl
+Mar 05 17:15:37 program [5794]: Starting new HTTP connection (1): kazik-jot.pl:80
+Mar 05 17:15:47 program [5794]: http://kazik-jot.pl
+Mar 05 17:15:47 program [5794]: Starting new HTTP connection (1): hdh36997.pl:80
+Mar 05 17:15:47 program [5794]: http://hdh36997.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:15:47 program [5794]: http://hdh36997.pl
+Mar 05 17:15:47 program [5794]: Starting new HTTP connection (1): ekdevops.pl:80
+Mar 05 17:15:48 program [5794]: http://ekdevops.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:15:48 program [5794]: http://ekdevops.pl
+Mar 05 17:15:48 program [5794]: Starting new HTTP connection (1): gkonieczny.pl:80
+Mar 05 17:15:48 program [5794]: http://gkonieczny.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:15:48 program [5794]: http://gkonieczny.pl
+Mar 05 17:15:48 program [5794]: Starting new HTTP connection (1): haskus.pl:80
+Mar 05 17:15:48 program [5794]: http://haskus.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:15:48 program [5794]: http://haskus.pl
+Mar 05 17:15:48 program [5794]: Starting new HTTP connection (1): kaemi.site:80
+Mar 05 17:15:48 program [5794]: http://kaemi.site:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:15:48 program [5794]: http://kaemi.site
+Mar 05 17:15:48 program [5794]: Starting new HTTP connection (1): etycznyhacker.online:80
+Mar 05 17:15:58 program [5794]: http://etycznyhacker.online
+Mar 05 17:15:58 program [5794]: Starting new HTTP connection (1): pikpok.eu:80
+Mar 05 17:16:08 program [5794]: http://pikpok.eu
+Mar 05 17:16:08 program [5794]: Starting new HTTP connection (1): piotrleski.pl:80
+Mar 05 17:16:08 program [5794]: http://piotrleski.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:08 program [5794]: http://piotrleski.pl
+Mar 05 17:16:08 program [5794]: Starting new HTTP connection (1): foxnox.pl:80
+Mar 05 17:16:08 program [5794]: http://foxnox.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:08 program [5794]: http://foxnox.pl
+Mar 05 17:16:08 program [5794]: Starting new HTTP connection (1): porananas.pl:80
+Mar 05 17:16:08 program [5794]: http://porananas.pl:80 "GET / HTTP/1.1" 200 111
+Mar 05 17:16:08 program [5794]: http://porananas.pl
+Mar 05 17:16:08 program [5794]: Starting new HTTP connection (1): piterwr.pl:80
+Mar 05 17:16:18 program [5794]: http://piterwr.pl
+Mar 05 17:16:18 program [5794]: Starting new HTTP connection (1): katarzynagawel.pl:80
+Mar 05 17:16:18 program [5794]: http://katarzynagawel.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:18 program [5794]: http://katarzynagawel.pl
+Mar 05 17:16:18 program [5794]: Starting new HTTP connection (1): cyberprzemo.pl:80
+Mar 05 17:16:18 program [5794]: http://cyberprzemo.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:18 program [5794]: http://cyberprzemo.pl
+Mar 05 17:16:18 program [5794]: Starting new HTTP connection (1): tap-tap.pl:80
+Mar 05 17:16:19 program [5794]: http://tap-tap.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:19 program [5794]: http://tap-tap.pl
+Mar 05 17:16:19 program [5794]: Starting new HTTP connection (1): hello-dev.pl:80
+Mar 05 17:16:19 program [5794]: http://hello-dev.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:19 program [5794]: http://hello-dev.pl
+Mar 05 17:16:19 program [5794]: Starting new HTTP connection (1): niezlypythonbrachu.pl:80
+Mar 05 17:16:19 program [5794]: http://niezlypythonbrachu.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:19 program [5794]: http://niezlypythonbrachu.pl
+Mar 05 17:16:19 program [5794]: Starting new HTTP connection (1): e-magdalena.pl:80
+Mar 05 17:16:19 program [5794]: http://e-magdalena.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:19 program [5794]: http://e-magdalena.pl
+Mar 05 17:16:19 program [5794]: Starting new HTTP connection (1): karozag.pl:80
+Mar 05 17:16:19 program [5794]: http://karozag.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:19 program [5794]: http://karozag.pl
+Mar 05 17:16:19 program [5794]: Starting new HTTP connection (1): piotrorlinski.pl:80
+Mar 05 17:16:19 program [5794]: http://piotrorlinski.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:19 program [5794]: http://piotrorlinski.pl
+Mar 05 17:16:19 program [5794]: Starting new HTTP connection (1): picor.pl:80
+Mar 05 17:16:19 program [5794]: http://picor.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:19 program [5794]: http://picor.pl
+Mar 05 17:16:19 program [5794]: Starting new HTTP connection (1): kolsut94.pl:80
+Mar 05 17:16:19 program [5794]: http://kolsut94.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:19 program [5794]: http://kolsut94.pl
+Mar 05 17:16:19 program [5794]: Starting new HTTP connection (1): maxrossenberg.pl:80
+Mar 05 17:16:19 program [5794]: http://maxrossenberg.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:19 program [5794]: http://maxrossenberg.pl
+Mar 05 17:16:19 program [5794]: Starting new HTTP connection (1): dominik-pythoniarz.pl:80
+Mar 05 17:16:19 program [5794]: http://dominik-pythoniarz.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:19 program [5794]: http://dominik-pythoniarz.pl
+Mar 05 17:16:19 program [5794]: Starting new HTTP connection (1): szatan-antas.pl:80
+Mar 05 17:16:20 program [5794]: http://szatan-antas.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:20 program [5794]: http://szatan-antas.pl
+Mar 05 17:16:20 program [5794]: Starting new HTTP connection (1): krzyfoto.pl:80
+Mar 05 17:16:30 program [5794]: http://krzyfoto.pl
+Mar 05 17:16:30 program [5794]: Starting new HTTP connection (1): wiktorstachowiak.online:80
+Mar 05 17:16:30 program [5794]: http://wiktorstachowiak.online:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:30 program [5794]: http://wiktorstachowiak.online
+Mar 05 17:16:30 program [5794]: Starting new HTTP connection (1): mywebsiteonline.pl:80
+Mar 05 17:16:30 program [5794]: http://mywebsiteonline.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:30 program [5794]: http://mywebsiteonline.pl
+Mar 05 17:16:30 program [5794]: Starting new HTTP connection (1): experientia.com.pl:80
+Mar 05 17:16:40 program [5794]: http://experientia.com.pl
+Mar 05 17:16:40 program [5794]: Starting new HTTP connection (1): maksprojekt.pl:80
+Mar 05 17:16:40 program [5794]: http://maksprojekt.pl:80 "GET / HTTP/1.1" 502 166
+Mar 05 17:16:40 program [5794]: http://maksprojekt.pl
+Mar 05 17:16:40 program [5794]: Starting new HTTP connection (1): herotin.pl:80
+Mar 05 17:16:40 program [5794]: http://herotin.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:40 program [5794]: http://herotin.pl
+Mar 05 17:16:40 program [5794]: Starting new HTTP connection (1): emocrec.pl:80
+Mar 05 17:16:40 program [5794]: http://emocrec.pl
+Mar 05 17:16:40 program [5794]: Starting new HTTP connection (1): szymon-domena.pl:80
+Mar 05 17:16:40 program [5794]: http://szymon-domena.pl
+Mar 05 17:16:40 program [5794]: Starting new HTTP connection (1): joanna-portfolio.pl:80
+Mar 05 17:16:40 program [5794]: http://joanna-portfolio.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:40 program [5794]: http://joanna-portfolio.pl
+Mar 05 17:16:40 program [5794]: Starting new HTTP connection (1): testowanie-i-programowanie.pl:80
+Mar 05 17:16:40 program [5794]: http://testowanie-i-programowanie.pl:80 "GET / HTTP/1.1" 502 166
+Mar 05 17:16:40 program [5794]: http://testowanie-i-programowanie.pl
+Mar 05 17:16:40 program [5794]: Starting new HTTP connection (1): paulina-koduje-pythona.pl:80
+Mar 05 17:16:40 program [5794]: http://paulina-koduje-pythona.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:40 program [5794]: http://paulina-koduje-pythona.pl
+Mar 05 17:16:40 program [5794]: Starting new HTTP connection (1): jdobrzanski.pl:80
+Mar 05 17:16:40 program [5794]: http://jdobrzanski.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:16:40 program [5794]: http://jdobrzanski.pl
+Mar 05 17:16:40 program [5794]: Starting new HTTP connection (1): alamakotaipsa.pl:80
+Mar 05 17:16:50 program [5794]: http://alamakotaipsa.pl
+Mar 05 17:16:50 program [5794]: Starting new HTTP connection (1): martaprogramuje.pl:80
+Mar 05 17:17:00 program [5794]: http://martaprogramuje.pl
+Mar 05 17:17:00 program [5794]: Starting new HTTP connection (1): martaprogramuje.pl:80
+Mar 05 17:17:10 program [5794]: http://martaprogramuje.pl
+Mar 05 17:17:10 program [5794]: Starting new HTTP connection (1): python-learning.pl:80
+Mar 05 17:17:20 program [5794]: http://python-learning.pl
+Mar 05 17:17:20 program [5794]: Starting new HTTP connection (1): agnieszkaf.pl:80
+Mar 05 17:17:21 program [5794]: http://agnieszkaf.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:17:21 program [5794]: http://agnieszkaf.pl
+Mar 05 17:17:21 program [5794]: Starting new HTTP connection (1): plusart.pro:80
+Mar 05 17:17:21 program [5794]: http://plusart.pro:80 "GET / HTTP/1.1" 200 756
+Mar 05 17:17:21 program [5794]: http://plusart.pro
+Mar 05 17:17:21 program [5794]: Starting new HTTP connection (1): masterofsnakes.pl:80
+Mar 05 17:17:21 program [5794]: http://masterofsnakes.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:17:21 program [5794]: http://masterofsnakes.pl
+Mar 05 17:17:21 program [5794]: Starting new HTTP connection (1): lubuskieklunkry.pl:80
+Mar 05 17:17:21 program [5794]: http://lubuskieklunkry.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:17:21 program [5794]: http://lubuskieklunkry.pl
+Mar 05 17:17:21 program [5794]: Starting new HTTP connection (1): programatorek.pl:80
+Mar 05 17:17:21 program [5794]: http://programatorek.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:17:21 program [5794]: http://programatorek.pl
+Mar 05 17:17:21 program [5794]: Starting new HTTP connection (1): zulos.pl:80
+Mar 05 17:17:21 program [5794]: http://zulos.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:17:21 program [5794]: http://zulos.pl
+Mar 05 17:17:21 program [5794]: Starting new HTTP connection (1): em45.pl:80
+Mar 05 17:17:31 program [5794]: http://em45.pl
+Mar 05 17:17:31 program [5794]: Starting new HTTP connection (1): e-security.cloud:80
+Mar 05 17:17:31 program [5794]: http://e-security.cloud:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:17:31 program [5794]: http://e-security.cloud
+Mar 05 17:17:31 program [5794]: Starting new HTTP connection (1): przemekwrona.pl:80
+Mar 05 17:17:31 program [5794]: http://przemekwrona.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:17:31 program [5794]: http://przemekwrona.pl
+Mar 05 17:17:31 program [5794]: Starting new HTTP connection (1): test.wykrywaj.pl:80
+Mar 05 17:17:32 program [5794]: http://test.wykrywaj.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:17:32 program [5794]: http://test.wykrywaj.pl
+Mar 05 17:17:32 program [5794]: Starting new HTTP connection (1): kingvszka.pl:80
+Mar 05 17:17:32 program [5794]: http://kingvszka.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:17:32 program [5794]: http://kingvszka.pl
+Mar 05 17:17:32 program [5794]: Starting new HTTP connection (1): despresso.pl:80
+Mar 05 17:17:32 program [5794]: http://despresso.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:17:32 program [5794]: http://despresso.pl
+Mar 05 17:17:32 program [5794]: Starting new HTTP connection (1): niebyt.pl:80
+Mar 05 17:17:32 program [5794]: http://niebyt.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:17:32 program [5794]: http://niebyt.pl
+Mar 05 17:17:32 program [5794]: Starting new HTTP connection (1): jestemjonson.pl:80
+Mar 05 17:17:32 program [5794]: http://jestemjonson.pl:80 "GET / HTTP/1.1" 502 166
+Mar 05 17:17:32 program [5794]: http://jestemjonson.pl
+Mar 05 17:17:32 program [5794]: Starting new HTTP connection (1): pvtrk.pl:80
+Mar 05 17:17:32 program [5794]: http://pvtrk.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:17:32 program [5794]: http://pvtrk.pl
+Mar 05 17:17:32 program [5794]: Starting new HTTP connection (1): wyqp.pl:80
+Mar 05 17:17:32 program [5794]: http://wyqp.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:17:32 program [5794]: http://wyqp.pl
+Mar 05 17:17:32 program [5794]: Starting new HTTP connection (1): mikropatolog.pl:80
+Mar 05 17:17:33 program [5794]: http://mikropatolog.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:17:33 program [5794]: http://mikropatolog.pl
+Mar 05 17:17:33 program [5794]: Starting new HTTP connection (1): uczesieprogramowac.pl:80
+Mar 05 17:17:43 program [5794]: http://uczesieprogramowac.pl
+Mar 05 17:17:43 program [5794]: Starting new HTTP connection (1): youras.pl:80
+Mar 05 17:17:53 program [5794]: http://youras.pl
+Mar 05 17:17:53 program [5794]: Starting new HTTP connection (1): hadr.tk:80
+Mar 05 17:18:03 program [5794]: http://hadr.tk
+Mar 05 17:18:03 program [5794]: Starting new HTTP connection (1): pytonportfolio.pl:80
+Mar 05 17:18:03 program [5794]: http://pytonportfolio.pl
+Mar 05 17:18:03 program [5794]: Starting new HTTP connection (1): test.konradlapka.site:80
+Mar 05 17:18:03 program [5794]: http://test.konradlapka.site
+Mar 05 17:18:03 program [5794]: Starting new HTTP connection (1): rclimate.pl:80
+Mar 05 17:18:03 program [5794]: http://rclimate.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:18:03 program [5794]: http://rclimate.pl
+Mar 05 17:18:03 program [5794]: Starting new HTTP connection (1): rclimate.pl:80
+Mar 05 17:18:03 program [5794]: http://rclimate.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:18:03 program [5794]: http://rclimate.pl
+Mar 05 17:18:03 program [5794]: Starting new HTTP connection (1): cryptella.pl:80
+Mar 05 17:18:03 program [5794]: http://cryptella.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:18:03 program [5794]: http://cryptella.pl
+Mar 05 17:18:03 program [5794]: Starting new HTTP connection (1): python.weselle.pl:80
+Mar 05 17:18:13 program [5794]: http://python.weselle.pl
+Mar 05 17:18:13 program [5794]: Starting new HTTP connection (1): flag.artbit.com.pl:80
+Mar 05 17:18:13 program [5794]: http://flag.artbit.com.pl:80 "GET / HTTP/1.1" 301 17
+Mar 05 17:18:13 program [5794]: Starting new HTTPS connection (1): flag.artbit.com.pl:443
+Mar 05 17:18:13 program [5794]: https://flag.artbit.com.pl:443 "GET / HTTP/1.1" 200 192
+Mar 05 17:18:13 program [5794]: http://flag.artbit.com.pl
+Mar 05 17:18:13 program [5794]: Starting new HTTP connection (1): andysz.bieda.it:80
+Mar 05 17:18:14 program [5794]: http://andysz.bieda.it:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:18:14 program [5794]: http://andysz.bieda.it
+Mar 05 17:18:14 program [5794]: Starting new HTTP connection (1): puunina.szczecin.pl:80
+Mar 05 17:18:14 program [5794]: http://puunina.szczecin.pl:80 "GET / HTTP/1.1" 502 182
+Mar 05 17:18:14 program [5794]: http://puunina.szczecin.pl
+Mar 05 17:18:14 program [5794]: Starting new HTTP connection (1): pigalu.pl:80
+Mar 05 17:18:14 program [5794]: http://pigalu.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:18:14 program [5794]: http://pigalu.pl
+Mar 05 17:18:14 program [5794]: Starting new HTTP connection (1): tomekpython.online:80
+Mar 05 17:18:14 program [5794]: http://tomekpython.online:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:18:14 program [5794]: http://tomekpython.online
+Mar 05 17:18:14 program [5794]: Starting new HTTP connection (1): ribjata.pl:80
+Mar 05 17:18:14 program [5794]: http://ribjata.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:18:14 program [5794]: http://ribjata.pl
+Mar 05 17:18:14 program [5794]: Starting new HTTP connection (1): gregkozicki.pl:80
+Mar 05 17:18:24 program [5794]: http://gregkozicki.pl
+Mar 05 17:18:24 program [5794]: Starting new HTTP connection (1): borovski.e-qov.pl:80
+Mar 05 17:18:34 program [5794]: http://borovski.e-qov.pl
+Mar 05 17:18:34 program [5794]: Starting new HTTP connection (1): dt3.pl:80
+Mar 05 17:18:34 program [5794]: http://dt3.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:18:34 program [5794]: http://dt3.pl
+Mar 05 17:18:34 program [5794]: Starting new HTTP connection (1): kocilegat.pl:80
+Mar 05 17:18:44 program [5794]: http://kocilegat.pl
+Mar 05 17:18:44 program [5794]: Starting new HTTP connection (1): kamilzeglen.pl:80
+Mar 05 17:18:44 program [5794]: http://kamilzeglen.pl
+Mar 05 17:18:44 program [5794]: Starting new HTTP connection (1): hlwnv.com.pl:80
+Mar 05 17:18:44 program [5794]: http://hlwnv.com.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:18:44 program [5794]: http://hlwnv.com.pl
+Mar 05 17:18:44 program [5794]: Starting new HTTP connection (1): yabol2137.pl:80
+Mar 05 17:18:54 program [5794]: http://yabol2137.pl
+Mar 05 17:18:54 program [5794]: Starting new HTTP connection (1): torododendron.pl:80
+Mar 05 17:19:04 program [5794]: http://torododendron.pl
+Mar 05 17:19:04 program [5794]: Starting new HTTP connection (1): torododendron.pl:80
+Mar 05 17:19:14 program [5794]: http://torododendron.pl
+Mar 05 17:19:14 program [5794]: Starting new HTTP connection (1): foremka.tk:80
+Mar 05 17:19:15 program [5794]: http://foremka.tk:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:19:15 program [5794]: http://foremka.tk
+Mar 05 17:19:15 program [5794]: Starting new HTTP connection (1): lukasz-blechar.pl:80
+Mar 05 17:19:25 program [5794]: http://lukasz-blechar.pl
+Mar 05 17:19:25 program [5794]: Starting new HTTP connection (1): python-programming.marzec.eu:80
+Mar 05 17:19:25 program [5794]: http://python-programming.marzec.eu
+Mar 05 17:19:25 program [5794]: Starting new HTTP connection (1): w-dziedzic.pl:80
+Mar 05 17:19:35 program [5794]: http://w-dziedzic.pl
+Mar 05 17:19:35 program [5794]: Starting new HTTP connection (1): junioronly.com:80
+Mar 05 17:19:45 program [5794]: http://junioronly.com
+Mar 05 17:19:45 program [5794]: Starting new HTTP connection (1): edukodu.pl:80
+Mar 05 17:19:45 program [5794]: http://edukodu.pl:80 "GET / HTTP/1.1" 502 166
+Mar 05 17:19:45 program [5794]: http://edukodu.pl
+Mar 05 17:19:45 program [5794]: Starting new HTTP connection (1): isp7.pl:80
+Mar 05 17:19:45 program [5794]: http://isp7.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:19:45 program [5794]: http://isp7.pl
+Mar 05 17:19:45 program [5794]: Starting new HTTP connection (1): runningwarrior.pl:80
+Mar 05 17:19:45 program [5794]: http://runningwarrior.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:19:45 program [5794]: http://runningwarrior.pl
+Mar 05 17:19:45 program [5794]: Starting new HTTP connection (1): trzydwatrzy.pl:80
+Mar 05 17:19:55 program [5794]: http://trzydwatrzy.pl
+Mar 05 17:19:55 program [5794]: Starting new HTTP connection (1): maczupikczu.online:80
+Mar 05 17:19:56 program [5794]: http://maczupikczu.online:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:19:56 program [5794]: http://maczupikczu.online
+Mar 05 17:19:56 program [5794]: Starting new HTTP connection (1): danielekwafelek.pl:80
+Mar 05 17:20:06 program [5794]: http://danielekwafelek.pl
+Mar 05 17:20:06 program [5794]: Starting new HTTP connection (1): pimpa.pl:80
+Mar 05 17:20:16 program [5794]: http://pimpa.pl
+Mar 05 17:20:16 program [5794]: Starting new HTTP connection (1): python-cave.pl:80
+Mar 05 17:20:26 program [5794]: http://python-cave.pl
+Mar 05 17:20:26 program [5794]: Starting new HTTP connection (1): emobox.pl:80
+Mar 05 17:20:26 program [5794]: http://emobox.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:20:26 program [5794]: http://emobox.pl
+Mar 05 17:20:26 program [5794]: Starting new HTTP connection (1): wetwater.pl:80
+Mar 05 17:20:26 program [5794]: http://wetwater.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:20:26 program [5794]: http://wetwater.pl
+Mar 05 17:20:26 program [5794]: Starting new HTTP connection (1): malinowapogoda.edu.pl:80
+Mar 05 17:20:26 program [5794]: http://malinowapogoda.edu.pl
+Mar 05 17:20:26 program [5794]: Starting new HTTP connection (1): daco-python.pl:80
+Mar 05 17:20:36 program [5794]: http://daco-python.pl
+Mar 05 17:20:36 program [5794]: Starting new HTTP connection (1): bookreview.pl:80
+Mar 05 17:20:46 program [5794]: http://bookreview.pl
+Mar 05 17:20:46 program [5794]: Starting new HTTP connection (1): piotrekxd.pl:80
+Mar 05 17:20:46 program [5794]: http://piotrekxd.pl
+Mar 05 17:20:46 program [5794]: Starting new HTTP connection (1): ab-solution.pl:80
+Mar 05 17:20:46 program [5794]: http://ab-solution.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:20:46 program [5794]: http://ab-solution.pl
+Mar 05 17:20:46 program [5794]: Starting new HTTP connection (1): urszkam.pl:80
+Mar 05 17:20:46 program [5794]: http://urszkam.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:20:46 program [5794]: http://urszkam.pl
+Mar 05 17:20:46 program [5794]: Starting new HTTP connection (1): szimilandia.pl:80
+Mar 05 17:20:56 program [5794]: http://szimilandia.pl
+Mar 05 17:20:56 program [5794]: Starting new HTTP connection (1): pythontu.pl:80
+Mar 05 17:21:06 program [5794]: http://pythontu.pl
+Mar 05 17:21:06 program [5794]: Starting new HTTP connection (1): projekty-patrycjaksmrz.pl:80
+Mar 05 17:21:07 program [5794]: http://projekty-patrycjaksmrz.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:21:07 program [5794]: http://projekty-patrycjaksmrz.pl
+Mar 05 17:21:07 program [5794]: Starting new HTTP connection (1): ng-python.pl:80
+Mar 05 17:21:07 program [5794]: http://ng-python.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:21:07 program [5794]: http://ng-python.pl
+Mar 05 17:21:07 program [5794]: Starting new HTTP connection (1): inzpython.pl:80
+Mar 05 17:21:07 program [5794]: http://inzpython.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:21:07 program [5794]: http://inzpython.pl
+Mar 05 17:21:07 program [5794]: Starting new HTTP connection (1): cyfrowydzik.pl:80
+Mar 05 17:21:07 program [5794]: http://cyfrowydzik.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:21:07 program [5794]: http://cyfrowydzik.pl
+Mar 05 17:21:07 program [5794]: Starting new HTTP connection (1): ehoze-developer.pl:80
+Mar 05 17:21:07 program [5794]: http://ehoze-developer.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:21:07 program [5794]: http://ehoze-developer.pl
+Mar 05 17:21:07 program [5794]: Starting new HTTP connection (1): dupa.twojadomena.pl:80
+Mar 05 17:21:17 program [5794]: http://dupa.twojadomena.pl
+Mar 05 17:21:17 program [5794]: Starting new HTTP connection (1): gosiatesterka.pl:80
+Mar 05 17:21:27 program [5794]: http://gosiatesterka.pl
+Mar 05 17:21:27 program [5794]: Starting new HTTP connection (1): dt3.eu:80
+Mar 05 17:21:27 program [5794]: http://dt3.eu:80 "GET / HTTP/1.1" 301 0
+Mar 05 17:21:27 program [5794]: Starting new HTTP connection (1): www.dt3.pl:80
+Mar 05 17:21:27 program [5794]: http://www.dt3.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:21:27 program [5794]: http://dt3.eu
+Mar 05 17:21:27 program [5794]: Starting new HTTP connection (1): dominisiaczkowo.pl:80
+Mar 05 17:21:37 program [5794]: http://dominisiaczkowo.pl
+Mar 05 17:21:37 program [5794]: Starting new HTTP connection (1): damianbialas.pl:80
+Mar 05 17:21:37 program [5794]: http://damianbialas.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:21:37 program [5794]: http://damianbialas.pl
+Mar 05 17:21:37 program [5794]: Starting new HTTP connection (1): korneliusz-burian.pl:80
+Mar 05 17:21:37 program [5794]: http://korneliusz-burian.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:21:37 program [5794]: http://korneliusz-burian.pl
+Mar 05 17:21:37 program [5794]: Starting new HTTP connection (1): mojapierwszadomena.pl:80
+Mar 05 17:21:47 program [5794]: http://mojapierwszadomena.pl
+Mar 05 17:21:47 program [5794]: Starting new HTTP connection (1): wozyweselne.pl:80
+Mar 05 17:21:47 program [5794]: http://wozyweselne.pl:80 "GET / HTTP/1.1" 200 None
+Mar 05 17:21:47 program [5794]: http://wozyweselne.pl
+Mar 05 17:21:47 program [5794]: Starting new HTTP connection (1): adavxcq.pl:80
+Mar 05 17:21:57 program [5794]: http://adavxcq.pl
+Mar 05 17:21:57 program [5794]: Starting new HTTP connection (1): soczkowato.pl:80
+Mar 05 17:22:07 program [5794]: http://soczkowato.pl
+Mar 05 17:22:07 program [5794]: Starting new HTTP connection (1): do-it-today.pl:80
+Mar 05 17:22:17 program [5794]: http://do-it-today.pl
