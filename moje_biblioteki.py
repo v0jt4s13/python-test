@@ -180,7 +180,31 @@ def rebootFlask():
 
 	return 'Restart serwera zakonczony ....'
 
+def removeDuplicatesFromList(val_list):
+	xx = 0
+	max = int(len(val_list))
+	print(xx,max)
+	while xx < max:
+		if type(val_list[xx]) == list:
+			if int(len(val_list[xx])) == 6:
+				print('lista 1:',val_list[xx])
+				for v in val_list[xx]:
+					data_list.append(v)
+			else:
+				print('\t',type(val_list[xx]),len(val_list[xx]))
+				for v in val_list[xx]:
+					data_list.append(v)
+		else:
+			print('string 1:',type(val_list[xx]),len(val_list[xx]))
+			data_list.append(val_list[xx])
 
+		xx+= 1
+
+	len_before = len(data_list)
+	deduplicated_list = list(set(data_list))
+	print('\n\n\t\t\t\t*** removeDuplicatesFromList ==>before:',len_before,' after:',len(deduplicated_list))
+	
+	return deduplicated_list
 
 if 1 == 2:
 	# for reading nested data [0] represents
