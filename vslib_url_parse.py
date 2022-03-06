@@ -24,33 +24,12 @@ def parseUrlChangeParamValue(link,query_para,query_para_new_value):
 #link = "http://website.url" #?cat=1&start=1"
 #parseUrlChangeParamValue(link,'start',5)
 
-def putUrlListToFile(section, val_list):
+def putUrlListToFile(section, data_list):
     import pandas as pd
     import os
     import datetime 
     from jinja2 import Template
     import gzip
-    
-    data_list = []
-    xx = 0
-    max = int(len(val_list))
-    print(xx,max)
-    while xx < max:
-        if type(val_list[xx]) == list:
-            if int(len(val_list[xx])) == 6:
-                print('lista 1:',val_list[xx])
-                for v in val_list[xx]:
-                    data_list.append(v)
-            else:
-                print('\t',type(val_list[xx]),len(val_list[xx]))
-                for v in val_list[xx]:
-                    data_list.append(v)
-        else:
-            print('string 1:',type(val_list[xx]),len(val_list[xx]))
-            data_list.append(val_list[xx])
-
-        xx+= 1
-    
     
     xml_data = "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" "
     xml_data+= "xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" "

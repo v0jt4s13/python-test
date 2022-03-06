@@ -40,8 +40,10 @@ log_setup()
 
 timeLoad_list = []
 
+
 def current_milli_time():
 	return round(time.time() * 1000)
+
 
 def getDifference2(then, now = current_milli_time()):
 	duration = now - then
@@ -52,6 +54,7 @@ def getDifference2(then, now = current_milli_time()):
 # wyszukiwanie fragmentu adresu url w dostarczonej tablicy stringow
 # if 'http://' in str
 #################################
+
 def wyszukajUrlWStringu(str):
 	em = re.findall(r"(?:http(?:s?)://)?(?:[a-zA-Z0-9_-]+\.)+[a-zA-Z]+(?::\d{1,5})?$",str)
 	if len(em) > 0:
@@ -66,6 +69,7 @@ def wyszukajUrlWStringu(str):
 # odpytanie za pomoca biblioteki requests domeny - oczekiwana odpowiedz 200
 # import requests czy import urllib.request - czy nie wystarczy 1  z tych linii ??
 #################################
+
 def webRequest(url):
 
 	urllib3.disable_warnings()
@@ -76,9 +80,11 @@ def webRequest(url):
 		return [e, "Error"]
 
 
+
 def showLogs(n, str):
 	if n == 1:
 		print(str)
+
 
 
 def getWebPage(link):
@@ -87,6 +93,7 @@ def getWebPage(link):
 	website_tekst = website_response.text
 	website_lista_prep = website_tekst.split('\n')
 	return website_lista_prep
+
 
 
 def urlsList(link,resp_count,base_url,section):
@@ -142,6 +149,7 @@ def urlsList(link,resp_count,base_url,section):
 	return url_list
 
 
+
 def parseAdUrlFromAdsList(listing_page_url):
 
 
@@ -167,6 +175,7 @@ def parseAdUrlFromAdsList(listing_page_url):
 
 	return href
     
+
 
 def parseAdsListPage(resp_count,url_to_parse,section,website_lista_prep):
 	
@@ -213,6 +222,7 @@ def parseAdsListPage(resp_count,url_to_parse,section,website_lista_prep):
 	#print('111===>',len(url_list),last_page_nr)
 	#print(url_list)
 	return [url_list, last_page_nr]
+
 
 
 def parseAdsListPage_depricated(resp_count,url_to_parse,section,website_lista_prep):
@@ -268,6 +278,7 @@ def parseAdsListPage_depricated(resp_count,url_to_parse,section,website_lista_pr
 	print('\t* Przetworzonych stron: %i' %yy)
 
 
+
 def urlsPaginationList(url_list,resp_count,section):
 
 	print('\n\n\t\t\tlen url_list:',len(url_list),' ====> url_list:',url_list)
@@ -295,14 +306,18 @@ def urlsPaginationList(url_list,resp_count,section):
 
 				website_lista_prep = getWebPage(tmp_url)
 				#print(website_lista_prep)
-    			# wyszukanie na stronie listy ogloszen linkow do ogloszen
+				# wyszukanie na stronie listy ogloszen linkow do ogloszen
 				resp_list = parseAdsListPage(resp_count,tmp_url,section,website_lista_prep)
 
-				tmp_url_list = resp_list[0][0].split(section)
-				tmp_url_str1 = tmp_url_list[0]+section+tmp_url_list[-1]
-				tmp_url_list = resp_list[0][-1].split(section)
-				tmp_url_str2 = tmp_url_list[0]+section+tmp_url_list[-1]
-    
+				try:
+					tmp_url_list = resp_list[0][0].split(section)
+					tmp_url_str1 = tmp_url_list[0]+section+tmp_url_list[-1]
+					tmp_url_list = resp_list[0][-1].split(section)
+					tmp_url_str2 = tmp_url_list[0]+section+tmp_url_list[-1]
+				except:
+					if len(resp_list[0]) == 0:
+						print('Brak wynikow ')
+
 				print('\t\t\t',tmp_url,'\n''\t\t\t\t'+'* '*20,'\n\t\t\t\tStrona',xx,'z',resp_list[1],'; Pobranych linków:',len(resp_list[0]))
 				print('\t\t\t 1.\t'+tmp_url_str1+'\n\t\t\t'+str(len(resp_list[0]))+'.\t'+tmp_url_str2)
 				
@@ -314,7 +329,7 @@ def urlsPaginationList(url_list,resp_count,section):
 	#################################################
 	########## test test test #######################
 	#################################################
-				if xx >= 5: break
+				#if xx >= 5: break
 				#raise SystemExit
 	#################################################
 	########## test test test #######################
@@ -343,16 +358,23 @@ def urlsPaginationList(url_list,resp_count,section):
 
 				#raise SystemExit
 
-				if section in ["jobs","jobseekers","personals"]:
+				try:
 					tmp_url_list = resp_list[0][0].split(section)
 					tmp_url_str1 = tmp_url_list[0]+section+tmp_url_list[-1]
 					tmp_url_list = resp_list[0][-1].split(section)
 					tmp_url_str2 = tmp_url_list[0]+section+tmp_url_list[-1]
-				else:
-					tmp_url_list = resp_list[0][0].split(section)
-					tmp_url_str1 = tmp_url_list[0]+section+tmp_url_list[-1]
-					tmp_url_list = resp_list[0][-1].split(section)
-					tmp_url_str2 = tmp_url_list[0]+section+tmp_url_list[-1]
+				except:
+					try:
+						print('Err: 12xER1\tWystąpił błąd. resp_list[0][0].split('+section+') => len='+str(len(resp_list[0][0]))+'\n',resp_list[0])
+					except:
+						print('Err: 13xER1\tWystąpił błąd. resp_list[0].split('+section+') => len='+str(len(resp_list[0]))+'\n',resp_list[0])
+
+					raise SystemExit
+ 
+				tmp_url_list = resp_list[0][0].split(section)
+				tmp_url_str1 = tmp_url_list[0]+section+tmp_url_list[-1]
+				tmp_url_list = resp_list[0][-1].split(section)
+				tmp_url_str2 = tmp_url_list[0]+section+tmp_url_list[-1]
 
 				print('\t\t\t',tmp_url,'\n''\t\t\t\t'+'* '*20,'\n\t\t\t\tStrona',xx,'z',resp_list[1],'; Pobranych linków:',len(resp_list[0]))
 				print('\t\t\t 1.\t'+tmp_url_str1+'\n\t\t\t'+str(len(resp_list[0]))+'.\t'+tmp_url_str2)
@@ -373,26 +395,31 @@ def urlsPaginationList(url_list,resp_count,section):
 #        print()
 
     
+
 def main(argv):
 	console.clear()
  
-	if len(argv) == 3:
-		resp_count = int(argv[1])
-		if argv[2] in ("j","J","t","T","y","Y"):
-			output_type = "json"
+	if 1 == 2:
+		if len(argv) == 3:
+			resp_count = int(argv[1])
+			if argv[2] in ("j","J","t","T","y","Y"):
+				output_type = "json"
+			else:
+				output_type = ""
 		else:
-			output_type = ""
-	else:
-		print('\n\n')
-		resp_count = console.input("\t\t\t\t*** Ilość wierszy do przeszukania?\n\t\t\t\t\t (0-max; Enter-30) :smiley: ")
-		if resp_count == "":
-			resp_count = 30
-		elif resp_count != 0:
-			#print(resp_count,type(int(resp_count)))
-			if type(int(resp_count)) != type(1):
-				resp_count = 10
+			print('\n\n')
+			resp_count = console.input("\t\t\t\t*** Ilość wierszy do przeszukania?\n\t\t\t\t\t (0-max; Enter-30) :smiley: ")
+			if resp_count == "":
+				resp_count = 30
+			elif resp_count != 0:
+				#print(resp_count,type(int(resp_count)))
+				if type(int(resp_count)) != type(1):
+					resp_count = 10
 
-	resp_count = int(resp_count)
+		resp_count = int(resp_count)
+
+	resp_count = 30
+ 
 	#print('resp_count==>',resp_count,' type=',type(resp_count))
 	print('\n')
 	#if argv[1] == "ads":
@@ -513,7 +540,10 @@ def main(argv):
 	#wyszukajUrlWStringu
 	#print(val_list)
 
-	putUrlListToFile(section, val_list)
+	#################################
+	#### to do - save to file
+	#################################
+	#putUrlListToFile(section, val_list)
  
 	if 1 == 2:
 		xx = 0	
