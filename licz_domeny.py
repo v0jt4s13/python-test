@@ -1,5 +1,11 @@
 from logging import exception
 import requests
+import time
+
+def current_milli_time():
+	return round(time.time() * 1000)
+
+t1 = current_milli_time()
 
 # Pobranie tekstu ze strony (jako tafla tesktu).
 orangutan = 'https://zajecia-programowania-xd.pl/flagi'
@@ -48,17 +54,6 @@ def ilosc_domen(lista_domen):
         if tmp_list_name not in list_lista:
             list_lista.append(tmp_list_name)
         
-        if 1 == 2:
-            try:
-                print('list_lista[%s]' %tmp_list_name)
-                xx = 0
-                while xx < len(list_lista):
-                    print('list_lista[%i] %s ==> %s' %(xx,tmp_list_name,list_lista[xx]))
-                    xx+= 1
-            except ValueError as e1:
-                print('1. Error: %s' %e1)
-            
-        
         try:
             d_ext_list.append([d_ext,domena])
         except ValueError as e2:
@@ -72,10 +67,6 @@ def ilosc_domen(lista_domen):
             bad_list.append(domena)
         elif d_ext not in unique_ext_list and d_ext != "error":
             unique_ext_list.append(d_ext)
-            #print('2. %s' %qq)
-        #else:
-            #res1 = d_ext in (item for sublist in unique_ext_list for item in sublist)
-            #print(d_ext+' ==> jest poz:'+str(unique_ext_list.count(d_ext)))
 
     ########################################################################################
     # z przygotowanych tablic wydobywamy potrzebne informacje:
@@ -88,7 +79,6 @@ def ilosc_domen(lista_domen):
     tmp_str = ""
     for val in unique_ext_list:
         tmp_str+= val+" "
-    #print('\n\n\t1. %s' %tmp_str)
     
     tmp_str = ""
     min_len = 0
@@ -100,8 +90,6 @@ def ilosc_domen(lista_domen):
     licz = 0
     for val in full_domain_list:
         domain_len = len(val)
-        #if 0 in (min_len, max_len):
-        #    print('Nowa wartosc:'+str(domain_len))
         if domain_len <= min_len or licz == 0:
             domain_min_char = val
             min_len = domain_len
@@ -211,6 +199,11 @@ for value in uni_ext_list:
         print("\t."+key+"\t| "+str(val)+" szt. "+str_domen)
     else:
         print("\t."+key+"\t\t| "+str(val)+" szt. "+str_domen)
+
+t2 = current_milli_time()
+
+print(t2-t1)
+
 
 #print(csv_str)
 #for domena in lista_domen:
