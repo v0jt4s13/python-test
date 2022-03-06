@@ -1,6 +1,7 @@
 github-clone
 *.log
 *.json
+*.log.json
 *.ini
 *.lprof
 
