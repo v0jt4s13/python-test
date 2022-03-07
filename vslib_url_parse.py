@@ -30,23 +30,62 @@ def putUrlListToFile(section, data_list):
     import datetime 
     from jinja2 import Template
     import gzip
+    from moje_biblioteki import removeDuplicatesFromList
     
+    #<?xml version="1.0" encoding="utf-8"?>
+    #<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    #<url><loc>https://www.haikson.com</loc></url>
+    #<url><loc>https://www.haikson.com/static/css/bootstrap.min.css</loc></url>
+    #</urlset>
+
     xml_data = "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" "
     xml_data+= "xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" "
     xml_data+= "xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9 "
     xml_data+= "http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\">"
 
-
+    new_url_list = []
     # Import List of URLs
-    list_of_urls = '\n'.join(data_list)
-    list_of_urls
+    #print(len(data_list),type(data_list))
+    xx = 0
+    while xx < len(data_list):
+        #print(xx,type(data_list[xx]),len(data_list[xx]))
+        if len(data_list[xx]) > 0 and type(data_list[xx]) == list:
+            for tmp_url in data_list[xx]:
+                if type(tmp_url) == str:
+                    new_url_list.append(tmp_url)
+                else:
+                    print('Wartosc nie jest stringiem. => ',type(tmp_url))
+                    print(str(tmp_url))
+        elif len(data_list[xx]) > 0:
+            print('=====>',data_list[xx])
+            new_url_list.append(data_list[xx])
+        else:
+            print('Wartosc jest pusta.')
+        
+        xx+= 1
+    
+    #print(len(new_url_list))
+    #removeDuplicatesFromList(new_url_list)
  
+    deduplicated_list = list(set(new_url_list))
+    print('Reduce duplicates from:',len(new_url_list),' to:',len(deduplicated_list))
+    #list_of_urls = '\n'.join(new_url_list)
+    list_of_urls = deduplicated_list
+    #print(list_of_urls)
+
+
+
+    raise SystemExit
+
+    list_of_urls = pd.DataFrame(["https://londynek.net/", "https://londynek.net/link1", "https://londynek.net/link2"],
+     columns=['name'])
+    
     # Set-Up Maximum Number of URLs (recommended max 50,000)
     n = 50000
  
     # Create New Empty Row to Store the Splitted File Number
     list_of_urls.loc[:,'name'] = ''
- 
+        
     # Split the file with the maximum number of rows specified
     new_df = [list_of_urls[i:i+n] for i in range(0,list_of_urls.shape[0],n)]
  
