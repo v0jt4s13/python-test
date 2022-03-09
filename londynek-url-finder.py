@@ -24,6 +24,9 @@ from bs4 import BeautifulSoup
 from vslib_url_parse import parseUrlChangeParamValue, putUrlListToFile
 
 domain = "https://londynek.net"
+section_list = []
+section_list.append(["business","accommodation","jobs","jobseekers","automotive","buysell","personals"])
+section_list.append(["wiadomosci"])
 
 def log_setup():
 	log_file_name = "output.log"
@@ -177,7 +180,7 @@ def parseAdUrlFromAdsList(listing_page_url):
     
 
 
-def parseAdsListPage(resp_count,url_to_parse,section,website_lista_prep):
+def parseListPage(resp_count,url_to_parse,section,website_lista_prep):
 	
 	#print(website_lista_prep[440:445])
 	#print('\t*','* '*5,url_to_parse,' *'*5)
@@ -213,11 +216,19 @@ def parseAdsListPage(resp_count,url_to_parse,section,website_lista_prep):
 			new_page_fragment_list.append(tmp_str)
 			soup = BeautifulSoup(tmp_str, "lxml")
 			href = soup.a['href']
-			if domain not in href:
-				href = domain+href
-			if href not in url_list:
-				url_list.append(href)
-			ad_url_list.append(href)
+
+			new_href = ""
+			if section in section_list[0] or section in section_list[1]:
+				part_href_list = href.split(',')
+				if len(part_href_list) >= 2:
+					new_href+= domain+part_href_list[-1]
+				else:
+					print('Co to za url ? ==> ',href)
+
+			if new_href != "" and new_href not in url_list:
+				url_list.append(new_href)
+
+			#ad_url_list.append(href)
 
 	#print('111===>',len(url_list),last_page_nr)
 	#print(url_list)
@@ -290,9 +301,9 @@ def urlsPaginationList(url_list,resp_count,section):
 			new_url_list.append(link)
 			continue
 		section = val[1]
-		if section in ["wiadomosci"]:
+		if section in section_list[1]:
 			print('\n\n\t**** **** **** **** **** **** **** **** **** **** **** **** **** ****')
-			print('\t',section,'parseAdsListPage(',resp_count,link,'list)')
+			print('\t',section,'parseListPage(',resp_count,link,'list)')
 			print('\t**** **** **** **** **** **** **** **** **** **** **** **** **** ****')
 
 			xx = 1
@@ -307,7 +318,7 @@ def urlsPaginationList(url_list,resp_count,section):
 				website_lista_prep = getWebPage(tmp_url)
 				#print(website_lista_prep)
 				# wyszukanie na stronie listy ogloszen linkow do ogloszen
-				resp_list = parseAdsListPage(resp_count,tmp_url,section,website_lista_prep)
+				resp_list = parseListPage(resp_count,tmp_url,section,website_lista_prep)
 
 				try:
 					tmp_url_list = resp_list[0][0].split(section)
@@ -315,6 +326,8 @@ def urlsPaginationList(url_list,resp_count,section):
 					tmp_url_list = resp_list[0][-1].split(section)
 					tmp_url_str2 = tmp_url_list[0]+section+tmp_url_list[-1]
 				except:
+					tmp_url_str1 = ""
+					tmp_url_str2 = ""
 					if len(resp_list[0]) == 0:
 						print('Brak wynikow ')
 
@@ -335,9 +348,9 @@ def urlsPaginationList(url_list,resp_count,section):
 	########## test test test #######################
 	#################################################
 
-		if section in ["business","accommodation","jobs","jobseekers","automotive","buysell","personals"]:
+		if section in section_list[0]:
 			print('\n\n\t**** **** **** **** **** **** **** **** **** **** **** **** **** ****')
-			print('\t',section,'parseAdsListPage(',resp_count,link,'list)')
+			print('\t',section,'parseListPage(',resp_count,link,'list)')
 			print('\t**** **** **** **** **** **** **** **** **** **** **** **** **** ****')
 
 			xx = 1
@@ -352,8 +365,8 @@ def urlsPaginationList(url_list,resp_count,section):
 				website_lista_prep = getWebPage(tmp_url)
 				# wyszukanie na stronie listy ogloszen linkow do ogloszen
 				# resp_list =[url_list, last_page_nr]
-				#print('111111=========>>>>>>>>>>>>>>parseAdsListPage(',resp_count,tmp_url,section,'website_lista_prep)')
-				resp_list = parseAdsListPage(resp_count,tmp_url,section,website_lista_prep)
+				#print('111111=========>>>>>>>>>>>>>>parseListPage(',resp_count,tmp_url,section,'website_lista_prep)')
+				resp_list = parseListPage(resp_count,tmp_url,section,website_lista_prep)
 				#print('222222=========>>>>>>>>>>>>>>',resp_list)
 
 				#raise SystemExit
@@ -364,18 +377,11 @@ def urlsPaginationList(url_list,resp_count,section):
 					tmp_url_list = resp_list[0][-1].split(section)
 					tmp_url_str2 = tmp_url_list[0]+section+tmp_url_list[-1]
 				except:
-					try:
-						print('Err: 12xER1\tWystąpił błąd. resp_list[0][0].split('+section+') => len='+str(len(resp_list[0][0]))+'\n',resp_list[0])
-					except:
-						print('Err: 13xER1\tWystąpił błąd. resp_list[0].split('+section+') => len='+str(len(resp_list[0]))+'\n',resp_list[0])
-
-					raise SystemExit
- 
-				tmp_url_list = resp_list[0][0].split(section)
-				tmp_url_str1 = tmp_url_list[0]+section+tmp_url_list[-1]
-				tmp_url_list = resp_list[0][-1].split(section)
-				tmp_url_str2 = tmp_url_list[0]+section+tmp_url_list[-1]
-
+					tmp_url_str1 = ""
+					tmp_url_str2 = ""
+					if len(resp_list[0]) == 0:
+						print('Brak wynikow ')
+					#raise SystemExit
 				print('\t\t\t',tmp_url,'\n''\t\t\t\t'+'* '*20,'\n\t\t\t\tStrona',xx,'z',resp_list[1],'; Pobranych linków:',len(resp_list[0]))
 				print('\t\t\t 1.\t'+tmp_url_str1+'\n\t\t\t'+str(len(resp_list[0]))+'.\t'+tmp_url_str2)
 				
@@ -420,15 +426,16 @@ def main(argv):
 
 	resp_count = 30
  
-	#print('resp_count==>',resp_count,' type=',type(resp_count))
-	print('\n')
+	#while xx >= 10: 
+	#	print('\n\t','* '*xx)
+	#	xx-= 5
+ 
 	#if argv[1] == "ads":
 	ads_section_list = {
 		"wydarzenia" : ["index"],
 		"ukipedia" : ["index"],
 		"newslajt" : ["index"],
 		"wiadomosci" : ["index", "start=", ["cat", 39, 40, 42, 45, 46]],
-		"wiadomosci" : ["index", ["cat", 39, 40, 42, 45, 46]],
 		"czytelnia" : ["index", ["cat", 47, 48, 50, 85]],
 		"buysell" : ["start=", "cat=2"],
 		"accommodation" : ["start=", "cat=4"],
@@ -443,15 +450,38 @@ def main(argv):
 	url_list = []
 	base_url = "https://londynek.net/"
 
-	para_p = argv[1]
-	if para_p != "ads":
-		print(ads_section_list[para_p])
-		#qq = ads_section_list[para_p]
-		ads_section_list = {
-			para_p : ads_section_list[para_p]
-		}
+	if len(argv) > 1:
+		para_p = argv[1]
+		if para_p != "all" and para_p != "ads":
+			ads_section_list = {
+				para_p : ads_section_list[para_p]
+			}
+	print('\n\n')
+	print('---'*30)
+	for section in ads_section_list:
+		tabs_short = "\t"
+		if section == "jobs": tabs = "\t\t"
+		elif section == "accommodation": tabs = ""
+		else: tabs = "\t"
+
+		tmp_str = ""
+		for tmp in ads_section_list[section]:
+			tmp_str+= str(type(tmp))+' '
+
+		if ads_section_list[section][0][-1] == "=":
+			print('|',section,tabs,len(ads_section_list[section]),tabs_short,ads_section_list[section][0][:-1],type(ads_section_list[section][-1]),'tmp_str=',tmp_str)
+		else:
+			print('|',section,tabs,len(ads_section_list[section]),tabs_short,ads_section_list[section][0],type(ads_section_list[section][-1]),'tmp_str=',tmp_str)
+		try:
+			print('|\t\t\t\t\t\t 1. ===> ',len(ads_section_list[section]),''.join(ads_section_list[section][0]),''.join(ads_section_list[section][-1]))
+		except:
+			print('|\t\t\t\t\t\t 2. ===> ',len(ads_section_list[section]),ads_section_list[section])
+		print('---'*30)
+		
+		#raise SystemExit
 
 	for section in ads_section_list:
+		print('Sektor przetwarzany:',section,'==>',' '.join(ads_section_list[section][0]))
 		#print('section: '+section+' ==> '+str(len(ads_section_list[section])))
 		#print(ads_section_list[section])
 		para_count = len(ads_section_list[section])
@@ -461,22 +491,26 @@ def main(argv):
 		while xx < len(ads_section_list[section]):
 
 			url_str = base_url+section+"/"
-
 			
 			if ads_section_list[section][xx][:-1] == "start" and len(ads_section_list[section]) == 1:
 				print('tu',len(ads_section_list[section]),ads_section_list[section][xx][:-1])
 				url_list.append([url_str+"view-ads?start=1",section])
 				xx+= 1
 				continue
+
+			#if ads_section_list[section][xx][:-1] == "start" and len(ads_section_list[section]) == 2:
+			#	print('tu',len(ads_section_list[section]),ads_section_list[section][xx][:-1])
+			#	url_list.append([url_str+"view-ads?start=1",section])
+			#	xx+= 1
     
 			if ads_section_list[section][xx] == "index":
 				url_list.append([url_str+"index",section])
 				xx+= 1
 				continue
-			print('while=',xx,ads_section_list[section][xx],url_str+"index",type(ads_section_list[section][xx]))
+			#print('while=',xx,ads_section_list[section][xx],url_str+"index",type(ads_section_list[section][xx]))
 			
 			if type(ads_section_list[section][xx]) == list:
-				print('lista:',ads_section_list[section][xx][0],section,url_str)
+				#print('lista:',ads_section_list[section][xx][0],section,url_str)
 				if ads_section_list[section][xx][0] == "cat" and section in ("wiadomosci", "czytelnia"):
 					zz = 1
 					while zz < len(ads_section_list[section][xx]):
@@ -492,6 +526,8 @@ def main(argv):
 					tmp_para_list_formated = para_list[0]+'=='+para_list[1]+' %%%%%% '+str(len(para_list))+' '+'^'.join(para_list)
 					#print('\t\t\t\t***%%%%*** '+section+' try para_list==>',tmp_para_list_formated,'==>'+ads_section_list[section][xx]+'***%%%%***',xx,ads_section_list[section][0],ads_section_list[section][1])
 
+					print('\n\n\n\t\t\t',para_list,'\t\t\tif "',para_list[0],'" == "start" and "',ads_section_list[section][1],'"\n\n\n')
+     
 					if para_list[0] == "start" and ads_section_list[section][1] == "index":
 						if len(para_list) == 2 and para_list[1] == "":
 							#tmp_url = url_str+"?start=1"
@@ -526,7 +562,8 @@ def main(argv):
 	##################################################################
 	print('\t\t\t ****** go to urlsPaginationList(url_list',resp_count,base_url,') ******')
 
-
+	print(url_list)
+ 
 	val_list = urlsPaginationList(url_list,resp_count,section)
 
 	##################################################################
@@ -543,7 +580,7 @@ def main(argv):
 	#################################
 	#### to do - save to file
 	#################################
-	#putUrlListToFile(section, val_list)
+	putUrlListToFile(section, val_list)
  
 	if 1 == 2:
 		xx = 0	

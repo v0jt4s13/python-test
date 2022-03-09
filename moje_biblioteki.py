@@ -219,3 +219,44 @@ if 1 == 2:
 		print("Website:", i['website'])
 		print("From:", i['from'])
 		rrprint()
+
+
+def drawTriangles():
+	#print('resp_count==>',resp_count,' type=',type(resp_count))
+	xx = 1
+	zz = 1
+	yy = 1
+	row_max = 1
+	str_draw = ""
+	str_new_line = "\n\t\t"
+	str_star = " *"
+	max_row_col = 12
+	while xx <= max_row_col:
+		str_draw+= str_new_line #+str(xx) #+" ==> "
+		while zz <= row_max:
+			str_draw+= " * " #+str(zz) #str_star
+			zz+= 1
+   
+		yy_max = max_row_col-row_max-1
+		while yy <= yy_max:
+			str_draw+= " " #+str(yy_max) #"  "
+			yy+= 1
+
+		zz = 1
+		while zz <= row_max:
+			str_draw+= " * " #+str(zz) #+str(zz) #str_star
+			zz+= 1
+		#if xx > 1: str_draw+= " ==> "+str(max_row_col)+'/'+str(xx)+"="+str(int(max_row_col/xx))
+  
+		xx+= 1
+		zz = 1
+		yy = xx
+		if xx <= 6: row_max+= 1
+		else: 
+			row_max-= 1
+			zz = 1
+			yy = max_row_col-xx
+   
+		#str_draw+= str(yy)
+  
+	print('\n\n'+str_draw+'\n\n')
