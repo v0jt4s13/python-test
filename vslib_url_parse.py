@@ -73,8 +73,10 @@ def putUrlListToFile(section, data_list):
     list_of_urls = deduplicated_list
     #print(list_of_urls)
 
-
-
+    with open('sitemap-urls.txt', 'w') as f:
+        for item in list_of_urls:
+            f.write("%s\n" % item)
+    
     raise SystemExit
 
     list_of_urls = pd.DataFrame(["https://londynek.net/", "https://londynek.net/link1", "https://londynek.net/link2"],
