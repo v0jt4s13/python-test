@@ -108,22 +108,30 @@ def postacieListToSaveInFile(lista_postaci,extra_para=""):
 	return zapis
 
 def postacieWikiToFile(lista_postaci,extra_para=""):
-	print(lista_postaci,extra_para)
 	if len(lista_postaci) == "":
 		lista_postaci = ["Kubuś puchatek", "Kopernik", "Małysz"]
   
 	postacieListToSaveInFile(lista_postaci)
-	print('11111111')
 	lista_postaci_out = json.dumps(lista_postaci, ensure_ascii=False, sort_keys=True, indent=4).encode('utf8')
-	print('2222222222')
+	
 	if extra_para == "print":
-		print('Print json file:')
-		print(lista_postaci_out.decode())
-	print('33333333333')
+		print('\n\nPrint json file:',file_name,'')
+		postacieWikiFromFile()
+  		#print(lista_postaci_out.decode())
+
  
 
 def postacieWikiFromFile():
-    print("\n\n\n\t\t\t\t Funkcja trakcie tworzenia \n\n")
+    
+	try:
+		print('\n\nPrint json file:')
+		f = open(file_name)
+		data = json.load(f)
+		for line in data['Name']:
+			print(line)
+			f.close()
+	except:
+		print("\n\n\n\t\t\t\t Funkcja trakcie tworzenia \n\n")	
 
 def main(argv):
 	####### testowanie ######
