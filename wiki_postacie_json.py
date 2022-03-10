@@ -37,52 +37,15 @@ def postac_wiki(postac:str):
 
 	return [ludz, opis ,img]
     
-
-def postacieListToFile_fileCheck_dead():
-	#########################################
- 	# sprawdzenie czy plik json istnieje i
-	#########################################
-	from os.path import exists
-	f_mode = "a"
-	file_exists = exists(file_name)
-	if file_exists is False:
-		print("Brak pliku %s, wiec zostanie utworzony " %file_name)
-		f_mode = "w"
-	else:
-		stworz_nowy_plik = input("Czy chcesz nadpisywac plik czy dopisywac zawartosc (T/N) ? ")
-		if stworz_nowy_plik in ("T", "t", ""):
-			f_mode = "w"
-		else:
-			f_mode = "a"
-	return f_mode
-	
-def preparePostacieListToFile_dead(lista):
-
-	line = 0
-	wiersz_list = []
-	wiersz_str = ""
-	for items in lista:
-		if line == 0:
-			wiersz_list.append(["Nazwisko",lista[line]])
-			wiersz_str = "'Nazwisko':'"+lista[line]+"'"
-			#print(wiersz)		
-		if line == len(lista)-1:
-			wiersz_list.append(["Img",lista[line]])
-			wiersz_str+= ", 'Img':'"+lista[line]+"'"
-		else:
-			wiersz_list.append(["Opis",lista[line][:10]])
-			wiersz_str+= ", 'Opis':'"+lista[line][:10]+"'"
-		line+= 1
-
-	return json.dumps(wiersz_list)
-	#return [{wiersz_str}]
-
-def postacieListToFile(file_name,json_str,f_mode):
+def postacieListToFile(file_name,json_str):
 	try:
-		with open(file_name, mode=f_mode) as f:
-			f.writelines(json_str.decode())
-	
-		f.close()
+
+		# Serializing json 
+		json_obj = json.dumps(json_str, indent = 4)
+		with open(file_name, "w") as outfile:
+			outfile.write(json_obj)
+
+		outfile.close()
   
 		return "Zapisane"	
 	except ValueError as e:	
@@ -102,9 +65,7 @@ def postacieListToSaveInFile(lista_postaci,extra_para=""):
 			postac_list.append({'Name':postac_opis[0],'Opis':postac_opis[1],'url':postac_opis[-1]})
 	
 	wszytkie_postacie_list = {'Postacie':postac_list}
-	wszytkie_postacie_json = json.dumps(wszytkie_postacie_list, ensure_ascii=False).encode('utf8')
-	f_mode = "w"
-	zapis = postacieListToFile(file_name,wszytkie_postacie_json,f_mode)
+	zapis = postacieListToFile(file_name,wszytkie_postacie_list)
 	return zapis
 
 def postacieWikiToFile(lista_postaci,extra_para=""):
@@ -119,19 +80,25 @@ def postacieWikiToFile(lista_postaci,extra_para=""):
 		postacieWikiFromFile()
   		#print(lista_postaci_out.decode())
 
- 
-
 def postacieWikiFromFile():
     
 	try:
+	#if 1 == 1:
 		print('\n\nPrint json file:')
-		f = open(file_name)
-		data = json.load(f)
-		for line in data['Name']:
-			print(line)
-			f.close()
+		#f = open(file_name)
+		# Opening JSON file
+		with open(file_name) as json_file:
+			data = json.load(json_file)
+
+			# Print the type of data variable
+			print("Type:", type(data))
+
+			# Print the data of dictionary
+			print("\nPeople1:", data['people1'])
+			print("\nPeople2:", data['people2'])
 	except:
-		print("\n\n\n\t\t\t\t Funkcja trakcie tworzenia \n\n")	
+	#else:
+		print("\n\n\n\t\t\t\t Funkcja w trakcie tworzenia \n\n")	
 
 def main(argv):
 	####### testowanie ######
@@ -154,9 +121,12 @@ def main(argv):
 				else:
 					postacieWikiToFile(lista_postaci,'')
 		elif len(argv) == 2:
-			lista_postaci = ["Kubuś puchatek", "Kopernik", "Małysz"]
-			#print('2. postacieListToSaveInFile(',lista_postaci,',extra_para='')')
-			postacieWikiToFile(lista_postaci,'')
+			if argv[1] == "read":
+				postacieWikiFromFile()
+			else:
+				lista_postaci = ["Kubuś puchatek", "Kopernik", "Małysz"]
+				#print('2. postacieListToSaveInFile(',lista_postaci,',extra_para='')')
+				postacieWikiToFile(lista_postaci,'')
 		else:
 			print('\n\n\nCos nie tak z wywolaniem ....')
 #	else:
