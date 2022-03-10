@@ -113,7 +113,7 @@ def main(argv):
 		print("\n\t\t Test z terminala: \n\t\t\tpython3 wiki_postacie_json.py test\n\t\t\tpython3 wiki_postacie_json.py test print")
 		#print("\n\t\t\t wywolanie: postacieWikiToFile('test','test') \n\t\t\t generuje przykladowa liste")
 		#print("\n\t\t\t wywolanie: postacieWikiToFile('test','print') \n\t\t\t generuje przykladowa liste i wyswietla wynik na ekran")
-		print("\n\t\t 2. Randomowy rekord z pliku .json  => postacieWikiFromFile('rand) ")
+		print("\n\t\t 2. Randomowy rekord z pliku .json  => postacieWikiFromFile('rand') ")
 		print("\n\t\t Test z terminala: \n\t\t\tpython3 wiki_postacie_json.py rand\n\t\t\tpython3 wiki_postacie_json.py read")
 		print("\n\n")
 	else:
