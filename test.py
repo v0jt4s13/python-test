@@ -101,3 +101,4 @@ def parseAdUrlFromAdsList(listing_page_url):
 
 lista = "https://londynek.net/buysell/view-ads?cat=1&start=1"
 print(parseAdUrlFromAdsList(lista))
+
