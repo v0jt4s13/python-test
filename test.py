@@ -102,3 +102,14 @@ def parseAdUrlFromAdsList(listing_page_url):
 lista = "https://londynek.net/buysell/view-ads?cat=1&start=1"
 print(parseAdUrlFromAdsList(lista))
 
+def lista1():
+  return ['poz1', 'poz2', 'poz3']
+
+lista = ["poz4","poz2"]
+
+
+lista+= lista1()
+print('lista1=',lista)
+print('lista2=',lista1())
+print('lista_new=',lista)
+print('usuniete duplikaty',len(lista),len(list(set(lista))),list(set(lista)))

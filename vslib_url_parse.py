@@ -57,7 +57,7 @@ def putUrlListToFile(section, data_list):
                     print('Wartosc nie jest stringiem. => ',type(tmp_url))
                     print(str(tmp_url))
         elif len(data_list[xx]) > 0:
-            print('=====>',data_list[xx])
+            #print('=====>',data_list[xx])
             new_url_list.append(data_list[xx])
         else:
             print('Wartosc jest pusta.')
@@ -71,7 +71,17 @@ def putUrlListToFile(section, data_list):
     print('Reduce duplicates from:',len(new_url_list),' to:',len(deduplicated_list))
     #list_of_urls = '\n'.join(new_url_list)
     list_of_urls = deduplicated_list
-    #print(list_of_urls)
+    list_to_remove = []
+    for url in list_of_urls:
+        if "https" not in url:
+            list_to_remove.append(url)
+    if len(list_to_remove) > 0:
+        for url in list_to_remove:
+            list_of_urls.remove(url)
+        
+    if len(list_of_urls) < 150:
+        for url in list_of_urls:
+            print(url)
 
     with open('sitemap-urls.txt', 'w') as f:
         for item in list_of_urls:

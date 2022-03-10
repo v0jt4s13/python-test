@@ -4,6 +4,7 @@ github-clone
 *.log.json
 *.ini
 *.lprof
+aws.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

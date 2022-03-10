@@ -181,9 +181,10 @@ def rebootFlask():
 	return 'Restart serwera zakonczony ....'
 
 def removeDuplicatesFromList(val_list):
+	data_list = []
 	xx = 0
 	max = int(len(val_list))
-	print(xx,max)
+	#print(xx,max)
 	while xx < max:
 		if type(val_list[xx]) == list:
 			if int(len(val_list[xx])) == 6:
