@@ -77,25 +77,30 @@ def postacieWikiToFile(lista_postaci,extra_para=""):
 	
 	if extra_para == "print":
 		print('\n\nPrint json file:',file_name,'')
-		postacieWikiFromFile()
+		print(postacieWikiFromFile())
   		#print(lista_postaci_out.decode())
 
-def postacieWikiFromFile():
-    
+def postacieWikiFromFile(cols=""):
+	import random
 	try:
 	#if 1 == 1:
 		print('\n\nPrint json file:')
-		#f = open(file_name)
-		# Opening JSON file
 		with open(file_name) as json_file:
 			data = json.load(json_file)
 
-			# Print the type of data variable
-			print("Type:", type(data))
+		if cols == "rand":
+			r = random.randrange(len(data['Postacie']))
+			postacie_list = data['Postacie'][r]
+		else:
+			postacie_list = []
+			for line in data['Postacie']:
+				if cols == "test":
+					postacie_list.append([line['Name'],line['url']])
+				else:
+					postacie_list.append([line['Name'],line['Opis'],line['url']])
 
-			# Print the data of dictionary
-			print("\nPeople1:", data['people1'])
-			print("\nPeople2:", data['people2'])
+		return postacie_list
+
 	except:
 	#else:
 		print("\n\n\n\t\t\t\t Funkcja w trakcie tworzenia \n\n")	
@@ -105,10 +110,11 @@ def main(argv):
 	if len(sys.argv) == 1:
 		print("\n\n\t Zapis postaci do pliku",file_name)
 		print("\n\t\t 1. Tworzenie pliku .json => postacieWikiToFile(lista_postaci)")
+		print("\n\t\t Test z terminala: \n\t\t\tpython3 wiki_postacie_json.py test\n\t\t\tpython3 wiki_postacie_json.py test print")
 		#print("\n\t\t\t wywolanie: postacieWikiToFile('test','test') \n\t\t\t generuje przykladowa liste")
 		#print("\n\t\t\t wywolanie: postacieWikiToFile('test','print') \n\t\t\t generuje przykladowa liste i wyswietla wynik na ekran")
-		print("\n\t\t 2. Lista z pliku .json  => postacieWikiFromFile() ")
-		print("\n\t\t 3. Test z terminala: \n\t\t\tpython3 wiki_postacie_json.py test\n\t\t\tpython3 wiki_postacie_json.py test print")
+		print("\n\t\t 2. Randomowy rekord z pliku .json  => postacieWikiFromFile('rand) ")
+		print("\n\t\t Test z terminala: \n\t\t\tpython3 wiki_postacie_json.py rand\n\t\t\tpython3 wiki_postacie_json.py read")
 		print("\n\n")
 	else:
 		argv_str = argv[1]
@@ -121,8 +127,8 @@ def main(argv):
 				else:
 					postacieWikiToFile(lista_postaci,'')
 		elif len(argv) == 2:
-			if argv[1] == "read":
-				postacieWikiFromFile()
+			if argv[1] in ("read","rand"):
+				print(postacieWikiFromFile('rand'))
 			else:
 				lista_postaci = ["Kubuś puchatek", "Kopernik", "Małysz"]
 				#print('2. postacieListToSaveInFile(',lista_postaci,',extra_para='')')
