@@ -1,4 +1,4 @@
-<html>
+<html>   
 	<head>
 		<title>Kurs Programowania w Pythonie - index page</title>
 		<meta charset="utf-8">
@@ -15,9 +15,12 @@
 		}
 
 		.vertical-menu {
-			width: 25vw;
+			width: 40vw;
+			margin-left: auto;
+			margin-right: auto;
 			min-width: 250px;
 			padding-top: 2vh;
+			text-align: center;
 		}
 
 		.vertical-menu a {
@@ -29,7 +32,19 @@
 		}
 
 		.vertical-menu a:hover {
-			background-color: #395ccf;
+			background-color: #005bbb;
+		}
+
+		.text-align-right a.hover {
+			text-align: right;
+		}
+
+		.vertical-menu a:hover {
+			background-color: #005bbb;
+		}
+
+		.text-align-left a.hover {
+			text-align: left;
 		}
 
 		.vertical-menu a.active {
@@ -59,11 +74,13 @@
 			margin-left: 25vw;
 			/*border-style: double;*/
     		min-width: 250px;
+			position: sticky;
 		}
 		@media screen and (max-width: 600px) {
 			.center-col {
 				width: 80vw;
 				margin-left: 10vw;
+				position: sticky;
 			}
 			.left-col {
 				width: 10vw;
@@ -87,16 +104,19 @@
 		}
 		</style>
 	</head>
-	<body>
+	<body style="margin: 0px;">
+		<div style="background-color:#005bbbad;width: 100vw;height: 50vh;position: absolute;"></div>
+		<div style="background-color:#ffd500b8;width: 100vw;height: 50vh;position: absolute;margin-top: 50vh;"></div>
 		<div class="left-col"><hr></div>
 		<div class="center-col">
 		<ul class="vertical-menu">
-			<li class="active"><a href="/">Home {{text}}</a></li>
-			<li><a href="kubus_puchatek">Kubuś Puchatek</a></li>
-			<li><a href="flagi">Flagi page</a></li>
-			<li><a href="doc">Dokumantacja startowa</a></li>
-			<li><a href="xd">xD page</a></li>
-			<li><a href="https://github.com/v0jt4s13/python-test">GitHub page</a></li>
+			<li class="active text-align-left"><a href="/">Home {{text}}</a></li>
+			<li class="text-align-right"><a href="kubus_puchatek">Kubuś Puchatek</a></li>
+			<li class="text-align-left"><a href="flagi">Flagi page</a></li>
+			<li class="text-align-right"><a href="pass-generator">Generator haseł</a></li>
+			<li class="text-align-left"><a href="doc">Dokumantacja startowa</a></li>
+			<li class="text-align-right"><a href="xd">xD page</a></li>
+			<li class="text-align-left"><a href="https://github.com/v0jt4s13/python-test">GitHub page</a></li>
 		</ul>
 	</div>
 		<div class="right-col">

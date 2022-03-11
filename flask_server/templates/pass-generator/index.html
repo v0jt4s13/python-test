@@ -8,23 +8,107 @@
 				$(document).ready(function(){
 					$('#pass-generate').click(function() { 
 						var characters_count = $('#characters-count').val();
-						if ( 1 == 1 ) {
+						if ( characters_count < 8 ) {
+							$('#pass-prop').html('Hasło jest za krótkie.');
+						} else if ( characters_count > 20 ) {
+							$('#pass-prop').html('Hasło jest za długie.');
+						} else {
 							$.post('pass-generator', { char_count:characters_count }, function(data) {
 								$('#pass-prop').html(data);
+								$('.question-answer').css('display','block');
+								$('.question-answer-showpass').css('display','block');
 								console.log('Zaladowane. '+characters_count);
 							});
 							return false; // prevent default
 						}
 					});
+					$('#pass-prop-showpass').mouseover(function() {
+						akt_stan = $('.question-answer').css('-webkit-text-security');
+						if ( akt_stan == 'circle' ) {
+							$('.question-answer-showpass').html('Ukryj<br />hasło');
+							$('.question-answer').css('-webkit-text-security','inherit');
+						} else {
+							$('.question-answer-showpass').html('Pokaż<br />hasło');
+							$('.question-answer').css('-webkit-text-security','circle');
+						}
+					});
 				});
 			</script>
-
+			<style>
+				body {
+					margin: 0px;
+					background-color: #1d2a35!important;
+    			color: #ddd!important;
+				}
+				.main-wrapper {
+					width: 600px;
+					text-align: center;
+					background-color: #38444d;
+					position: absolute;
+    			top: 50%;
+    			left: 50%;
+    			transform: translate(-50%, -50%);
+					padding: 10px;
+				}
+				.main-wrapper h1 {
+					text-shadow: -3px 0px 8px #000000ab;
+					font-family: "Segoe UI",Arial,sans-serif;
+    			font-weight: 400;
+				}
+				.question-field p {
+					font-size: xx-large;
+				}
+				.question-input {
+					color: white;
+    			background-color: rgb(40,44,52);
+					font-size: xx-large;
+					width: 80px;
+					text-align: center;
+					padding: 15px;
+				}
+				.question-submit {
+					color: #FFFFFF;
+    			background-color: #4CAF50;
+					font-size: xx-large;
+					width: 180px;
+					text-align: center;
+					padding: 15px;
+				}
+				.question-answer {
+					font-size: xx-large;
+    			margin: 3vh 5vw;
+    			padding: 2vh;
+					min-width: 300px;
+					padding: 2vh;
+					border-top-color: rgb(40,44,52);
+					border-top-width: thick;
+					border-top-style: outset;
+					margin-top: 10px;
+					color: white;
+    			background-color: rgb(40,44,52);
+					-webkit-text-security: circle;
+					letter-spacing: 5px;
+				}
+				.question-answer-showpass {
+					height: 50px; 
+					padding: 2vh; 
+					margin: 1vh -5vw;
+				}
+			</style>
 			</head>
 			<body>
+				<div class="main-wrapper">
+
 					<h1>Generator haseł</h1>
-					Z ilu znaków ma się składać hasło? <input type="text" name="ilosc_znakow" id="characters-count"> 
-					<input type="submit" value="Generuj" id="pass-generate">
-					<div id="pass-prop"></div>
+					<div class="question-field">
+						<p>Z ilu znaków ma się składać hasło (8-20)?</p>
+						<input type="text" name="ilosc_znakow" id="characters-count" class="question-input"> 
+						<input type="submit" value="Generuj" id="pass-generate" class="question-submit">
+						<div id="pass-prop" class="question-answer" style="float:left;display: none"></div>
+						<div style="float:left;display:none" id="pass-prop-showpass" class="question-answer-showpass">Pokaż<br>hasło</div>
+					</div>
+					
+				</div>
 			</body>
 	</html>
 {% endif %}
