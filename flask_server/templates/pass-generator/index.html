@@ -1,26 +1,30 @@
-<html>
-		<head>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-		<script>
-			$(document).ready(function(){
-				$('#pass-generate').click(function() { 
-					var characters_count = $('#characters-count').val();
-					if ( 1 == 1 ) {
-						$.post('pass-generator', { char_count:characters_count }, function(data) {
-							$('#pass-prop').html(data);
-							console.log('Zaladowane.');
-						});
-						return false; // prevent default
-					}
+{% if pass_rendered != '' %}
+	{{pass_rendered}}
+{% else %}
+	<html>
+			<head>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+			<script>
+				$(document).ready(function(){
+					$('#pass-generate').click(function() { 
+						var characters_count = $('#characters-count').val();
+						if ( 1 == 1 ) {
+							$.post('pass-generator', { char_count:characters_count }, function(data) {
+								$('#pass-prop').html(data);
+								console.log('Zaladowane. '+characters_count);
+							});
+							return false; // prevent default
+						}
+					});
 				});
-			});
-		</script>
+			</script>
 
-		</head>
-		<body>
-				<h1>Generator haseł</h1>
-				Z ilu znaków ma się składać hasło? <input type="text" name="ilosc_znakow" id="characters-count"> 
-				<input type="submit" value="Generuj" id="pass-generate">
-				<div id="pass-prop"></div>
-		</body>
-</html>
+			</head>
+			<body>
+					<h1>Generator haseł</h1>
+					Z ilu znaków ma się składać hasło? <input type="text" name="ilosc_znakow" id="characters-count"> 
+					<input type="submit" value="Generuj" id="pass-generate">
+					<div id="pass-prop"></div>
+			</body>
+	</html>
+{% endif %}
