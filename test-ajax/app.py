@@ -2,6 +2,7 @@ from flask import Flask, render_template, url_for
 from flask import request
 from py_terminal_app_run import runAppInsideScript
 
+
 app=Flask(__name__)
 
 @app.route('/app-run', methods=['GET','POST'])
