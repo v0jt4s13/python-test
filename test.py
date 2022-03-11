@@ -1,5 +1,6 @@
 import subprocess
 import os
+from moje_biblioteki import *
 
 def check_code_safety(file_path):
     code_lines = open(file_path).readlines()
@@ -113,3 +114,31 @@ print('lista1=',lista)
 print('lista2=',lista1())
 print('lista_new=',lista)
 print('usuniete duplikaty',len(lista),len(list(set(lista))),list(set(lista)))
+
+def usersAndGroupsList():
+  import pwd, grp
+  for p in pwd.getpwall():
+    print(p[0], grp.getgrgid(p[3])[0])
+    
+usersAndGroupsList()
+
+weight = 73
+height = 170
+bmi1 = (weight / (height **2))
+bmi2 = (weight / (height * height))
+print(bmi1, bmi2)
+
+list_to_check = [[1, "poz 1"], [2, "poz 2"], [3, "poz 3"], [2, "poz 2"]]
+
+new_list_to_check1 = removeDuplicatesFromMixedList(list_to_check)
+print(new_list_to_check1)
+
+try:
+  new_list_to_check2 = list(set(list_to_check))
+  print(new_list_to_check2)
+except:
+  print(drawTriangles())
+  
+print('****************************')
+print(convertListToJsonString())
+saveJsonStringToFile('test.json',convertListToJsonString())

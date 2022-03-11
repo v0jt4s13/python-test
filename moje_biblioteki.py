@@ -1,3 +1,28 @@
+"""
+def flagiIloscTopDomenPl(domeny_ext_list="",domeny_full_json=""):
+	- project xD - Top lvl .pl domain list from provided list of domain
+def flagiBuildPageFromJson(filename='test_test_file.json'):
+	- project xD - some info about provided list of domain from json file
+def flagiBuildWebpage():
+	- project xD - build and save page with list of domain
+def flagiIloscDomenPl(domeny_ext_list="",domeny_full_json=""):
+	- project xD - simply .pl domain count
+def flagiIloscZnakow(domeny_list="",domeny_full_json=""):
+	- project xD - count 'a' characters in all provided domains 
+def flagiDlugoscDomeny(domeny_list="",domeny_full_json=""):
+	- project xD - count longest and shortest domains
+def rebootFlask():
+	- project xD - flask and nginx reload script
+def removeDuplicatesFromMixedList(val_list):
+	- remove duplicates from flatten mixed list
+def drawTriangles():
+	- just draw a triangle for fun ;)
+def saveJsonStringToFile(file_name,json_str):
+	- save provided json string to .json file
+def convertListToJsonString():
+	- convert list to json string and save it to .json file
+"""
+
 import json
 import os
 
@@ -5,7 +30,7 @@ def flagiIloscTopDomenPl(domeny_ext_list="",domeny_full_json=""):
 	#print(domeny_full_json[0]['domena'])
 	pl_ext_count = 0
 	top_lvl_domain = ['.agro.pl','.aid.pl','.atm.pl','.augustow.pl','.auto.pl','.babia-gora.pl','.bedzin.pl','.beskidy.pl','.bialowieza.pl','.bialystok.pl','.bielawa.pl','.bieszczady.pl','.biz.pl','.boleslawiec.pl','.bydgoszcz.pl','.bytom.pl','.cieszyn.pl','.com.pl','.czeladz.pl','.czest.pl','.dlugoleka.pl','.edu.pl','.elblag.pl','.elk.pl','.glogow.pl','.gmina.pl','.gniezno.pl','.gorlice.pl','.grajewo.pl','.gsm.pl','.ilawa.pl','.info.pl','.jaworzno.pl','.jelenia-gora.pl','.jgora.pl','.kalisz.pl','.karpacz.pl','.kartuzy.pl','.kaszuby.pl','.katowice.pl','.kazimierz-dolny.pl','.kepno.pl','.ketrzyn.pl','.klodzko.pl','.kobierzyce.pl','.kolobrzeg.pl','.konin.pl','.konskowola.pl','.kutno.pl','.lapy.pl','.lebork.pl','.legnica.pl','.lezajsk.pl','.limanowa.pl','.lomza.pl','.lowicz.pl','.lubin.pl','.lukow.pl','.mail.pl','.malbork.pl','.malopolska.pl','.mazowsze.pl','.mazury.pl','.media.pl','.miasta.pl','.mielec.pl','.mielno.pl','.mil.pl','.mragowo.pl','.naklo.pl','.net.pl','.nieruchomosci.pl','.nom.pl','.nowaruda.pl','.nysa.pl','.olawa.pl','.olecko.pl','.olkusz.pl','.olsztyn.pl','.opoczno.pl','.opole.pl','.org.pl','.ostroda.pl','.ostroleka.pl','.ostrowiec.pl','.ostrowwlkp.pl','.pc.pl','.pila.pl','.pisz.pl','.podhale.pl','.podlasie.pl','.polkowice.pl','.pomorskie.pl','.pomorze.pl','.powiat.pl','.priv.pl','.prochowice.pl','.pruszkow.pl','.przeworsk.pl','.pulawy.pl','.radom.pl','.rawa-maz.pl','.realestate.pl','.rel.pl','.rybnik.pl','.rzeszow.pl','.sanok.pl','.sejny.pl','.sex.pl','.shop.pl','.sklep.pl','.skoczow.pl','.slask.pl','.slupsk.pl','.sos.pl','.sosnowiec.pl','.stalowa-wola.pl','.starachowice.pl','.stargard.pl','.suwalki.pl','.swidnica.pl','.swiebodzin.pl','.swinoujscie.pl','.szczecin.pl','.szczytno.pl','.szkola.pl','.targi.pl','.tarnobrzeg.pl','.tgory.pl','.tm.pl','.tourism.pl','.travel.pl','.turek.pl','.turystyka.pl','.tychy.pl','.ustka.pl','.walbrzych.pl','.warmia.pl','.warszawa.pl','.waw.pl','.wegrow.pl','.wielun.pl','.wlocl.pl','.wloclawek.pl','.wodzislaw.pl','.wolomin.pl','.wroclaw.pl','.zachpomor.pl','.zagan.pl','.zarow.pl','.zgora.pl','.zgorzelec.pl']
-	qq = []
+	top_lvl_domain_list = []
 	if len(domeny_ext_list) > 0:
 		for ext in domeny_ext_list:
 			if ext[0] == "pl":
@@ -19,13 +44,12 @@ def flagiIloscTopDomenPl(domeny_ext_list="",domeny_full_json=""):
 			#if ext_pl == "pl" and len(domena.split('.')) > 2:
 				#print(str(len(domena.split('.')))+" ==> "+domena)
 			if ext_pl == "pl" and len(domena.split('.')) > 2 and "."+ext_pl2+"."+ext_pl in top_lvl_domain:
-				if domena not in qq:
-					qq.append(domena)
+				if domena not in top_lvl_domain_list:
+					top_lvl_domain_list.append(domena)
 				pl_ext_count+= 1
 			licz+= 1
 	#print(qq)
-	return [pl_ext_count, qq]
-
+	return [pl_ext_count, top_lvl_domain_list]
 
 def flagiBuildPageFromJson(filename='test_test_file.json'):
 	liczcz = 0
@@ -55,7 +79,7 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 		str_to_html_list.append('<br/>Wszystkich domen .pl: %s; Ilość znaków \'a\': %s' %(ilosc_domen_pl,ilosc_znakow))
 		domeny_pl_list = flagiIloscTopDomenPl("", file_data['ListaDomen'])
 		str_to_html_list.append('<br/><span style="background-color: silver">Wszystkich domen .pl - TOP-LVL: %i ===> %s </span>' %(domeny_pl_list[0],' '.join(domeny_pl_list[1])))
-  
+	
 		min_len,shortest,max_len,longest = flagiDlugoscDomeny("",file_data['ListaDomen'])
 
 		#short_domain_char = 0
@@ -180,7 +204,7 @@ def rebootFlask():
 
 	return 'Restart serwera zakonczony ....'
 
-def removeDuplicatesFromList(val_list):
+def removeDuplicatesFromMixedList(val_list):
 	data_list = []
 	xx = 0
 	max = int(len(val_list))
@@ -188,39 +212,24 @@ def removeDuplicatesFromList(val_list):
 	while xx < max:
 		if type(val_list[xx]) == list:
 			if int(len(val_list[xx])) == 6:
-				print('lista 1:',val_list[xx])
+				#print('lista 1:',val_list[xx])
 				for v in val_list[xx]:
 					data_list.append(v)
 			else:
-				print('\t',type(val_list[xx]),len(val_list[xx]))
+				#print('\t',type(val_list[xx]),len(val_list[xx]))
 				for v in val_list[xx]:
 					data_list.append(v)
 		else:
-			print('string 1:',type(val_list[xx]),len(val_list[xx]))
+			#print('string 1:',type(val_list[xx]),len(val_list[xx]))
 			data_list.append(val_list[xx])
 
 		xx+= 1
 
 	len_before = len(data_list)
 	deduplicated_list = list(set(data_list))
-	print('\n\n\t\t\t\t*** removeDuplicatesFromList ==>before:',len_before,' after:',len(deduplicated_list))
+	#print('\n\n\t\t\t\t*** removeDuplicatesFromList ==>before:',len_before,' after:',len(deduplicated_list))
 	
 	return deduplicated_list
-
-if 1 == 2:
-	# for reading nested data [0] represents
-	# the index value of the list
-	print(data['ListaDomen'][0])
-
-	# for printing the key-value pair of
-	# nested dictionary for loop can be used
-	print("\nPrinting nested dictionary as a key-value pair\n")
-	for i in data['people1']:
-		print("Name:", i['name'])
-		print("Website:", i['website'])
-		print("From:", i['from'])
-		rrprint()
-
 
 def drawTriangles():
 	#print('resp_count==>',resp_count,' type=',type(resp_count))
@@ -237,7 +246,7 @@ def drawTriangles():
 		while zz <= row_max:
 			str_draw+= " * " #+str(zz) #str_star
 			zz+= 1
-   
+
 		yy_max = max_row_col-row_max-1
 		while yy <= yy_max:
 			str_draw+= " " #+str(yy_max) #"  "
@@ -248,7 +257,7 @@ def drawTriangles():
 			str_draw+= " * " #+str(zz) #+str(zz) #str_star
 			zz+= 1
 		#if xx > 1: str_draw+= " ==> "+str(max_row_col)+'/'+str(xx)+"="+str(int(max_row_col/xx))
-  
+	
 		xx+= 1
 		zz = 1
 		yy = xx
@@ -257,7 +266,36 @@ def drawTriangles():
 			row_max-= 1
 			zz = 1
 			yy = max_row_col-xx
-   
+	 
 		#str_draw+= str(yy)
-  
-	print('\n\n'+str_draw+'\n\n')
+	
+	return '\n\n'+str_draw+'\n\n'
+
+def saveJsonStringToFile(file_name,json_str):
+	try:
+		# Serializing json 
+		json_obj = json.dumps(json_str, indent = 4)
+		with open(file_name, "w") as outfile:
+			outfile.write(json_obj)
+		outfile.close()
+
+		return "Saved"	
+	except ValueError as e:	
+		return "Error: "+e	
+
+def convertListToJsonString(input_list="",extra_para=""):
+	
+	file_name = "jsonFileName.json"
+	if input_list == "":
+		input_list = ["Value1", "Value2", "Value3"]
+	append_new_list = []
+	for item in input_list:
+		more_details_list = ["More details1", "More details2", "More details3"] #extended_list_function(item)
+		if extra_para == "test":
+			append_new_list.append({'Len':len(more_details_list),'Detail1':more_details_list[0],'DetailLast':more_details_list[-1]})
+		else:
+			append_new_list.append({'Detail1':more_details_list[0],'Detail2':more_details_list[1],'DetailLast':more_details_list[-1]})
+	
+	wrap_json_list = {'MainName':append_new_list}
+	#save_response = saveJsonStringToFile(file_name,wrap_json_list)
+	return wrap_json_list

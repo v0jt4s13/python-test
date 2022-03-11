@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import *
 from pytube import YouTube
 from tkinter import messagebox, filedialog
-
+import os
 
 # Defining CreateWidgets() function
 # to create necessary tkinter widgets
@@ -99,7 +99,7 @@ def Browse():
 	# user-input destination directory and
 	# storing it in downloadDirectory
 
-	import os
+	#print(os.scandir)
 	download_Directory = filedialog.askdirectory(
 		initialdir = "/home/"+os.getlogin()+"/Videos/fromYouTube/", title="Save Video")
 
