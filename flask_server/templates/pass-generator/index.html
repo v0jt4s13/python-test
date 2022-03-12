@@ -8,18 +8,22 @@
 				$(document).ready(function(){
 					$('#pass-generate').click(function() { 
 						var characters_count = $('#characters-count').val();
-						if ( characters_count < 8 ) {
-							$('#pass-prop').html('Hasło jest za krótkie.');
-						} else if ( characters_count > 20 ) {
-							$('#pass-prop').html('Hasło jest za długie.');
+						if (Math.round(characters_count) == characters_count) {
+							if ( characters_count < 8 ) {
+								$('#pass-prop').html('Hasło jest za krótkie.');
+							} else if ( characters_count > 20 ) {
+								$('#pass-prop').html('Hasło jest za długie.');
+							} else {
+								$.post('pass-generator', { char_count:characters_count }, function(data) {
+									$('#pass-prop').html(data);
+									$('.question-answer').css('display','block');
+									$('.question-answer-showpass').css('display','block');
+									console.log('Zaladowane. '+characters_count);
+								});
+								return false; // prevent default
+							}
 						} else {
-							$.post('pass-generator', { char_count:characters_count }, function(data) {
-								$('#pass-prop').html(data);
-								$('.question-answer').css('display','block');
-								$('.question-answer-showpass').css('display','block');
-								console.log('Zaladowane. '+characters_count);
-							});
-							return false; // prevent default
+							alert('Wiesz jak co to cyfry ? ;) Zakres 8 - 20 ... jeszcze raz ...')
 						}
 					});
 					$('#pass-prop-showpass').mouseover(function() {
