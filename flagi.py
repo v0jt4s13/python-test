@@ -71,7 +71,7 @@ def webRequest(url):
 def webRequestOK(url):
   import requests
   import urllib3
-
+  logging.info('========= START2 ========== '+type(url)+' ==> '+url)
   urllib3.disable_warnings()
   try:
     resp = requests.get(url)
