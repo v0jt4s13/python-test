@@ -11,41 +11,11 @@ def timeNow(format=""):
     #datetime(1987, 12, 30, 17, 50, 14)
     return datetime.now()
 
-def getDifference(then, now, interval = "secs"):
-    if now == "":
-      now = datetime.datetime.now()
-    duration = now - then
-    duration_in_s = duration.total_seconds() 
-    
-    #Date and Time constants
-    yr_ct = 365 * 24 * 60 * 60 #31536000
-    day_ct = 24 * 60 * 60 			#86400
-    hour_ct = 60 * 60 					#3600
-    minute_ct = 60 
-    
-    def yrs():
-      return divmod(duration_in_s, yr_ct)[0]
-
-    def days():
-      return divmod(duration_in_s, day_ct)[0]
-
-    def hrs():
-      return divmod(duration_in_s, hour_ct)[0]
-
-    def mins():
-      return divmod(duration_in_s, minute_ct)[0]
-
-    def secs(): 
-      return duration_in_s
-
-    return {
-        'yrs': int(yrs()),
-        'days': int(days()),
-        'hrs': int(hrs()),
-        'mins': int(mins()),
-        'secs': int(secs())
-    }[interval]
-  
+def activeThreadingCheck(count=1,main_time_start=timeNow('ddn')):
+  while threading.activeCount() > count:
+    main_time_finish = timeNow('ddn')
+    c = main_time_finish-main_time_start
+  return c
 
 qq_list = []
 def test(url):
@@ -55,49 +25,90 @@ def test(url):
   qq_list.append([start_time, end_time, url[1], url[0]])
   print('\t'*6,end_time,'test('+url[1]+')')
 
-url_list1 = [[4, "http://test-4.pl"], [5, "http://test-5.pl"], [3, "http://test-3.pl"]]
-url_list2 = [[2, "http://test-2.pl"], [5, "http://test-5.pl"], [3, "http://test-3.pl"]]
-url_list = url_list1+url_list2
 
-main_time_start = timeNow('ddn')
-c = 0
-threads = list()
-for url in url_list:
-  c+= url[0]
-  print("Start thread %s." %url)
-  t1 = threading.Thread(target=test, args=(url,))
-  threads.append(t1)
-  t1.start()
-  t1.join()
+#########################################################
+#########################################################
+#########################################################
 
-main_time_finish = timeNow('ddn')
-print("\n\n\tThreads count:%i\n" %len(threads))
-for qq in qq_list:
-  print(qq)
-print('\tMethod 1 -> Koniec ==> %i sec\n' %c)
+import logging
+import logging.handlers
+from moje_biblioteki import *
 
-#print('\t\t\t',main_time_finish-main_time_start)
-#print('\t',main_time_start,main_time_finish,getDifference(main_time_finish,main_time_start,'sec'))
+def log_setup():
+  log_file_name = "output.log"
+  log_handler = logging.handlers.WatchedFileHandler('output.log')
+  formatter = logging.Formatter(
+      '%(asctime)s program [%(process)d]: %(message)s',
+      '%b %d %H:%M:%S')
+  formatter.converter = time.gmtime  # if you want UTC time
+  log_handler.setFormatter(formatter)
+  logger = logging.getLogger()
+  logger.addHandler(log_handler)
+  logger.setLevel(logging.DEBUG)
+log_setup()
 
-print('\n\n')
-qq_list.clear()
+def webRequest(url):
+  import requests
+  import urllib3
 
-main_time_start = timeNow('ddn')
-threads = list()
-for url in url_list:
-  print("=====>>> create and start thread %s." %url)
-  t1 = threading.Thread(target=test, args=(url,))
-  threads.append(t1)
-  t1.start()
+  urllib3.disable_warnings()
+  try:
+    resp = requests.get(url, verify=False, timeout=10)
+    return [resp.status_code, url]
+  except requests.exceptions.HTTPError as e: 
+    return [e, "Error"]
 
-print("\n\n\tThreads count:%i\n" %len(threads))
+def webRequestOK(url):
+  import requests
+  import urllib3
+  logging.info('========= START2 ========== '+str(url[0]))
+  urllib3.disable_warnings()
+  try:
+    resp = requests.get(url)
+    if resp.ok:
+      return [200,url]
+    else:
+      return webRequest(url)
+  except requests.exceptions.InvalidSchema as e:
+    return [e, "Error 1x11"]
+  except requests.exceptions.HTTPError as e: 
+    return [e, "Error 2x11"]
 
-for qq in qq_list:
-  print(qq)
+########################################################
+########################################################
+########################################################
 
-main_time_finish = timeNow('ddn')
-c = main_time_finish-main_time_start
-print('\tMethod 2 -> Koniec ==> %s sec ... nie do konca jest to prawdą :/ \n' %c)
+  
+def flagsList():  
+  url_list1 = [[4, "http://test-4.pl"], [5, "http://test-5.pl"], [3, "http://test-3.pl"]]
+  url_list2 = [[2, "http://test-2.pl"], [5, "http://test-5.pl"], [3, "http://test-3.pl"]]
+  url_list = url_list1+url_list2
 
-#print('\t\t\t',main_time_finish-main_time_start)
-#print('\t',main_time_start,main_time_finish,getDifference(main_time_finish,main_time_start,'sec'))
+  main_time_start = timeNow('ddn')
+  threads_response_list = list()
+  for url in url_list:
+    print(threading.activeCount(),"=====>>> create and start thread %s." %url)
+    if threading.activeCount() >= 3:
+      print(threading.activeCount(),"=====>>> too much thread %s." %url)
+      while threading.activeCount() > 3:
+        pass
+    
+    t1 = threading.Thread(target=webRequestOK, args=(url,))
+    
+    threads_response_list.append(t1)
+    t1.start()
+
+  print("\n\n\tThreads count:%i\n" %len(threads_response_list))
+
+
+  for qq in qq_list:
+    print('aa',qq)
+
+  c = activeThreadingCheck(1,main_time_start)
+
+  print('\tMethod 2 -> Koniec th count: %i ==> %s sec \n\n' %(threading.activeCount(),c))
+  print('\n\n\t\t','*'*47,'\n\t\t * We are the champion my friend\'s ... hehe ;) *\n\t\t','*'*47)
+  #print('\t\t\t',main_time_finish-main_time_start)
+  #print('\t',main_time_start,main_time_finish,getDifference(main_time_finish,main_time_start,'sec'))
+
+flagsList()
