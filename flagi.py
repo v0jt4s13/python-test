@@ -1,3 +1,4 @@
+import threading
 from operator import truediv
 import urllib.request
 import json
@@ -5,6 +6,7 @@ import re
 import datetime
 import time
 from datetime import date, timedelta
+import datetime
 import sys
 # modules dla kolorowania textow
 from rich import print
@@ -15,6 +17,8 @@ console = Console(width=120)
 import logging
 import logging.handlers
 from moje_biblioteki import *
+import requests
+import urllib3
 
 def log_setup():
   log_file_name = "output.log"
@@ -38,6 +42,21 @@ def getDifference2(then, now = current_milli_time()):
 	duration = now - then
 	return duration
 
+def timeNow(format=""):
+  from datetime import datetime
+  if format == "":
+    now = datetime.now()
+    return now.strftime("%M:%S")
+  else:
+    #datetime(1987, 12, 30, 17, 50, 14)
+    return datetime.now()
+
+def activeThreadingCheck(count=1,main_time_start=timeNow('ddn')):
+  while threading.activeCount() > count:
+    main_time_finish = timeNow('ddn')
+    c = main_time_finish-main_time_start
+  return c
+
 ################################# ``` ```
 # funkcja wyszukajUrlWStringu
 # wyszukiwanie fragmentu adresu url w dostarczonej tablicy stringow
@@ -52,37 +71,67 @@ def wyszukajUrlWStringu(str):
     print('String nie jest poprawnym adresem URI: ',str)
     return ""
 
+##########################################
+############ output lists ################
+##########################################
+wszystkieDomenyOut_list = []
+status_code2_list = []
+all_status_code_list = []
+clearUrlList = []
+json_list = []
+  
+def buildRespList(status_code,url,extra="200"):
+  if status_code == 200:
+    wszystkieDomenyOut_list.append([url, 200])
+
+  else:
+    wszystkieDomenyOut_list.append([url, status_code])
+    status_code2_list.append([status_code,url])
+            
+    if all_status_code_list.count(status_code) == 0:
+      all_status_code_list.append(status_code)
+    
+  str_list = [{'id':'licznik', 'status_code':status_code,'description':'Status code dla domeny', 'extra':200}] #, 'output':curl_url}]
+  clearUrlList.append([url, status_code])
+  json_list.append({"domena":url, "data":str_list})
+
 #################################
 # funkcja webRequest
 # odpytanie za pomoca biblioteki requests domeny - oczekiwana odpowiedz 200
 # import requests czy import urllib.request - czy nie wystarczy 1  z tych linii ??
 #################################
 def webRequest(url):
-  import requests
-  import urllib3
-
+  #logging.info('========= START3 ========== '+str(url))
   urllib3.disable_warnings()
   try:
     resp = requests.get(url, verify=False, timeout=10)
-    return [resp.status_code, url]
+    buildRespList(resp.status_code, url)
+    #return [resp.status_code, url]
   except requests.exceptions.HTTPError as e: 
-    return [e, "Error"]
+    buildRespList(e,"Error 0x11")
+    #return [e, "Error"]
 
 def webRequestOK(url):
-  import requests
-  import urllib3
-  logging.info('========= START2 ========== '+type(url)+' ==> '+url)
+  #logging.info('========= START2 ========== '+str(url))
   urllib3.disable_warnings()
   try:
+    #logging.info('========= START2 22 ========== '+str(url))
     resp = requests.get(url)
     if resp.ok:
-      return [200,url]
+      buildRespList(200,url)
     else:
       return webRequest(url)
-    
+  except requests.exceptions.ConnectTimeout as e:
+    buildRespList(e.errno,url,e)
+  except requests.exceptions.ConnectionError as e:
+    buildRespList(e.errno,url,e)
+  except requests.exceptions.InvalidSchema as e:
+    buildRespList(e.errno,url,e)
   except requests.exceptions.HTTPError as e: 
-    return [e, "Error"]
-
+    buildRespList(e.errno,url,e)
+  except:
+    buildRespList(999,url,999)
+    
 def showLogs(n, str):
   if n == 1:
     print(str)
@@ -92,21 +141,25 @@ def showLogs(n, str):
 # pobranie listy domen, obrobienie stringow zawierajacych adresy stron (URI) i dodanie ich do tablic oraz wywołań (request) domen 
 #################################
 def flagsList(link,resp_count,json_file_name):
-  import requests
   import json
   import os
-  import threading
+  
+  #############################################################
+  maximumThreadsCount = 10 # ????? ile mozna zapuscic max ????
+  #############################################################
   
   domena_str = ""
   tmpDomeny_list = []
   tmpDomenyExt_list = []
-  wszystkieDomenyOut_list = []
+  
   flagi_response = requests.get(link)
   flagi_tekst = flagi_response.text
 
   lista_flag = re.findall(r"(?:http(?:s?)://)?(?:[a-zA-Z0-9_-]+\.)+[a-zA-Z]+(?::\d{1,5})?$",flagi_tekst)
   flagi_lista_prep = flagi_tekst.split('</p><p>')
   
+  main_time_start = timeNow('ddn')
+  threads_response_list = list()
   xx = 0
   for tmp_str in flagi_lista_prep:
     xx+= 1
@@ -140,14 +193,7 @@ def flagsList(link,resp_count,json_file_name):
     
     tmpDomenyExt_list.append([d_ext,domena_str])
   
-  
-  all_status_code_list = []
-  status_code2_list = []
-  json_list = []
-  clearUrlList = ['website url', 'status']
-  clearUrlList.clear()
   licz = 0
-  status_ok_count = 0
 
   if 1 == 1:
     print(len(tmpDomeny_list),len(tmpDomenyExt_list))
@@ -158,7 +204,6 @@ def flagsList(link,resp_count,json_file_name):
     ilosc_znakow.append(flagiIloscZnakow(tmpDomeny_list,""))
 
   #if 1 == 2:
-    tt1 = 0
     for url in tmpDomeny_list:
       tmpUrl = wyszukajUrlWStringu(url)
       if len(tmpUrl) > 0:
@@ -170,85 +215,25 @@ def flagsList(link,resp_count,json_file_name):
         try:
         #if 1 == 1:
           url = "http://"+url
-          logging.info('========= START ========== '+url)
-          if tt1 == 0:
-            tt1 = 1
-            logging.info('t1 = webRequestOK('+url+')')
-            t1 = threading.Thread(target=webRequestOK, args=url)
-            continue
-          
-          tt1 = 0
-          logging.info('t2 = webRequestOK('+url+')')
-          t2 = threading.Thread(target=webRequestOK, args=url)
-            
+          #logging.info('========= START ========== '+url)
+          if threading.activeCount() >= maximumThreadsCount:
+            logging.info('========= POSTóJ ========== '+str(threading.activeCount()))
+            while threading.activeCount() > maximumThreadsCount:
+              pass
+
+          #logging.info('t1 = webRequestOK('+url+')')
+          t1 = threading.Thread(target=webRequestOK, args=(url,))
+          threads_response_list.append(t1)           
           t1.start()
-          #logging.info(url)
-          t2.start()
-          #logging.info(url)
-          
-          status_code = t1.join()
-          if status_code[0] == 200:
-            wszystkieDomenyOut_list.append([status_code[1], 200])
-            status_ok_count += 1
-          else:
-            wszystkieDomenyOut_list.append([status_code[1], status_code[0]])
-            status_code2_list.append([status_code[0],url])
-          
-          if all_status_code_list.count(status_code[0]) == 0:
-            all_status_code_list.append(status_code[0])
-          str_list = [{'id':licz-1, 'status_code':status_code[0],'description':'Status code dla domeny', 'extra':200}] #, 'output':curl_url}]
-          clearUrlList.append([url, status_code[0]])
-          json_list.append({"domena":url, "data":str_list})
-          
-          status_code = t2.join()
-          if status_code[0] == 200:
-            wszystkieDomenyOut_list.append([status_code[1], 200])
-            status_ok_count += 1
-          else:
-            wszystkieDomenyOut_list.append([status_code[1], status_code[0]])
-            status_code2_list.append([status_code[0],url])
-
-          if all_status_code_list.count(status_code[0]) == 0:
-            all_status_code_list.append(status_code[0])
-          str_list = [{'id':licz-1, 'status_code':status_code[0],'description':'Status code dla domeny', 'extra':200}] #, 'output':curl_url}]
-          clearUrlList.append([url, status_code[0]])
-          json_list.append({"domena":url, "data":str_list})
-
-          #str_list_json = {'id':licz, 'status_code':status_code[0],'description':'Status code dla domeny', 'extra':200}
-          #str_list = [["id", licz], ["status_code", status_code[0]], ["description", 'Status code dla domeny'], ["url", url], ["extra",200], ["output",curl_url]] #, ["json_resp", status_code[1]]
-          #[1, 200, {'Server': 'nginx/1.14.0 (Ubuntu)', 'Date': 'Wed, 02 Feb 2022 22:10:57 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Content-Encoding': 'gzip'}, 'Status code dla domeny', 'http://www.roszkov.pl']
-          #showLogs(1, str)
-          #print(js["Server"])
 
         except ValueError:
           logging.info('============================================================= 1111111111 ======> '+url)
-          status_code = [500, url]
-          
-          wszystkieDomenyOut_list.append([url, status_code[0]])
-          #print(licz,';',status_code[0],';',status_code[1],';Problem z domeną;   curl -i ', url)
-          curl_url = "curl -i " + url
-          str_list = [{'id':licz, 'status_code':status_code[0],'description':'Problem z domeną', 'extra':0}] #, 'output':curl_url}]
-          #str_list_json = {'id':licz, 'status_code':status_code[0],'description':'Problem z domeną', 'extra':0}
-          #str_list = [["id", licz], ["status_code", status_code[0]], ["description", 'Problem z domeną'], ["url", url], ["extra",0], ["output",curl_url]] #, ["json_resp", status_code[1]]
-          #print(str_list)
-          if status_code[0] == 200:
-            status_ok_count += 1
+          buildRespList(500,url)
             
         except:
           logging.info('============================================================ 222222222222 ======> '+url)
-          status_code = [999, url]
-          
-          wszystkieDomenyOut_list.append([url, status_code[0]])
-          #print(licz,';',status_code[0],';',status_code[1],';Nieudokumentowany problem z domeną;   curl -i ', url)
-          curl_url = "curl -i " + url
-          str_list = [{'id':licz, 'status_code':status_code[0],'description':'Nieudokumentowany problem z domeną', 'extra':0}] #, 'output':curl_url}]
-          #str_list_json = {'id':licz, 'status_code':status_code[0],'description':'Nieudokumentowany problem z domeną', 'extra':0}
-          #str_list = [["id", licz], ["status_code", status_code[0]], ["description", 'Nieudokumentowany problem z domeną'], ["url", url], ["extra",0], ["output",curl_url]] #, ["json_resp", status_code[1]]
-          #print(str_list)
-          if status_code[0] == 200:
-            status_ok_count += 1
+          buildRespList(999,url)
             
-        #print(json.dumps(str_list))
         # wyswietl info o postepach co 50 rekordow
         if licz % 50 == 0:
           number = int(licz/10)
@@ -257,19 +242,33 @@ def flagsList(link,resp_count,json_file_name):
             licz_wew += 1
           timeLoad_list.append([time.time_ns(),datetime.datetime.now()])          
           print('\t\t%s >>> Już %s domen za nami. <<< ' %(datetime_now_str,licz))
-
         #logging.info(url)
-        
         if resp_count != 0:
           if licz >= int(resp_count):        # na czas testow ogranicznie ilosci wyswietlania linków
             break
-        #print("url {}".format("test"))
         
       except ValueError as e:
         print(url)
         print("*****************************************\n*****************************************\n  Oops! ", e)
         break
-
+  ######################################################
+  # Czekaj az ilosc aktywnych procesów zejdzie do zera #
+  ######################################################
+  c = activeThreadingCheck(1,main_time_start)
+  
+  status_ok_count = 0
+  for item in clearUrlList:
+    if item[1] == 200:
+      status_ok_count+= 1
+  
+  #print('clearUrlList=',clearUrlList)
+  #print('licz=',licz, 'status_ok_count=',status_ok_count)
+  #print('all_status_code_list=',all_status_code_list)
+  #print('status_code2_list=',status_code2_list)
+  #print('json_list=',json_list)
+  #print('timeLoad_list=',timeLoad_list)
+  #print('ilosc_domen_pl=',ilosc_domen_pl)
+  #print('ilosc_znakow=',ilosc_znakow)
   timeLoad_list.append([time.time_ns(),datetime.datetime.now()])
   return [clearUrlList, licz, status_ok_count, all_status_code_list, status_code2_list, json_list, timeLoad_list, ilosc_domen_pl, ilosc_znakow]
 
@@ -373,17 +372,6 @@ def main(argv):
       print("\t\t\t\t******************************************************")
       print("\t\t\t\t*** Zapisane do pliku:[bold blue] %s [/bold blue]" %json_file_name)
       print("\t\t\t\t******************************************************")
-      #print("*****************************************\n*****************************************\n")
-      #print(json.dumps(val_list[0]));
-      #print("*****************************************\n*****************************************\n")
-      #print(json.dumps(val_list[1]));
-      #print("*****************************************\n*****************************************\n")
-      #print(json.dumps(val_list[2]));
-      #print("*****************************************\n*****************************************\n")
-      #print(json.dumps(val_list[3]));
-      #print("*****************************************\n*****************************************\n")
-      #print(json.dumps(val_list[4]));
-      #print("*****************************************\n*****************************************\n")
     
     else:
       print('')
