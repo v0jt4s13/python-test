@@ -381,10 +381,10 @@ def main(argv):
       #lista_domen_list = "{'ListaDomen':"+str(val_list[5])+",'IloscDomen':"+str(val_list[1])+",'Status200':"+str(val_list[2])+","
       #lista_domen_list = lista_domen_list+"'Statusy':"+str(val_list[3])+",'BledneDomeny':"+str(val_list[4])+"}"
       #lista_domen_json = lista_domen_list.replace("'", '"')
-      print('\t\t ****************************************\n\t\t *********** supa json ******************\n\t\t ****************************************\n')
-      print(lista_domen_json)
-      print(json.dumps(lista_domen_json))
-      print('\t\t ****************************************\n\t\t ****************************************\n\t\t ****************************************\n')
+      #print('\t\t ****************************************\n\t\t *********** supa json ******************\n\t\t ****************************************\n')
+      #print(lista_domen_json)
+      #print(json.dumps(lista_domen_json))
+      #print('\t\t ****************************************\n\t\t ****************************************\n\t\t ****************************************\n')
       
       #json_file_name = 
       #save_to_file_output_str = 
