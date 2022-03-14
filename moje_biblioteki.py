@@ -86,7 +86,7 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 		for url_item in domeny_pl_list[1]:
 			domeny_top_lvl_str = domeny_top_lvl_str+'<div class="display-inline-block padding-10"><a href="'+url_item+'" target="_blank">'+url_item+'</a></div>'
    
-		str_to_html_list.append('<div class="padding-10"><span style="background-color: silver">Wszystkich domen .pl - TOP-LVL: %i </div><div id="top-lvl-list padding-10"> %s </div>' %(domeny_pl_list[0],domeny_top_lvl_str))
+		str_to_html_list.append('<div class="padding-10"><span style="background-color:#1e1acf;padding:15px;">Wszystkich domen .pl - TOP-LVL: %i </div><div id="top-lvl-list padding-10"> %s </div>' %(domeny_pl_list[0],domeny_top_lvl_str))
 
 		str_to_html_list.append('<p>Błędne domeny</p><div class="display-inline-block padding-10">')
 		while licz < len(file_data['BledneDomeny']):
@@ -114,7 +114,7 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 	return str_to_html_list
 
 def flagiBuildWebpage(filename="test_file.json"):
-	data_style = "<style>\n\t\t.domena{margin-right:20px;}\n\t\t.status-code{margin-right:20px;}"
+	data_style = "<style>\n\t\tbody{background-color:#111;color:#eee;}\n\t\t.domena{margin-right:20px;}\n\t\t.status-code{margin-right:20px;}"
 	data_style = data_style+"\n\t\t.line1{float:left;padding:10px;}\n\t\t.status-code2{margin-right:20px;}"
 	data_style = data_style+"\n\t\t.line1-wrap{display: inline-block;}\n\t\t.line-procent{padding: 10px;}"
 	data_style = data_style+"\n\t\t.line-procent span{font-size: xx-large;}\n\t\t.display-inline-block{display:inline-block}"
