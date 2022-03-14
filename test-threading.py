@@ -32,7 +32,7 @@ def test(url):
 
 import logging
 import logging.handlers
-from moje_biblioteki import *
+from flask_server.app_files.moje_biblioteki import *
 
 def log_setup():
   log_file_name = "output.log"

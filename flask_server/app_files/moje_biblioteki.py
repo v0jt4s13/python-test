@@ -1,4 +1,6 @@
 """
+def mainPageMenuList():
+	- main page url list to build a menu href
 def flagiIloscTopDomenPl(domeny_ext_list="",domeny_full_json=""):
 	- project xD - Top lvl .pl domain list from provided list of domain
 def flagiBuildPageFromJson(filename='test_test_file.json'):
@@ -28,6 +30,14 @@ import os
 from sre_compile import isstring
 from xxlimited import new
 
+def mainPageMenuList():
+  menu_list = []
+  menu_list.append({'Url':'/flagi','Menu text':'Flagi page','HTML':'<li class="text-align-left"><a href="/flagi">Flagi page</a></li>'})
+  menu_list.append({'Url':'/kubus_puchatek','Menu text':'Kubuś puchatek','HTML':'<li class="text-align-left"><a href="/kubus_puchatek">Flagi page</a></li>'})
+
+  
+  return menu_list
+  
 def flagiIloscTopDomenPl(domeny_ext_list="",domeny_full_json=""):
 	#print(domeny_full_json[0]['domena'])
 	pl_ext_count = 0
