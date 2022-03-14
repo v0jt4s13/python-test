@@ -327,7 +327,7 @@ def drawTriangles():
 def saveJsonStringToFile(file_name,json_str):
 	try:
 		# Serializing json 
-		print('Save json',file_name,json_str)
+		#print('Save json',file_name,json_str)
 		json_obj = json.dumps(json_str, indent = 4)
 		with open(file_name, "w") as outfile:
 			outfile.write(json_obj)
