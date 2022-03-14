@@ -82,7 +82,7 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 		min_len,shortest,max_len,longest = flagiDlugoscDomeny("",file_data['ListaDomen'])
 		str_to_html_list.append('<div class="line1">Najkrótsza domena (%i znaków): %s</div><div class="line1">Najdłuższa domena (%i znaków): %s</div></div>' %(min_len,'; '.join(shortest),max_len,'; '.join(longest)))
 
-		str_to_html_list.append('<div class="line-procent">%s</div>' %procent_str)
+		str_to_html_list.append('<div class="line-procent center">%s</div>' %procent_str)
 		domeny_pl_list = flagiIloscTopDomenPl("", file_data['ListaDomen'])
 		domeny_top_lvl_str = ""
 		for url_item in domeny_pl_list[1]:
@@ -91,7 +91,7 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 		#str_to_html_list.append('<div class="padding-10"><span style="background-color:#1e1acf;padding:15px;">Wszystkich domen .pl - TOP-LVL: %i </div><div id="top-lvl-list padding-10"> %s </div>' %(domeny_pl_list[0],domeny_top_lvl_str))
 
 		wall_of_weeping_str = '<span style="background-color:#1e1acf;padding:15px;">-</span><span style="background-color:#1e1acf;padding:15px;">a wall of weeping</span>'
-		str_to_html_list.append('<div class="padding-10 center"><span class="bledne-domeny-title">Błędne domeny</span>'+wall_of_weeping_str+'</div>')
+		str_to_html_list.append('<div class="padding-10 center" style="font-size:xx-large;"><span class="bledne-domeny-title">Błędne domeny</span>'+wall_of_weeping_str+'</div>')
 
 		#file_data['Statusy']
 		new_status_list = []
@@ -113,7 +113,8 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 				c = new_status_list.count(el)
 				if tmp_str != "":
 					tmp_str+= "; "
-				tmp_str+= str(c)+' domeny z błędem: '+str(el)
+				#tmp_str+= str(c)+' domeny z błędem: '+str(el)
+				tmp_str+= 'Status: '+str(el)+' ==> '+str(c)+' domen'
 				new_status_list_count.append(tmp_str)
 				while new_status_list.count(el) > 0:
 					new_status_list.remove(el)
