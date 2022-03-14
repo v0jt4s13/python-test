@@ -119,7 +119,8 @@ def flagiBuildWebpage(filename="test_file.json"):
 	data_style = "<style>\n\t\t.domena{margin-right:20px;}\n\t\t.status-code{margin-right:20px;}"
 	data_style = data_style+"\n\t\t.line1{float:left;padding:10px;}\n\t\t.status-code2{margin-right:20px;}"
 	data_style = data_style+"\n\t\t.line1-wrap{display: inline-block;}\n\t\t.line-procent{padding: 10px;}"
-	data_style = data_style+"\n\t\t.line-procent span{font-size: xx-large;}\n\t\t.display-inline-block{display:inline-block}</style>"
+	data_style = data_style+"\n\t\t.line-procent span{font-size: xx-large;}\n\t\t.display-inline-block{display:inline-block}"
+	data_style = data_style+"\n\t\t.padding-10{padding:10;}</style>"
 	data_head = "<html>\n\t<head>\n\t\t%s\n\t</head>\n\t<body>\n\t\t" %data_style
 
 	data_footer = "\n\t</body>\n</html>"
