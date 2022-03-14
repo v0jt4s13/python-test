@@ -86,8 +86,9 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 		for url_item in domeny_pl_list[1]:
 			domeny_top_lvl_str = domeny_top_lvl_str+'<div class="display-inline-block padding-10"><a href="'+url_item+'" target="_blank">'+url_item+'</a></div>'
    
-		str_to_html_list.append('<div class="padding-10"><span style="background-color: silver">Wszystkich domen .pl - TOP-LVL: %i </div><div id="top-lvl-list padding-10"> %s </div><div class="display-inline-block padding-10">' %(domeny_pl_list[0],domeny_top_lvl_str))
-	
+		str_to_html_list.append('<div class="padding-10"><span style="background-color: silver">Wszystkich domen .pl - TOP-LVL: %i </div><div id="top-lvl-list padding-10"> %s </div>' %(domeny_pl_list[0],domeny_top_lvl_str))
+
+		str_to_html_list.append('<p>Błędne domeny</p><div class="display-inline-block padding-10">')
 		while licz < len(file_data['BledneDomeny']):
 			status_code = file_data['BledneDomeny'][licz][0]
 			domena = file_data['BledneDomeny'][licz][1]
