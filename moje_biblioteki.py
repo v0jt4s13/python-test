@@ -91,7 +91,7 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 		while licz < len(file_data['BledneDomeny']):
 			status_code = file_data['BledneDomeny'][licz][0]
 			domena = file_data['BledneDomeny'][licz][1]
-			str_to_html = '<div class="padding-10"><span class="domena"><a href="'+domena+'" target="_blank">'+domena+'</a></span><span class="status-code">'+str(status_code)+'</span></div>'
+			str_to_html = '<div class="padding-10 float-left"><span class="domena"><a href="'+domena+'" target="_blank">'+domena+'</a></span><span class="status-code">'+str(status_code)+'</span></div>'
 			str_to_html_list.append(str_to_html)
 			licz+= 1
 
@@ -102,7 +102,7 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 			domena = file_data['ListaDomen'][licz]['domena']
 			extra = file_data['ListaDomen'][licz]['data'][0]['extra']
 			#print(domena,status_code,extra)
-			str_to_html = '<div class="padding-10"><span class="domena">'+domena+'</span><span class="status-code">'+str(status_code)+'</span><span class="status-code2">'+str(extra)+'</span></div>'
+			str_to_html = '<div class="padding-10 float-left"><span class="domena">'+domena+'</span><span class="status-code">'+str(status_code)+'</span><span class="status-code2">'+str(extra)+'</span></div>'
 			str_to_html_list.append(str_to_html)
 			#print(file_data['ListaDomen'][1]['domena'])
 			licz+= 1
@@ -117,7 +117,7 @@ def flagiBuildWebpage(filename="test_file.json"):
 	data_style = data_style+"\n\t\t.line1{float:left;padding:10px;}\n\t\t.status-code2{margin-right:20px;}"
 	data_style = data_style+"\n\t\t.line1-wrap{display: inline-block;}\n\t\t.line-procent{padding: 10px;}"
 	data_style = data_style+"\n\t\t.line-procent span{font-size: xx-large;}\n\t\t.display-inline-block{display:inline-block}"
-	data_style = data_style+"\n\t\t.padding-10{padding:10;}</style>"
+	data_style = data_style+"\n\t\t.padding-10{padding:10}\n\t\t.float-left{float:left}</style>"
 	data_head = "<html>\n\t<head>\n\t\t%s\n\t</head>\n\t<body>\n\t\t" %data_style
 
 	data_footer = "\n\t</body>\n</html>"
