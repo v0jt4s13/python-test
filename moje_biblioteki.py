@@ -25,6 +25,8 @@ def convertListToJsonString():
 
 import json
 import os
+from sre_compile import isstring
+from xxlimited import new
 
 def flagiIloscTopDomenPl(domeny_ext_list="",domeny_full_json=""):
 	#print(domeny_full_json[0]['domena'])
@@ -89,7 +91,39 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 		#str_to_html_list.append('<div class="padding-10"><span style="background-color:#1e1acf;padding:15px;">Wszystkich domen .pl - TOP-LVL: %i </div><div id="top-lvl-list padding-10"> %s </div>' %(domeny_pl_list[0],domeny_top_lvl_str))
 
 		wall_of_weeping_str = '<span style="background-color:#1e1acf;padding:15px;">-</span><span style="background-color:#1e1acf;padding:15px;">a wall of weeping</span>'
-		str_to_html_list.append('<div class="padding-10"><span class="bledne-domeny-title">Błędne domeny</span>'+wall_of_weeping_str+'</div><div class="display-inline-block padding-10">')
+		str_to_html_list.append('<div class="padding-10"><span class="bledne-domeny-title">Błędne domeny</span>'+wall_of_weeping_str+'</div>')
+
+		#file_data['Statusy']
+		new_status_list = []
+		new_status_list_count = []
+		for resp_code in file_data['ListaDomen']:
+			#print(str(resp_code['data'][0]['status_code']))
+			status_code = resp_code['data'][0]['status_code']
+			#if status_code == None:	status_code = 999
+			new_status_list.append(str(status_code))
+		
+		tmp_str = ""
+		continue_loop = True
+		#print('Lista in',new_status_list)
+		new_status_list.sort()
+		#print('Lista sort',new_status_list)
+		while continue_loop:
+			if len(new_status_list) > 0:
+				el = new_status_list[0]
+				c = new_status_list.count(el)
+				if tmp_str != "":
+					tmp_str+= "; "
+				tmp_str+= str(c)+' domeny z błędem: '+str(el)
+				new_status_list_count.append(tmp_str)
+				while new_status_list.count(el) > 0:
+					new_status_list.remove(el)
+			else:
+				continue_loop = False
+
+		str_to_html_list.append('<div class="padding-10"><span class="bledne-domeny-short">'+tmp_str+'</span></div>')
+		#print(new_status_list_count)
+    
+		str_to_html_list.append('<div class="display-inline-block padding-10">')
 		while licz < len(file_data['BledneDomeny']):
 			status_code = file_data['BledneDomeny'][licz][0]
 			domena = file_data['BledneDomeny'][licz][1]
@@ -149,8 +183,8 @@ def flagiIloscDomenPl(domeny_ext_list="",domeny_full_json=""):
 	if len(domeny_full_json) > 0:
 		licz = 0
 		while licz < len(domeny_full_json):
-			print(domeny_full_json[licz])
-			print(domeny_full_json[licz]['data'][0]['status_code'])
+			#print(domeny_full_json[licz])
+			#print(domeny_full_json[licz]['data'][0]['status_code'])
 			domena = domeny_full_json[licz]['domena']
 			ext_pl = domena.split('.')[-1]
 			#if ext_pl == "pl" and len(domena.split('.')) > 2:
