@@ -110,12 +110,12 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 
 	return str_to_html_list
 
-def flagiBuildWebpage():
+def flagiBuildWebpage(filename="test_file.json"):
 	data_style = "<style>.domena{margin-right:20px;}.status-code{margin-right:20px;}.status-code2{margin-right:20px;}</style>"
 	data_head = "<head><html>%s</html><body>" %data_style
 
 	data_footer = "</body></html>"
-	data_list = flagiBuildPageFromJson()
+	data_list = flagiBuildPageFromJson(filename)
 	data_str = ''.join(data_list)
 	with open('/var/www/flaga/templates/flagi.html','w') as file: 
 		file.write(data_head)
@@ -274,18 +274,18 @@ def drawTriangles():
 def saveJsonStringToFile(file_name,json_str):
 	try:
 		# Serializing json 
+		print('Save json',file_name,json_str)
 		json_obj = json.dumps(json_str, indent = 4)
 		with open(file_name, "w") as outfile:
 			outfile.write(json_obj)
 		outfile.close()
 
-		return "Saved"	
+		return True
 	except ValueError as e:	
 		return "Error: "+e	
 
 def convertListToJsonString(input_list="",extra_para=""):
 	
-	file_name = "jsonFileName.json"
 	if input_list == "":
 		input_list = ["Value1", "Value2", "Value3"]
 	append_new_list = []
@@ -297,5 +297,4 @@ def convertListToJsonString(input_list="",extra_para=""):
 			append_new_list.append({'Detail1':more_details_list[0],'Detail2':more_details_list[1],'DetailLast':more_details_list[-1]})
 	
 	wrap_json_list = {'MainName':append_new_list}
-	#save_response = saveJsonStringToFile(file_name,wrap_json_list)
 	return wrap_json_list
