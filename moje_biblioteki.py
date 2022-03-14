@@ -76,7 +76,10 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 
 		ilosc_domen_pl = flagiIloscDomenPl("", file_data['ListaDomen'])
 		ilosc_znakow = flagiIloscZnakow("",file_data['ListaDomen'])
-		str_to_html_list.append('<div class="line1">Wszystkich domen .pl: %s</div><div class="line1">Ilość znaków \'a\': %s</div></div>' %(ilosc_domen_pl,ilosc_znakow))
+		str_to_html_list.append('<div class="line1">Wszystkich domen .pl: %s</div><div class="line1">Ilość znaków \'a\': %s</div>' %(ilosc_domen_pl,ilosc_znakow))
+		min_len,shortest,max_len,longest = flagiDlugoscDomeny("",file_data['ListaDomen'])
+		str_to_html_list.append('<div class="line1">Najkrótsza domena (%i znaków): %s</div><div class="line1">Najdłuższa domena (%i znaków): %s</div></div>' %(min_len,'; '.join(shortest),max_len,'; '.join(longest)))
+
 		str_to_html_list.append('<div class="line-procent">%s</div>' %procent_str)
 		domeny_pl_list = flagiIloscTopDomenPl("", file_data['ListaDomen'])
 		domeny_top_lvl_str = ""
@@ -85,10 +88,6 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
    
 		str_to_html_list.append('<div class="padding-10"><span style="background-color: silver">Wszystkich domen .pl - TOP-LVL: %i </div><div id="top-lvl-list padding-10"> %s </div>' %(domeny_pl_list[0],domeny_top_lvl_str))
 	
-		min_len,shortest,max_len,longest = flagiDlugoscDomeny("",file_data['ListaDomen'])
-
-		#short_domain_char = 0
-		str_to_html_list.append('<div>Najkrótsza domena (%i znaków): %s</div><div>Najdłuższa domena (%i znaków): %s</div>' %(min_len,'; '.join(shortest),max_len,'; '.join(longest)))
 
 		#print(len(file_data['BledneDomeny']))
 		#print(file_data['BledneDomeny'][0][1])
