@@ -1,13 +1,16 @@
 from flask import Flask, render_template, url_for
 from flask import request
 from py_terminal_app_run import runAppInsideScript
+from app_files.moje_biblioteki import mainPageMenuList
+
 
 app=Flask(__name__)
 
 @app.route('/')
 def index():
 	text = open('domain.txt').read()
-	return render_template("index.html", text=text)
+	li_list = mainPageMenuList()
+	return render_template("index.html", text=text, li_list=li_list)
 
 @app.route('/doc')
 def doc():

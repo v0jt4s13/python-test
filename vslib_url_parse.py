@@ -30,7 +30,7 @@ def putUrlListToFile(section, data_list):
     import datetime 
     from jinja2 import Template
     import gzip
-    from moje_biblioteki import removeDuplicatesFromList
+    from flask_server.app_files.moje_biblioteki import removeDuplicatesFromList
     
     #<?xml version="1.0" encoding="utf-8"?>
     #<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">

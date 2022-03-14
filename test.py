@@ -1,6 +1,6 @@
 import subprocess
 import os
-from moje_biblioteki import *
+from flask_server.app_files.moje_biblioteki import *
 
 def check_code_safety(file_path):
     code_lines = open(file_path).readlines()

@@ -16,7 +16,7 @@ console = Console(width=120)
 
 import logging
 import logging.handlers
-from moje_biblioteki import *
+from flask_server.app_files.moje_biblioteki import *
 import requests
 import urllib3
 
@@ -392,7 +392,7 @@ def main(argv):
       #  file.write(lista_domen_json)
 
       #file.close()
-      from moje_biblioteki import saveJsonStringToFile
+      from flask_server.app_files.moje_biblioteki import saveJsonStringToFile
       if saveJsonStringToFile(json_file_name,lista_domen_json):
         print("\t\t","*"*65)
         print("\t\t *** Zapisane do pliku:[bold blue] %s [/bold blue]" %json_file_name)
@@ -504,5 +504,115 @@ if __name__ == '__main__':
                                                                                               2022-03-13 22:29:59.856969
 ────────────────────────────────────────────────────── Koniec ... ──────────────────────────────────────────────────────
 
+2022-03-12 14:38:55.550352                                                                                              
+────────────────────────────────────────────────── Wystartowalim ... ───────────────────────────────────────────────────
+803 803
+                2022-03-12 14:39:28.822657 >>> Już 50 domen za nami. <<< 
+                2022-03-12 14:40:56.938785 >>> Już 100 domen za nami. <<< 
+                2022-03-12 14:42:35.178781 >>> Już 150 domen za nami. <<< 
+                2022-03-12 14:44:01.494316 >>> Już 200 domen za nami. <<< 
+                2022-03-12 14:44:28.468579 >>> Już 250 domen za nami. <<< 
+                2022-03-12 14:44:58.062751 >>> Już 300 domen za nami. <<< 
+                2022-03-12 14:46:09.388035 >>> Już 350 domen za nami. <<< 
+                2022-03-12 14:46:40.884057 >>> Już 400 domen za nami. <<< 
+                2022-03-12 14:48:51.341509 >>> Już 450 domen za nami. <<< 
+                2022-03-12 14:50:31.917244 >>> Już 500 domen za nami. <<< 
+                2022-03-12 14:51:58.793099 >>> Już 550 domen za nami. <<< 
+                2022-03-12 14:53:07.087389 >>> Już 600 domen za nami. <<< 
+                2022-03-12 14:54:27.830410 >>> Już 650 domen za nami. <<< 
+                2022-03-12 14:56:57.494508 >>> Już 700 domen za nami. <<< 
+                2022-03-12 14:58:57.753846 >>> Już 750 domen za nami. <<< 
+                2022-03-12 15:02:31.541113 >>> Już 800 domen za nami. <<< 
+                                                                                              2022-03-12 15:03:02.129279
+────────────────────────────────────────────────────── Koniec ... ──────────────────────────────────────────────────────
+                                ******************************************************
+                                *** Zapisane do pliku: test_test_file.json 
+                                ******************************************************
+
+                                ******************************************************
+                                *** Ilość wszystkich domen: 803
+                                *** Domeny ze statusem 200: 725
+                                ******************************************************
+                                *** Kody odpowiedzi serwerów: [200, 502, 500, 404]
+                                ******************************************************
+                                *** Domeny z błędnymi odpowiedziami: 
+                                *** 502 URl:http://dbys.pl
+                                *** 502 URl:http://moje-programowanie.pl
+                                *** 502 URl:http://lounalevittoux.pl
+                                *** 502 URl:http://trellomorelo.pl
+                                *** 502 URl:http://dominikak.pl
+                                *** 500 URl:http://laboratorium-projektu.pl
+                                *** 502 URl:http://robiefajnerzeczywpythonie.pl
+                                *** 404 URl:http://3dradar.pl
+                                *** 500 URl:http://rafalbryzek.pl
+                                *** 502 URl:http://kilokota.pl
+                                *** 404 URl:http://virgointhesky.pl
+                                *** 502 URl:http://kacper-potocki.pl
+                                *** 502 URl:http://kasia-python.pl
+                                *** 502 URl:http://eultramax.pl
+                                *** 502 URl:http://pythonfun.pl
+                                *** 502 URl:http://test-klaudia-app.herokuapp.com
+                                *** 502 URl:http://tsyhankova.pl
+                                *** 502 URl:http://dandi-design.pl
+                                *** 502 URl:http://olaponeta.pl
+                                *** 502 URl:http://klaudianiemcewicz.pl
+                                *** 502 URl:http://skepticalsnek.pl
+                                *** 502 URl:http://programowanie.czest.pl
+                                *** 404 URl:http://artbit.com.pl
+                                *** 502 URl:http://bogdangpython.com.pl
+                                *** 502 URl:http://kacpertest.pl
+                                *** 502 URl:http://iwicher.pl
+                                *** 502 URl:http://programistamati.pl
+                                *** 502 URl:http://r3dwood.pl
+                                *** 502 URl:http://kondiu.online
+                                *** 502 URl:http://andzejem.pl
+                                *** 404 URl:http://alawicki.pl
+                                *** 502 URl:http://spiekanie.pl
+                                *** 502 URl:http://angelzak.pl
+                                *** 502 URl:http://tajny-kot.pl
+                                *** 500 URl:http://popanato.bieda.it
+                                *** 502 URl:http://sebasbobik.pl
+                                *** 502 URl:http://milkatech.pl
+                                *** 502 URl:http://tresmil.pl
+                                *** 502 URl:http://la-cozja.pl
+                                *** 502 URl:http://guayaba.pl
+                                *** 404 URl:http://hauas.pl
+                                *** 404 URl:http://miksawero.pl
+                                *** 502 URl:http://roszkowska-it.com.pl
+                                *** 502 URl:http://panidanych.pl
+                                *** 502 URl:http://lukasz-motm.pl
+                                *** 502 URl:http://programowanie.fun
+                                *** 502 URl:http://cryptonft.com.pl
+                                *** 502 URl:http://wysocmac.tk
+                                *** 502 URl:http://jsjdhd.online
+                                *** 502 URl:http://python-master.pl
+                                *** 502 URl:http://panna-hakasse.plp
+                                *** 502 URl:http://glodnapirania.pl
+                                *** 502 URl:http://glodnapirania.pl
+                                *** 502 URl:http://basia-zxd.pl
+                                *** 502 URl:http://cardecor.pl
+                                *** 502 URl:http://infiniteloop.site
+                                *** 502 URl:http://python-nanotechnologia.pl
+                                *** 502 URl:http://tengel.pl
+                                *** 502 URl:http://bzentkow.pl
+                                *** 404 URl:http://adekdevcode.pl
+                                *** 404 URl:http://sulomon.pl
+                                *** 502 URl:http://infmagazine.pl
+                                *** 502 URl:http://ichimokumaster.pl
+                                *** 502 URl:http://rob3rt.pl
+                                *** 502 URl:http://digitalsoup.pl
+                                *** 404 URl:http://onlyfansfilomenka.pl
+                                *** 404 URl:http://teszka.pl
+                                *** 502 URl:http://theriddle.pl
+                                *** 500 URl:http://alemery.pl
+                                *** 500 URl:http://test4kuba.pl
+                                *** 502 URl:http://wiseowlstudio.xyz
+                                *** 502 URl:http://hello-dev.pl
+                                *** 502 URl:http://piotrorlinski.pl
+                                *** 502 URl:http://testowanie-i-programowanie.pl
+                                *** 502 URl:http://despresso.pl
+                                *** 502 URl:http://jestemjonson.pl
+                                *** 502 URl:http://puunina.szczecin.pl
+                                *** 502 URl:http://edukodu.pl
 
 """
