@@ -91,9 +91,16 @@ def buildRespList(status_code,url,extra="200"):
     if all_status_code_list.count(status_code) == 0:
       all_status_code_list.append(status_code)
     
-  str_list = [{'id':'licznik', 'status_code':status_code,'description':'Status code dla domeny', 'extra':200}] #, 'output':curl_url}]
+  str_list = [{
+    'id':'licznik',
+    'status_code':status_code,
+    'description':'Status code dla domeny',
+    'extra':status_code
+  }] #, 'output':curl_url}]
+  #str_list = [['id','licznik'], ['status_code',status_code], ['description','Status code dla domeny'], ['extra',200]] #, 'output':curl_url}]
   clearUrlList.append([url, status_code])
-  json_list.append({"domena":url, "data":str_list})
+  json_list.append({'domena':url, 'data':str_list})
+  #json_list.append([["domena",url], ["data",str_list]])
 
 #################################
 # funkcja webRequest
@@ -104,7 +111,7 @@ def webRequest(url):
   #logging.info('========= START3 ========== '+str(url))
   urllib3.disable_warnings()
   try:
-    resp = requests.get(url, verify=False, timeout=10)
+    resp = requests.get(url, verify=False, timeout=3)
     buildRespList(resp.status_code, url)
     #return [resp.status_code, url]
   except requests.exceptions.HTTPError as e: 
@@ -140,7 +147,7 @@ def showLogs(n, str):
 # funkcja flagsList
 # pobranie listy domen, obrobienie stringow zawierajacych adresy stron (URI) i dodanie ich do tablic oraz wywołań (request) domen 
 #################################
-def flagsList(link,resp_count,json_file_name):
+def flagsList(link,resp_count):
   import json
   import os
   
@@ -261,11 +268,11 @@ def flagsList(link,resp_count,json_file_name):
     if item[1] == 200:
       status_ok_count+= 1
   
-  #print('clearUrlList=',clearUrlList)
+  print('clearUrlList=',clearUrlList)
   #print('licz=',licz, 'status_ok_count=',status_ok_count)
-  #print('all_status_code_list=',all_status_code_list)
-  #print('status_code2_list=',status_code2_list)
-  #print('json_list=',json_list)
+  print('all_status_code_list=',all_status_code_list)
+  print('status_code2_list=',status_code2_list)
+  print('json_list=',json_list)
   #print('timeLoad_list=',timeLoad_list)
   #print('ilosc_domen_pl=',ilosc_domen_pl)
   #print('ilosc_znakow=',ilosc_znakow)
@@ -286,38 +293,47 @@ def main(argv):
     else:
       output_type = ""
   else:
-    job_direction_ask = int(console.input("\t\t\t\t*** Co będziemy robić? \n\n\t\t\t\t1. Generowanie strony html z domenami z pliku json \n\t\t\t\t2. Aktualizacja dostępności domen\n\n\t\t\t\tTwój wybór to: "))
+    job_direction_ask = int(console.input("\t\t *** Co będziemy robić? \n\n\t\t1. Generowanie strony html z domenami z pliku json \n\t\t2. Aktualizacja dostępności domen\n\n\t\tTwój wybór to: "))
 
-  if job_direction_ask == 0:
-    startDateTime = current_milli_time()
-    timeLoad_list.append([time.time_ns(),datetime.datetime.now()])
-    #print('                                 ',timeLoad_list[0][1])
-    console.print(timeLoad_list[0][1],"\t\t\t\t", justify="left")
-    console.rule("[bold red]Wystartowalim ...")
-    val_list = flagsList('http://zajecia-programowania-xd.pl/flagi',0,'test_file.json')
-    timeLoad_list.append([time.time_ns(),datetime.datetime.now()])
-    #print('                                 ',timeLoad_list[-1][1])
-    console.print(timeLoad_list[-1][1],"\t\t\t\t", justify="right")
-    console.rule("[bold red]Koniec ...")
+  json_file_name='flagi_file.json'
+  
+  ############################################################################
+  #       ############# test flow - 10, 15 ###########################       #
+  ############################################################################
+  if job_direction_ask >= 10:
+    if job_direction_ask == 10:
+      startDateTime = current_milli_time()
+      timeLoad_list.append([time.time_ns(),datetime.datetime.now()])
+      #print('                                 ',timeLoad_list[0][1])
+      console.print(timeLoad_list[0][1],"\t\t", justify="left")
+      console.rule("[bold red]Wystartowalim ...")
+      val_list = flagsList('http://zajecia-programowania-xd.pl/flagi',0)
+      timeLoad_list.append([time.time_ns(),datetime.datetime.now()])
+      #print('                                 ',timeLoad_list[-1][1])
+      console.print(timeLoad_list[-1][1],"\t\t", justify="right")
+      console.rule("[bold red]Koniec ...")
 
-  if job_direction_ask == 5:
-    filename='test_test_file.json'    
-    with open(filename,'r+') as file:
-      file_data = file.read()
-      #print(type(file_data))
-      file_data_json = file_data.replace("'", "\"")
-      file_data = json.loads(file_data_json)
-      licz = 0
-      print(flagiIloscZnakow("",file_data['ListaDomen']))
-    
+    if job_direction_ask == 15:
+      json_file_name='flagi_file.json'    
+      with open(json_file_name,'r+') as file:
+        file_data = file.read()
+        #print(type(file_data))
+        file_data_json = file_data.replace("'", "\"")
+        file_data = json.loads(file_data_json)
+        licz = 0
+        print(flagiIloscZnakow("",file_data['ListaDomen']))
+  ############################################################################
+  #       ############# test flow - 10, 15 ###########################       #
+  ############################################################################
+
   if job_direction_ask == 1:
-    
-    flagiBuildWebpage()
+    #json_file_name = "flagi_file.json"
+    flagiBuildWebpage(json_file_name)
     rebootFlask()
     
   if job_direction_ask == 2:
     print('\n\n')
-    resp_count = console.input("\t\t\t\t*** Ilość wierszy do przeszukania?\n\t\t\t\t\t (0-max; Enter-10) :smiley: ")
+    resp_count = console.input("\t\t *** Ilość wierszy do przeszukania?\n\t\t\t (0-max; Enter-10) :smiley: ")
     if resp_count == "":
       resp_count = 10
     elif resp_count != 0:
@@ -328,24 +344,23 @@ def main(argv):
     resp_count = int(resp_count)
     #print('resp_count==>',resp_count,' type=',type(resp_count))
     
-    output_type = console.input("\n\t\t\t\t*** Wynik zapisać jako plik .json?\n\t\t\t\t\t (y-tak; Enter-pokaż wynik na ekranie): ")
+    output_type = console.input("\n\t\t *** Wynik zapisać jako plik .json?\n\t\t\t (y-tak; Enter-pokaż wynik na ekranie): ")
     if output_type in ["y","Y","t","T"]:
       output_type = "json"
     print('\n')
     
-    json_file_name = "test_file.json"
     link = 'http://zajecia-programowania-xd.pl/flagi'
     #link = 'http://localhost/narzedzia/local/flagi'
     # uruchamiamy nasz program
     startDateTime = current_milli_time()
     timeLoad_list.append([time.time_ns(),datetime.datetime.now()])
     #print('                                 ',timeLoad_list[0][1])
-    console.print(timeLoad_list[0][1],"\t\t\t\t", justify="left")
+    console.print(timeLoad_list[0][1],"\t\t", justify="left")
     console.rule("[bold red]Wystartowalim ...")
-    val_list = flagsList(link,resp_count,json_file_name)
+    val_list = flagsList(link,resp_count)
     timeLoad_list.append([time.time_ns(),datetime.datetime.now()])
     #print('                                 ',timeLoad_list[-1][1])
-    console.print(timeLoad_list[-1][1],"\t\t\t\t", justify="right")
+    console.print(timeLoad_list[-1][1],"\t\t", justify="right")
     console.rule("[bold red]Koniec ...")
     endDateTime = current_milli_time()
     #wyszukajUrlWStringu
@@ -356,55 +371,69 @@ def main(argv):
       #print("*****************************************")
       #print("*****************************************")
       
-      lista_domen_list = "{'ListaDomen':"+str(val_list[5])+",'IloscDomen':"+str(val_list[1])+",'Status200':"+str(val_list[2])+","
-      lista_domen_list = lista_domen_list+"'Statusy':"+str(val_list[3])+",'BledneDomeny':"+str(val_list[4])+"}"
-      lista_domen_json = lista_domen_list #json.dumps(lista_domen_list)
-      #print('\t\t****************************************\n\t\t*********** supa json ******************\n\t\t****************************************\n')
-      #print(json.loads(lista_domen_json))
-      #print('\t\t****************************************\n\t\t****************************************\n\t\t****************************************\n')
+      lista_domen_json = {
+        'ListaDomen':val_list[5],
+        'IloscDomen':val_list[1],
+        'Status200':val_list[2],
+        'Statusy':val_list[3],
+        'BledneDomeny':val_list[4]
+      }
+      #lista_domen_list = "{'ListaDomen':"+str(val_list[5])+",'IloscDomen':"+str(val_list[1])+",'Status200':"+str(val_list[2])+","
+      #lista_domen_list = lista_domen_list+"'Statusy':"+str(val_list[3])+",'BledneDomeny':"+str(val_list[4])+"}"
+      #lista_domen_json = lista_domen_list.replace("'", '"')
+      print('\t\t ****************************************\n\t\t *********** supa json ******************\n\t\t ****************************************\n')
+      print(lista_domen_json)
+      print(json.dumps(lista_domen_json))
+      print('\t\t ****************************************\n\t\t ****************************************\n\t\t ****************************************\n')
       
-      json_file_name = "test_test_file.json"
-      with open(json_file_name, 'w') as file:
-        file.write(lista_domen_json)
+      #json_file_name = 
+      #save_to_file_output_str = 
+      #with open(json_file_name, 'w') as file:
+      #  file.write(lista_domen_json)
 
-      file.close()
-      
-      print("\t\t\t\t******************************************************")
-      print("\t\t\t\t*** Zapisane do pliku:[bold blue] %s [/bold blue]" %json_file_name)
-      print("\t\t\t\t******************************************************")
-    
+      #file.close()
+      from moje_biblioteki import saveJsonStringToFile
+      if saveJsonStringToFile(json_file_name,lista_domen_json):
+        print("\t\t","*"*65)
+        print("\t\t *** Zapisane do pliku:[bold blue] %s [/bold blue]" %json_file_name)
+        print("\t\t","*"*65)
+      else:
+        print("\t\t","*"*65)
+        print("\t\t *** Wystąpił błąd podczas zapisu do pliku:[bold blue] %s [/bold blue]" %json_file_name)
+        print("\t\t","*"*65)
+            
     else:
       print('')
-      print('\t\t\t\t****** Zobaczmy co my tu mamy ... ')
-      print('\t\t\t\t****** URI strony z flagami: ',link)
+      print('\t\t ****** Zobaczmy co my tu mamy ... ')
+      print('\t\t ****** URI strony z flagami: ',link)
       print('')
     
     if 1 == 1:    
       print('')
-      print('\t\t\t\t******************************************************')
-      str_out = "\t\t\t\t*** Ilość wszystkich domen: " + str(val_list[1])
-      print(str_out, str(val_list[2]), sep='\n\t\t\t\t*** Domeny ze statusem 200: ')
-      print('\t\t\t\t******************************************************')
+      print('\t\t ******************************************************')
+      str_out = "\t\t *** Ilość wszystkich domen: " + str(val_list[1])
+      print(str_out, str(val_list[2]), sep='\n\t\t *** Domeny ze statusem 200: ')
+      print('\t\t ******************************************************')
       # pokaz jakie wystapily odpowiedzi
       html_resp_code = val_list[3] #set(val_list[3])
       if len(html_resp_code) > 0:
-        print('\t\t\t\t*** Kody odpowiedzi serwerów: %s' %html_resp_code)
+        print('\t\t *** Kody odpowiedzi serwerów: %s' %html_resp_code)
       
-      print('\t\t\t\t******************************************************')
-      print('\t\t\t\t*** Domeny z błędnymi odpowiedziami: ')
+      print('\t\t ******************************************************')
+      print('\t\t *** Domeny z błędnymi odpowiedziami: ')
       # pokaz domeny z blednymi odpowiedziami
       for val in val_list[4]:
-        print('\t\t\t\t*** %s URl:%s' %(val[0],val[1]))
+        print('\t\t *** %s URl:%s' %(val[0],val[1]))
 
-      print('\n\n\t\t\t\t******************************************************')
-      print('\t\t\t\t*** I to by było na tyle ... ',)
-      print('\t\t\t\t******************************************************')
-      print('\t\t\t\t****** Oddano do użytku w zaledwie %s sekundy' %str(int(getDifference2(startDateTime, endDateTime)/1000)))
-      print('\t\t\t\t\t\t\t*** by v0jt4s *** \n\n')
+      print('\n\n\t\t ******************************************************')
+      print('\t\t *** I to by było na tyle ... ',)
+      print('\t\t ******************************************************')
+      print('\t\t ****** Oddano do użytku w zaledwie %s sekundy' %str(int(getDifference2(startDateTime, endDateTime)/1000)))
+      print('\t\t\t *** by v0jt4s *** \n\n')
       
-      def read_json(filename='test_test_file.json'):
+      def read_json(json_file_name='flagi_file.json'):
         liczcz = 0
-        with open(filename,'r+') as file:
+        with open(json_file_name,'r+') as file:
           liczcz+= 1
           # First we load existing data into a dict.
           file_data = file.read() #json.load(file)
@@ -426,3 +455,54 @@ def main(argv):
 
 if __name__ == '__main__':
   main(sys.argv)
+
+
+
+
+"""
+2022-03-12 14:38:55.550352                                                                                              
+────────────────────────────────────────────────── Wystartowalim ... ───────────────────────────────────────────────────
+803 803
+                2022-03-12 14:39:28.822657 >>> Już 50 domen za nami. <<< 
+                2022-03-12 14:40:56.938785 >>> Już 100 domen za nami. <<< 
+                2022-03-12 14:42:35.178781 >>> Już 150 domen za nami. <<< 
+                2022-03-12 14:44:01.494316 >>> Już 200 domen za nami. <<< 
+                2022-03-12 14:44:28.468579 >>> Już 250 domen za nami. <<< 
+                2022-03-12 14:44:58.062751 >>> Już 300 domen za nami. <<< 
+                2022-03-12 14:46:09.388035 >>> Już 350 domen za nami. <<< 
+                2022-03-12 14:46:40.884057 >>> Już 400 domen za nami. <<< 
+                2022-03-12 14:48:51.341509 >>> Już 450 domen za nami. <<< 
+                2022-03-12 14:50:31.917244 >>> Już 500 domen za nami. <<< 
+                2022-03-12 14:51:58.793099 >>> Już 550 domen za nami. <<< 
+                2022-03-12 14:53:07.087389 >>> Już 600 domen za nami. <<< 
+                2022-03-12 14:54:27.830410 >>> Już 650 domen za nami. <<< 
+                2022-03-12 14:56:57.494508 >>> Już 700 domen za nami. <<< 
+                2022-03-12 14:58:57.753846 >>> Już 750 domen za nami. <<< 
+                2022-03-12 15:02:31.541113 >>> Już 800 domen za nami. <<< 
+                                                                                              2022-03-12 15:03:02.129279
+────────────────────────────────────────────────────── Koniec ... ──────────────────────────────────────────────────────
+
+2022-03-13 22:01:27.484527                                                                                              
+────────────────────────────────────────────────── Wystartowalim ... ───────────────────────────────────────────────────
+803 803
+                2022-03-13 22:01:28.297472 >>> Już 50 domen za nami. <<< 
+                2022-03-13 22:03:38.800255 >>> Już 100 domen za nami. <<< 
+                2022-03-13 22:03:41.240881 >>> Już 150 domen za nami. <<< 
+                2022-03-13 22:05:52.665401 >>> Już 200 domen za nami. <<< 
+                2022-03-13 22:05:55.255100 >>> Już 250 domen za nami. <<< 
+                2022-03-13 22:08:01.340815 >>> Już 300 domen za nami. <<< 
+                2022-03-13 22:08:05.896924 >>> Już 350 domen za nami. <<< 
+                2022-03-13 22:10:12.455644 >>> Już 400 domen za nami. <<< 
+                2022-03-13 22:12:23.330858 >>> Już 450 domen za nami. <<< 
+                2022-03-13 22:14:35.224326 >>> Już 500 domen za nami. <<< 
+                2022-03-13 22:14:42.905958 >>> Już 550 domen za nami. <<< 
+                2022-03-13 22:16:47.665728 >>> Już 600 domen za nami. <<< 
+                2022-03-13 22:18:15.343340 >>> Już 650 domen za nami. <<< 
+                2022-03-13 22:21:09.686240 >>> Już 700 domen za nami. <<< 
+                2022-03-13 22:23:20.780081 >>> Już 750 domen za nami. <<< 
+                2022-03-13 22:27:42.962923 >>> Już 800 domen za nami. <<< 
+                                                                                              2022-03-13 22:29:59.856969
+────────────────────────────────────────────────────── Koniec ... ──────────────────────────────────────────────────────
+
+
+"""
