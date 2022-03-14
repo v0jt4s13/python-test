@@ -268,11 +268,11 @@ def flagsList(link,resp_count):
     if item[1] == 200:
       status_ok_count+= 1
   
-  print('clearUrlList=',clearUrlList)
+  #print('clearUrlList=',clearUrlList)
   #print('licz=',licz, 'status_ok_count=',status_ok_count)
-  print('all_status_code_list=',all_status_code_list)
-  print('status_code2_list=',status_code2_list)
-  print('json_list=',json_list)
+  #print('all_status_code_list=',all_status_code_list)
+  #print('status_code2_list=',status_code2_list)
+  #print('json_list=',json_list)
   #print('timeLoad_list=',timeLoad_list)
   #print('ilosc_domen_pl=',ilosc_domen_pl)
   #print('ilosc_znakow=',ilosc_znakow)

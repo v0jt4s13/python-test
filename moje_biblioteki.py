@@ -25,6 +25,8 @@ def convertListToJsonString():
 
 import json
 import os
+from sre_compile import isstring
+from xxlimited import new
 
 def flagiIloscTopDomenPl(domeny_ext_list="",domeny_full_json=""):
 	#print(domeny_full_json[0]['domena'])
@@ -68,7 +70,7 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 		wszystkich_domen = file_data['IloscDomen']
 		domeny_ok = file_data['Status200']
 		bledne_domeny = wszystkich_domen-domeny_ok
-
+		
 		procent = int(int(bledne_domeny*100)/int(wszystkich_domen))
 		procent_str = "Projektów niedostępnych: <span>"+str(procent)+"%</span>"
 		#print(procent)
@@ -86,9 +88,42 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 		for url_item in domeny_pl_list[1]:
 			domeny_top_lvl_str = domeny_top_lvl_str+'<div class="display-inline-block padding-10"><a href="'+url_item+'" target="_blank">'+url_item+'</a></div>'
    
-		str_to_html_list.append('<div class="padding-10"><span style="background-color:#1e1acf;padding:15px;">Wszystkich domen .pl - TOP-LVL: %i </div><div id="top-lvl-list padding-10"> %s </div>' %(domeny_pl_list[0],domeny_top_lvl_str))
+		#str_to_html_list.append('<div class="padding-10"><span style="background-color:#1e1acf;padding:15px;">Wszystkich domen .pl - TOP-LVL: %i </div><div id="top-lvl-list padding-10"> %s </div>' %(domeny_pl_list[0],domeny_top_lvl_str))
 
-		str_to_html_list.append('<div class="padding-10"><span style="background-color:#1e1acf;padding:15px;">Błędne domeny</span></div><div class="display-inline-block padding-10">')
+		wall_of_weeping_str = '<span style="background-color:#1e1acf;padding:15px;">-</span><span style="background-color:#1e1acf;padding:15px;">a wall of weeping</span>'
+		str_to_html_list.append('<div class="padding-10"><span class="bledne-domeny-title">Błędne domeny</span>'+wall_of_weeping_str+'</div>')
+
+		#file_data['Statusy']
+		new_status_list = []
+		new_status_list_count = []
+		for resp_code in file_data['ListaDomen']:
+			#print(str(resp_code['data'][0]['status_code']))
+			status_code = resp_code['data'][0]['status_code']
+			#if status_code == None:	status_code = 999
+			new_status_list.append(str(status_code))
+		
+		tmp_str = ""
+		continue_loop = True
+		#print('Lista in',new_status_list)
+		new_status_list.sort()
+		#print('Lista sort',new_status_list)
+		while continue_loop:
+			if len(new_status_list) > 0:
+				el = new_status_list[0]
+				c = new_status_list.count(el)
+				if tmp_str != "":
+					tmp_str+= "; "
+				tmp_str+= str(c)+' domeny z błędem: '+str(el)
+				new_status_list_count.append(tmp_str)
+				while new_status_list.count(el) > 0:
+					new_status_list.remove(el)
+			else:
+				continue_loop = False
+
+		str_to_html_list.append('<div class="padding-10"><span class="bledne-domeny-short">'+tmp_str+'</span></div>')
+		#print(new_status_list_count)
+    
+		str_to_html_list.append('<div class="display-inline-block padding-10">')
 		while licz < len(file_data['BledneDomeny']):
 			status_code = file_data['BledneDomeny'][licz][0]
 			domena = file_data['BledneDomeny'][licz][1]
@@ -117,8 +152,9 @@ def flagiBuildWebpage(filename="test_file.json"):
 	data_style = "<style>\n\t\tbody{background-color:#111;color:#eee;}\n\t\t.domena{margin-right:20px;}\n\t\t.status-code{margin-right:20px;}"
 	data_style = data_style+"\n\t\t.line1{float:left;padding:10px;}\n\t\t.status-code2{margin-right:20px;}"
 	data_style = data_style+"\n\t\t.line1-wrap{display: inline-block;}\n\t\t.line-procent{padding: 10px;}"
-	data_style = data_style+"\n\t\t.line-procent span{font-size: xx-large;}\n\t\t.display-inline-block{display:inline-block}"
-	data_style = data_style+"\n\t\t.padding-10{padding:10}\n\t\t.float-left{float:left}\n\t\ta{color:aliceblue;}</style>"
+	data_style = data_style+"\n\t\t.line-procent span{font-size: xx-large;text-align:center}\n\t\t.display-inline-block{display:inline-block}"
+	data_style = data_style+"\n\t\t.padding-10{padding:10}\n\t\t.float-left{float:left}\n\t\ta{color:aliceblue;}"
+	data_style = data_style+"\n\t\t.bledne-domeny-title{background-color:#1e1acf;padding:15px;font-size:xx-large;width:100vw;text-align:center;}</style>"
 	data_head = "<html>\n\t<head>\n\t\t%s\n\t</head>\n\t<body>\n\t\t" %data_style
 
 	data_footer = "\n\t</body>\n</html>"
@@ -138,7 +174,7 @@ def flagiBuildWebpage(filename="test_file.json"):
 	return 'Zapisane, trwa reboot serwera ....'
 
 def flagiIloscDomenPl(domeny_ext_list="",domeny_full_json=""):
-	#print(domeny_full_json[0]['domena'])
+
 	pl_ext_count = 0
 	if len(domeny_ext_list) > 0:
 		for ext in domeny_ext_list:
@@ -147,6 +183,8 @@ def flagiIloscDomenPl(domeny_ext_list="",domeny_full_json=""):
 	if len(domeny_full_json) > 0:
 		licz = 0
 		while licz < len(domeny_full_json):
+			#print(domeny_full_json[licz])
+			#print(domeny_full_json[licz]['data'][0]['status_code'])
 			domena = domeny_full_json[licz]['domena']
 			ext_pl = domena.split('.')[-1]
 			#if ext_pl == "pl" and len(domena.split('.')) > 2:
