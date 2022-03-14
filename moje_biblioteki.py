@@ -91,7 +91,7 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 		#str_to_html_list.append('<div class="padding-10"><span style="background-color:#1e1acf;padding:15px;">Wszystkich domen .pl - TOP-LVL: %i </div><div id="top-lvl-list padding-10"> %s </div>' %(domeny_pl_list[0],domeny_top_lvl_str))
 
 		wall_of_weeping_str = '<span style="background-color:#1e1acf;padding:15px;">-</span><span style="background-color:#1e1acf;padding:15px;">a wall of weeping</span>'
-		str_to_html_list.append('<div class="padding-10"><span class="bledne-domeny-title">Błędne domeny</span>'+wall_of_weeping_str+'</div>')
+		str_to_html_list.append('<div class="padding-10 center"><span class="bledne-domeny-title">Błędne domeny</span>'+wall_of_weeping_str+'</div>')
 
 		#file_data['Statusy']
 		new_status_list = []
@@ -120,7 +120,7 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 			else:
 				continue_loop = False
 
-		str_to_html_list.append('<div class="padding-10"><span class="bledne-domeny-short">'+tmp_str+'</span></div>')
+		str_to_html_list.append('<div class="padding-10 center"><span class="bledne-domeny-short">'+tmp_str+'</span></div>')
 		#print(new_status_list_count)
     
 		str_to_html_list.append('<div class="display-inline-block padding-10">')
@@ -150,11 +150,12 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 
 def flagiBuildWebpage(filename="test_file.json"):
 	data_style = "<style>\n\t\tbody{background-color:#111;color:#eee;}\n\t\t.domena{margin-right:20px;}\n\t\t.status-code{margin-right:20px;}"
-	data_style = data_style+"\n\t\t.line1{float:left;padding:10px;}\n\t\t.status-code2{margin-right:20px;}"
+	data_style = data_style+"\n\t\t.line1{float:left;padding:10px;}\n\t\t.status-code2{margin-right:20px;}\n\t\t.center{text-align:center}"
 	data_style = data_style+"\n\t\t.line1-wrap{display: inline-block;}\n\t\t.line-procent{padding: 10px;}"
 	data_style = data_style+"\n\t\t.line-procent span{font-size: xx-large;text-align:center}\n\t\t.display-inline-block{display:inline-block}"
 	data_style = data_style+"\n\t\t.padding-10{padding:10}\n\t\t.float-left{float:left}\n\t\ta{color:aliceblue;}"
-	data_style = data_style+"\n\t\t.bledne-domeny-title{background-color:#1e1acf;padding:15px;font-size:xx-large;width:100vw;text-align:center;}</style>"
+	data_style = data_style+"\n\t\t.bledne-domeny-title{background-color:#1e1acf;padding:15px;font-size:xx-large;width:100vw;text-align:center;}"
+	data_style = data_style+"\n\t\t.bledne-domeny-short{background-color:#1e1acf;padding:10px;font-size:large;width:100vw;text-align:center;}</style>"
 	data_head = "<html>\n\t<head>\n\t\t%s\n\t</head>\n\t<body>\n\t\t" %data_style
 
 	data_footer = "\n\t</body>\n</html>"
