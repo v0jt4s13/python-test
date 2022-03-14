@@ -70,13 +70,14 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 		bledne_domeny = wszystkich_domen-domeny_ok
 
 		procent = int(int(bledne_domeny*100)/int(wszystkich_domen))
-		procent_str = "Procent nieukończonych projektów: "+str(procent)+"%"
+		procent_str = "Projektów niedostępnych: <span>"+str(procent)+"%</span>"
 		#print(procent)
-		str_to_html_list.append('<div>Wszystkich domen: %s</div><div>Błędnych domen: %s</div><div>%s</div>' %(wszystkich_domen,bledne_domeny,procent_str))
+		str_to_html_list.append('<div class="line1">Wszystkich domen: %s</div><div class="line1">Błędnych domen: %s</div>' %(wszystkich_domen,bledne_domeny))
 
 		ilosc_domen_pl = flagiIloscDomenPl("", file_data['ListaDomen'])
 		ilosc_znakow = flagiIloscZnakow("",file_data['ListaDomen'])
 		str_to_html_list.append('<div>Wszystkich domen .pl: %s</div><div>Ilość znaków \'a\': %s</div>' %(ilosc_domen_pl,ilosc_znakow))
+		str_to_html_list.append('<div class="line-procent">%s</div>' %procent_str)
 		domeny_pl_list = flagiIloscTopDomenPl("", file_data['ListaDomen'])
 		str_to_html_list.append('<div><span style="background-color: silver">Wszystkich domen .pl - TOP-LVL: %i </div><div> %s </div>' %(domeny_pl_list[0],' '.join(domeny_pl_list[1])))
 	
