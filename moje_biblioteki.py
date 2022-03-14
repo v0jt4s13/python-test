@@ -86,29 +86,27 @@ def flagiBuildPageFromJson(filename='test_test_file.json'):
 		for url_item in domeny_pl_list[1]:
 			domeny_top_lvl_str = domeny_top_lvl_str+'<div class="display-inline-block padding-10"><a href="'+url_item+'" target="_blank">'+url_item+'</a></div>'
    
-		str_to_html_list.append('<div class="padding-10"><span style="background-color: silver">Wszystkich domen .pl - TOP-LVL: %i </div><div id="top-lvl-list padding-10"> %s </div>' %(domeny_pl_list[0],domeny_top_lvl_str))
+		str_to_html_list.append('<div class="padding-10"><span style="background-color: silver">Wszystkich domen .pl - TOP-LVL: %i </div><div id="top-lvl-list padding-10"> %s </div><div class="display-inline-block padding-10">' %(domeny_pl_list[0],domeny_top_lvl_str))
 	
-
-		#print(len(file_data['BledneDomeny']))
-		#print(file_data['BledneDomeny'][0][1])
 		while licz < len(file_data['BledneDomeny']):
-			#print(file_data['BledneDomeny'])
 			status_code = file_data['BledneDomeny'][licz][0]
 			domena = file_data['BledneDomeny'][licz][1]
-			str_to_html = "<div><span class=\"domena\">"+domena+"</span><span class=\"status-code\">"+str(status_code)+"</span></div>"
+			str_to_html = '<div class="padding-10"><span class="domena"><a href="'+domena+'" target="_blank">'+domena+'</a></span><span class="status-code">'+str(status_code)+'</span></div>'
 			str_to_html_list.append(str_to_html)
 			licz+= 1
-		
+
+		str_to_html_list.append('</div><div class="display-inline-block padding-10">')
 		licz = 0
 		while licz < 0: # len(file_data['ListaDomen']):
 			status_code = file_data['ListaDomen'][licz]['data'][0]['status_code']
 			domena = file_data['ListaDomen'][licz]['domena']
 			extra = file_data['ListaDomen'][licz]['data'][0]['extra']
 			#print(domena,status_code,extra)
-			str_to_html = "<div><span class=\"domena\">"+domena+"</span><span class=\"status-code\">"+str(status_code)+"</span><span class=\"status-code2\">"+str(extra)+"</span></div>"
+			str_to_html = '<div class="padding-10"><span class="domena">'+domena+'</span><span class="status-code">'+str(status_code)+'</span><span class="status-code2">'+str(extra)+'</span></div>'
 			str_to_html_list.append(str_to_html)
 			#print(file_data['ListaDomen'][1]['domena'])
 			licz+= 1
+		str_to_html_list.append('</div>')
 
 	file.close()
 
