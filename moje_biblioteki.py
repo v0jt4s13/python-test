@@ -154,7 +154,7 @@ def flagiBuildWebpage(filename="test_file.json"):
 	data_style = data_style+"\n\t\t.line1{float:left;padding:10px;}\n\t\t.status-code2{margin-right:20px;}\n\t\t.center{text-align:center}"
 	data_style = data_style+"\n\t\t.line1-wrap{display: inline-block;}\n\t\t.line-procent{padding: 10px;}"
 	data_style = data_style+"\n\t\t.line-procent span{font-size: xx-large;text-align:center}\n\t\t.display-inline-block{display:inline-block}"
-	data_style = data_style+"\n\t\t.padding-10{padding:10}\n\t\t.float-left{float:left}\n\t\ta{color:aliceblue;}"
+	data_style = data_style+"\n\t\t.padding-10{padding:10;line-height:2.5}\n\t\t.float-left{float:left}\n\t\ta{color:aliceblue;}"
 	data_style = data_style+"\n\t\t.bledne-domeny-title{background-color:#1e1acf;padding:15px;font-size:xx-large;width:100vw;text-align:center;}"
 	data_style = data_style+"\n\t\t.bledne-domeny-short{background-color:#1e1acf;padding:10px;font-size:large;width:100vw;text-align:center;}</style>"
 	data_head = "<html>\n\t<head>\n\t\t%s\n\t</head>\n\t<body>\n\t\t" %data_style
@@ -327,7 +327,7 @@ def drawTriangles():
 def saveJsonStringToFile(file_name,json_str):
 	try:
 		# Serializing json 
-		print('Save json',file_name,json_str)
+		#print('Save json',file_name,json_str)
 		json_obj = json.dumps(json_str, indent = 4)
 		with open(file_name, "w") as outfile:
 			outfile.write(json_obj)
