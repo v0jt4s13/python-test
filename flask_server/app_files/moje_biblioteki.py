@@ -23,8 +23,6 @@ def saveJsonStringToFile(file_name,json_str):
 	- save provided json string to .json file
 def convertListToJsonString():
 	- convert list to json string and save it to .json file
-def showRandomPythonCode():
-	- show ranom pyton code from .json file
 """
 
 import json
@@ -377,8 +375,10 @@ def convertListToJsonString(input_list="",extra_para=""):
 		
 		wrap_json_list = {'MainName':append_new_list}
 
+		return wrap_json_list
+
 	else:
-		json_obj_list = []
+		json_str_list = []
 		yy = 0
 		for item in input_list:
 			#if yy > 0: break
@@ -432,23 +432,17 @@ def convertListToJsonString(input_list="",extra_para=""):
 				#print('44==>',prep_json_list_str)
 				#json_obj = json.dumps(prep_json_list_str, indent = 4)
 				#print('55==>',json.loads(json_obj))
-				json_obj_list.append(prep_json_list)
+				json_str_list.append(prep_json_list)
 			else:
 				break
 
 			yy+= 1
 
-		#print(json_obj_list)
-		saveJsonStringToFile('test-python-code.json',json_obj_list)	
-		#print(json_obj_list)
+			return json_str_list
 
-def showRandomPythonCode():
-	import random
-	
-	rand_num = random.randrange(len(example_item_list))
-	example_item_list = pythonCodeExampleList()
-
-	return example_item_list[rand_num]
+		#print(json_str_list)
+		#saveJsonStringToFile('test-python-code.json',json_str_list)	
+		#print(json_str_list)
 
 def listExamples():
 	list1 = ['dev','ab','c','warlord','qwas']
@@ -471,64 +465,3 @@ def listExamples():
 	list2_1 = sorted(list2, key=lambda x: x)
 	print('List 2 sorted(key=lambda x: x):',list2_1)
  
- 
-	return wrap_json_list
-
-
-
-
-
-def pythonCodeExampleList():
-
-	example_item_list = []
-
-	example_item_list.append([["Type","Metoda"],["Name","String center"],["Syntax","string.center(length, character)"],["ParameterValue",
-                   	[
-                     ["length","Required. The length of the returned string"],
-                     ["character","Optional. The character to fill the missing space on each side. Default is \" \" (space)"]
-                    ]
-									],["UseExample",
-                  	[
-                     ["Using the char \"+_\" as the padding character:", "text = \"powidła\"\n\nx = text.center(20, \"+_\")"]
-										]
-									],["Return","String"]])
-
-	example_item_list.append([["Type","Metoda"],["Name","randrange"],["Syntax","random.randrange(start, stop, step)"],["ParameterValue",
-                   	[
-                     ["start","Optional. An integer specifying at which position to start. Default 0"],
-                     ["stop","Required. An integer specifying at which position to end."],
-                     ["step","Optional. An integer specifying the incrementation. Default 1"]
-                    ]
-									],["UseExample",
-                  	[
-                     ["Return a number between 0 and 5", "import random\n\nprint(random.randrange(0, 5))"]
-										]
-									],["Return"]])
- 
-	example_item_list.append([["Type","Metoda"],["Name","Sort"],["Syntax","list.sort(reverse=True|False, key=myFunc)"],["ParameterValue",
-                   	[
-                     ["reverse","Optional. reverse=True will sort the list descending. Default is reverse=False"],
-                     ["key","Optional. A function to specify the sorting criteria(s)"]
-                    ]
-									],["UseExample",
-                  	[
-                     ["Sort the list descending", "numbers_list = [5, 1, 4]\n\nnumbers_list.sort(reverse=True)"]
-										]
-									],["Return",
-                   	[
-                      ["ReturnType","list"],
-                      ["ReturnValue","[1, 4, 5]"]
-										]
-									]])
-	#print('len:',len(example_item_list),example_item_list[-1][0])
-	
-	example_item_list.append([["Type","Others"],["Name","Change List Items"],["Syntax"],["ParameterValue"],["UseExample",
-                  	[
-                     ["Change second item value", "pisaki_list = [\"pióro\", \"oliwa\", \"długopis\", \"ołówek\"]\n\npisaki_list[1] = \"mazak\""],
-                     ["Change a Range of Item Values", "pisaki_list = [\"pióro\", \"oliwa\", \"burak\", \"ołówek\"]\n\npisaki_list[1:3] = [\"mazak\",\"długopis\"]"]
-										]
-									],["Return"]])
- 
-	convertListToJsonString(example_item_list)
- 
-	return example_item_list
