@@ -1,8 +1,7 @@
 from flask import Flask, render_template, url_for
 from flask import request
-from py_terminal_app_run import runAppInsideScript
+from test_ajax.py_terminal_app_run import runAppInsideScript
 from app_files.moje_biblioteki import mainPageMenuList
-
 
 app=Flask(__name__)
 
