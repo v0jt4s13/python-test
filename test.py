@@ -142,3 +142,15 @@ except:
 print('****************************')
 print(convertListToJsonString())
 saveJsonStringToFile('test.json',convertListToJsonString())
+
+
+
+a = input()
+b = ''
+
+for x in a:
+  if x.isupper():
+    b += '_'+x.lower()
+  else:
+    b += x
+print(b)
