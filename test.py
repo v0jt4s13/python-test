@@ -96,6 +96,7 @@ def parseAdUrlFromAdsList(listing_page_url):
       soup = BeautifulSoup(tmp_str, "lxml")
       href = soup.a['href']
     except:
+      href = ""
       pass
 
   return href

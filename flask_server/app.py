@@ -1,8 +1,9 @@
 from flask import Flask, render_template, url_for
 from flask import request
-from py_terminal_app_run import runAppInsideScript
+import json
+from app_files.py_terminal_app_run import runAppInsideScript
 from app_files.moje_biblioteki import mainPageMenuList
-
+from app_files.password_generator import password_generator
 
 app=Flask(__name__)
 
@@ -31,7 +32,6 @@ def flaga_dla_ukrainy():
 
 @app.route('/pass-generator', methods=['GET','POST'])
 def pass_generator():
-	from app_files.password_generator import password_generator
 		
 	pass_rendered = ""
 	try:
