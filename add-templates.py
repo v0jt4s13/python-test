@@ -1,5 +1,7 @@
+from genericpath import isfile
 import sys
 import os
+import subprocess
 from rich import print
 from rich.console import Console
 # creating the console object
@@ -24,12 +26,66 @@ def const_var(str_p):
 def current_milli_time():
 	return round(time.time() * 1000)
 
+def flaskCleaner():
+	tmp_serwer_templates_path = console.input("\t\t*** Wpisz scieżke do katalogu flask (flaga) lub wciśnij ENTER\n\t\t\t (default: "+const_var('SERWER_TEMPLATES_PATH')+")\n\t\t*** ")
+	if tmp_serwer_templates_path != "":
+		SERWER_TEMPLATES_PATH = tmp_serwer_templates_path
+
+
+	files_list = []
+	pozostale_pliki_list = []
+	
+	for (root_folder, dirs_list, dir_files_list) in os.walk(const_var('SERWER_TEMPLATES_PATH')):
+		print('aaaa')
+		for dir in dirs_list:
+			if dir in (".git","flagaenv"):
+				continue
+			else:
+				for (root_folder2, dir2s_list, dir2_list) in os.walk(const_var('SERWER_TEMPLATES_PATH')+'/'+dir):
+					#print(root_folder2, dir2s_list, dir2_list)
+
+					for file in dir2_list:
+						file_split_tup = os.path.splitext(file)
+						extension = file_split_tup[-1]
+						files_list.append([1,root_folder2,extension,file])
+  
+	if 1 == 2:  
+		for file in dir_files_list:
+			if file == "app.py":
+				print('Zmiany w app.py ==>',root_folder)
+			else:
+				file_split_tup = os.path.splitext(file)
+				extension = file_split_tup[-1]
+				if extension in (".txt",".py",".ini",".log") and root_folder not in ("flagaenv",".git"):
+					files_list.append([2,root_folder,extension,file])
+				elif file not in ("flagaenv",".git"):
+					pozostale_pliki_list.append([root_folder,file])
+       
+		
+	print(files_list)
+	print(len(files_list))
+	#print(pozostale_pliki_list)
+
+	print('='*20)
+	if 1 == 2:
+		files_str = subprocess.getoutput('ls')
+		files_list = files_str.split('\n')
+		for file in files_list:
+			if isfile(const_var('SERWER_TEMPLATES_PATH')+'/'+file):
+				print(' a file: %s' %const_var('SERWER_TEMPLATES_PATH')+'/'+file)
+			else:
+				print(' a directory: %s' %const_var('SERWER_TEMPLATES_PATH')+'/'+file)
+
+  
+  
+#flaskCleaner()
+
 def main(argv):
 	import subprocess
 	console.clear()
 	
 	if len(argv) > 1 and argv[1] == "3":
-		commit_text = console.input("\t\t\t\t*** Wpisz opis dla 'git commit': \n\t\t\t\t*** ")
+		commit_text = console.input("\t\t*** Wpisz opis dla 'git commit': \n\t\t*** ")
 		init_user = subprocess.check_output('whoami', shell=True)
 		init_dir = subprocess.check_output('pwd', shell=True)
 		init_user = init_user.decode().replace('\n','') #, os.system('pwd'))
@@ -41,7 +97,15 @@ def main(argv):
 			print("Real user ID of the current process:", os.getuid())
 			change_user_resp = os.setuid(uid)
 			print("Real user ID after changes:", os.getuid())
-			#change_user_resp = subprocess.check_output(change_user_resp, shell=True)
+			#change_user_resp = subprocess.check_output(change_u
+        | Example description: Change a Range of Item Values
+        _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+        |  pisaki_list = ["pióro", "oliwa", "burak", "ołówek"]
+        |  
+        |  pisaki_list[1:3] = ["mazak","długopis"]
+        _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+ser_resp, shell=True)
 			print("Coś tu jednak nie działa jak powinno ;/")
 			#new_user = subprocess.check_output('whoami', shell=True)
 			os.system('cd '+init_dir+' && pwd')
@@ -51,22 +115,25 @@ def main(argv):
 		print('Wypchanie kodu na GitHub:\n git add -A .; git commit -m "'+commit_text+'"; git push\n\n')
 	else:
 		print('\n\n')
-		option_nr = console.input("\t\t\t\t*** Wybierz jedną z poniższych opcji: \n\t\t\t\t*** 1. nazwe pliku html \n\t\t\t\t*** 2. wykonaj synchronizacje (rsync) \n\t\t\t\t*** 3. wypchnij kod na GitHub\n\t\t\t\t*** ")
+		option_nr = console.input("\t\t*** Wybierz jedną z poniższych opcji: \n\t\t*** 1. nazwe pliku html \n\t\t*** 2. wykonaj synchronizacje (rsync) \n\t\t*** 3. wypchnij kod na GitHub\n\t\t*** 4. zrób porządek w app.py i folderach\n\t\t*** ")
 		file_name = ""
+		if option_nr == "4":
+			pass
+			flaskCleaner()
 		if option_nr == "1":
-			file_name = console.input("\t\t\t\t*** Podaj nazwę pliku html (bez rozszerzenia): \n\t\t\t\t*** ")
+			file_name = console.input("\t\t*** Podaj nazwę pliku html (bez rozszerzenia): \n\t\t*** ")
 		elif option_nr == "3":
-			commit_text = console.input("\t\t\t\t*** Wpisz opis dla 'git commit': \n\t\t\t\t*** ")
+			commit_text = console.input("\t\t*** Wpisz opis dla 'git commit': \n\t\t*** ")
 			print(os.system('whoami'))
 			print(os.system('git add -A .; git commit -m "'+commit_text+'"; git push'))
 			print('Wypchanie kodu na GitHub:\n git add -A .; git commit -m "'+commit_text+'"; git push')
 		
 		if option_nr != "3":
-			tmp_serwer_templates_path = console.input("\t\t\t\t*** Wpisz scieżke do katalogu templates na serwerze lub wciśnij ENTER\n\t\t\t\t\t (default: "+const_var('SERWER_TEMPLATES_PATH')+")\n\t\t\t\t*** ")
+			tmp_serwer_templates_path = console.input("\t\t*** Wpisz scieżke do katalogu templates na serwerze lub wciśnij ENTER\n\t\t\t (default: "+const_var('SERWER_TEMPLATES_PATH')+")\n\t\t*** ")
 			if tmp_serwer_templates_path != "":
 				SERWER_TEMPLATES_PATH = tmp_serwer_templates_path
 
-			tmp_home_templates_path = console.input("\t\t\t\t*** Wpisz scieżke do katalogu templates z repozytorium lub wciśnij ENTER\n\t\t\t\t\t (default: "+const_var('HOME_TEMPLATES_PATH')+")\n\t\t\t\t*** ")
+			tmp_home_templates_path = console.input("\t\t*** Wpisz scieżke do katalogu templates z repozytorium lub wciśnij ENTER\n\t\t\t (default: "+const_var('HOME_TEMPLATES_PATH')+")\n\t\t*** ")
 			if tmp_home_templates_path != "":
 				HOME_TEMPLATES_PATH = tmp_home_templates_path
 
@@ -75,13 +142,13 @@ def main(argv):
 				#wynik = os.system('rsync -avzh '+const_var('HOME_TEMPLATES_PATH')+' '+const_var('SERWER_TEMPLATES_PATH'))
 				wynik = subprocess.check_output('rsync -avzh '+const_var('HOME_TEMPLATES_PATH')+' '+const_var('SERWER_TEMPLATES_PATH'), shell=True)
 				str_wynik = str(wynik.decode())
-				str_wynik_list = str_wynik.rsplit('\n') #replace('\n', '\n\t\t\t\t*** ')
+				str_wynik_list = str_wynik.rsplit('\n') #replace('\n', '\n\t\t*** ')
 
 				#print(str_wynik)
 				print()
 				for line in str_wynik_list:
-					print('\t\t\t\t*** %s' %line)
-				print('\n\t\t\t\t*** Synchronizacja:\n\t\t\t\t*** sudo rsync -avzh '+const_var('HOME_TEMPLATES_PATH')+' '+const_var('SERWER_TEMPLATES_PATH')+' \n\t\t\t\t*** wykonana, trwa reboot serwera .... \n\n')
+					print('\t\t*** %s' %line)
+				print('\n\t\t*** Synchronizacja:\n\t\t*** sudo rsync -avzh '+const_var('HOME_TEMPLATES_PATH')+' '+const_var('SERWER_TEMPLATES_PATH')+' \n\t\t*** wykonana, trwa reboot serwera .... \n\n')
 			else:	
 				file_path = const_var('SERWER_TEMPLATES_PATH')+"/templates/"+file_name+".html"
 				html_str = "<html>\n\t<head>\n\t\t<style>\n\n\t\t</style>\n\t</head>\n\t<body>"+file_name+".html {{text}}\n\n\t</body>\n</html>"
@@ -89,14 +156,14 @@ def main(argv):
 				pomin_dodawanie = 0
 				tmp_file_exist = ""
 				if os.path.exists(file_path):
-					tmp_file_exist = console.input("\t\t\t\t\t\t*** !!! UWAGA !!! ***\n\t\t\t\t*** Plik "+file_name+" już istnieje, czy nadpisać plik? \n\t\t\t\t\t (default: Y)\n\t\t\t\t*** ")
+					tmp_file_exist = console.input("\t\t\t\t*** !!! UWAGA !!! ***\n\t\t*** Plik "+file_name+" już istnieje, czy nadpisać plik? \n\t\t\t (default: Y)\n\t\t*** ")
 					pomin_dodawanie = 1
 					#os.remove("demofile.txt")
 
 				if tmp_file_exist in ("t","T","Y","y",""):
-					tmp_extra_txt_file = console.input("\t\t\t\t*** Wpisz nazwe pliku textowego jezeli takowy ma byc dolaczony lub wciśnij ENTER\n\t\t\t\t*** ")
+					tmp_extra_txt_file = console.input("\t\t*** Wpisz nazwe pliku textowego jezeli takowy ma byc dolaczony lub wciśnij ENTER\n\t\t*** ")
 					if tmp_extra_txt_file != "":
-						tmp_extra_txt_str = console.input("\t\t\t\t*** Wpisz zawartość pliku textowego \n\t\t\t\t*** ")	
+						tmp_extra_txt_str = console.input("\t\t*** Wpisz zawartość pliku textowego \n\t\t*** ")	
 						tmp_extra_txt_file = const_var('SERWER_TEMPLATES_PATH')+"/"+tmp_extra_txt_file+".txt"
 						with open(tmp_extra_txt_file, 'w') as file:
 							file.write(tmp_extra_txt_str)
@@ -170,19 +237,19 @@ if __name__ == '__main__':
 		main(sys.argv)
 	else:
 		console.clear()
-		print('\n\n\t\t\t\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**')
+		print('\n\n\t\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**')
 		print()
-		print('\t\t\t\t**-**\t\t Uruchom nowy projekt / Synchronizuj dane / Wypchnij na GitHub ;) \t**-**')
+		print('\t\t**-**\t\t Uruchom nowy projekt / Synchronizuj dane / Wypchnij na GitHub ;) \t**-**')
 		print()
-		print('\t\t\t\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**')
+		print('\t\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**')
 		print()
-		print('\t\t\t\t**-**\t 1. dodaje nową stronę do '+const_var('SERWER_TEMPLATES_PATH')+'/templates/ oraz uaktualnia plik app.py **-**')
-		print('\t\t\t\t**-**\t 2. synchronizuje katalog roboczy z '+const_var('SERWER_TEMPLATES_PATH')+'/templates/ \t\t\t**-**')
-		print('\t\t\t\t**-**\t 3. wypycha repozytorium na GitHub (bez sudo) - uruchom z parametrem 3 \t\t**-**')
+		print('\t\t**-**\t 1. dodaje nową stronę do '+const_var('SERWER_TEMPLATES_PATH')+'/templates/ oraz uaktualnia plik app.py **-**')
+		print('\t\t**-**\t 2. synchronizuje katalog roboczy z '+const_var('SERWER_TEMPLATES_PATH')+'/templates/ \t\t\t**-**')
+		print('\t\t**-**\t 3. wypycha repozytorium na GitHub (bez sudo) - uruchom z parametrem 3 \t\t**-**')
 		print()
-		print('\t\t\t\t**-**\t\t Po wykonaniu wybranej operacji następuje restart usług.\t\t**-**')
+		print('\t\t**-**\t\t Po wykonaniu wybranej operacji następuje restart usług.\t\t**-**')
 		print()
-		print('\t\t\t\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**')
-		print('\n\n\t\t\t\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**')
-		print('\n\t\t\t\t**-**\t\t Uruchom program ponownie z uprawnieniami root\'a (sudo) \t\t**-**\n')
-		print('\t\t\t\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\n\n')
+		print('\t\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**')
+		print('\n\n\t\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**')
+		print('\n\t\t**-**\t\t Uruchom program ponownie z uprawnieniami root\'a (sudo) \t\t**-**\n')
+		print('\t\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\n\n')
