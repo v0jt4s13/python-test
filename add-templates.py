@@ -1,8 +1,8 @@
+import sys
 from asyncio.format_helpers import _get_function_source
 from asyncore import ExitNow
 import enum
 from genericpath import isfile
-import sys
 import os
 import subprocess
 from flask import redirect
@@ -586,10 +586,17 @@ def main(argv):
 			#print(os.system('nano '+file_path))
 
 if __name__ == '__main__':
-	if os.getuid() == 0 or len(sys.argv) > 1:
+
+	console.clear()
+	if len(sys.argv) > 1 and sys.argv[1] == "4":
+		flaskCleaner()
+		raise SystemExit
+
+	elif os.getuid() == 0 or len(sys.argv) > 1:
 		main(sys.argv)
+  
 	else:
-		console.clear()
+		
 		print('*'*40)
 		txt = "text wycentrowany do wartosci 40"
 		x = txt.center(40)

@@ -92,7 +92,7 @@ def buildRespList(status_code,url,extra="200"):
 
   today = date.today()
   str_list = [{
-    'date':today,
+    'date':str(today),
     'status_code':status_code,
     'description':'Status code dla domeny',
     'extra':status_code
@@ -123,7 +123,7 @@ def webRequestOK(url):
   urllib3.disable_warnings()
   try:
     #logging.info('========= START2 22 ========== '+str(url))
-    resp = requests.get(url)
+    resp = requests.get(url, verify=False, timeout=3)
     if resp.ok:
       buildRespList(200,url)
     else:
@@ -393,6 +393,7 @@ def main(argv):
 
       #file.close()
       from flask_server.app_files.moje_biblioteki import saveJsonStringToFile
+      #print('saveJsonStringToFile(',json_file_name,',',lista_domen_json,')')
       if saveJsonStringToFile(json_file_name,lista_domen_json):
         print("\t\t","*"*65)
         print("\t\t *** Zapisane do pliku:[bold blue] %s [/bold blue]" %json_file_name)
