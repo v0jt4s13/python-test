@@ -416,6 +416,11 @@ def flaskCleaner():
 				print(place)
 				#tmp_place = place.split(':')[3:]
 				#print(' '.join(tmp_place))
+			elif "AssertionError" in info:
+				tmp_info_list = info.split(':')
+				if "function" in tmp_info_list[1] and "overwriting" in tmp_info_list[1] and "an existing" in tmp_info_list[1]:
+					print('Sprawdź nazwę funkcji, prawdopodobnie w pliku app.py masz 2 funkcje nazywające się:',tmp_info_list[-1])
+					print('\n',place)
 			else:
 				print(place)
 			print('\n')
