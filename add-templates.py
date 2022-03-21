@@ -1,7 +1,9 @@
+from asyncore import ExitNow
 from genericpath import isfile
 import sys
 import os
 import subprocess
+from flask import redirect
 from rich import print
 from rich.console import Console
 # creating the console object
@@ -26,59 +28,348 @@ def const_var(str_p):
 def current_milli_time():
 	return round(time.time() * 1000)
 
-def flaskCleaner():
-	tmp_serwer_templates_path = console.input("\t\t*** Wpisz scieżke do katalogu flask (flaga) lub wciśnij ENTER\n\t\t\t (default: "+const_var('SERWER_TEMPLATES_PATH')+")\n\t\t*** ")
-	if tmp_serwer_templates_path != "":
-		SERWER_TEMPLATES_PATH = tmp_serwer_templates_path
 
+def app_py_file_to_list(flaga_path):
+	app_py_code_list = []
+	with open(flaga_path+'/app.py', 'r') as file:
+		file_line_list = file.readlines()
 
+	for line_nr, line in enumerate(file_line_list):
+		if " import " in line or line[:6] == "import":
+			app_py_code_list.append([line_nr,"import",line])
+		elif "def " in line:
+			app_py_code_list.append([line_nr,"def",line])
+		elif "@app.route" in line:
+			app_py_code_list.append([line_nr,"route",line])
+		elif "render_template" in line:
+			app_py_code_list.append([line_nr,"render_template",line])
+		elif ".jinja" in line:
+			app_py_code_list.append([line_nr,"html.jinja",line])
+		elif ".html" in line:
+			app_py_code_list.append([line_nr,"html",line])
+		elif ".txt" in line:
+			app_py_code_list.append([line_nr,"txt",line])
+		elif line.replace('\t','') == "\n":
+			app_py_code_list.append([line_nr,"brakeline",line])
+		else:
+			app_py_code_list.append([line_nr,"others",line])
+
+	return app_py_code_list
+
+def build_files_list():
 	files_list = []
+	files_list1 = []
+	files_list2 = []
 	pozostale_pliki_list = []
-	
+	root_folder_searched = True
+	excluded_files_list = ["requirements.txt"]
+	############################################################################
+	# ogolne przegladniecie katalogow oraz plikow i zapisanie ich do tablicy
+ 	############################################################################
 	for (root_folder, dirs_list, dir_files_list) in os.walk(const_var('SERWER_TEMPLATES_PATH')):
-		print('aaaa')
+		
 		for dir in dirs_list:
+			
 			if dir in (".git","flagaenv"):
 				continue
 			else:
-				for (root_folder2, dir2s_list, dir2_list) in os.walk(const_var('SERWER_TEMPLATES_PATH')+'/'+dir):
-					#print(root_folder2, dir2s_list, dir2_list)
+				if root_folder == "/var/www/flaga" and root_folder_searched:
+					#print('aaaa',root_folder,dir,dir_files_list)
+					#print(dir_files_list)
+					for file in dir_files_list:
+						file_split_tup = os.path.splitext(file)
+						extension = file_split_tup[-1].lstrip('.')
+						if file not in excluded_files_list:
+							home_dir = ""
+							files_list1.append([root_folder,extension,file,home_dir])
 
+					root_folder_searched = False
+
+				for (root_folder2, dir2s_list, dir2_list) in os.walk(const_var('SERWER_TEMPLATES_PATH')+'/'+dir):
+					
+					#print('bbbb',root_folder2, dir2s_list, dir2_list)
+					#files_list.append([root_folder,dir2s_list,dir2_list])
 					for file in dir2_list:
 						file_split_tup = os.path.splitext(file)
-						extension = file_split_tup[-1]
-						files_list.append([1,root_folder2,extension,file])
+						extension = file_split_tup[-1].lstrip('.')
+						if file not in excluded_files_list:
+							home_dir = root_folder2.replace(root_folder,'').lstrip('/')
+							files_list2.append([root_folder2,extension,file,home_dir])
   
-	if 1 == 2:  
-		for file in dir_files_list:
-			if file == "app.py":
-				print('Zmiany w app.py ==>',root_folder)
+	files_list = files_list1+files_list2
+	#print('================= files list1 ===================')
+	#print(files_list1)
+	#print('================= files list2 ===================')
+	#print(files_list2)
+	return files_list
+ 
+def build_extensions_files_list(flaga_path,files_list):
+	import magic
+	############################################################
+	# pliki .txt, .py, .pyc, .html, .jinja, .css, .js
+	############################################################
+	txt_files_list = []
+	py_files_list = []
+	pyc_files_list = []
+	html_files_list = []
+	web_static_files_list = []
+	image_files_list = []
+	others_files_list = []
+	#print(files_list)
+	for file in files_list:
+		try:
+			#print(file)
+			if "txt" in file[1]: txt_files_list.append(file)
+			elif "pyc" in file[1]: pyc_files_list.append(file)
+			elif "py" in file[1]: py_files_list.append(file)
+			elif "html" in file[1] or "jinja" in file[1]: html_files_list.append(file)
+			elif "css" in file[1] or "js" in file[1]: web_static_files_list.append(file)
 			else:
-				file_split_tup = os.path.splitext(file)
-				extension = file_split_tup[-1]
-				if extension in (".txt",".py",".ini",".log") and root_folder not in ("flagaenv",".git"):
-					files_list.append([2,root_folder,extension,file])
-				elif file not in ("flagaenv",".git"):
-					pozostale_pliki_list.append([root_folder,file])
-       
+				pass
+				# try:
+				# 	detected = magic.detect_from_filename(file[0]+"/"+file[-1])
+				# 	if "image" in detected.mime_type:
+				# 		image_files_list.append(file)
+				# 	else:
+				# 		others_files_list.append(file)
+				# 	#print('mime: %s ==> %s' %(detected.mime_type,file[-1]))
+				# except:
+				# 	print('Nierozpoznany format pliku: %s' %file[-1])
+		except:
+			continue
+	
+	return [txt_files_list, py_files_list,	pyc_files_list, html_files_list, web_static_files_list, image_files_list, others_files_list]
+
+def find_in_app_py(file_type,search_files_list,app_py_file_code_list):
+	founded_list = []
+	#print(len(app_py_file_code_list),search_files_list)
+	#print('-----------')
+	for line_nr,app_line in enumerate(app_py_file_code_list):
+		#print(line_nr, file_type, '+++',app_line,'***')
+		if file_type == app_line[1] or file_type in app_line[2]:
+			#print(line_nr, file_type, '+++',app_line,'***')
+			#print(line_nr, app_line[2])
+			pos = 0
+			for path, ext, file, home_dir in search_files_list:
+				#print(path, ext, file)
+				if file in app_line[2]:
+					#print(pos,line_nr,app_line[2])
+					if home_dir != '': home_dir+= "/"
+					founded_list.append([home_dir+file,app_line[2]])
+					search_files_list.pop(pos)
+				pos+= 1
+    
+	return [search_files_list, founded_list]
+
+
+def logsReport():
+
+	return subprocess.console('lastlog |head -1000')
+
+def lostLibInstallRequest(lib_name):
+	
+	if lib_name == "termcolor":
+		extra_text = " do kolorowania textu w terminalu. "
+	if lib_name == "file-magic":
+		extra_text = " do rozpoznawania typów plików. \n\n\tWięcej informacji na temat biblioteki dostępne jest na stronie:\n\t\thttps://github.com/file/file/tree/master/python"
+
+	input_text = "\n\n\tBrakuje biblioteki "+lib_name+extra_text+" \n\n\t Czy chcesz teraz zainstalować bibliotekę 'pip3 install termcolor' (Tak/Nie)? "
+  
+	if input(input_text) in ("Tak","tak"):
+		resp = subprocess.getoutput('pip3 install '+lib_name)
+		print(resp)
+		print('\n\n\tUruchom program ponownie.')
+	
+		return False
+	
+	else:
+		#print('\n\n\tOK, Wróć jak będziesz miał zainstalowaną bibliotekę '+lib_name+'. \n\n\n')
+		return 'NoColors'
 		
-	print(files_list)
-	print(len(files_list))
-	#print(pozostale_pliki_list)
+	
 
-	print('='*20)
-	if 1 == 2:
-		files_str = subprocess.getoutput('ls')
-		files_list = files_str.split('\n')
-		for file in files_list:
-			if isfile(const_var('SERWER_TEMPLATES_PATH')+'/'+file):
-				print(' a file: %s' %const_var('SERWER_TEMPLATES_PATH')+'/'+file)
+def flaskCleaner():
+	
+	lib_ok = True
+	try:
+		from termcolor import colored, cprint
+		text_colored = 1
+	except:
+		lib_ok = lostLibInstallRequest('termcolor')
+		if lib_ok == "NoColors":
+			text_colored = 0
+  
+  # For MIME types
+	try:
+		import magic
+	except:
+		lib_ok = lostLibInstallRequest('file-magic')
+
+	if not lib_ok:
+		raise SystemExit
+
+	console.clear()
+ 	
+	tmp_serwer_templates_path = console.input("\t\t*** Wpisz scieżke do katalogu flask (flaga) lub jeżeli podana jest właściwa, wciśnij ENTER\n\t\t\t (default: "+const_var('SERWER_TEMPLATES_PATH')+")\n\t\t*** ")
+	if tmp_serwer_templates_path == "q":
+		raise SystemExit
+
+	if tmp_serwer_templates_path != "":
+		flaga_path = tmp_serwer_templates_path
+	else:
+		flaga_path = const_var('SERWER_TEMPLATES_PATH')
+
+	# zapisz w tablicy linie z pliku app.py
+	app_py_file_code_list = app_py_file_to_list(flaga_path)
+	#print(app_py_file_code_list)
+	
+	# lista znalezionych plikow
+	files_list = build_files_list()
+	#print(files_list)
+ 
+	# lista znalezionych plikow w podziale na rozszerzenia
+	#txt_files_list, py_files_list,	pyc_files_list, html_files_list, web_static_files_list, image_files_list, others_files_list = build_extensions_files_list(files_list)
+	extension_files_list = build_extensions_files_list(flaga_path,files_list)
+	#print(extension_files_list)
+
+	
+	output_list = []
+	#for nr, item in enumerate(extension_files_list):
+	file_types_list = [[0,"txt"],[3,"html"],[1,"py"]]
+	licz = 0
+	for nr, ext in file_types_list:
+		search_files_list = extension_files_list[nr]
+		#print('Szukamy plików .%s' %ext)
+		#if ext == "html": print('HTML',len(app_py_file_code_list))
+		output_list.append([ext, find_in_app_py(ext,search_files_list,app_py_file_code_list)])
+		#print('used',ext,'file output_list:',output_list[licz][1][1])
+		#print('non used',ext,'file output_list:',output_list[licz][1][0])
+		licz+= 1
+
+
+	
+	# pliki .txt
+	output_unused_list = output_list[0][1][0]
+	safe_to_remove_files_list = []
+	necessary_files_list = []
+	necessary_files_ok_list = []
+	for path, ext, file, home_dir in output_unused_list: safe_to_remove_files_list.append(file)
+	output_used_list = output_list[0][1][1]
+	tmp_str = ""
+	for file, line in output_used_list: necessary_files_list.append(file)
+	if len(output_used_list) == len(necessary_files_list): necessary_files_ok_list.append(['txt',True,'pass'])
+	elif len(necessary_files_list) < len(output_used_list): necessary_files_ok_list.append(['txt',False,'Brakuje wywołanego pliku .txt.'])
+
+	# pliki .html
+	output_unused_list = output_list[1][1][0]
+	for path, ext, file, home_dir in output_unused_list: safe_to_remove_files_list.append(file)
+	output_used_list = output_list[1][1][1]
+	for file, line in output_used_list: necessary_files_list.append(file)
+	if len(output_used_list) == len(necessary_files_list): necessary_files_ok_list.append(['html',True,'pass'])
+	elif len(necessary_files_list) < len(output_used_list): necessary_files_ok_list.append(['html',False,'Brakuje wywołanego pliku .html.'])
+
+
+	list_nr = 1
+	print('\n'+str(list_nr)+'. Znaleziono plik app.py który wymaga do poprawnego działania w systemie pliki:\n\t\t\t',', '.join(necessary_files_list))
+	for ext, return_bool, message in necessary_files_ok_list: 
+		if not return_bool: txt_color = "red"
+		else: txt_color = "green"
+		if text_colored == 1: text = colored(message, txt_color, attrs=['reverse', 'blink']).center(40)
+		else: text = message.center(40)
+		print('\n\t\t','*'*20,'\n\t\t',text,'\n\t\t','*-'*20)
+  
+  #################################################################
+	list_nr+= 1
+	safe_to_remove_files_list = list(set(safe_to_remove_files_list))
+	possibility_file_to_remove = '\n\n'+str(list_nr)+'. Pliki możliwe do usunięcia - '+str(len(safe_to_remove_files_list))+' (nie będą miały wpływu na działanie flagi):\n\t'
+	print(possibility_file_to_remove, '\n\t '.join(safe_to_remove_files_list))
+
+	#################################################################
+	# pliki .py
+	#################################################################
+	# list_nr+= 1
+	# safe_to_remove_files_list.clear()
+	# necessary_files_list.clear()
+	# output_unused_list = output_list[2][1][0]
+	# for path, ext, file, home_dir in output_unused_list: safe_to_remove_files_list.append(file)
+	# output_used_list = output_list[2][1][1]
+	# for file, line in output_used_list: necessary_files_list.append(file)
+	# if len(output_used_list) == len(necessary_files_list): necessary_files_ok_list.append(['py',True,'pass'])
+	# elif len(necessary_files_list) < len(output_used_list): necessary_files_ok_list.append(['py',False,'Brakuje wywołanego pliku .py.'])
+
+	# python_files_in_flaga_folder = output_used_list
+	# print('\n\n'+str(list_nr)+'. py files: ',python_files_in_flaga_folder)
+
+	#################################################################
+	# lastlog on server
+	#################################################################
+	list_nr+= 1
+	syslog_list = subprocess.getoutput('lastlog').split('\n')
+	for nr,line in enumerate(syslog_list):
+		line_list = line.split(' ')
+		new_list = []
+		for pos in line_list:
+			if pos != '':
+				new_list.append(pos)
+      
+		syslog_list[nr] = new_list
+    #print(nr,line_list[0],line_list[-1])
+	print('\n'+str(list_nr)+'. Ostatnie logowanie użytkownika:\n')
+	zz = 0
+	while zz < len(syslog_list):
+		if len(syslog_list[zz]) > 4:
+			#print(syslog_list[zz])
+			log_str = '\t'+syslog_list[zz][0]+' z dnia: '+syslog_list[zz][-4]+' '+syslog_list[zz][-5]+' z godz.: '+syslog_list[zz][-3]+' z IP: '+syslog_list[zz][2]
+			print(log_str)
+		zz+= 1
+
+	#################################################################
+	# find error in syslog -> cat /var/log/syslog
+	#################################################################
+	list_nr+= 1
+	syslog_list = subprocess.getoutput('cat /var/log/syslog').split('\n')
+	gunicorn_error_proc_id_list = []
+	error_line_list = []
+	for line in syslog_list:
+		if "[ERROR]" in line:
+			line_list = line.split(' ')
+			if "gunicorn" in line_list[4]:
+				pid = line_list[4]
+				gunicorn_error_proc_id_list.append(pid)
+	
+	for pid in gunicorn_error_proc_id_list:
+		for line in syslog_list:
+			if pid in line:
+				tmp_error_list = line.split(' ')
+				if len(tmp_error_list) > 4:
+					error_line_list.append([tmp_error_list[4],tmp_error_list])
+				else:
+					print(error_line_list)
+	
+	err_msg_list = []
+	tmp_err_msg = ""
+	for id, error_list in enumerate(error_line_list):
+			if error_list[1][-4] == "Worker" and error_list[1][-5] == "[INFO]":
+				#print(error_list[1])
+				if ' '.join(error_line_list[id-1][1][5:]) != tmp_err_msg:
+					err_msg_list.append([' '.join(error_line_list[id-1][1][5:]), ' '.join(error_line_list[id-3][1])])
+					tmp_err_msg = ' '.join(error_line_list[id-1][1][5:])
+
+	if len(err_msg_list) > 0:
+		print('\n'+str(list_nr)+'. Ostatnie błędy w pliku syslog:\n')
+		for info, place in err_msg_list:
+			print(info)
+			if "IndentationError" in info:
+				print('Sprawdź wcięcia w pliku app.py w linii:')
+				#print(place)
+				tmp_place = place.split(':')[3:]
+				print(' '.join(tmp_place))
 			else:
-				print(' a directory: %s' %const_var('SERWER_TEMPLATES_PATH')+'/'+file)
-
-  
-  
-#flaskCleaner()
+				print(place)
+			print('\n')
+		#print(err_msg_list[0])
+	else:
+		print('\n'+str(list_nr)+'. Nie ma błędów w pliku syslog.')
 
 def main(argv):
 	import subprocess
@@ -98,36 +389,41 @@ def main(argv):
 			change_user_resp = os.setuid(uid)
 			print("Real user ID after changes:", os.getuid())
 			#change_user_resp = subprocess.check_output(change_u
-        | Example description: Change a Range of Item Values
-        _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-        |  pisaki_list = ["pióro", "oliwa", "burak", "ołówek"]
-        |  
-        |  pisaki_list[1:3] = ["mazak","długopis"]
-        _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-ser_resp, shell=True)
 			print("Coś tu jednak nie działa jak powinno ;/")
 			#new_user = subprocess.check_output('whoami', shell=True)
 			os.system('cd '+init_dir+' && pwd')
 
-		git_out = subprocess.check_output('git add -A .; git commit -m "'+commit_text+'"; git push', shell=True)
-		print(git_out.decode())
 		print('Wypchanie kodu na GitHub:\n git add -A .; git commit -m "'+commit_text+'"; git push\n\n')
+		#git_out = subprocess.check_output('git add -A .; git commit -m "'+commit_text+'"; git push', shell=True)
+		#print(git_out.decode())
+	elif len(argv) > 1 and argv[1] == "4":
+		flaskCleaner()
+		raise SystemExit
 	else:
 		print('\n\n')
-		option_nr = console.input("\t\t*** Wybierz jedną z poniższych opcji: \n\t\t*** 1. nazwe pliku html \n\t\t*** 2. wykonaj synchronizacje (rsync) \n\t\t*** 3. wypchnij kod na GitHub\n\t\t*** 4. zrób porządek w app.py i folderach\n\t\t*** ")
+		opt_str = "\t\t*** Wybierz jedną z poniższych opcji: \n\t\t*** "
+		opt_str+= "1. nazwe pliku html \n\t\t*** "
+		opt_str+= "2. wykonaj synchronizacje (rsync) \n\t\t*** "
+		opt_str+= "3. wypchnij kod na GitHub\n\t\t*** "
+		opt_str+= "4. sprawdź serwer FLASK\n\n\t\t*** "
+		opt_str+= "q - wyjście\n\n\t\t\t --|> "
+		option_nr = console.input(opt_str)
 		file_name = ""
-		if option_nr == "4":
-			pass
+		if option_nr == "q":
+			raise SystemExit
+		elif option_nr == "4":
 			flaskCleaner()
-		if option_nr == "1":
+			raise SystemExit
+		elif option_nr == "1":
 			file_name = console.input("\t\t*** Podaj nazwę pliku html (bez rozszerzenia): \n\t\t*** ")
 		elif option_nr == "3":
 			commit_text = console.input("\t\t*** Wpisz opis dla 'git commit': \n\t\t*** ")
 			print(os.system('whoami'))
 			print(os.system('git add -A .; git commit -m "'+commit_text+'"; git push'))
 			print('Wypchanie kodu na GitHub:\n git add -A .; git commit -m "'+commit_text+'"; git push')
-		
+		else:
+			raise SystemExit
+ 
 		if option_nr != "3":
 			tmp_serwer_templates_path = console.input("\t\t*** Wpisz scieżke do katalogu templates na serwerze lub wciśnij ENTER\n\t\t\t (default: "+const_var('SERWER_TEMPLATES_PATH')+")\n\t\t*** ")
 			if tmp_serwer_templates_path != "":
@@ -237,19 +533,31 @@ if __name__ == '__main__':
 		main(sys.argv)
 	else:
 		console.clear()
+		print('*'*40)
+		txt = "text wycentrowany do wartosci 40"
+		x = txt.center(40)
+		print(x)
 		print('\n\n\t\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**')
-		print()
-		print('\t\t**-**\t\t Uruchom nowy projekt / Synchronizuj dane / Wypchnij na GitHub ;) \t**-**')
-		print()
+		print('\t\t**-**','\t     '*10,'  **-**')
+		print('\t\t**-**','\t     '*10,'  **-**')
+		print('\t\t**-**\t Takie tam różne narzędzia ...')
+		print('\t\t**-**\t')
+		print('\t\t**-**\t 1. Uruchom nowy projekt (wymaga sudo)')
+		print('\t\t**-**\t\t - dodaje nową stronę do '+const_var('SERWER_TEMPLATES_PATH')+'/templates/')
+		print('\t\t**-**\t\t - uaktualnia plik app.py')
+		print('\t\t**-**\t\t - restartuje usługi')
+		print('\t\t**-**\t 2. Synchronizacja rsync (wymaga sudo)')
+		print('\t\t**-**\t\t - synchronizuj katalog roboczy z '+const_var('SERWER_TEMPLATES_PATH')+'/templates/')
+		print('\t\t**-**\t 3. Git push (git add -A .; git commit -m "commit_text"; git push)')
+		print('\t\t**-**\t\t - dodaj pliki do repo, zakomituj i wypchnij na GitHub')
+		print('\t\t**-**\t\t - działa bez sudo - uruchom z parametrem 3')
+		print('\t\t**-**\t 4. Wystąpił nieoczekiwany błąd serwera?')
+		print('\t\t**-**\t\t - sprawdza app.py pod kątem powiązań z plikami')
+		print('\t\t**-**\t\t - pokazuje możliwe błędy z pliku syslog')
+		print('\t\t**-**\t\t - uruchom z parametrem 4')
+		print('\t\t**-**','\t     '*10,'  **-**')
+		print('\t\t**-**','\t     '*10,'  **-**')
 		print('\t\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**')
-		print()
-		print('\t\t**-**\t 1. dodaje nową stronę do '+const_var('SERWER_TEMPLATES_PATH')+'/templates/ oraz uaktualnia plik app.py **-**')
-		print('\t\t**-**\t 2. synchronizuje katalog roboczy z '+const_var('SERWER_TEMPLATES_PATH')+'/templates/ \t\t\t**-**')
-		print('\t\t**-**\t 3. wypycha repozytorium na GitHub (bez sudo) - uruchom z parametrem 3 \t\t**-**')
-		print()
-		print('\t\t**-**\t\t Po wykonaniu wybranej operacji następuje restart usług.\t\t**-**')
-		print()
-		print('\t\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**')
-		print('\n\n\t\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**')
-		print('\n\t\t**-**\t\t Uruchom program ponownie z uprawnieniami root\'a (sudo) \t\t**-**\n')
-		print('\t\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\n\n')
+#		print('\n\n\t\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**')
+#		print('\n\t\t**-**\t\t Uruchom program ponownie z uprawnieniami root\'a (sudo) \t\t**-**\n')
+#		print('\t\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\t**-**\n\n')
