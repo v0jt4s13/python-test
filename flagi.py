@@ -6,7 +6,6 @@ import re
 import datetime
 import time
 from datetime import date, timedelta
-import datetime
 import sys
 # modules dla kolorowania textow
 from rich import print
@@ -90,9 +89,10 @@ def buildRespList(status_code,url,extra="200"):
             
     if all_status_code_list.count(status_code) == 0:
       all_status_code_list.append(status_code)
-    
+
+  today = date.today()
   str_list = [{
-    'id':'licznik',
+    'date':today,
     'status_code':status_code,
     'description':'Status code dla domeny',
     'extra':status_code
