@@ -6,7 +6,7 @@ def clean_log_list_from_bad_insert(gunicorn_error_proc_id_list):
   ##################################################
   #+#  Remove duplicates and not necessary data  #+#
   ##################################################
-  pid_list = []
+	pid_list = []
 	for date,pid,short,message in gunicorn_error_proc_id_list:
 		pid_list.append(pid)
 
@@ -78,16 +78,21 @@ def prepare_syslog_output(syslog_list):
 	tmp_err_list = []
 	for id, error_list in enumerate(error_line_list):
 			if error_list[1][-4] == "Worker" and error_list[1][-5] == "[INFO]":
+				worker_info_err_message = error_line_list[id+1][1][5].rstrip(':')
+				tmp_line_err_msg2 = ''
+				if worker_info_err_message in ("ModuleNotFoundError","IndentationError","AttributeError"):
+					tmp_line_err_msg2 = ' '.join(error_line_list[id+2][1][5:])
+     
 				pid = error_list[0]
 				data = str(error_list[1][5]+' '+error_list[1][6]).replace('[','')
-				tmp_line_err_mg = ' '.join(error_line_list[id+3][1][5:])
-				tmp_line_err_msg2 = ' '.join(error_line_list[id+1][1][5:])
-				strstr = tmp_line_err_mg+' '+tmp_line_err_msg2
+				tmp_line_err_msg1 = ' '.join(error_line_list[id+1][1][5:])
+				tmp_line_err_msg3 = ' '.join(error_line_list[id+3][1][5:])
+				strstr = tmp_line_err_msg1+' '+tmp_line_err_msg2
 				
 				if tmp_err_list.count(strstr) == 0:
 					tmp_err_list.append(strstr)
 					#print(id,pid,data,tmp_line_err_mg,tmp_line_err_msg2)
-					err_msg_list.append([data,tmp_line_err_msg2,tmp_line_err_mg])
+					err_msg_list.append([data,tmp_line_err_msg1,tmp_line_err_msg2,tmp_line_err_msg3])
 
 	return err_msg_list
 
@@ -101,21 +106,22 @@ def search_syslog_for_error():
 	#print(err_msg_list)
 	if len(err_msg_list) > 0:
 		print('\n\n\n Ostatnie błędy w pliku syslog:\n')
-		for err_date, info, place in err_msg_list:
+		for err_date, msgl1, msgl2, msgl3 in err_msg_list:
 			print(' - - -',err_date,'- '*40)
-			print('Komunikat błędu:', info) #,'place===>',place)
-			if "IndentationError" in info:
+			print('Komunikat błędu:', msgl1) #,'msgl2===>',msgl2)
+			if "IndentationError" in msgl1:
 				print('Sprawdź wcięcia w pliku app.py w linii:')
-				print(place)
-				#tmp_place = place.split(':')[3:]
+				print(msgl2)
+				#tmp_place = msgl2.split(':')[3:]
 				#print(' '.join(tmp_place))
-			elif "AssertionError" in info:
-				tmp_info_list = info.split(':')
+			elif "AssertionError" in msgl1:
+				tmp_info_list = msgl1.split(':')
 				if "function" in tmp_info_list[1] and "overwriting" in tmp_info_list[1] and "an existing" in tmp_info_list[1]:
 					print('Sprawdź nazwę funkcji, prawdopodobnie w pliku app.py masz 2 funkcje nazywające się:',tmp_info_list[-1])
-					print('\n',place)
+					print('\n',msgl2)
 			else:
-				print(place)
+				print(msgl2)
+			print(msgl3)
 			print('\n')
 		#print(err_msg_list[0])
 	else:
