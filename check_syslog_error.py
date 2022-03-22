@@ -2,7 +2,7 @@
 import subprocess
 
 
-def cleanLogListFromBadInsert(gunicorn_error_proc_id_list):
+def clean_log_list_from_bad_insert(gunicorn_error_proc_id_list):
 	#print(gunicorn_error_proc_id_list)
 	pid_list = []
 	for date,pid,short,message in gunicorn_error_proc_id_list:
@@ -19,7 +19,7 @@ def cleanLogListFromBadInsert(gunicorn_error_proc_id_list):
 
 	return new_gunicorn_error_proc_id_list
  
-def cleanLogLineAndPutInToList(line):
+def clean_log_line_and_put_in_to_list(line):
 	line_list = line.split(']: [')
 	#print('\n\naaaaa ===>',line_list)
 	new_list = line_list[1].split(']')
@@ -29,22 +29,22 @@ def cleanLogLineAndPutInToList(line):
   
 	return tmp_list
 
-def prepareSyslogOutput(syslog_list):
+def prepare_syslog_output(syslog_list):
 	gunicorn_error_proc_id_list = []
 	error_line_list = []
 	for nr, line in enumerate(syslog_list):
 		tmp_line_list = line.split(':')
 		pid = 0
 		if "[INFO]" in line and "Worker exiting" in line:
-			#print('\n\tZZZ=',cleanLogLineAndPutInToList(line),'\n')
-			tmp_list = cleanLogLineAndPutInToList(line)
+			#print('\n\tZZZ=',clean_log_line_and_put_in_to_list(line),'\n')
+			tmp_list = clean_log_line_and_put_in_to_list(line)
 			gunicorn_error_proc_id_list.append([tmp_list[0],tmp_list[1],tmp_list[2],tmp_list[3]])
 		elif "[ERROR]" in line and "Exception in worker process" in line:
-			#print('\n\tYYY=',cleanLogLineAndPutInToList(line),'\n')
-			tmp_list = cleanLogLineAndPutInToList(line)
+			#print('\n\tYYY=',clean_log_line_and_put_in_to_list(line),'\n')
+			tmp_list = clean_log_line_and_put_in_to_list(line)
 			gunicorn_error_proc_id_list.append([tmp_list[0],tmp_list[1],tmp_list[2],tmp_list[3]])
 	
-	new_gunicorn_error_proc_id_list = cleanLogListFromBadInsert(gunicorn_error_proc_id_list)
+	new_gunicorn_error_proc_id_list = clean_log_list_from_bad_insert(gunicorn_error_proc_id_list)
 	for data,pid,short,message in new_gunicorn_error_proc_id_list:
 		for line in syslog_list:
 			if pid in line:
@@ -79,7 +79,7 @@ def search_syslog_for_error():
   
 	syslog_list = subprocess.getoutput('cat /var/log/syslog').split('\n')
 	syslog_list.reverse()
-	err_msg_list = prepareSyslogOutput(syslog_list)
+	err_msg_list = prepare_syslog_output(syslog_list)
  
 	#print(err_msg_list)
 	if len(err_msg_list) > 0:
