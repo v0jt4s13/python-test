@@ -1,0 +1,143 @@
+Timer unit: 1e-06 s
+
+Total time: 0.009909 s
+File: test-direction.py.lprof
+Function: dirReduc at line 12
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    12                                           @profile
+    13                                           def dirReduc(arr):
+    14         3          2.0      0.7      0.0      steps = []  #
+    15      4603       1278.0      0.3     12.9      for step in arr:  #
+    16      4600       1603.0      0.3     16.2          steps.append(step)
+    17      4600       2072.0      0.5     20.9          if "EAST" in steps[-2:] and "WEST" in steps[-2:]:
+    18       768        283.0      0.4      2.9              steps.pop(-1)
+    19       768        293.0      0.4      3.0              steps.pop(-1)
+    20      3832       1830.0      0.5     18.5          elif "NORTH" in steps[-2:] and "SOUTH" in steps[-2:]:
+    21       587        233.0      0.4      2.4              steps.pop(-1)
+    22       587        229.0      0.4      2.3              steps.pop(-1)
+    23                                           
+    24      1893        541.0      0.3      5.5      for step in steps:  #
+    25      1890        805.0      0.4      8.1          if "EAST" in steps[-2:] and "WEST" in steps[-2:]:
+    26                                                       steps.pop(-1)
+    27                                                       steps.pop(-1)
+    28      1890        739.0      0.4      7.5          elif "NORTH" in steps[-2:] and "SOUTH" in steps[-2:]:
+    29                                                       steps.pop(-1)
+    30                                                       steps.pop(-1)
+    31         3          1.0      0.3      0.0      return steps
+
+Total time: 0.000775 s
+File: test-direction.py.lprof
+Function: dirReduc2 at line 33
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    33                                           @profile
+    34                                           def dirReduc2(arr):
+    35         1          1.0      1.0      0.1      opposite = {'NORTH': 'SOUTH', 'EAST': 'WEST', 'SOUTH': 'NORTH', 'WEST': 'EAST'}
+    36         1          0.0      0.0      0.0      new_plan = []
+    37         1        773.0    773.0     99.7      [new_plan.pop() if new_plan and new_plan[-1] == opposite[d] else new_plan.append(d) for d in arr]
+    38         1          1.0      1.0      0.1      return new_plan
+
+Total time: 0.004336 s
+File: test-direction.py.lprof
+Function: dirReduc3 at line 41
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    41                                           @profile
+    42                                           def dirReduc3(arr):
+    43         1         22.0     22.0      0.5      dir = " ".join(arr)
+    44         1         53.0     53.0      1.2      dir2 = dir.replace("NORTH SOUTH",'').replace("SOUTH NORTH",'').replace("EAST WEST",'').replace("WEST EAST",'')
+    45         1         49.0     49.0      1.1      dir3 = dir2.split()
+    46         1       4212.0   4212.0     97.1      return dirReduc(dir3) if len(dir3) < len(arr) else dir3
+
+
+Total time: 0.006234 s
+File: test-direction.py.lprof
+Function: dirReduc4 at line 49
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    49                                           @profile
+    50                                           def dirReduc4(arr):
+    51         1          1.0      1.0      0.0      opposites = [{'NORTH', 'SOUTH'}, {'EAST', 'WEST'}]
+    52         1          2.0      2.0      0.0      for i in range(len(arr) - 1):
+    53         1          2.0      2.0      0.0          if set(arr[i:i + 2]) in opposites:
+    54         1          2.0      2.0      0.0              del arr[i:i + 2]
+    55         1       6227.0   6227.0     99.9              return dirReduc(arr)
+    56                                               return arr
+
+
+Total time: 0.303606 s
+File: test-direction.py.lprof
+Function: dirReduc5 at line 59
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    59                                           @profile
+    60                                           def dirReduc5(arr):
+    61         1          1.0      1.0      0.0      opposite={"NORTH":"SOUTH",
+    62         1          1.0      1.0      0.0                "SOUTH":"NORTH",
+    63         1          1.0      1.0      0.0                "WEST":"EAST",
+    64         1          1.0      1.0      0.0                "EAST":"WEST"
+    65                                               }
+    66         1          1.0      1.0      0.0      i=0
+    67    184418      80507.0      0.4     26.5      while i+1<len(arr):
+    68    184417      77916.0      0.4     25.7          opp=opposite.get(arr[i])
+    69    184417      75267.0      0.4     24.8          if arr[i+1]==opp:
+    70       581        420.0      0.7      0.1              arr.pop(i+1)
+    71       581        363.0      0.6      0.1              arr.pop(i)
+    72       581        238.0      0.4      0.1              i=0
+    73                                                   else:
+    74    183836      68889.0      0.4     22.7              i+=1
+    75         1          1.0      1.0      0.0      return arr
+
+Total time: 0.001011 s
+File: test-direction.py.lprof
+Function: dirReduc6 at line 78
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    78                                           @profile
+    79                                           def dirReduc6(arr):
+    80         1          1.0      1.0      0.1      opposite = {"NORTH": "SOUTH",
+    81         1          0.0      0.0      0.0                  "SOUTH": "NORTH",
+    82         1          0.0      0.0      0.0                  "WEST": "EAST",
+    83         1          0.0      0.0      0.0                  "EAST": "WEST"
+    84                                                           }
+    85         1          0.0      0.0      0.0      i = 0
+    86       630        271.0      0.4     26.8      while i+1 < len(arr):
+    87       629        257.0      0.4     25.4          opp = opposite.get(arr[i])
+    88       629        249.0      0.4     24.6          if arr[i+1] == opp:
+    89                                                       arr.pop(i+1)
+    90                                                       arr.pop(i)
+    91                                                       if i > 0:
+    92                                                           i -= 1
+    93                                                   else:
+    94       629        233.0      0.4     23.0              i += 1
+    95         1          0.0      0.0      0.0      return arr
+
+
+
+
+
+
+Total time: 0.000775 s
+Function: dirReduc2 at line 33
+
+Total time: 0.001011 s
+Function: dirReduc6 at line 78
+
+Total time: 0.004336 s
+Function: dirReduc3 at line 41
+
+Total time: 0.006234 s
+Function: dirReduc4 at line 49
+
+Total time: 0.009909 s
+Function: dirReduc at line 12
+
+Total time: 0.303606 s
+Function: dirReduc5 at line 59
