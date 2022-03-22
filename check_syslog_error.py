@@ -3,8 +3,10 @@ import subprocess
 
 
 def clean_log_list_from_bad_insert(gunicorn_error_proc_id_list):
-	#print(gunicorn_error_proc_id_list)
-	pid_list = []
+  ##################################################
+  #+#  Remove duplicates and not necessary data  #+#
+  ##################################################
+  pid_list = []
 	for date,pid,short,message in gunicorn_error_proc_id_list:
 		pid_list.append(pid)
 
@@ -20,6 +22,12 @@ def clean_log_list_from_bad_insert(gunicorn_error_proc_id_list):
 	return new_gunicorn_error_proc_id_list
  
 def clean_log_line_and_put_in_to_list(line):
+  ################################################
+  #+#  Change syslog line from string to list  #+#
+  ################################################
+  # Mar 22 00:15:55 ip-172-31-29-165 gunicorn[792103]: [2022-03-22 00:15:55 +0000] [792103] [INFO] Worker exiting (pid: 792103)
+	# ['2022-03-22 00:15:55 +0000', '792103', 'INFO', 'Worker exiting (pid: 792103)']
+  ################################################
 	line_list = line.split(']: [')
 	#print('\n\naaaaa ===>',line_list)
 	new_list = line_list[1].split(']')
@@ -30,11 +38,20 @@ def clean_log_line_and_put_in_to_list(line):
 	return tmp_list
 
 def prepare_syslog_output(syslog_list):
+  ################################################
+  #+#   Prepare syslog output to better view   #+#
+  ################################################
+  # Mar 22 00:15:55 ip-172-31-29-165 gunicorn[792103]: [2022-03-22 00:15:55 +0000] [792103] [INFO] Worker exiting (pid: 792103)
+	# ['2022-03-22 00:15:55 +0000', '792103', 'INFO', 'Worker exiting (pid: 792103)']
+  ################################################
 	gunicorn_error_proc_id_list = []
 	error_line_list = []
 	for nr, line in enumerate(syslog_list):
 		tmp_line_list = line.split(':')
 		pid = 0
+		#################################################
+		# Search for specific string in syslog line
+		#################################################
 		if "[INFO]" in line and "Worker exiting" in line:
 			#print('\n\tZZZ=',clean_log_line_and_put_in_to_list(line),'\n')
 			tmp_list = clean_log_line_and_put_in_to_list(line)
