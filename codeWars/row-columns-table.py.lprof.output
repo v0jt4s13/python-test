@@ -1,0 +1,302 @@
+Timer unit: 1e-06 s
+
+========================================================================================
+
+Total time: 0.001081 s
+File: row-columns-table.py.lprof
+Function: Artur_Babinskicrown2 at line 26
+==========================================
+Total time: 0.001333 s
+File: row-columns-table.py.lprof
+Function: Artur_Babinskicrown1 at line 15
+==========================================
+Total time: 0.001503 s
+File: row-columns-table.py.lprof
+Function: Urbid at line 178
+
+==========================================
+
+Total time: 0.002261 s
+File: row-columns-table.py.lprof
+Function: RafalK at line 124
+==========================================
+Total time: 0.002305 s
+File: row-columns-table.py.lprof
+Function: SebastianK at line 143
+==========================================
+Total time: 0.002356 s
+File: row-columns-table.py.lprof
+Function: Czarny at line 91
+==========================================
+Total time: 0.002495 s
+File: row-columns-table.py.lprof
+Function: Boomer at line 72
+==========================================
+Total time: 0.002502 s
+File: row-columns-table.py.lprof
+Function: ika at line 107
+==========================================
+Total time: 0.002793 s
+File: row-columns-table.py.lprof
+Function: svenson at line 158
+==========================================
+Total time: 0.00323 s
+File: row-columns-table.py.lprof
+Function: herodisiac at line 3
+==========================================
+Total time: 0.022695 s
+File: row-columns-table.py.lprof
+Function: Bartek at line 39
+
+========================================================================================
+
+Total time: 0.00323 s
+File: row-columns-table.py.lprof
+Function: herodisiac at line 3
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     3                                           @profile
+     4                                           def herodisiac(n,m):
+     5         1          1.0      1.0      0.0    rows = n
+     6         1          0.0      0.0      0.0    col = m
+     7         1          0.0      0.0      0.0    a = 9
+     8        51         18.0      0.4      0.6    for i in range(rows):
+     9        50         21.0      0.4      0.7        temp = []
+    10      2550        762.0      0.3     23.6        for j in range(col):
+    11      2500        803.0      0.3     24.9            a += 1
+    12      2500        978.0      0.4     30.3            temp.append(a%10)
+    13        50        647.0     12.9     20.0        print(*temp)
+
+Total time: 0.001333 s
+File: row-columns-table.py.lprof
+Function: Artur_Babinskicrown1 at line 15
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    15                                           @profile
+    16                                           def Artur_Babinskicrown1(n,m):
+    17                                           
+    18         1          2.0      2.0      0.2    def tablica(rows, columns):
+    19                                                 numbers_list = [i % 10 for i in range(rows * columns)]
+    20                                                 result = [[] for row in range(rows)]  # create list of empty lists (each list is a row)
+    21                                                 [result[index // columns].append(str(number)) for index, number in enumerate(numbers_list)]  # fill the lists
+    22                                                 for lst in result:  # display the table 
+    23                                                     print(' '.join(lst))
+    24         1       1331.0   1331.0     99.8    tablica(n,m)
+
+Total time: 0.001081 s
+File: row-columns-table.py.lprof
+Function: Artur_Babinskicrown2 at line 26
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    26                                           @profile
+    27                                           def Artur_Babinskicrown2(n,m):
+    28                                           
+    29         1          1.0      1.0      0.1    def tablica2(rows, columns):
+    30                                                 numbers_list = [i % 10 for i in range(rows * columns)]
+    31                                                 for i in range((rows * columns) // columns):
+    32                                                     print(*numbers_list[i * columns:(i + 1) * columns])
+    33                                           
+    34                                             
+    35         1          1.0      1.0      0.1    print('********************************')
+    36         1       1079.0   1079.0     99.8    tablica2(n,m)
+
+Total time: 0.022695 s
+File: row-columns-table.py.lprof
+Function: Bartek at line 39
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    39                                           @profile
+    40                                           def Bartek(n=0,m=0):
+    41         1      15765.0  15765.0     69.5    from tkinter import N  
+    42         1          2.0      2.0      0.0    def kolejna(liczba):
+    43                                               wynik = 0
+    44                                               if liczba + 1 > 9:
+    45                                                   wynik = 0
+    46                                               else:
+    47                                                   wynik = liczba + 1
+    48                                               return wynik
+    49                                           
+    50         1          1.0      1.0      0.0    if n+m > 0:
+    51         1          1.0      1.0      0.0      wiersz = n
+    52         1          1.0      1.0      0.0      kolumna = m
+    53                                             else:
+    54                                               wiersz = int(input('Ile wierszy: '))
+    55                                               kolumna = int(input('Ile kolumn: '))
+    56         1          1.0      1.0      0.0    lista = ''
+    57                                           
+    58         1          0.0      0.0      0.0    zmienna = 0
+    59                                           
+    60        51         23.0      0.5      0.1    while wiersz != 0:
+    61                                           
+    62      2550       1254.0      0.5      5.5        for i in range(kolumna):
+    63      2500       1207.0      0.5      5.3            wynik = zmienna
+    64      2500       1864.0      0.7      8.2            lista = lista + str(wynik) + ' '
+    65      2500       2478.0      1.0     10.9            zmienna = kolejna(zmienna)
+    66                                           
+    67        50         48.0      1.0      0.2        print(lista)
+    68        50         24.0      0.5      0.1        lista = ''
+    69        50         26.0      0.5      0.1        wiersz -= 1
+
+Total time: 0.002495 s
+File: row-columns-table.py.lprof
+Function: Boomer at line 72
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    72                                           @profile
+    73                                           def Boomer(n,m):
+    74                                           
+    75         1          1.0      1.0      0.0    kolumny = n
+    76         1          0.0      0.0      0.0    wiersze = m
+    77                                           
+    78         1          1.0      1.0      0.0    def prs(kol, wier):
+    79                                               str = "" 
+    80                                               arr = [i%10 for i in range(kol*wier)]
+    81                                               for j in range(len(arr)):
+    82                                                   str += "{0}, ".format(arr[j])
+    83                                                   if j%kol==kol-1 and j>0:
+    84                                                     str += "\n"
+    85                                               str_d = str.replace(',', '')
+    86                                               return str_d
+    87                                           
+    88         1       2493.0   2493.0     99.9    print(prs(kolumny, wiersze))
+
+Total time: 0.002356 s
+File: row-columns-table.py.lprof
+Function: Czarny at line 91
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    91                                           @profile
+    92                                           def Czarny(n,m):
+    93                                             
+    94         1          1.0      1.0      0.0    def gen_table(row, col):
+    95                                                 from itertools import cycle
+    96                                                 steps = 10 * row * col//10
+    97                                                 iter_cycle = cycle(range(10))
+    98                                           
+    99                                                 for i in range(steps):
+   100                                                     if i % col == 0 and i != 0:
+   101                                                         print()
+   102                                                     print(next(iter_cycle), end=" ")
+   103                                           
+   104         1       2355.0   2355.0    100.0    gen_table(n,m)
+
+Total time: 0.002502 s
+File: row-columns-table.py.lprof
+Function: ika at line 107
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   107                                           @profile
+   108                                           def ika(n=0,m=0):
+   109         1          7.0      7.0      0.3    from itertools import cycle
+   110         1          0.0      0.0      0.0    if n+m > 0: 
+   111         1          0.0      0.0      0.0      rows = n
+   112         1          0.0      0.0      0.0      columns = m
+   113                                             else:
+   114                                               rows = int(input("Ile wierszy: "))
+   115                                               columns = int(input("Ile kolumn: "))
+   116         1          1.0      1.0      0.0    number_cycle = cycle('0123456789')
+   117        51         20.0      0.4      0.8    for i in range(rows):
+   118        50         23.0      0.5      0.9        row = []
+   119      2550       1075.0      0.4     43.0        for j in range(columns):
+   120      2500       1232.0      0.5     49.2            row.append(next(number_cycle))
+   121        50        144.0      2.9      5.8        print(' '.join(row))
+
+Total time: 0.002261 s
+File: row-columns-table.py.lprof
+Function: RafalK at line 124
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   124                                           @profile
+   125                                           def RafalK(n,m):
+   126                                             
+   127         1          1.0      1.0      0.0    def funkcja(r, c):
+   128                                               i=0
+   129                                               for a in range(0, r):
+   130                                                   temp=[]
+   131                                                   for b in range(0, c):
+   132                                                     temp.append(i)
+   133                                                     if i ==9:
+   134                                                         i=0
+   135                                                     else:
+   136                                                         i +=1
+   137                                                   print(*temp)
+   138                                                   temp.clear()
+   139                                           
+   140         1       2260.0   2260.0    100.0    funkcja(n,m)
+
+Total time: 0.002305 s
+File: row-columns-table.py.lprof
+Function: SebastianK at line 143
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   143                                           @profile
+   144                                           def SebastianK(n,m):
+   145                                           
+   146         1          1.0      1.0      0.0    def arr(w, k):
+   147                                                 i = 0
+   148                                                 for y in range(w):
+   149                                                     for x in range(k):
+   150                                                         print(i, end=" ")
+   151                                                         i += 1
+   152                                                         if i == 10:
+   153                                                             i = 0
+   154                                                     print()
+   155         1       2304.0   2304.0    100.0    arr(n,m)
+
+Total time: 0.002793 s
+File: row-columns-table.py.lprof
+Function: svenson at line 158
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   158                                           @profile
+   159                                           def svenson(n,m):
+   160                                           
+   161         1          1.0      1.0      0.0    def tablica(inputTable):
+   162                                                 numberOfALL = inputTable[0]*inputTable[1]
+   163                                                 tempDigit = 0
+   164                                           
+   165                                                 for i in range(1, numberOfALL+1):
+   166                                                     if i % inputTable[1] == 0:
+   167                                                         print(tempDigit)
+   168                                                     else:
+   169                                                         print(tempDigit, end=' ')
+   170                                           
+   171                                                     tempDigit += 1
+   172                                                     if tempDigit > 9:
+   173                                                         tempDigit = 0
+   174                                           
+   175                                           
+   176         1       2792.0   2792.0    100.0    tablica([n,m])
+
+Total time: 0.001503 s
+File: row-columns-table.py.lprof
+Function: Urbid at line 178
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   178                                           @profile
+   179                                           def Urbid(n,m):
+   180                                           
+   181         1          1.0      1.0      0.1    def tablica (n, m):
+   182                                               ret = []
+   183                                               nice_list = [(lambda x: str(x%10))(x) for x in list(range(0,n*m+1))]
+   184                                               start, end = 0, m
+   185                                           
+   186                                               for _ in range(n):
+   187                                                 ret.append(" ".join(nice_list[start:end]))
+   188                                                 start, end = end, end+m
+   189                                           
+   190                                               return "\n".join(ret)
+   191                                             
+   192         1       1502.0   1502.0     99.9    return tablica(n,m)
+
