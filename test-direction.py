@@ -88,9 +88,10 @@ def dirReduc6(arr):
             i += 1
     return arr
   
-print(dirReduc(arr))
-print(dirReduc2(arr))
-print(dirReduc3(arr))
-print(dirReduc4(arr))
-print(dirReduc5(arr))
-print(dirReduc6(arr))
+print(len(arr))
+print(len(dirReduc(arr)))
+print(len(dirReduc2(arr)))
+print(len(dirReduc3(arr)))
+print(len(dirReduc4(arr)))
+print(len(dirReduc5(arr)))
+print(len(dirReduc6(arr)))
