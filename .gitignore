@@ -5,6 +5,7 @@ github-clone
 *.ini
 *.lprof
 aws.py
+fromgithub/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
