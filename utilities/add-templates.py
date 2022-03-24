@@ -459,7 +459,7 @@ def main(argv):
 	else:
 		print('\n\n')
 		opt_str = "\t\t*** Wybierz jedną z poniższych opcji: \n\t\t*** "
-		opt_str+= "1. nazwe pliku html \n\t\t*** "
+		opt_str+= "1. stwórz template dla nowej flagi \n\t\t*** "
 		opt_str+= "2. wykonaj synchronizacje (rsync) \n\t\t*** "
 		opt_str+= "3. wypchnij kod na GitHub\n\t\t*** "
 		opt_str+= "4. sprawdź serwer FLASK\n\n\t\t*** "
