@@ -1,3 +1,61 @@
+def strategia_a(movie_list: list) -> dict:
+    longest = movie_list[0]
+    
+    for movie in movie_list:
+        if longest['duration'] < movie['duration']:
+            longest = movie
+        elif (longest['duration'] == movie['duration']
+              and longest['end'] > movie['end']): 
+            longest = movie
+    return longest
+         
+            
+def strategia_b(movie_list: list) -> dict:
+    shortest = movie_list[0]
+    
+    for movie in movie_list:
+        if shortest['duration'] > movie['duration']:
+            shortest = movie
+        elif (shortest['duration'] == movie['duration']
+              and shortest['end'] > movie['end']): 
+            shortest = movie
+    return shortest
+
+
+def strategia_c(movie_list: list) -> dict:
+    earliest_start = movie_list[0]
+    
+    for movie in movie_list:
+        if earliest_start['start'] > movie['start']:
+            earliest_start = movie
+        elif (earliest_start['start'] == movie['start']
+              and earliest_start['end'] > movie['end']):
+            earliest_start = movie
+    return earliest_start
+            
+def strategia_d(movie_list: list) -> dict:
+    earliest_end = movie_list[0]
+    
+    for movie in movie_list:
+        if earliest_end['end'] > movie['end']:
+            earliest_end = movie
+        elif (earliest_end['end'] == movie['end']
+            and earliest_end['start'] < movie['start']): 
+            earliest_end = movie
+    return earliest_end
+
+
+
+
+
+TV = [{'name': 'film1', 'start': 9, 'end': 12},
+      {'name': 'film2', 'start': 15, 'end': 17},
+      {'name': 'film3', 'start': 11, 'end': 16},
+      {'name': 'film4', 'start': 12, 'end': 14},
+      {'name': 'film5', 'start': 11.5, 'end': 12.5}]
+
+
+
 Telewizja = [{'nazwa': 'film1', 'start': 9, 'end': 12, 'czas': 3},
              {'nazwa': 'film2', 'start': 15, 'end': 17, 'czas': 2},
              {'nazwa': 'film3', 'start': 11, 'end': 16, 'czas': 5},
@@ -120,3 +178,33 @@ print('\t\t>>>> Telewizja alg_B2 <<<<'.center(75))
 print('','*-* '*25,'\n')
 print('\n\tKoniec ==> ',alg_B2(Telewizja))
 print('\n\n\n')
+
+
+
+
+for movie in TV:
+    movie['duration'] = movie['end'] - movie['start']
+strategia = strategia_b
+
+    
+def movie_intersection(movie1: dict, movie2: dict) -> bool:
+    return not (movie2['start'] >= movie1['end'] 
+                or movie1['start'] >= movie2['end'])
+
+
+def algorytm(movie_list: list, strategia) -> list: 
+    output_list = []
+    movie_list_copy = movie_list.copy()
+    
+    while movie_list_copy:
+        chosen_movie = strategia(movie_list_copy)
+        output_list.append(chosen_movie)
+        for movie in movie_list_copy.copy():
+            if (movie_intersection(chosen_movie, movie)
+                or chosen_movie == movie):
+                movie_list_copy.remove(movie)
+    return output_list   
+
+print(algorytm(TV, strategia))
+
+

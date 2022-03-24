@@ -47,3 +47,19 @@ http://localhost/info/?action=discount_stats&type=discount<br />
 <br />
 http://localhost/mailing/news-prep<br />
 <br />
+
+<p>Git:<br />
+Najprościej jest sklonować zdalne repo za pomocą linku ssh i wtedy zacząć wprowadzać zmiany.
+<br />git init
+<br />git add .
+<br />git commit -m "Initial commit"
+<br />git remote add origin {link do repo}
+<br />git push -u origin main
+<br />
+<br />Pod Windows najlepiej robić to w konsoli gitbash
+<br />cd C:\Users\%username%\.ssh
+<br />eval $(ssh-agent)
+<br />ssh-add C:\Users\%username%\.ssh\{klucz_prywatny}
+<br />git config --global user.email "{adres email użyty na github.com}"
+<br />git config --global user.name "{nazwa użytkownika z github.com}"
+</p>
