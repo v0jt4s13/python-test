@@ -1,0 +1,157 @@
+========================================
+
+=============================================
+Total time: 0.000244 s
+File: 007Where_my_anagrams.py.lprof
+Function: anagrams3 at line 26
+=============================================
+Total time: 0.000272 s
+File: 007Where_my_anagrams.py.lprof
+Function: ana3 at line 65
+=============================================
+Total time: 0.000305 s
+File: 007Where_my_anagrams.py.lprof
+Function: anagrams2 at line 21
+
+=============================================
+
+Total time: 0.000327 s
+File: 007Where_my_anagrams.py.lprof
+Function: ana2 at line 52
+=============================================
+Total time: 0.000418 s
+File: 007Where_my_anagrams.py.lprof
+Function: anagrams4 at line 33
+=============================================
+Total time: 0.000435 s
+File: 007Where_my_anagrams.py.lprof
+Function: ana4 at line 78
+=============================================
+Total time: 0.000874 s
+File: 007Where_my_anagrams.py.lprof
+Function: anagrams1 at line 16
+=============================================
+Total time: 0.000902 s
+File: 007Where_my_anagrams.py.lprof
+Function: ana1 at line 39
+
+========================================================================================
+
+Timer unit: 1e-06 s
+
+Total time: 0.000874 s
+File: 007Where_my_anagrams.py.lprof
+Function: anagrams1 at line 16
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    16                                           @profile
+    17                                           def anagrams1(word, words):
+    18         3        874.0    291.3    100.0    return [w for w in words if sorted([c for c in word]) == sorted([c for c in w])]
+
+Total time: 0.000305 s
+File: 007Where_my_anagrams.py.lprof
+Function: anagrams2 at line 21
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    21                                           @profile
+    22                                           def anagrams2(word, words):
+    23         3        305.0    101.7    100.0    return [w for w in words if sorted(word) == sorted(w)]
+
+Total time: 0.000244 s
+File: 007Where_my_anagrams.py.lprof
+Function: anagrams3 at line 26
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    26                                           @profile
+    27                                           def anagrams3(word,words):
+    28         3          0.0      0.0      0.0    a = []
+    29         3          4.0      1.3      1.6    s_word = sorted(set(word))
+    30         3        239.0     79.7     98.0    a.append([w for w in words if s_word == sorted(set(w))])
+    31         3          1.0      0.3      0.4    return a
+
+Total time: 0.000418 s
+File: 007Where_my_anagrams.py.lprof
+Function: anagrams4 at line 33
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    33                                           @profile
+    34                                           def anagrams4(word,words):
+    35         3        418.0    139.3    100.0    return [w for w in words if sorted(set(word)) == sorted(set(w))]
+
+Total time: 0.000902 s
+File: 007Where_my_anagrams.py.lprof
+Function: ana1 at line 39
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    39                                           @profile
+    40                                           def ana1(w1,w1l,w2,w2l,w3,w3l):
+    41         1          1.0      1.0      0.1    tbl = []
+    42                                           
+    43         1        321.0    321.0     35.6    tbl.append(anagrams1(w1,w1l))
+    44                                           
+    45         1        285.0    285.0     31.6    tbl.append(anagrams1(w2,w2l))
+    46                                           
+    47         1        282.0    282.0     31.3    tbl.append(anagrams1(w3,w3l))
+    48                                             
+    49         1         13.0     13.0      1.4    print(tbl)
+
+Total time: 0.000327 s
+File: 007Where_my_anagrams.py.lprof
+Function: ana2 at line 52
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    52                                           @profile
+    53                                           def ana2(w1,w1l,w2,w2l,w3,w3l):
+    54         1          1.0      1.0      0.3    tbl = []
+    55                                           
+    56         1        101.0    101.0     30.9    tbl.append(anagrams2(w1,w1l))
+    57                                           
+    58         1        124.0    124.0     37.9    tbl.append(anagrams2(w2,w2l))
+    59                                           
+    60         1         90.0     90.0     27.5    tbl.append(anagrams2(w3,w3l))
+    61                                             
+    62         1         11.0     11.0      3.4    print(tbl)
+
+Total time: 0.000272 s
+File: 007Where_my_anagrams.py.lprof
+Function: ana3 at line 65
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    65                                           @profile
+    66                                           def ana3(w1,w1l,w2,w2l,w3,w3l):
+    67         1          0.0      0.0      0.0    tbl = []
+    68                                           
+    69         1         91.0     91.0     33.5    tbl.append(anagrams3(w1,w1l))
+    70                                           
+    71         1         81.0     81.0     29.8    tbl.append(anagrams3(w2,w2l))
+    72                                           
+    73         1         88.0     88.0     32.4    tbl.append(anagrams3(w3,w3l))
+    74                                             
+    75         1         12.0     12.0      4.4    print(tbl)
+
+Total time: 0.000435 s
+File: 007Where_my_anagrams.py.lprof
+Function: ana4 at line 78
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    78                                           @profile
+    79                                           def ana4(w1,w1l,w2,w2l,w3,w3l):
+    80         1          0.0      0.0      0.0    tbl = []
+    81                                           
+    82         1        142.0    142.0     32.6    tbl.append(anagrams4(w1,w1l))
+    83                                           
+    84         1        132.0    132.0     30.3    tbl.append(anagrams4(w2,w2l))
+    85                                           
+    86         1        151.0    151.0     34.7    tbl.append(anagrams4(w3,w3l))
+    87                                             
+    88         1         10.0     10.0      2.3    print(tbl)
+
+
