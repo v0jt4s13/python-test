@@ -6,6 +6,7 @@ github-clone
 *.lprof
 aws.py
 fromgithub/
+robocze/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
