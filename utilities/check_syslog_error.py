@@ -127,9 +127,97 @@ def search_syslog_for_error():
 	else:
 		print('\n\n\n Nie ma błędów w pliku syslog.')
   
+def show_hdd_free_space():
+	print()
+	print('='*30)
+	print('Miejsce na dysku'.center(20))
+	print()
+	df_list = subprocess.getoutput('df -h').split('\n')
+	for nr,line in enumerate(df_list):
+
+		new_lline = []
+		if nr < 2: print(line)
+		#elif nr in range(2, 4): #nr >= 2 and nr : 
+		else:
+			lline = line.split(' ')
+			for inr, item in enumerate(lline):
+				if lline[inr] == "":	# and lline[inr-1] == "":
+					continue
+				else:
+					if len(new_lline) > 0:
+						new_lline.append('')
+						new_lline.append(lline[inr])
+					else:
+						new_lline.append(lline[inr])
+			if int(new_lline[-3].rstrip('%')) >= 85 and "dev/loop" not in new_lline[0]:
+				print(new_lline)
+	
+	print('\n\n')
   
+  
+ 
 def main():
   search_syslog_for_error()
+  
+  show_hdd_free_space()
+  
+  
     
 if __name__ == '__main__':
 	main()
+
+
+
+def python():
+  """
+  operatory aytmetyczne: +-*/ %
+  mozliwy zapis: 
+  a = 5
+  a+=3 ===> a = a + 3
+  a == 8
+  
+  stringi:
+  funkcje:
+		len(str)
+  
+  metody:
+		str = 'jakis string'
+		str.capitalize()
+		str.upper() str.lower()
+		str[0] = j
+		str[0:2] = ja
+		str[-3:] = ing
+		str.split(' ') => lista_slow
+		' '.join(lista_slow)
+		str.startswith('j')
+		str.endswith('g')
+		str.rstrip('g') / str.lstrip('g') / str.strip()
+		str.join(str1, str2)
+		str(325).zfill(5) => 00325 / str(5).zfill(5) ==> 00005
+  
+	instrukcje warunkowe:
+		print("Jedz") if light == 'green' else print("Czekaj")
+  
+  petle:
+		while 
+		for int in range(1,10):	-> for int in range(0,30, 3):
+			1 - 9												0,3,6,9 ... 27
+
+
+	struktury danych -> list, set, tuple(krotka), dictionary:
+	list.reverse()
+ 	list.sort()
+  list.append()
+  list.count(el)
+  list.pop()
+  list.remove()
+  list.clear()
+  
+	s = set()
+	s.add('one')
+	s.add('two')
+	s.add('five')
+	s.remove('five')
+	s.discard('five') -> nie wystapi blad jezeli nie ma wartosci
+   
+  """
