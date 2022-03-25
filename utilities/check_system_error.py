@@ -1,81 +1,3 @@
-
-
- 
-def clean_log_line_and_put_in_to_list(line):
-  ################################################
-  #+#  Change syslog line from string to list  #+#
-  ################################################
-  # Mar 22 00:15:55 ip-172-31-29-165 gunicorn[792103]: [2022-03-22 00:15:55 +0000] [792103] [INFO] Worker exiting (pid: 792103)
-	# ['2022-03-22 00:15:55 +0000', '792103', 'INFO', 'Worker exiting (pid: 792103)']
-	# or
-	# ['2022-03-24 11:10:19,822', 'ERROR in app: Exception on /xdGET', '', '']
-  ################################################
-	line_list = line.split(']: [')
-	#print('\n\naaaaa ===>',line_list)
-	new_list = line_list[1].split(']')
-	tmp_list = []
-	for nr,l in enumerate(new_list):
-		tmp_data = l.replace(' [','').lstrip()
-		if nr == 1 and not tmp_data.strip().isnumeric():
-#			print(tmp_data)
-			tmp_txt = tmp_data.split(' ')
-			break
-		if tmp_data.isnumeric():
-			tmp_data = int(tmp_data)
-		tmp_list.append(tmp_data)
-	
-	if len(tmp_list) == 1 and "gunicorn" in line_list[0]:
-		tmp_left_txt = line_list[0].split('[')[-1]
-		if tmp_left_txt.isnumeric():
-			tmp_pid = int(tmp_left_txt)
-			tmp_errmsg = ' '.join([tmp_txt[0] if tmp_txt[0] != "" else tmp_txt[1]])
-			#tmp_errmsg = tmp_left_txt
-			tmp_list.append(tmp_pid)
-			tmp_list.append(tmp_errmsg)
-			tmp_list.append(' '.join(tmp_txt))
-	
-	return tmp_list
-
-
-
-  
-def qq():
-		data = line[0]
-		half_cut_str = ']: ['
-		line_str = ' '.join(line)
-		half_line = line_str.split(half_cut_str)
-
-		print(tmp_str.replace(half_line[0],'').replace(data,'').replace(half_cut_str,'').lstrip(']').lstrip(':'))
-  
-		return False
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from logging import LogRecord
 import subprocess
 
@@ -371,6 +293,10 @@ def main():
 	print('\n\n')
 	print('\t1. Szukaj błędów serwera flask (flaga) w pliku /var/log/syslog')
 	print('\t2. Pokaż dostępne miejsce na dysku')
+	print('\t3. Pokaż konfiguracje domeny oraz IP')
+	print('\t4. Informacja z lastaccess')
+	print('\t5. Informacja o probach logowań')
+
 
 	print('\n\tq. Wyjdź')
 	option = input("\t\tCo robimy ? ")
@@ -382,7 +308,19 @@ def main():
 		elif option == "2":
 			show_hdd_free_space()
 			break
-  
+   
+		elif option == "3":
+			show_serwer_ip_and_domain_connection()
+			break
+   
+		elif option == "4":
+			server_last_access(user_name)
+			break
+   
+		elif option == "5":
+			show_server_hacking_attempts(user_name)
+			break
+
 		elif option == "q":
 			break
 		else:
@@ -401,58 +339,3 @@ if __name__ == '__main__':
 	main()
 
 
-
-def python():
-  """
-  operatory aytmetyczne: +-*/ %
-  mozliwy zapis: 
-  a = 5
-  a+=3 ===> a = a + 3
-  a == 8
-  
-  stringi:
-  funkcje:
-		len(str)
-  
-  metody:
-		str = 'jakis string'
-		str.capitalize()
-		str.upper() str.lower()
-		str[0] = j
-		str[0:2] = ja
-		str[-3:] = ing
-		str.split(' ') => lista_slow
-		' '.join(lista_slow)
-		str.startswith('j')
-		str.endswith('g')
-		str.rstrip('g') / str.lstrip('g') / str.strip()
-		str.join(str1, str2)
-		str(325).zfill(5) => 00325 / str(5).zfill(5) ==> 00005
-		str.isnumeric()
-  
-	instrukcje warunkowe:
-		print("Jedz") if light == 'green' else print("Czekaj")
-  
-  petle:
-		while 
-		for int in range(1,10):	-> for int in range(0,30, 3):
-			1 - 9												0,3,6,9 ... 27
-
-
-	struktury danych -> list, set, tuple(krotka), dictionary:
-	list.reverse()
- 	list.sort()
-  list.append()
-  list.count(el)
-  list.pop()
-  list.remove()
-  list.clear()
-  
-	s = set()
-	s.add('one')
-	s.add('two')
-	s.add('five')
-	s.remove('five')
-	s.discard('five') -> nie wystapi blad jezeli nie ma wartosci
-   
-  """
