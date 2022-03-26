@@ -1,5 +1,6 @@
 # kalkluator
 
+print('\n')
 history_list = []
 while True:
   r = input("Wpisz równanie (+,-,/,*): ")
