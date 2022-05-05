@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "file_explorer"
+		},
+		{
+			"path": "../app-py-project"
 		}
 	],
 	"settings": {}
